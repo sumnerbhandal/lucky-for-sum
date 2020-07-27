@@ -6,7 +6,7 @@ import { BrowserRouter as Router, Route, Link, Switch, Redirect, useHistory } fr
 export default function App() {
   const name = 'John Doe';
   return (
-   <Router basename={process.env.PUBLIC_URL}>
+   <Router>
     <main>
       <nav>
         <ul>
