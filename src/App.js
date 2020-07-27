@@ -16,7 +16,7 @@ export default function App() {
         </ul>
       </nav>
     <Switch>
-      <Route path="/" component={Home} />
+      <Route path="/" exact component={Home} />
       <Route path="/about/:name"  component={About} />
       <Route path="/contact"  component={Contact} />
       <Route render={() => <h1>404: page not found</h1>} />
