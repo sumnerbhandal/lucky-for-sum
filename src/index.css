@@ -11,3 +11,23 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+
+.product-list {
+  display: flex;
+  padding: 2rem;
+}
+
+.card {
+  flex: 1 1 33.33%;
+  margin-right: 2rem;
+}
+
+.card:nth-child(3n) {
+  margin-right: 0;
+}
+
+.card > img {
+  width: 100%;
+}
