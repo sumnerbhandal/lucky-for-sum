@@ -30,7 +30,7 @@ function User() {
   const [homePage, setHomepage] = useState(null);
   
   useEffect(() => {
-    fetch('http://cdn.luckyforsum.com/products')
+    fetch('http://luckyforsum.club/products')
     .then(response => response.json())
     .then(data => {
     setHomepage(data);
@@ -55,7 +55,7 @@ function User() {
           <h2> 
           {listItem.title}
         </h2>
-        <img src={`http://cdn.luckyforsum.com${listItem.hero.formats.small.url}`} />
+        {/* <img src={`http://cdn.luckyforsum.com${listItem.hero.formats.small.url}`} /> */}
         <p> 
           {listItem.description}
         </p>
