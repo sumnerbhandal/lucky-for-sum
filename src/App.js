@@ -30,7 +30,7 @@ function User() {
   const [homePage, setHomepage] = useState(null);
   
   useEffect(() => {
-    fetch('http://cdn.luckyforsum.com/products')
+    fetch('https://cdn.luckyforsum.com/products')
     .then(response => response.json())
     .then(data => {
     setHomepage(data);
