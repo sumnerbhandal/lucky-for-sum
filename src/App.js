@@ -55,7 +55,7 @@ function User() {
           <h2> 
           {listItem.title}
           </h2>
-          <img src={`http://cdn.luckyforsum.com${listItem.hero.formats.small.url}`} />
+          <img src={`https://cdn.luckyforsum.com${listItem.hero.formats.small.url}`} />
           <p> 
             {listItem.description}
           </p>
