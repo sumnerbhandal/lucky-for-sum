@@ -54,14 +54,14 @@ function User() {
         <div className="card">
           <h2> 
           {listItem.title}
-        </h2>
-        {/* <img src={`http://cdn.luckyforsum.com${listItem.hero.formats.small.url}`} /> */}
-        <p> 
-          {listItem.description}
-        </p>
-        <p> 
-          {listItem.price}
-        </p>
+          </h2>
+          <img src={`http://cdn.luckyforsum.com${listItem.hero.formats.small.url}`} />
+          <p> 
+            {listItem.description}
+          </p>
+          <p> 
+            {listItem.price}
+          </p>
         </div>
       ))}
     </div>

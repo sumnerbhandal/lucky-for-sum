@@ -17,15 +17,21 @@ code {
 .product-list {
   display: flex;
   padding: 2rem;
+  flex-wrap: wrap;
 }
 
 .card {
-  flex: 1 1 33.33%;
-  margin-right: 2rem;
+  flex: 1 1 100%;
 }
 
-.card:nth-child(3n) {
-  margin-right: 0;
+@media (min-width: 768px) {
+  .card {
+    flex: 1 1 25%;
+    margin-right: 2rem;
+  }
+  .card:nth-child(3n) {
+    margin-right: 0;
+  }
 }
 
 .card > img {
