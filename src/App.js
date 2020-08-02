@@ -3,59 +3,30 @@ import "./index.css"
 
 import { BrowserRouter as Router, Route, Link, Switch, useHistory } from "react-router-dom";
 
-
-const useFetch = url => {
-  const [data, setData] = useState(null);
-  const [loading, setLoading] = useState(true);
-
-  async function fetchData() {
-    const response = await fetch(url);
-    const json = await response.json();
-    setData(json);
-    setLoading(false)
-  }
-
-  useEffect(() => {
-    fetchData()
-  }, []);
-
-  return {loading,data};
-};
-
-// .map((highlight) =>
-//           <div key={highlight.id} className="container-fluid p-0"></div>
-
-
 function User() {
   const [homePage, setHomepage] = useState(null);
   
   useEffect(() => {
-    fetch('https://cdn.luckyforsum.com/products')
+    // fetch('https://cdn.luckyforsum.com/products')
+    fetch('https://cdn.luckyforsum.com/categories/1')
     .then(response => response.json())
     .then(data => {
     setHomepage(data);
     } );
   }, []); // <-- Have to pass in [] here!
 
-  const listings = [];
-
-  // { !homePage ? 'Loading...' : homePage.map(listItem => (
-  //   <p className={`header2 pb-3`}>
-  //     {listItem}
-  //   </p>
-  // ))}
-
   console.log(homePage)
   
   return (
     <div className="product-list">
 
-      {!homePage ? 'Loading...' : homePage.map(listItem => (
+      {/* {!homePage ? 'Loading...' : homePage..map(listItem => ( */}
+      {!homePage ? 'Loading...' : homePage.products.map(listItem => (
         <div className="card">
           <h2> 
           {listItem.title}
           </h2>
-          <img src={`https://cdn.luckyforsum.com${listItem.hero.formats.small.url}`} />
+          <img src={`https://cdn.luckyforsum.com${listItem.hero.formats.small.url}`} alt={listItem.hero.alternativeText} />
           <p> 
             {listItem.description}
           </p>
@@ -94,9 +65,41 @@ export default function App() {
   );
 }
 
+function Banner() {
+  const [homepageBanner, setHomepageBanner] = useState(null);
+  
+  useEffect(() => {
+    fetch('https://cdn.luckyforsum.com/homepage-banner')
+    .then(response => response.json())
+    .then(data => {
+    setHomepageBanner(data);
+    } );
+  }, []); // <-- Have to pass in [] here!
+
+  console.log(homepageBanner)
+  
+  return (
+    <div className="banner full-width">
+      {!homepageBanner ? 'Loading...' : 
+          <img src={`https://cdn.luckyforsum.com${homepageBanner.image.formats.small.url}`}
+               srcSet={`${`https://cdn.luckyforsum.com${homepageBanner.image.formats.small.url}`} 300w, 
+                        ${`https://cdn.luckyforsum.com${homepageBanner.image.formats.medium.url}`} 768w, 
+                        ${`https://cdn.luckyforsum.com${homepageBanner.image.formats.large.url}`} 1024w,
+                        ${`https://cdn.luckyforsum.com${homepageBanner.image.url}`} 1280w`
+                      } 
+                alt={homepageBanner.image.alternativeText}
+          />
+      }
+    </div>
+  );
+}
+
+
+
 function Home() {
   return (
   <Fragment>
+    <Banner />
     <User />
   </Fragment>
   )
