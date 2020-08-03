@@ -51,6 +51,9 @@ code {
     max-width: calc(33.33% - 2rem);
     margin-right: 2rem;
   }
+  .card:nth-child(2n) {
+    margin-right: 2rem;
+  }
   .card:nth-child(3n) {
     margin-right: 0;
   }
@@ -62,6 +65,9 @@ code {
     margin-right: 2rem;
   }
   .card:nth-child(3n) {
+    margin-right: 2rem;
+  }
+  .card:nth-child(4n) {
     margin-right: 0;
   }
 }
@@ -98,6 +104,17 @@ code {
 
 h1, h2, h3, h4, h5 {
   font-weight: bold;
+}
+
+p.product-title {
+  height: 2.875rem;
+  font-weight: bold;
+  font-size: 1rem;
+}
+@media (min-width: 1440px) {
+  p.product-title {
+    height: auto;
+  }
 }
 
 p.price {

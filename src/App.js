@@ -27,9 +27,9 @@ function User() {
             <div className="img-container">
               <img src={`https://cdn.luckyforsum.com${listItem.hero.formats.small.url}`} alt={listItem.hero.alternativeText} />
             </div>
-            <h3> 
+            <p className="product-title"> 
             {listItem.title}
-            </h3>
+            </p>
             <p className="description"> 
               {listItem.description}
             </p>
