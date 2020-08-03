@@ -18,23 +18,27 @@ function User() {
   console.log(homePage)
   
   return (
-    <div className="product-list">
+    <div className="section">
+      <div className="product-list">
 
-      {/* {!homePage ? 'Loading...' : homePage..map(listItem => ( */}
-      {!homePage ? 'Loading...' : homePage.products.map(listItem => (
-        <div className="card">
-          <h2> 
-          {listItem.title}
-          </h2>
-          <img src={`https://cdn.luckyforsum.com${listItem.hero.formats.small.url}`} alt={listItem.hero.alternativeText} />
-          <p> 
-            {listItem.description}
-          </p>
-          <p> 
-            {listItem.price}
-          </p>
-        </div>
-      ))}
+        {/* {!homePage ? 'Loading...' : homePage..map(listItem => ( */}
+        {!homePage ? 'Loading...' : homePage.products.map(listItem => (
+          <div className="card">
+            <div className="img-container">
+              <img src={`https://cdn.luckyforsum.com${listItem.hero.formats.small.url}`} alt={listItem.hero.alternativeText} />
+            </div>
+            <h3> 
+            {listItem.title}
+            </h3>
+            <p className="description"> 
+              {listItem.description}
+            </p>
+            <p className="price"> 
+              £{listItem.price}
+            </p>
+          </div>
+        ))}
+      </div>
     </div>
   );
 }
@@ -45,7 +49,7 @@ export default function App() {
   return (
    <Router>
     <main>
-      <nav>
+      <nav className="section">
         <ul>
           <li><Link to="/">Home</Link></li>
           <li><Link to={`/about/${name}`}>About</Link></li>

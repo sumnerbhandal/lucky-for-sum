@@ -1,10 +1,10 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 0.875rem;
+  letter-spacing: 0.0075rem;
+  line-height: 1.5;
+  color: #111;
 }
 
 code {
@@ -13,29 +13,40 @@ code {
 }
 
 
+.section {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+
 
 .product-list {
   display: flex;
-  padding: 2rem;
   flex-wrap: wrap;
-  justify-content: space-between;
+  margin-top: 1rem;
+  padding: 0 1rem;
+}
+@media (min-width: 768px) {
+  .product-list {
+    padding: 0 2rem;
+    margin-top: 2rem;
+  }
+}
+@media (min-width: 1440px) {
+  .product-list {
+    padding: 0;
+  }
 }
 
 .card {
-  flex: 1 1 100%;
+  max-width: calc(50% - 0.5rem);
+  margin-right: 1rem;
+}
+.card:nth-child(2n) {
+  margin-right: 0;
 }
 
 @media (min-width: 768px) {
-  .card {
-    max-width: calc(50% - 2rem);
-    margin-right: 2rem;
-  }
-  .card:nth-child(2n) {
-    margin-right: 0;
-  }
-}
-
-@media (min-width: 1024px) {
   .card {
     max-width: calc(33.33% - 2rem);
     margin-right: 2rem;
@@ -45,14 +56,60 @@ code {
   }
 }
 
-.card > img {
-  width: 100%;
+@media (min-width: 1024px) {
+  .card {
+    max-width: calc(25% - 2rem);
+    margin-right: 2rem;
+  }
+  .card:nth-child(3n) {
+    margin-right: 0;
+  }
 }
 
-.banner .full-width {
-  width: 100vw;
+.card > .img-container {
+  padding-top: 100%;
+  height: 0;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.card > .img-container > img {
+  position: absolute;
+  top: -15%;
+  left: 0;
+  width: 100%;
+  height: auto;
+}
+
+.banner.full-width {
+  width: 100%;
+  overflow: hidden;
+  margin: 0 auto;
 }
 
 .banner.full-width img {
   width: 100%;
+  object-fit: contain;
+  object-position: center;
+  max-height: 400px;
+  background: #FED07E;
+}
+
+h1, h2, h3, h4, h5 {
+  font-weight: bold;
+}
+
+p.price {
+  font-weight: bold;
+}
+
+p.description {
+    display: -webkit-box;
+    height: 2.75rem;
+    max-height: 2.75rem;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
