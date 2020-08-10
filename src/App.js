@@ -21,7 +21,7 @@ const User = () => {
   let navigate = useNavigate();
   function handleClick (event) {
     const target = event.target.closest(".card");
-    navigate(`/pdp/${target.title.replace(/ |'|_/g,"-")}_${target.id}`, { 
+    navigate(`/pdp/${target.title.replace(/ |'|_/g,"-")}_pid-${target.id}`, { 
       state: {
         id: `${target.id}`
       } 

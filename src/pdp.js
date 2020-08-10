@@ -5,17 +5,17 @@ import { useLocation } from "react-router-dom/index";
 
 const ProductPage = () => { 
 
-const {state} = useLocation();
-const { id } = state; // Read values passed on state
+// const {state} = useLocation();
+// const { id } = state; // Read values passed on state
 
-// const { id } = window.location.href.split('_')[1];
-console.log({ id })
+const { id } = window.location.href.split('_')[1];
+// console.log({ id })
 
 const [product, setProduct] = useState(null);
 
 
 useEffect(() => {
-    fetch(`https://cdn.luckyforsum.com/products/${window.location.href.split('_')[1]}`)
+    fetch(`https://cdn.luckyforsum.com/products/${window.location.href.split('_pid-')[1]}`)
     .then(response => response.json())
     .then(data => {
     setProduct(data);
