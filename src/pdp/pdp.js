@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom/index";
 
+import "./pdp.css"
+
 
 
 const ProductPage = () => { 
@@ -28,9 +30,17 @@ return (
     
     <div className="section">
         {!product ? 'Loading...' : (
-        <div>
-            <h1>{product.title}</h1>
-            <div>
+        <div className="product-contents">
+            <div className="product-details">
+                <h1 className="product-title">{product.title}</h1>
+                <p className="description"> 
+                  {product.description}
+                </p>
+                <p className="price"> 
+                  £{product.price}
+                </p>
+            </div>
+            <div className="pdp-imagery">
                { product.product_shots.map((image, index) => (
                    <img key={index} src={`https://cdn.luckyforsum.com${image.formats.small.url}`} alt={`${image.alternativeText} ${index}`} />
                ))}

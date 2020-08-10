@@ -16,6 +16,7 @@ code {
 .section {
   max-width: 1440px;
   margin: 0 auto;
+  padding: 0 1rem;
 }
 
 
@@ -24,16 +25,19 @@ code {
   display: flex;
   flex-wrap: wrap;
   margin-top: 1rem;
-  padding: 0 1rem;
+
 }
 @media (min-width: 768px) {
   .product-list {
-    padding: 0 2rem;
     margin-top: 2rem;
   }
+  .section {
+    padding: 0 2rem;
+  }
 }
+  
 @media (min-width: 1440px) {
-  .product-list {
+  .section {
     padding: 0;
   }
 }
@@ -42,6 +46,7 @@ code {
   max-width: calc(50% - 0.5rem);
   margin-right: 1rem;
   margin-bottom: 1rem;
+  cursor: pointer;
 }
 .card:nth-child(2n) {
   margin-right: 0;
@@ -79,6 +84,7 @@ code {
   width: 100%;
   position: relative;
   overflow: hidden;
+  background: #f6f6f6;
 }
 
 .card > .img-container > img {
@@ -93,6 +99,9 @@ code {
   width: 100%;
   overflow: hidden;
   margin: 0 auto;
+  padding-top: 28.75%;
+  position: relative;
+  background: #f6f6f6;
 }
 
 .banner.full-width img {
@@ -101,6 +110,8 @@ code {
   object-position: center;
   max-height: 400px;
   background: #FED07E;
+  position: absolute;
+  top: 0;
 }
 
 h1, h2, h3, h4, h5 {
@@ -111,6 +122,9 @@ p.product-title {
   height: 2.875rem;
   font-weight: bold;
   font-size: 1rem;
+}
+p.product-title:hover {
+  text-decoration: underline;
 }
 @media (min-width: 1440px) {
   p.product-title {

@@ -1,5 +1,5 @@
 import React, { Fragment, useEffect, useState } from "react";
-import ProductPage from './pdp';
+import ProductPage from './pdp/pdp';
 import "./index.css"
 
 import { BrowserRouter as Router, Route, Link, Routes, useNavigate } from "react-router-dom/index";
@@ -93,7 +93,7 @@ function Banner() {
  
   return (
     <div className="banner full-width">
-      {!homepageBanner ? 'Loading...' : 
+      {!homepageBanner ? '' : 
           <img src={`https://cdn.luckyforsum.com${homepageBanner.image.formats.small.url}`}
                srcSet={`${`https://cdn.luckyforsum.com${homepageBanner.image.formats.small.url}`} 300w, 
                         ${`https://cdn.luckyforsum.com${homepageBanner.image.formats.medium.url}`} 768w, 
