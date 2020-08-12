@@ -1,9 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useLocation } from "react-router-dom/index";
-
 import "./pdp.css"
-
-
 
 const ProductPage = () => { 
 

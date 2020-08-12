@@ -1,0 +1,125 @@
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+  
+  }
+  @media (min-width: 768px) {
+    .product-list {
+      margin-top: 2rem;
+    }
+    .section {
+      padding: 0 2rem;
+    }
+  }
+    
+  @media (min-width: 1440px) {
+    .section {
+      padding: 0;
+    }
+  }
+  
+  .card {
+    width: calc(50% - 0.5rem);
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+  }
+  .card:nth-child(2n) {
+    margin-right: 0;
+  }
+  
+  @media (min-width: 768px) {
+    .card {
+      width: calc(33.33% - 1.375rem);
+      margin-right: 2rem;
+    }
+    .card:nth-child(2n) {
+      margin-right: 2rem;
+    }
+    .card:nth-child(3n) {
+      margin-right: 0;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .card {
+      width: calc(25% - 1.5rem);
+      margin-right: 2rem;
+    }
+    .card:nth-child(3n) {
+      margin-right: 2rem;
+    }
+    .card:nth-child(4n) {
+      margin-right: 0;
+    }
+  }
+  
+  .card > .img-container {
+    padding-top: 100%;
+    height: 0;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background: #f6f6f6;
+  }
+  
+  .card > .img-container > img {
+    position: absolute;
+    top: -15%;
+    left: 0;
+    width: 100%;
+    height: auto;
+    animation: fadeIn 1s forwards;
+  }
+  
+  h1, h2, h3, h4, h5 {
+    font-weight: bold;
+  }
+
+  .plp-placeholder-container {
+      width: 100%;
+  }
+  
+  p.product-title {
+    height: 2.875rem;
+    font-weight: bold;
+    font-size: 1rem;
+  }
+
+  p.product-title-placeholder {
+    height: 2.875rem;
+    background: #f7f7f7;
+    color: #f7f7f7;
+  }
+
+  p.product-title:hover {
+    text-decoration: underline;
+  }
+  @media (min-width: 1440px) {
+    p.product-title-placeholder {
+      height: auto;
+    }
+  }
+  
+  p.product-price {
+    font-weight: bold;
+  }
+  
+  p.product-price-placeholder {
+    background: #f7f7f7;
+    color: #f7f7f7;
+  }
+  
+  p.description {
+      display: -webkit-box;
+      height: 2.75rem;
+      max-height: 2.75rem;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+  }
+
+
+

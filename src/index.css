@@ -19,129 +19,19 @@ code {
   padding: 0 1rem;
 }
 
-
-
-.product-list {
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: 1rem;
-
+@-webkit-keyframes fadeIn {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
 }
-@media (min-width: 768px) {
-  .product-list {
-    margin-top: 2rem;
-  }
-  .section {
-    padding: 0 2rem;
-  }
+@-moz-keyframes fadeIn {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
 }
-  
-@media (min-width: 1440px) {
-  .section {
-    padding: 0;
-  }
+@-o-keyframes fadeIn {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
 }
-
-.card {
-  max-width: calc(50% - 0.5rem);
-  margin-right: 1rem;
-  margin-bottom: 1rem;
-  cursor: pointer;
-}
-.card:nth-child(2n) {
-  margin-right: 0;
-}
-
-@media (min-width: 768px) {
-  .card {
-    max-width: calc(33.33% - 1.375rem);
-    margin-right: 2rem;
-  }
-  .card:nth-child(2n) {
-    margin-right: 2rem;
-  }
-  .card:nth-child(3n) {
-    margin-right: 0;
-  }
-}
-
-@media (min-width: 1024px) {
-  .card {
-    max-width: calc(25% - 1.5rem);
-    margin-right: 2rem;
-  }
-  .card:nth-child(3n) {
-    margin-right: 2rem;
-  }
-  .card:nth-child(4n) {
-    margin-right: 0;
-  }
-}
-
-.card > .img-container {
-  padding-top: 100%;
-  height: 0;
-  width: 100%;
-  position: relative;
-  overflow: hidden;
-  background: #f6f6f6;
-}
-
-.card > .img-container > img {
-  position: absolute;
-  top: -15%;
-  left: 0;
-  width: 100%;
-  height: auto;
-}
-
-.banner.full-width {
-  width: 100%;
-  overflow: hidden;
-  margin: 0 auto;
-  padding-top: 28.75%;
-  position: relative;
-  background: #f6f6f6;
-}
-
-.banner.full-width img {
-  width: 100%;
-  object-fit: contain;
-  object-position: center;
-  max-height: 400px;
-  background: #FED07E;
-  position: absolute;
-  top: 0;
-}
-
-h1, h2, h3, h4, h5 {
-  font-weight: bold;
-}
-
-p.product-title {
-  height: 2.875rem;
-  font-weight: bold;
-  font-size: 1rem;
-}
-p.product-title:hover {
-  text-decoration: underline;
-}
-@media (min-width: 1440px) {
-  p.product-title {
-    height: auto;
-  }
-}
-
-p.price {
-  font-weight: bold;
-}
-
-p.description {
-    display: -webkit-box;
-    height: 2.75rem;
-    max-height: 2.75rem;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    text-overflow: ellipsis;
+@keyframes fadeIn {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
 }

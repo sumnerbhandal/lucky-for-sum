@@ -1,0 +1,31 @@
+
+.banner.full-width {
+    width: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+    height: 10rem;
+    /* background: #f6f6f6; */
+    background: #FED07E;
+  }
+  
+  @media (min-width: 768px) {
+    .banner.full-width {
+      height: 15rem;
+    }
+  }
+  
+  @media (min-width: 1280px) {
+    .banner.full-width {
+      height: 18rem;
+    }
+  }
+  
+  .banner.full-width img {
+    height: 125%;
+    object-fit: scale-down;
+    object-position: center;
+    display: flex;
+    margin: 0 auto;
+    transform: translateY(-10%);
+    /* animation: fadeIn 1s forwards; */
+  }
