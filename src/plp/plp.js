@@ -66,7 +66,7 @@ const Plp = () => {
                     <div key={listItem.id} id={listItem.id} title={listItem.title} className="card" 
                     onClick={handleClick}>
                         <div className="img-container">
-                        <img id={listItem.id} src={`https://cdn.luckyforsum.com${listItem.hero.formats.small.url}`} alt={listItem.hero.alternativeText} />
+                        <img id={listItem.id} src={`https://cdn.luckyforsum.com${listItem.hero.formats.medium.url}`} alt={listItem.hero.alternativeText} />
                         </div>
                         <p className="product-title"> 
                         {listItem.title}

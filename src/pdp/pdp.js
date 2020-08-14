@@ -33,7 +33,7 @@ return (
             </div>
             <div className="pdp-imagery">
                { product.product_shots.map((image, index) => (
-                   <img key={index} src={`https://cdn.luckyforsum.com${image.formats.small.url}`} alt={`${image.alternativeText} ${index}`} />
+                   <img key={index} src={`https://cdn.luckyforsum.com${image.formats.medium.url}`} alt={`${image.alternativeText} ${index}`} />
                ))}
                 </div>
          </div>
