@@ -2,12 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./pdp.css"
 
 const ProductPage = () => { 
-
-// const {state} = useLocation();
-// const { id } = state; // Read values passed on state
-
 const { id } = window.location.href.split('_')[1];
-// console.log({ id })
 
 const [product, setProduct] = useState(null);
 
@@ -18,14 +13,14 @@ useEffect(() => {
     .then(data => {
     setProduct(data);
     } );
-  }, []); // <-- Have to pass in [] here!
+  }, []);
 
 console.log(product)
 
 return (
     
     <div className="section">
-        {!product ? 'Loading...' : (
+        {!product ? '' : (
         <div className="product-contents">
             <div className="product-details">
                 <h1 className="product-title">{product.title}</h1>

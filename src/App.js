@@ -40,10 +40,10 @@ export default function App() {
 
 function Home() {
   return (
-  <Fragment>
+      <div className="PageContent">
     <MarketingBanner />
     <Plp />
-  </Fragment>
+    </div>
   )
 };
 

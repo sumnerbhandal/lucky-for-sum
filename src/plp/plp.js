@@ -31,25 +31,33 @@ const PlpTemplate = () => {
 const Plp = () => {
     const [homePage, setHomepage] = useState(null);
   
-    
     useEffect(() => {
       fetch('https://cdn.luckyforsum.com/categories/1')
       .then(response => response.json())
       .then(data => {
       setHomepage(data);
       } );
-    }, []); // <-- Have to pass in [] here!
-  
-    console.log(homePage)
+    }, []);
   
     let navigate = useNavigate();
     function handleClick (event) {
-      const target = event.target.closest(".card");
-      navigate(`/pdp/${target.title.replace(/ |'|_/g,"-")}_pid-${target.id}`, { 
-        state: {
-          id: `${target.id}`
-        } 
-      });
+        const target = event.target.closest(".card");
+        const page = event.target.closest(".PageContent");
+        // var position = event.target.getBoundingClientRect();
+        // const windowWidth = window.innerWidth;
+        // const windowHeight = window.innerHeight;
+        // const yTransform = ((windowWidth - position.height) / 2 ) - y;
+        // page.style.transform = `translateX(-${windowWidth}px)`;
+        page.style.opacity = 0;
+        
+        setTimeout(function(){ 
+            navigate(`/pdp/${target.title.replace(/ |'|_/g,"-")}_pid-${target.id}`, { 
+                state: {
+                id: `${target.id}`
+                } 
+            });
+        }, 500);
+      
     }
    
     return (
