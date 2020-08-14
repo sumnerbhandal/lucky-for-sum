@@ -1,25 +1,17 @@
-import React, { Fragment } from "react";
+import React from "react";
 import ProductPage from './pdp/pdp';
 import Plp from './plp/plp';
+import NavDefault from './nav/navigation';
 import MarketingBanner from './banners/marketing-banner';
 import "./index.css"
-
-import { BrowserRouter as Router, Route, Link, Routes } from "react-router-dom/index";
-
-
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom/index";
 
 export default function App() {
   // const name = 'John Doe';
   return (
    <Router>
     <main>
-      <nav className="section">
-        <ul>
-          <li><Link to="/">Home</Link></li>
-          {/* <li><Link to={`/about/${name}`}>About</Link></li> */}
-          <li><Link to="/contact">Contact</Link></li>
-        </ul>
-      </nav>
+      <NavDefault />
       <Routes>
         <Route path="/" element={<Home />} />
         {/* <Route path="/about/:name" element={<About />} /> */}
@@ -35,25 +27,20 @@ export default function App() {
 }
 
 
-
-
-
 function Home() {
   return (
-      <div className="PageContent">
-    <MarketingBanner />
-    <Plp />
+    <div className="PageContent">
+      <MarketingBanner />
+      <Plp />
     </div>
   )
 };
 
 const Contact = () => { 
-  // const history = useHistory();
   return (
-    <Fragment>
+    <div className="section">
       <h1>Contact</h1>
-      {/* <button onClick={() => history.push('/') } >Go to home</button> */}
-    </Fragment>
+    </div>
   )
 };
 

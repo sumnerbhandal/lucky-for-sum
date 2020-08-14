@@ -1,3 +1,7 @@
+.product-contents {
+    margin-top: 2rem;
+}
+
 .pdp-imagery {
     width: 100%;
     display: flex;
@@ -40,46 +44,7 @@ h1.product-title {
 }
 
 
-@-webkit-keyframes pdpDesktopLoadUp {
-    0%   { 
-        opacity: 0; 
-        transform: translateY(150px);
-    }
-    75% {
-        opacity: 1; 
-    }
-    100% { 
-
-        transform: translateY(0);
-    }
-}
-  @-moz-keyframes pdpDesktopLoadUp {
-    0%   { 
-        opacity: 0; 
-        transform: translateY(150px);
-    }
-    75% {
-        opacity: 1; 
-    }
-    100% { 
-
-        transform: translateY(0);
-    }
-}
-  @-o-keyframes pdpDesktopLoadUp {
-    0%   { 
-        opacity: 0; 
-        transform: translateY(150px);
-    }
-    75% {
-        opacity: 1; 
-    }
-    100% { 
-
-        transform: translateY(0);
-    }
-}
-  @keyframes pdpDesktopLoadUp {
+@keyframes pdpDesktopLoadUp {
     0%   { 
         opacity: 0; 
         transform: translateY(150px);
@@ -94,47 +59,7 @@ h1.product-title {
     }
 }
 
-
-@-webkit-keyframes pdpMobileLoadUp {
-    0%   { 
-        opacity: 0; 
-        transform: translateX(150px);
-    }
-    75% {
-        opacity: 1; 
-    }
-    100% { 
-
-        transform: translateX(0);
-    }
-}
-  @-moz-keyframes pdpMobileLoadUp {
-    0%   { 
-        opacity: 0; 
-        transform: translateX(150px);
-    }
-    75% {
-        opacity: 1; 
-    }
-    100% { 
-
-        transform: translateX(0);
-    }
-}
-  @-o-keyframes pdpMobileLoadUp {
-    0%   { 
-        opacity: 0; 
-        transform: translateX(150px);
-    }
-    75% {
-        opacity: 1; 
-    }
-    100% { 
-
-        transform: translateX(0);
-    }
-}
-  @keyframes pdpMobileLoadUp {
+@keyframes pdpMobileLoadUp {
     0%   { 
         opacity: 0; 
         transform: translateX(150px);

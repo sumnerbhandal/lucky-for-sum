@@ -8,7 +8,7 @@ const PlpTemplate = () => {
             <div className="product-list">
                 {["1", "2", "3", "4", "5", "6"].map((listItem, index)  => (
                     <div key={index} id={index} title="placeholder" className="card">
-                        <div className="img-container">
+                        <div className="img-container bg-dots">
                         <img id={listItem} alt="placeholder" />
                         </div>
                         <p className="product-title-placeholder"> 
@@ -57,7 +57,6 @@ const Plp = () => {
                 } 
             });
         }, 500);
-      
     }
    
     return (

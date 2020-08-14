@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./pdp.css"
 
 const ProductPage = () => { 
-const { id } = window.location.href.split('_')[1];
+// const { id } = window.location.href.split('_')[1];
 
 const [product, setProduct] = useState(null);
 

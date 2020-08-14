@@ -1,20 +1,25 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import './marketing-banner.css'
 
 function MarketingBanner() {
-    const [homepageBanner, setHomepageBanner] = useState(null);
+    // const [homepageBanner, setHomepageBanner] = useState(null);
     
-    useEffect(() => {
-      fetch('https://cdn.luckyforsum.com/homepage-banner')
-      .then(response => response.json())
-      .then(data => {
-      setHomepageBanner(data);
-      } );
-    }, []); // <-- Have to pass in [] here!
+    // useEffect(() => {
+    //   fetch('https://cdn.luckyforsum.com/homepage-banner')
+    //   .then(response => response.json())
+    //   .then(data => {
+    //   setHomepageBanner(data);
+    //   } );
+    // }, []); // <-- Have to pass in [] here!
    
     return (
-      <div className="banner full-width">
-        {!homepageBanner ? '' : 
+      <div className="banner full-width bg-dots">
+        <div className="section banner-title">
+          <h1>
+          New Start, New Looks
+          </h1>
+        </div>
+        {/* {!homepageBanner ? '' : 
             <img src={`https://cdn.luckyforsum.com${homepageBanner.image.formats.small.url}`}
                  srcSet={`${`https://cdn.luckyforsum.com${homepageBanner.image.formats.small.url}`} 300w, 
                           ${`https://cdn.luckyforsum.com${homepageBanner.image.formats.medium.url}`} 768w, 
@@ -23,7 +28,7 @@ function MarketingBanner() {
                         } 
                   alt={homepageBanner.image.alternativeText}
             />
-        }
+        } */}
       </div>
     );
   }

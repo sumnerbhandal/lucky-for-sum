@@ -1,31 +1,56 @@
 
 .banner.full-width {
-    width: 100%;
-    overflow: hidden;
-    margin: 0 auto;
-    height: 10rem;
-    /* background: #f6f6f6; */
-    background: #FED07E;
-  }
+  width: 100%;
+  overflow: hidden;
+  margin: 0 auto;
+  height: 10rem;
+}
   
-  @media (min-width: 768px) {
-    .banner.full-width {
-      height: 15rem;
-    }
+.banner.full-width img {
+  height: 110%;
+  object-fit: scale-down;
+  object-position: center;
+  display: flex;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+.section.banner-title {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.section.banner-title h1 {
+  font-size: 1.5rem;
+  color: #111;
+  animation: bannerLoadUp 1s forwards;
+  box-shadow: 12px 12px 0px 0px #111;
+  padding: 0.25rem 1.5rem;
+  max-width: 60vw;
+  background: white;
+}
+
+@media (min-width: 768px) {
+  .banner.full-width {
+    height: 15rem;
   }
+  .section.banner-title h1 {
+    font-size: 2.5rem;
+    max-width: 80vw;
+  }
+}
   
-  @media (min-width: 1280px) {
-    .banner.full-width {
-      height: 18rem;
-    }
+
+
+@keyframes bannerLoadUp {
+  0%   { 
+      opacity: 0; 
+      transform: translateY(5px);
   }
-  
-  .banner.full-width img {
-    height: 125%;
-    object-fit: scale-down;
-    object-position: center;
-    display: flex;
-    margin: 0 auto;
-    transform: translateY(-10%);
-    /* animation: fadeIn 1s forwards; */
+  100% { 
+
+      transform: translateY(0);
+      opacity: 1; 
   }
+}
