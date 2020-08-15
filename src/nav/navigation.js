@@ -7,12 +7,12 @@ const NavDefault = () => {
     const [bodyOffset, setBodyOffset] = useState(
         document.body.getBoundingClientRect()
     );
-    const [scrollY, setScrollY] = useState(bodyOffset.top);
+    const [scrollY, setScrollY] = useState(Math.round(bodyOffset.top));
     const [isScrolled, setIsScrolled] = useState(null);
 
     const listener = e => {
         setBodyOffset(document.body.getBoundingClientRect());
-        setScrollY(-bodyOffset.top);
+        setScrollY(-Math.round(bodyOffset.top));
         if (scrollY < 40) {
             setIsScrolled("up");
         } else {
