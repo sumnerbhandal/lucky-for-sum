@@ -2,7 +2,7 @@ import React from "react";
 import ProductPage from './pdp/pdp';
 import Plp from './plp/plp';
 import NavDefault from './nav/navigation';
-import MarketingBanner from './banners/marketing-banner';
+import { MarketingBanner, MarketingBannerTwo } from './banners/marketing-banner';
 import "./index.css"
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom/index";
 
@@ -14,16 +14,21 @@ export default function App() {
       <NavDefault />
       <Routes>
         <Route path="/" element={<Home />} />
-        {/* <Route path="/about/:name" element={<About />} /> */}
-        <Route path="/contact" element={<Contact/>} />
         <Route path="/pdp/*" element={<ProductPage />} />
-        {/* <Route path="/projects/:id-:title" render={({match}) => <Project match={match} />} /> */}
-        <Route render={() => <h1>404: page not found</h1>} />
-
+        <Route path="/contact" element={<Contact/>} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </main>
   </Router>
   );
+}
+
+const NotFound = () => {
+  return (
+    <div className="section">
+      <h1>Error 404 - Page Not Found</h1>
+    </div>
+  )
 }
 
 
@@ -32,6 +37,8 @@ function Home() {
     <div className="PageContent">
       <MarketingBanner />
       <Plp />
+      <MarketingBannerTwo />
+      <Footer />
     </div>
   )
 };
@@ -44,12 +51,16 @@ const Contact = () => {
   )
 };
 
-  // const About = ({match:{params:{name}}}) => (
-  //   // props.match.params.name
-  //   <Fragment>
-  //     {/* { name !== 'John Doe' ? <Redirect to="/" /> : null } */}
-  //     <h1>About {name}</h1>
-  //   </Fragment>
-  // );
+const Footer = () => {
+  const date = new Date().getFullYear();
+  return (
+    <div className="footer">
+      <div className="section">
+      © {date} Lucky For Sum
+      </div>
+    </div>
+  )
+}
+
 
 

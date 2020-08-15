@@ -1,7 +1,7 @@
 import React from "react";
 import './marketing-banner.css'
 
-function MarketingBanner() {
+export function MarketingBanner() {
     // const [homepageBanner, setHomepageBanner] = useState(null);
     
     // useEffect(() => {
@@ -33,4 +33,16 @@ function MarketingBanner() {
     );
   }
 
-  export default MarketingBanner;
+ export const MarketingBannerTwo = () => {   
+    return (
+      <div className="banner full-width bg-stripes">
+        <div className="section banner-title">
+          <h1>
+          Thanks For Visiting
+          </h1>
+        </div>
+      </div>
+    );
+  }
+
+  export default { MarketingBanner, MarketingBannerTwo };
