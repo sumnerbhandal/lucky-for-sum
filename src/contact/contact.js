@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import emailjs from 'emailjs-com'
+import "./contact.css"
 
 export default function CountactForm() {
   const [email, setEmail] = useState("");
@@ -43,56 +45,80 @@ export default function CountactForm() {
       setErrorMessages(errors);
     } else {
       setShowErrors({ showErrors: false });
-      alert("Email Sent");
+      var template_params = {
+        "subject": subject,
+        "message": message,
+        "customer_name": name,
+        "customer_email": message
+     }
+     
+     var service_id = "default_service";
+     var template_id = "template_CJYQNlQH";
+     emailjs.send(service_id, template_id, template_params, "user_10rKc8RZP6dDPRHSbtlbl");
+
+
     }
-  };
+  }
 
   return (
     <div className="section">
-      <div className="outerFormContainer">
-        <img id="emailIcon" src="./emailIcon.png" alt="emailIcon" />
-        <div className="innerFormContainer">
-        <h1>Contact</h1>
-          <form className="" data-netlify="true" netlify method="post" netlify-honeypot="bot-field">
-            <input
-              label="Name"
-              placeholder="Jane Doe"
-              type="text"
-              variant="outlined"
-              name="Name"
-              onChange={e => setName(e.target.value)}
-            />
-            <input
-              label="Email"
-              placeholder="janedoe@gmail.com"
-              type="email"
-              variant="outlined"
-              name="Email"
-              onChange={e => setEmail(e.target.value)}
-            />
-            <input
-              label="Subject"
-              placeholder="Help with billing"
-              type="text"
-              variant="outlined"
-              name="Subject"
-              onChange={e => setSubject(e.target.value)}
-            />
-            <input
-              label="Message"
-              placeholder="Joe Doe"
-              type="text"
-              variant="outlined"
-              multiline
-              rowsMax="3"
-              name="Message"
-              onChange={e => setMessage(e.target.value)}
-            />
+              <h1>Get in touch!</h1>
+        <div className="contact-form-container">
+          <form className="">
+            <div className="contact-name-container">
+              <label for="contact-name">Name</label>
+              <input 
+                id="contact-name" 
+                type="text" 
+                autocomplete="name"
+                placeholder="Name"
+                name="Name"
+                onChange={e => setName(e.target.value)}
+                />
+            </div>
+            <div className="contact-email-container">
+              <label for="contact-email">E-mail Address</label>
+              <input
+                  id="contact-name" 
+                  type="email"
+                  autocomplete="email"
+                  placeholder="email@example.com"
+                  name="Email"
+                  onChange={e => setEmail(e.target.value)}
+              />
+            </div>
+            <div className="subject-container">
+              <label for="contact-subject">Subject</label>
+              <select 
+                name="Subject" 
+                id="contact-subject"
+                placeholder="Help with my order"
+                onChange={e => setSubject(e.target.value)}
+                >
+                <option value="1">Just Saying Hello</option>
+                <option value="2">Delivery Query</option>
+                <option value="3">Returns &amp; Refunds</option>
+                <option value="4">Problem With A Product</option>
+                <option value="5">Other</option>
+              </select>
+            </div>
+            <div className="message-container">
+              <label for="contact-message">Message</label>
+              <textarea
+                label="Message"
+                placeholder="Message"
+                type="text"
+                name="Message"
+                rows="4"
+                onChange={e => setMessage(e.target.value)}
+              />
+            </div>
             {showErrors
               ? errorMessages.map((item, index) => {
                   return <ul key={index}>{item}</ul>;
                 })
               : null}
+              <div>
             <button
               variant="contained"
               color="primary"
@@ -101,9 +127,9 @@ export default function CountactForm() {
             >
               Submit
             </button>
+            </div>
           </form>
         </div>
       </div>
-    </div>
   );
 }

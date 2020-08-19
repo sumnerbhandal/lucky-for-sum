@@ -1,0 +1,38 @@
+.contact-form-container {
+    display: flex;
+}
+
+.contact-form-container form {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.contact-form-container form input, form select, form textarea {
+    height: 100%;
+    width: calc(70% - 1rem);
+    box-sizing: border-box;
+    padding: 0 0.5rem;
+}
+
+.contact-name-container, .contact-email-container, .subject-container, .message-container {
+    display: flex;
+    height: 2.75rem;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+@media (min-width: 1024px) {
+    .contact-form-container form {
+        width: 100%;
+    }
+    .contact-name-container, .contact-email-container, .subject-container, .message-container {
+        display: flex;
+        height: 2.75rem;
+        align-items: center;
+        width: calc(50% - 2rem);
+        margin-right: 2rem;
+    }
+}

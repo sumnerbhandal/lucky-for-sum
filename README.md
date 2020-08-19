@@ -66,3 +66,17 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+
+### SSL API
+
+Digital Ocean Droplet
+Node JS Server
+NGINX Server
+SSL Certificate
+Strapi JS - CMS
+
+
+### EmailJS
+
+Contact form email handling
