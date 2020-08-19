@@ -1,6 +1,7 @@
 import React from "react";
 import ProductPage from './pdp/pdp';
 import Plp from './plp/plp';
+import ContactForm from './contact/contact';
 import NavDefault from './nav/navigation';
 import { MarketingBanner, MarketingBannerTwo } from './banners/marketing-banner';
 import "./index.css"
@@ -15,7 +16,7 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/pdp/*" element={<ProductPage />} />
-        <Route path="/contact" element={<Contact/>} />
+        <Route path="/contact" element={<ContactForm/>} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </main>
@@ -39,14 +40,6 @@ function Home() {
       <Plp />
       <MarketingBannerTwo />
       <Footer />
-    </div>
-  )
-};
-
-const Contact = () => { 
-  return (
-    <div className="section">
-      <h1>Contact</h1>
     </div>
   )
 };
