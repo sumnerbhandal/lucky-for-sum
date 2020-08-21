@@ -18,9 +18,9 @@ export default function CountactForm() {
     return false;
   }
 
-  const formValidation = () => {
+  const formValidation = (event) => {
     setErrorMessages([]);
-
+    
     const isNameValid = name !== "";
     const isMessageValid = message !== "";
     const isSubjectValid = subject !== "";
@@ -55,6 +55,10 @@ export default function CountactForm() {
      var service_id = "default_service";
      var template_id = "template_CJYQNlQH";
      emailjs.send(service_id, template_id, template_params, "user_10rKc8RZP6dDPRHSbtlbl");
+
+     const button = event.target;
+
+     button.innerHTML = "Thanks for submitting";
 
 
     }
@@ -95,11 +99,11 @@ export default function CountactForm() {
                 placeholder="Help with my order"
                 onChange={e => setSubject(e.target.value)}
                 >
-                <option value="1">Just Saying Hello</option>
-                <option value="2">Delivery Query</option>
-                <option value="3">Returns &amp; Refunds</option>
-                <option value="4">Problem With A Product</option>
-                <option value="5">Other</option>
+                <option value="Just Saying Hello">Just Saying Hello</option>
+                <option value="Delivery Query">Delivery Query</option>
+                <option value="Returns &amp; Refunds">Returns &amp; Refunds</option>
+                <option value="Problem With A Product">Problem With A Product</option>
+                <option value="Other">Other</option>
               </select>
             </div>
             <div className="message-container">
