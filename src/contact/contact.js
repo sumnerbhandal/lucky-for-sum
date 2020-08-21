@@ -5,7 +5,7 @@ import "./contact.css"
 export default function CountactForm() {
   const [email, setEmail] = useState("");
   const [name, setName] = useState("");
-  const [subject, setSubject] = useState("");
+  const [subject, setSubject] = useState("Just Saying Hello");
   const [message, setMessage] = useState("");
   const [errorMessages, setErrorMessages] = useState([]);
   const [showErrors, setShowErrors] = useState(false);
@@ -20,6 +20,8 @@ export default function CountactForm() {
 
   const formValidation = (event) => {
     setErrorMessages([]);
+
+    console.log(subject);
 
     const isNameValid = name !== "";
     const isMessageValid = message !== "";
@@ -49,7 +51,7 @@ export default function CountactForm() {
         "subject": subject,
         "message": message,
         "customer_name": name,
-        "customer_email": message
+        "customer_email": email
      }
      
      var service_id = "default_service";
@@ -74,10 +76,9 @@ export default function CountactForm() {
               <input 
                 id="contact-name" 
                 type="text" 
-                autocomplete="name"
                 placeholder="Name"
                 name="Name"
-                onChange={e => setName(e.target.innerHTML)}
+                onChange={e => setName(e.target.value)}
                 />
             </div>
             <div className="contact-email-container">
@@ -85,7 +86,6 @@ export default function CountactForm() {
               <input
                   id="contact-name" 
                   type="email"
-                  autocomplete="email"
                   placeholder="email@example.com"
                   name="Email"
                   onChange={e => setEmail(e.target.value)}
@@ -97,7 +97,7 @@ export default function CountactForm() {
                 name="Subject" 
                 id="contact-subject"
                 placeholder="Help with my order"
-                onChange={e => setSubject(e.target.value)}
+                onChange={e => setSubject(e.target.options[e.target.selectedIndex].text)}
                 >
                 <option value="1">Just Saying Hello</option>
                 <option value="2">Delivery Query</option>
