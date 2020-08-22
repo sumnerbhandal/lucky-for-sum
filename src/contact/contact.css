@@ -20,11 +20,11 @@
   form > div > textarea {
     width: calc(75% - 2rem);
     border: 0;
-    padding: 1rem;
+    padding: 0.75rem 1rem;
     border: 1px solid #15171d;
     border-radius: 0.25rem;
     color: #15171d;
-    height: 3.25rem;
+    height: auto;
   }
   form > div > textarea {
       height: auto;
@@ -94,6 +94,6 @@
     }
     form > div > label {
         align-self: start;
-        padding-top: 1rem;
+        padding-top: 0.75rem;
       }
 }
