@@ -26,6 +26,9 @@
     color: #15171d;
     height: auto;
   }
+  form > div > select {
+    padding: 0.75rem;
+  }
   form > div > textarea {
       height: auto;
       font-family: inherit;
