@@ -3,9 +3,7 @@ import "./pdp.css"
 
 const ProductPage = () => { 
 // const { id } = window.location.href.split('_')[1];
-
 const [product, setProduct] = useState(null);
-
 
 useEffect(() => {
     fetch(`https://cdn.luckyforsum.com/products/${window.location.href.split('_pid-')[1]}`)
@@ -15,10 +13,7 @@ useEffect(() => {
     } );
   }, []);
 
-console.log(product)
-
-return (
-    
+return (  
     <div className="section">
         {!product ? '' : (
         <div className="product-contents">
@@ -38,7 +33,6 @@ return (
                 </div>
          </div>
         )}
-   
     </div>
 )
 };

@@ -1,38 +1,99 @@
-.contact-form-container {
+  form > div {
+    position: relative;
+    background: white;
     display: flex;
-}
-
-.contact-form-container form {
-    display: flex;
-    width: 100%;
-    flex-wrap: wrap;
-}
-
-.contact-form-container form input, form select, form textarea {
-    height: 100%;
-    width: calc(70% - 1rem);
-    box-sizing: border-box;
-    padding: 0 0.5rem;
-}
-
-.contact-name-container, .contact-email-container, .subject-container, .message-container {
-    display: flex;
-    height: 2.75rem;
-    align-items: center;
-    width: 100%;
     justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: start;
     margin-bottom: 1rem;
-}
+  }
+  form > div > label {
+    position: relative;
+    width: 25%;
+    margin-right: 2rem;
+    align-self: center;
+  }
+  form > div > input[type="text"],
+  form > div > input[type="email"],
+  form > div > input[type="password"],
+  form > div > select,
+  form > div > textarea {
+    width: calc(75% - 2rem);
+    border: 0;
+    padding: 1rem;
+    border: 1px solid #15171d;
+    border-radius: 0.25rem;
+    color: #15171d;
+    height: 3.25rem;
+  }
+  form > div > textarea {
+      height: auto;
+      font-family: inherit;
+  }
+  form > div > input[type="text"]:focus,
+  form > div > input[type="email"]:focus,
+  form > div > input[type="password"]:focus {
+    outline: 0;
+    background: white;
+  }
+  form > div > input[type="text"]:focus + label,
+  form > div > input[type="email"]:focus + label,
+  form > div > input[type="password"]:focus + label {
+    opacity: 0;
+  }
+  form > div > input[type="text"]:valid,
+  form > div > input[type="email"]:valid,
+  form > div > input[type="password"]:valid {
+    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/check.svg);
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: 20px 20px;
+  }
+  form > div > input[type="text"]:valid + label,
+  form > div > input[type="email"]:valid + label,
+  form > div > input[type="password"]:valid + label {
+    opacity: 0;
+  }
+  form > div > input[type="text"]:invalid:not(:focus):not(:placeholder-shown),
+  form > div > input[type="email"]:invalid:not(:focus):not(:placeholder-shown),
+  form > div > input[type="password"]:invalid:not(:focus):not(:placeholder-shown) {
+    border: 2px solid crimson;
+  }
+  /* form > div > input[type="text"]:invalid:not(:focus):not(:placeholder-shown) + label,
+  form > div > input[type="email"]:invalid:not(:focus):not(:placeholder-shown) + label,
+  form > div > input[type="password"]:invalid:not(:focus):not(:placeholder-shown) + label {
+    opacity: 0;
+  } */
+  form > div > input[type="text"]:invalid:focus:not(:placeholder-shown) ~ .requirements,
+  form > div > input[type="email"]:invalid:focus:not(:placeholder-shown) ~ .requirements,
+  form > div > input[type="password"]:invalid:focus:not(:placeholder-shown) ~ .requirements {
+    max-height: 200px;
+    padding-left: calc(30% + 2rem);
+    padding-top: 1rem;
+  }
+  form > div .requirements {
+    padding-left: calc(30% + 2rem);
+    padding-top: 0;
+    color: #999;
+    max-height: 0;
+    -webkit-transition: 0.28s;
+    transition: 0.28s;
+    overflow: hidden;
+    color: crimson;
+    font-style: italic;
+  }
 
-@media (min-width: 1024px) {
-    .contact-form-container form {
-        width: 100%;
-    }
-    .contact-name-container, .contact-email-container, .subject-container, .message-container {
+  @media (min-width: 1024px) {
+    form {
         display: flex;
-        height: 2.75rem;
-        align-items: center;
-        width: calc(50% - 2rem);
-        margin-right: 2rem;
+        flex-wrap: wrap;
     }
+    form > div {
+        width: calc(50% - 4rem);
+        margin-right: 4rem;
+    }
+    form > div > label {
+        align-self: start;
+        padding-top: 1rem;
+      }
 }

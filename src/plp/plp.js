@@ -2,28 +2,26 @@ import { useNavigate } from "react-router-dom/index";
 import React, { useEffect, useState } from "react";
 import "./plp.css"
 
-
 const PlpTemplate = () => {
     return (
-            <div className="product-list">
-                {["1", "2", "3", "4", "5", "6"].map((listItem, index)  => (
-                    <div key={index} id={index} title="placeholder" className="card">
-                        <div className="img-container bg-dots">
-                        <img id={listItem} alt="placeholder" />
-                        </div>
-                        <p className="product-title-placeholder"> 
-                        {listItem}
-                        </p>
-                        <p className="product-title-placeholder"> 
-                        {listItem}
-                        </p>
-                        <p className="product-price-placeholder"> 
-                        £{listItem}
-                        </p>
-
+        <div className="product-list">
+            {["1", "2", "3", "4", "5", "6"].map((listItem, index)  => (
+                <div key={index} id={index} title="placeholder" className="card">
+                    <div className="img-container bg-dots">
+                    <img id={listItem} alt="placeholder" />
                     </div>
-                ))}
-            </div>
+                    <p className="product-title-placeholder"> 
+                    {listItem}
+                    </p>
+                    <p className="product-title-placeholder"> 
+                    {listItem}
+                    </p>
+                    <p className="product-price-placeholder"> 
+                    £{listItem}
+                    </p>
+                </div>
+            ))}
+        </div>
     );
 }
 
