@@ -1,13 +1,15 @@
 import React, { useState } from "react";
-import emailjs from 'emailjs-com'
-import "./contact.css"
-
+import emailjs from 'emailjs-com';
+import "./contact.css";
+import { MarketingBanner } from '../banners/marketing-banner';
 
 export default function CountactForm() {
   const [email, setEmail] = useState("");
   const [name, setName] = useState("");
   const [subject, setSubject] = useState("Just Saying Hello");
   const [message, setMessage] = useState("");
+
+  document.title = "Get In Touch - Lucky For Sum"
 
   const submitForm = (event) => {
     var template_params = {
@@ -25,8 +27,9 @@ export default function CountactForm() {
   }
 
   return (
+    <div className="PageContent">
+    <MarketingBanner message="Get in touch!" />
     <div className="section loadup">
-      <h1>Get in touch!</h1>
       <form onSubmit={submitForm} action="#0">
         <div>
         <label for="contact-name">Name</label>
@@ -83,6 +86,7 @@ export default function CountactForm() {
         </div>
         <input type="submit" value="Sign Up" />
       </form>
+    </div>
     </div>
   );
 }

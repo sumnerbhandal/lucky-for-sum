@@ -1,6 +1,11 @@
 * {
   box-sizing: border-box;
 }
+@media screen and (min-width: 960px) {
+  html {
+    overflow-y: scroll;
+  }
+}
 
 body {
   margin: 0;
@@ -24,6 +29,7 @@ code {
 
 .section.loadup {
   animation: bannerLoadUp 1s forwards;
+  margin-top: 2rem;
 }
 
 .PageContent {

@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom/index";
 import React, { useEffect, useState } from "react";
-import "./plp.css"
+import "./plp.css";
 
 const PlpTemplate = () => {
     return (

@@ -7,6 +7,8 @@ import { MarketingBanner, MarketingBannerTwo } from './banners/marketing-banner'
 import "./index.css"
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom/index";
 
+
+
 export default function App() {
   // const name = 'John Doe';
   return (
@@ -14,7 +16,7 @@ export default function App() {
     <main>
       <NavDefault />
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Home />}/>
         <Route path="/pdp/*" element={<ProductPage />} />
         <Route path="/contact" element={<ContactForm/>} />
         <Route path="*" element={<NotFound />} />
@@ -34,11 +36,13 @@ const NotFound = () => {
 
 
 function Home() {
+
+  document.title = "Lucky For Sum"
   return (
     <div className="PageContent">
-      <MarketingBanner />
+      <MarketingBanner message="New Start, New Looks" />
       <Plp />
-      <MarketingBannerTwo />
+      <MarketingBannerTwo message="Thanks For Visiting" />
       <Footer />
     </div>
   )

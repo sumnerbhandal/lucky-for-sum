@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import "./pdp.css"
 
 const ProductPage = () => { 
-// const { id } = window.location.href.split('_')[1];
 const [product, setProduct] = useState(null);
 
 useEffect(() => {
@@ -10,8 +9,10 @@ useEffect(() => {
     .then(response => response.json())
     .then(data => {
     setProduct(data);
+    document.title = data.title + ' - Lucky For Sum';
     } );
   }, []);
+
 
 return (  
     <div className="section">
