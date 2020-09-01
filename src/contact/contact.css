@@ -4,7 +4,7 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    align-items: start;
+    align-items: flex-start;
     margin-bottom: 1rem;
   }
   form > div > label {
@@ -96,7 +96,7 @@
         margin-right: 4rem;
     }
     form > div > label {
-        align-self: start;
+        align-self: flex-start;
         padding-top: 0.75rem;
       }
 }

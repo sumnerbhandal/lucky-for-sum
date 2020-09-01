@@ -41,11 +41,6 @@ const Plp = () => {
     function handleClick (event) {
         const target = event.target.closest(".card");
         const page = event.target.closest(".PageContent");
-        // var position = event.target.getBoundingClientRect();
-        // const windowWidth = window.innerWidth;
-        // const windowHeight = window.innerHeight;
-        // const yTransform = ((windowWidth - position.height) / 2 ) - y;
-        // page.style.transform = `translateX(-${windowWidth}px)`;
         page.style.opacity = 0;
         
         setTimeout(function(){ 
@@ -61,7 +56,7 @@ const Plp = () => {
         <div className="section">
             {!homePage ? <PlpTemplate /> : <div className="product-list">
                 {homePage.products.map(listItem => (
-                    <div key={listItem.id} id={listItem.id} title={listItem.title} className="card" 
+                    <a key={listItem.id} id={listItem.id} title={listItem.title} className="card" 
                     onClick={handleClick}>
                         <div className="img-container">
                         <img id={listItem.id} src={`https://cdn.luckyforsum.com${listItem.hero.formats.medium.url}`} alt={listItem.hero.alternativeText} />
@@ -76,7 +71,7 @@ const Plp = () => {
                         £{listItem.price}
                         </p>
 
-                    </div>
+                    </a>
                 ))}
             </div>}
         </div>
