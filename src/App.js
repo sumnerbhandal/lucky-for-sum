@@ -10,7 +10,6 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom/index";
 
 
 export default function App() {
-  // const name = 'John Doe';
   return (
    <Router>
     <main>
@@ -36,7 +35,6 @@ const NotFound = () => {
 
 
 function Home() {
-
   document.title = "Lucky For Sum"
   return (
     <div className="PageContent">

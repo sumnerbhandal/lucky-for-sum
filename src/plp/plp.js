@@ -56,10 +56,11 @@ const Plp = () => {
         <div className="section">
             {!homePage ? <PlpTemplate /> : <div className="product-list">
                 {homePage.products.map(listItem => (
-                    <a key={listItem.id} id={listItem.id} title={listItem.title} className="card" 
+                    <div key={listItem.id} id={listItem.id} title={listItem.title} className="card" 
                     onClick={handleClick}>
                         <div className="img-container">
-                        <img id={listItem.id} src={`https://cdn.luckyforsum.com${listItem.hero.formats.medium.url}`} alt={listItem.hero.alternativeText} />
+                        <img id={listItem.id} srcset={`https://cdn.luckyforsum.com${listItem.hero.formats.medium.url} 1024w`} src={`https://cdn.luckyforsum.com${listItem.hero.formats.small.url}`} alt={listItem.hero.alternativeText} /> 
+                        {/* <img id={listItem.id} srcset={`https://cdn.luckyforsum.com${listItem.hero.url} 1280w, https://cdn.luckyforsum.com${listItem.hero.formats.large.url} 800w, https://cdn.luckyforsum.com${listItem.hero.formats.medium.url} 600w`} src={`https://cdn.luckyforsum.com${listItem.hero.formats.small.url}`} alt={listItem.hero.alternativeText} />        */}
                         </div>
                         <p className="product-title"> 
                         {listItem.title}
@@ -71,7 +72,7 @@ const Plp = () => {
                         £{listItem.price}
                         </p>
 
-                    </a>
+                    </div>
                 ))}
             </div>}
         </div>
