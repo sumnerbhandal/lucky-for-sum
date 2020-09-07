@@ -5,7 +5,7 @@ import "./plp.css";
 const PlpTemplate = () => {
     return (
         <div className="product-list">
-            {["1", "2", "3", "4", "5", "6"].map((listItem, index)  => (
+            {["1", "2", "3", "4"].map((listItem, index)  => (
                 <div key={index} id={index} title="placeholder" className="card">
                     <div className="img-container bg-dots">
                     <img id={listItem} alt="placeholder" />
@@ -26,11 +26,11 @@ const PlpTemplate = () => {
 }
 
 
-const Plp = () => {
+const Plp = (props) => {
     const [homePage, setHomepage] = useState(null);
   
     useEffect(() => {
-      fetch('https://cdn.luckyforsum.com/categories/1')
+      fetch('https://cdn.luckyforsum.com/categories/'+props.category)
       .then(response => response.json())
       .then(data => {
       setHomepage(data);

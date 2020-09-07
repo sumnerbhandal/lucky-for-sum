@@ -40,8 +40,8 @@ const NavDefault = () => {
             {/* <p className="site-name">Lucky For Sum</p> */}
         </div>
             <ul className="lower-navigation section">
-                <li><Link to="/">Nav Link 1</Link></li>
-                <li><Link to="/">Nav Link 2</Link></li>
+                <li><Link to="/">New In</Link></li>
+                <li><Link to="/services">Hand Crafted Illustrations</Link></li>
                 <li><Link to="/">Nav Link 3</Link></li>
                 <li><Link to="/">Nav Link 4</Link></li>
                 <li><Link to="/">Nav Link 5</Link></li>

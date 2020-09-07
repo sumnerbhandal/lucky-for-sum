@@ -16,10 +16,12 @@ export default function App() {
       <NavDefault />
       <Routes>
         <Route path="/" element={<Home />}/>
+        <Route path="/services" element={<Services />}/>
         <Route path="/pdp/*" element={<ProductPage />} />
         <Route path="/contact" element={<ContactForm/>} />
         <Route path="*" element={<NotFound />} />
       </Routes>
+      <Footer />
     </main>
   </Router>
   );
@@ -39,12 +41,22 @@ function Home() {
   return (
     <div className="PageContent">
       <MarketingBanner message="New Start, New Looks" />
-      <Plp />
+      <Plp category="1" />
       <MarketingBannerTwo message="Thanks For Visiting" />
-      <Footer />
     </div>
   )
 };
+
+function Services() {
+  document.title = "Lucky For Sum - Services"
+  return (
+    <div className="PageContent">
+      <MarketingBanner message="Just For You" />
+      <Plp category="2" />
+      <MarketingBannerTwo message="Thanks For Visiting" />
+    </div>
+  )
+}
 
 const Footer = () => {
   const date = new Date().getFullYear();
