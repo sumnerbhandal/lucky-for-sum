@@ -1,6 +1,33 @@
 import React, { useEffect, useState } from "react";
 import "./pdp.css"
 
+const PdpTemplate = () => {
+  return (
+    <div className="product-contents">
+    <div className="product-details">
+        <h1 className="product-title placeholder">Title</h1>
+        <p className="description placeholder"> 
+          Description
+        </p>
+        <p className="price placeholder"> 
+          £00.00
+        </p>
+    </div>
+    <div id="image-carousel" className="pdp-imagery">
+       {["1", "2", "3", "4"].map((listItem, index) => (
+         <div className="img-container">
+           <img key={index} alt={`placeholder ${index}`}  />
+          </div>
+       ))}
+    </div>
+
+ </div>
+  );
+}
+
+
+
+
 const ProductPage = () => { 
 const [product, setProduct] = useState(null);
 const [isActive, setActive] = useState(false);
@@ -47,7 +74,7 @@ function closeZoom (event) {
 
 return (  
     <div className="section">
-        {!product ? '' : (
+        {!product ? < PdpTemplate /> : (
         <div className="product-contents">
             <div className="product-details">
                 <h1 className="product-title">{product.title}</h1>
@@ -63,12 +90,14 @@ return (
                         </button>) : null}
             <div id="image-carousel" className="pdp-imagery">
                { product.product_shots.map((image, index) => (
-                   <img className={isActive ? "zoom" : null} key={index} src={`https://cdn.luckyforsum.com${image.formats.medium.url}`} alt={`${image.alternativeText} ${index}`}  onClick={openZoom} style={{order: + index+2}} />
+                   <div className={`img-container ${isActive ? "zoom" : null}`} key={index} onClick={openZoom} style={{order: + index+2}}>
+                      <img src={`https://cdn.luckyforsum.com${image.formats.medium.url}`} alt={`${image.alternativeText} ${index}`} />
+                      </div>
                ))}
             </div>
-
          </div>
         )}
+        {/* < PdpTemplate />  */}
     </div>
 )
 };
