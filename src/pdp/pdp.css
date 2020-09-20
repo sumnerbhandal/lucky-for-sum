@@ -22,9 +22,8 @@
     animation: pdpMobileLoadUp 3s forwards;
     transition: all 0.3s ease-in-out;
     flex-shrink: 0;
-    padding-top: 125%;
+    padding-top: 100%;
     height: 0;
-    width: 100%;
     position: relative;
     overflow: hidden;
     background: #f6f6f6;
@@ -116,6 +115,11 @@ button.close-icon img {
         display: flex;
         flex-direction: row-reverse;
     }
+
+    .product-contents.zoom {
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+    }
     .product-details {
         width: 33.33%;
         padding-left: 1rem;
@@ -131,6 +135,24 @@ button.close-icon img {
         -ms-overflow-style: none;  /* IE and Edge */
         scrollbar-width: none;  /* Firefox */
     }
+
+    .pdp-imagery.desktop {
+        scroll-snap-coordinate: 0 0;
+        scroll-snap-points-x: repeat(100%);
+        scroll-snap-type: x;
+        -webkit-overflow-scrolling: touch;
+        width: 100%;
+        flex-wrap: nowrap;
+        justify-content: start;
+        flex-shrink: 0;
+        position: relative;
+    }
+
+    .pdp-imagery.desktop > .img-container {
+        flex-basis: calc(100vh / 1.5);
+        padding-top: 58%;
+    }
+
     .pdp-imagery::-webkit-scrollbar {
         display: none;
       }
@@ -141,8 +163,14 @@ button.close-icon img {
         scroll-snap-align: unset;
         flex: 0 0 calc(50% - 1rem);
         transition: all 0.5s ease;
+        padding-top: 60%;
     }
 
+    button.close-icon {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+    }
 }
 
 
