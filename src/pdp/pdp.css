@@ -1,5 +1,5 @@
 .product-contents {
-    margin-top: 2rem;
+    margin-top: 1rem;
 }
 
 .pdp-imagery {
@@ -27,6 +27,10 @@
     position: relative;
     overflow: hidden;
     background: #f6f6f6;
+}
+
+.pdp-imagery > .img-container.placeholder {
+    background: #fff;
 }
 
 .pdp-imagery > .img-container img {
@@ -58,10 +62,17 @@
     color: #f6f6f6;
   }
 
+
+.pdp-imagery > .img-container.placeholder img[alt]:after {  
+    color: #fff;
+    background-color: #fff;
+}
+
 .pdp-imagery > .img-container.zoom {
     width: 100%;
     cursor: initial;
     margin-bottom: 10vh;
+    padding-top: 125%;
 }
 
 
@@ -100,6 +111,26 @@ button.close-icon img {
     width: 3rem;
 }
 
+
+@media (min-width: 768px) {
+    .product-contents {
+        margin-top: 1.5rem;
+    }
+    .pdp-imagery > .img-container {
+        width: 42%;
+        margin-right: 1rem;
+        animation: pdpMobileLoadUp 3s forwards;
+        transition: all 0.3s ease-in-out;
+        flex-shrink: 0;
+        padding-top: 52%;
+        height: 0;
+        position: relative;
+        overflow: hidden;
+        background: #f6f6f6;
+    }
+}
+
+
 @media (max-width: 1023px) {
     .pdp-imagery {
         scroll-snap-coordinate: 0 0;
@@ -128,12 +159,14 @@ button.close-icon img {
         font-size: 1.5rem;
         margin-block-start: 0;
     }
+
     .pdp-imagery {
         width: 66.66%;
         flex-wrap: wrap;
         justify-content: space-between;
         -ms-overflow-style: none;  /* IE and Edge */
         scrollbar-width: none;  /* Firefox */
+        transition: width 0.3s ease;
     }
 
     .pdp-imagery.desktop {
@@ -148,11 +181,6 @@ button.close-icon img {
         position: relative;
     }
 
-    .pdp-imagery.desktop > .img-container {
-        flex-basis: calc(100vh / 1.5);
-        padding-top: 58%;
-    }
-
     .pdp-imagery::-webkit-scrollbar {
         display: none;
       }
@@ -162,16 +190,26 @@ button.close-icon img {
         animation: pdpDesktopLoadUp 0.75s forwards;
         scroll-snap-align: unset;
         flex: 0 0 calc(50% - 1rem);
-        transition: all 0.5s ease;
+        transition: all 0s;
+        padding-top: 60%;
+    }
+
+    .pdp-imagery.desktop > .img-container {
+        height: 100%;
         padding-top: 60%;
     }
 
     button.close-icon {
-        position: absolute;
+        position: relative;
         top: 1rem;
         right: 1rem;
+        justify-content: flex-end;
+        display: flex;
+        height: 0;
     }
 }
+
+
 
 
 @keyframes pdpDesktopLoadUp {

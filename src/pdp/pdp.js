@@ -15,7 +15,7 @@ const PdpTemplate = () => {
     </div>
     <div id="image-carousel" className="pdp-imagery">
        {["1", "2", "3", "4"].map((listItem, index) => (
-         <div className="img-container">
+         <div className="img-container placeholder">
            <img key={index} alt={`placeholder ${index}`}  />
           </div>
        ))}
@@ -64,13 +64,19 @@ useEffect(() => {
       }
     } else {
       setDesktop(true);
-      event.target.scrollIntoView({
-        behavior: 'smooth', // Defines the transition animation. default: auto
-      });
+
+      const target =  event.target; 
+
       setTimeout(function(){ 
         window.scrollTo(0, 0);
-        imageContainer.scrollTo(0, 0);
-      }, 100); 
+        const imageWidth = target.clientWidth;
+        const order = target.style.order;
+        const scrollValue = order - 2;
+        target.parentNode.scrollTo({left: imageWidth * scrollValue, behavior: 'smooth'})
+        // target.parentNode.scrollIntoView({
+        //   behavior: 'smooth', // Defines the transition animation. default: auto
+        // });
+      }, 300); 
     }
 
 }
@@ -92,7 +98,7 @@ function closeZoom (event) {
 return (  
     <div className="section">
         {!product ? < PdpTemplate /> : (
-        <div className={`product-contents ${isDesktop ? "zoom" : null}`}>
+        <div className={`product-contents ${isDesktop ? "zoom" : ""}`}>
             <div className="product-details">
                 <h1 className="product-title">{product.title}</h1>
                 <p className="description"> 
@@ -105,16 +111,17 @@ return (
             {isActive ? (<button onClick={closeZoom} className="close-icon" >
                           <img src={require('./icons/close-2.svg')} alt="Lucky For Sum Logo"/>
                         </button>) : null}
-            <div id="image-carousel" className={`pdp-imagery ${isDesktop ? "desktop" : null}`}>
-            {isDesktop ? (<button onClick={closeZoom} className="close-icon" >
-                          <img src={require('./icons/close-2.svg')} alt="Lucky For Sum Logo"/>
-                        </button>) : null}
+            <div id="image-carousel" className={`pdp-imagery ${isDesktop ? "desktop" : ""}`}>
+           
                { product.product_shots.map((image, index) => (
-                   <div className={`img-container ${isActive ? "zoom" : null}`} key={index} onClick={openZoom} style={{order: + index+2}}>
+                   <div className={`img-container ${isActive ? "zoom" : null} `} key={index} onClick={openZoom} style={{order: + index+2}}>
                       <img src={`https://cdn.luckyforsum.com${image.formats.medium.url}`} alt={`${image.alternativeText} ${index}`} />
                       </div>
                ))}
             </div>
+            {isDesktop ? (<button onClick={closeZoom} className="close-icon" >
+                          <img src={require('./icons/close-2.svg')} alt="Lucky For Sum Logo"/>
+                        </button>) : null}
          </div>
         )}
         {/* < PdpTemplate />  */}
