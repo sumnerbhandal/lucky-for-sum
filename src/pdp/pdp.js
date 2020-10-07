@@ -43,6 +43,8 @@ useEffect(() => {
     } );
   }, []);
 
+  const [chevronPosition, setChevronPosition] = useState(200);
+
 
   function openZoom (event) {
     const imageContainer = event.target.closest(".pdp-imagery");
@@ -70,6 +72,8 @@ useEffect(() => {
       setTimeout(function(){ 
         window.scrollTo(0, 0);
         const imageWidth = target.clientWidth;
+        const imageHeight = target.clientHeight;
+        setChevronPosition(imageHeight / 2)
         const order = target.style.order;
         const scrollValue = order - 2;
         target.parentNode.scrollTo({left: imageWidth * scrollValue, behavior: 'smooth'})
@@ -94,6 +98,10 @@ function closeZoom (event) {
   }
 }
 
+const nextIconPosition = {
+  top: `${chevronPosition}px`
+}
+
 
 return (  
     <div className="section">
@@ -116,12 +124,17 @@ return (
                { product.product_shots.map((image, index) => (
                    <div className={`img-container ${isActive ? "zoom" : null} `} key={index} onClick={openZoom} style={{order: + index+2}}>
                       <img src={`https://cdn.luckyforsum.com${image.formats.medium.url}`} alt={`${image.alternativeText} ${index}`} />
-                      </div>
+                     </div>
                ))}
             </div>
             {isDesktop ? (<button onClick={closeZoom} className="close-icon" >
-                          <img src={require('./icons/close-2.svg')} alt="Lucky For Sum Logo"/>
+                          <img src={require('./icons/close-2.svg')} alt="Close"/>
                         </button>) : null}
+
+                        {isDesktop ? (<button className="image-chevron">
+                          <img className="left" style={nextIconPosition} src={require('./icons/chevron-left.svg')} alt="Next Image"/>
+                          <img className="right" style={nextIconPosition} src={require('./icons/chevron-right.svg')} alt="Next Image"/>
+                        </button>) : null }
          </div>
         )}
         {/* < PdpTemplate />  */}

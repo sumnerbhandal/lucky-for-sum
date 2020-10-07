@@ -111,6 +111,11 @@ button.close-icon img {
     width: 3rem;
 }
 
+.image-chevron {
+    display: none;
+}
+
+
 
 @media (min-width: 768px) {
     .product-contents {
@@ -181,6 +186,7 @@ button.close-icon img {
         position: relative;
     }
 
+
     .pdp-imagery::-webkit-scrollbar {
         display: none;
       }
@@ -206,6 +212,30 @@ button.close-icon img {
         justify-content: flex-end;
         display: flex;
         height: 0;
+        z-index: 0;
+    }
+    .image-chevron {
+        border: 0;
+        position: relative;
+        width: 100%;
+        box-shadow: none;
+        display: block;
+    }
+
+    .image-chevron img {
+        position: absolute;
+        right: 0.25rem;
+        height: 3rem;
+        pointer-events: none;
+        -webkit-animation: fadeIn 1s forwards;
+        animation: fadeIn 1s forwards;
+        transition: top 0.3s ease;
+    }
+    .image-chevron img.left {
+        left: -0.25rem;
+    }
+    .image-chevron img.right {
+        right: -0.25rem;
     }
 }
 

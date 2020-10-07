@@ -35,7 +35,7 @@ const NavDefault = () => {
             onMouseEnter={() => setIsShown(true)}
             onMouseLeave={() => setIsShown(false)} 
             to="/">
-                <img src={require('./icons/lucky-for-sum-logo.svg')} alt="Close"/>
+                <img src={require('./icons/lucky-for-sum-logo.svg')} alt="Home"/>
             </Link>
             {/* <p className="site-name">Lucky For Sum</p> */}
         </div>
