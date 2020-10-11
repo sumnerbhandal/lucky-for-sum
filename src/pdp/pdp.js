@@ -147,25 +147,8 @@ return (
                 </p>
                 <p className="price"> 
                   £{product.price}
-                </p>
-                <p className="description"> 
-                  {product.description}
-                </p>
-                <p className="description"> 
-                  {product.description}
-                </p>
-                <p className="description"> 
-                  {product.description}
-                </p>
-                <p className="description"> 
-                  {product.description}
-                </p>
-                <p className="description"> 
-                  {product.description}
-                </p>
-                <p className="description"> 
-                  {product.description}
-                </p>
+                </p> 
+                <button className="add-to-bag">Add To Bag</button>
          </div>
          </div>
         )}

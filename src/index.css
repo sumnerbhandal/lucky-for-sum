@@ -85,6 +85,11 @@ button, form input[type="submit"] {
   background: white;
   cursor: pointer;
   transition: 0.3s ease;
+  margin-bottom: 2rem;
+  font-size: 1rem;
+  border-radius: 1.5rem;
+  height: 2.5rem;
+  min-width: 10rem;
 }
 
 button:hover, form input[type="submit"]:hover {
