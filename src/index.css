@@ -78,15 +78,18 @@ code {
 }
 
 button, form input[type="submit"] {
-  font-size: 1.5rem;
+  font-size: 1rem;
   color: #15171d;
   box-shadow: 12px 12px 0px 0px #15171d;
   padding: 0.25rem 1.5rem;
   background: white;
   cursor: pointer;
   transition: 0.3s ease;
+}
+
+button.action, input.action {
   margin-bottom: 2rem;
-  font-size: 1rem;
+
   border-radius: 1.5rem;
   height: 2.5rem;
   min-width: 10rem;

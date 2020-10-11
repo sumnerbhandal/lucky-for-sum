@@ -148,7 +148,7 @@ return (
                 <p className="price"> 
                   £{product.price}
                 </p> 
-                <button className="add-to-bag">Add To Bag</button>
+                <button className="action add-to-bag">Add To Bag</button>
          </div>
          </div>
         )}

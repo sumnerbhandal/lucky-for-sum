@@ -84,7 +84,7 @@ export default function CountactForm() {
               onChange={e => setMessage(e.target.value)}
             />
         </div>
-        <input type="submit" value="Sign Up" />
+        <input className="action" type="submit" value="Sign Up" />
       </form>
     </div>
     </div>
