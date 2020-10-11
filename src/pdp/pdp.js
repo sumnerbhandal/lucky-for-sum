@@ -77,12 +77,20 @@ useEffect(() => {
         const order = target.style.order;
         const scrollValue = order - 2;
         target.parentNode.scrollTo({left: imageWidth * scrollValue, behavior: 'smooth'})
-        // target.parentNode.scrollIntoView({
-        //   behavior: 'smooth', // Defines the transition animation. default: auto
-        // });
       }, 300); 
     }
+}
 
+function ScrollLeft (e) {
+  const imageContainer = document.getElementById("image-carousel");
+  const imageSize = imageContainer.firstChild.clientWidth;
+  imageContainer.scrollBy({left: -imageSize + 16, behavior: 'smooth'})
+}
+
+function ScrollRight (e) {
+  const imageContainer = document.getElementById("image-carousel");
+  const imageSize = imageContainer.firstChild.clientWidth;
+  imageContainer.scrollBy({left: imageSize + 16, behavior: 'smooth'})
 }
 
 function closeZoom (event) {
@@ -107,18 +115,21 @@ return (
     <div className="section">
         {!product ? < PdpTemplate /> : (
         <div className={`product-contents ${isDesktop ? "zoom" : ""}`}>
-            <div className="product-details">
-                <h1 className="product-title">{product.title}</h1>
-                <p className="description"> 
-                  {product.description}
-                </p>
-                <p className="price"> 
-                  £{product.price}
-                </p>
-            </div>
+
+               
+
+      
             {isActive ? (<button onClick={closeZoom} className="close-icon" >
                           <img src={require('./icons/close-2.svg')} alt="Lucky For Sum Logo"/>
                         </button>) : null}
+                        {isDesktop ? (<button onClick={closeZoom} className="close-icon" >
+                          <img src={require('./icons/close-2.svg')} alt="Close"/>
+                        </button>) : null}
+
+                        {isDesktop ? (<button className="image-chevron">
+                          <img className="left" style={nextIconPosition} src={require('./icons/chevron-left.svg')} alt="Next Image" onClick={ScrollLeft}/>
+                          <img className="right" style={nextIconPosition} src={require('./icons/chevron-right.svg')} alt="Next Image" onClick={ScrollRight}/>
+                        </button>) : null }
             <div id="image-carousel" className={`pdp-imagery ${isDesktop ? "desktop" : ""}`}>
            
                { product.product_shots.map((image, index) => (
@@ -127,14 +138,35 @@ return (
                      </div>
                ))}
             </div>
-            {isDesktop ? (<button onClick={closeZoom} className="close-icon" >
-                          <img src={require('./icons/close-2.svg')} alt="Close"/>
-                        </button>) : null}
 
-                        {isDesktop ? (<button className="image-chevron">
-                          <img className="left" style={nextIconPosition} src={require('./icons/chevron-left.svg')} alt="Next Image"/>
-                          <img className="right" style={nextIconPosition} src={require('./icons/chevron-right.svg')} alt="Next Image"/>
-                        </button>) : null }
+                        <div className="product-details">
+
+                        <h1 className="product-title">{product.title}</h1>
+                <p className="description"> 
+                  {product.description}
+                </p>
+                <p className="price"> 
+                  £{product.price}
+                </p>
+                <p className="description"> 
+                  {product.description}
+                </p>
+                <p className="description"> 
+                  {product.description}
+                </p>
+                <p className="description"> 
+                  {product.description}
+                </p>
+                <p className="description"> 
+                  {product.description}
+                </p>
+                <p className="description"> 
+                  {product.description}
+                </p>
+                <p className="description"> 
+                  {product.description}
+                </p>
+         </div>
          </div>
         )}
         {/* < PdpTemplate />  */}

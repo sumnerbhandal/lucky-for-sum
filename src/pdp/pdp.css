@@ -71,7 +71,6 @@
 .pdp-imagery > .img-container.zoom {
     width: 100%;
     cursor: initial;
-    margin-bottom: 10vh;
     padding-top: 125%;
 }
 
@@ -115,6 +114,19 @@ button.close-icon img {
     display: none;
 }
 
+.product-contents button:focus {
+    outline: 0;
+}
+
+
+
+.product-details .description {
+    
+    height: unset;
+    max-height: unset;
+    -webkit-line-clamp: unset;
+}
+
 
 
 @media (min-width: 768px) {
@@ -149,11 +161,11 @@ button.close-icon img {
 
     .product-contents {
         display: flex;
-        flex-direction: row-reverse;
+        /* flex-direction: row-reverse; */
     }
 
     .product-contents.zoom {
-        flex-direction: column-reverse;
+        /* flex-direction: column-reverse; */
         flex-wrap: wrap;
     }
     .product-details {
@@ -184,6 +196,7 @@ button.close-icon img {
         justify-content: start;
         flex-shrink: 0;
         position: relative;
+        overflow-y: hidden;
     }
 
 
@@ -208,11 +221,11 @@ button.close-icon img {
     button.close-icon {
         position: relative;
         top: 1rem;
-        right: 1rem;
+        right: 0.5rem;
         justify-content: flex-end;
         display: flex;
         height: 0;
-        z-index: 0;
+        width: 100%;
     }
     .image-chevron {
         border: 0;
@@ -220,13 +233,14 @@ button.close-icon img {
         width: 100%;
         box-shadow: none;
         display: block;
+        z-index: 1;
+        background: none;
     }
 
     .image-chevron img {
         position: absolute;
         right: 0.25rem;
         height: 3rem;
-        pointer-events: none;
         -webkit-animation: fadeIn 1s forwards;
         animation: fadeIn 1s forwards;
         transition: top 0.3s ease;
