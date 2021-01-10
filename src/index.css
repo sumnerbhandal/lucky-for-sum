@@ -38,7 +38,7 @@ code {
 }
 
 main {
-  overflow-x: hidden;
+  overflow: hidden;
   margin-top: 5rem;
 }
 

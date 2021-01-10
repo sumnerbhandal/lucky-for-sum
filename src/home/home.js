@@ -48,6 +48,8 @@ const HomePage = (props) => {
         const project = e.target;
         const currentProjectPosition = project.getBoundingClientRect();
         project.style.background = "#FEC155";
+        project.parentNode.style.transform = "scale(0.92)";
+        // project.style.boxShadow = "0 0 0 2px #000";
         props.PreviewPosition(currentProjectPosition);
         setTimeout(function(){ 
             navigate(`/project/_${project.id}`, { 
