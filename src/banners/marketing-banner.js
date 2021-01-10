@@ -16,7 +16,7 @@ export function MarketingBanner({ message }) {
 
  export const MarketingBannerTwo = ({ message }) => {   
     return (
-      <div className="banner full-width bg-stripes">
+      <div className="banner full-width">
         <div className="section banner-title">
           <h1>
           { message }

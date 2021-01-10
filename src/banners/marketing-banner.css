@@ -22,13 +22,14 @@
 }
 
 .section.banner-title h1 {
-  font-size: 1.5rem;
   color: #15171d;
   animation: bannerLoadUp 1s forwards;
   box-shadow: 12px 12px 0px 0px #15171d;
   padding: 0.25rem 1.5rem;
-  max-width: 60vw;
+  max-width: 20rem;
   background: white;
+  margin: 0 auto;
+  display: block;
 }
 
 @media (min-width: 768px) {

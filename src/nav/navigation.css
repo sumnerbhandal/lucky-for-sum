@@ -1,6 +1,6 @@
 nav {
-    position: -webkit-sticky; /* Safari */
-    position: sticky;
+    position: fixed;
+    width: 100%;
     top: 0;
     background: white;
     z-index: 2;

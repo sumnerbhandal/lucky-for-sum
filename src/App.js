@@ -1,21 +1,32 @@
-import React from "react";
+import "./reset.css";
+import "./index.css";
+import "./fonts/fonts.css";
+import React, {useState} from "react";
 import ProductPage from './pdp/pdp';
+import {Project} from './project/project';
 import Plp from './plp/plp';
 import ContactForm from './contact/contact';
 import NavDefault from './nav/navigation';
+import HomePage from './home/home'
 import { MarketingBanner, MarketingBannerTwo } from './banners/marketing-banner';
-import "./index.css"
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom/index";
 
 
 
 export default function App() {
+  const [projectPreviewPosition, setProjectPreviewPosition] = useState(null);
+  document.title = "Lucky For Sum"
   return (
    <Router>
     <main>
-      <NavDefault />
+      <NavDefault onChange={() => alert('test')} />
       <Routes>
-        <Route path="/" element={<Home />}/>
+        <Route path="/" element={ 
+          <div className="PageContent">
+             <HomePage PreviewPosition={(value) => setProjectPreviewPosition(value)}/>
+          </div>
+        }/>
+        <Route path="/project/*" element={<Project position={projectPreviewPosition} />}/>
         <Route path="/services" element={<Services />}/>
         <Route path="/pdp/*" element={<ProductPage />} />
         <Route path="/contact" element={<ContactForm/>} />
@@ -35,17 +46,6 @@ const NotFound = () => {
   )
 }
 
-
-function Home() {
-  document.title = "Lucky For Sum"
-  return (
-    <div className="PageContent">
-      <MarketingBanner message="New Start, New Looks" />
-      <Plp category="1" />
-      <MarketingBannerTwo message="Thanks For Visiting" />
-    </div>
-  )
-};
 
 function Services() {
   document.title = "Lucky For Sum - Services"

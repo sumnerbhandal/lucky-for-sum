@@ -39,7 +39,7 @@ const NavDefault = () => {
             </Link>
             {/* <p className="site-name">Lucky For Sum</p> */}
         </div>
-            <ul className="lower-navigation section">
+            {/* <ul className="lower-navigation section">
                 <li><Link to="/">New In</Link></li>
                 <li><Link to="/services">Hand Crafted Illustrations</Link></li>
                 <li><Link to="/">Nav Link 3</Link></li>
@@ -48,7 +48,7 @@ const NavDefault = () => {
                 <li><Link to="/">Nav Link 6</Link></li>
                 <li><Link to="/">Nav Link 7</Link></li>
                 <li><Link to="/contact">Contact</Link></li>
-            </ul>
+            </ul> */}
         </nav>
     )
 }
