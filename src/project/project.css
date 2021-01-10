@@ -8,7 +8,6 @@
     animation-fill-mode: forwards;
     background: #FEC155;
     overflow: hidden;
-     /* animation-delay: 0.5s;    */
 }
 
 .project-preview-container.header {
@@ -17,17 +16,20 @@
     flex-wrap: wrap;
 }
 
+.project-preview-container.header .project-preview {
+    position: fixed;
+}
+
 .project-preview-container.header .banner.full-width {
     width: 100%;
     z-index: 1;
     position: fixed;
     left: 0;
+    top: 5.5rem;
 }
 
 .project-preview-thumbnail.header > img {
-    /* top: 12rem; */
-    transition: all 2s;
-    max-width: 40rem;
+    width: 40rem;
 }
 
 @media (min-width: 768px) {
@@ -35,13 +37,11 @@
         transition: background 0.5s ease;
         animation-name: project-landing-tablet;
         animation-duration: 0.65s;
-        /* animation-delay: 0.5s;    */
     }
 
     .project-preview-thumbnail.header > img {
         top: 35rem;
         left: 50vw;
-        /* transition: all 0.65s; */
     }
 }
 
@@ -54,7 +54,6 @@
 .project-content {
     margin-top: 13rem;
     z-index: 1;
-    /* background: #F0EEE9; */
     background: #FFF;
     position: relative;
     padding: 1.5rem 2rem;
@@ -62,6 +61,7 @@
     opacity: 0;
     animation: projectContentLoadIn 0.5s forwards;
     animation-delay: 0.5s;
+    max-width: 1280px;
 }
 
 @media (min-width: 768px) {
@@ -73,11 +73,10 @@
 
 @keyframes project-landing {
     100% {  
-            top: -15rem;
-            transform: rotate(-20deg) translate(-50vw, -2rem);
+            top: -18rem;
+            transform: rotate(-20deg) translate(-60vw, -2rem);
             width: 150vw;
             height: 30rem;
-            left: 0;
     }
 }
 
