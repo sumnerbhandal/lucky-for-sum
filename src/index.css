@@ -28,9 +28,33 @@ body, * {
   scroll-behavior: smooth;
 }
 
-*:focus {
+/* *:focus {
   box-shadow: 0 0 0 4px black;
   outline: 4px solid blue;
+} */
+
+/* The default outline styling, for greatest accessibility. */
+/* You can skip this to just use the browser's defaults. */
+:focus {
+  box-shadow: 0 0 0 2px #fec155, 0 0 0 4px #1F1E20, 0 0 0 6px #fec155;
+  border-radius: 2px;
+  outline: 0;
+}
+
+.section.banner-title h1:focus {
+  box-shadow: 0 0 0 4px #1F1E20, 0 0 0 6px #fec155, 12px 12px 0px 0px #15171d, 0 0 0 2px #fec155;
+  border-radius: 0;
+}
+
+/* When mouse is detected, ALL focused elements have outline removed. */
+body.using-mouse :focus {
+  outline: none;
+  box-shadow: none;
+}
+
+body.using-mouse .section.banner-title h1:focus {
+  outline: none;
+  box-shadow: 12px 12px 0px 0px #15171d;
 }
 
 body {

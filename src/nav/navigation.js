@@ -4,14 +4,17 @@ import "./navigation.css"
 
 const NavDefault = () => {
     const [isShown, setIsShown] = useState(false);
-
+    function backToTop() {
+        window.scrollTo(0, 0)
+    }
     return (
         <nav role="navigation">
         <div className={`masthead ${!isShown ? "" : "hovered"}`}>
             <Link
             // className={isScrolled}
             onMouseEnter={() => setIsShown(true)}
-            onMouseLeave={() => setIsShown(false)} 
+            onMouseLeave={() => setIsShown(false)}
+            onClick={backToTop} 
             to="/">
                 <img src={require('./icons/lucky-for-sum-logo.svg')} alt="Home"/>
             </Link>

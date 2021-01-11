@@ -15,6 +15,25 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom/index";
 
 export default function App() {
   const [projectPreviewPosition, setProjectPreviewPosition] = useState(null);
+
+  function focusStates() {
+    // Let the document know when the mouse is being used
+    document.body.addEventListener('mousedown', function() {
+      document.body.classList.add('using-mouse');
+    });
+
+    // Re-enable focus styling when Tab is pressed
+    document.body.addEventListener('keydown', function(event) {
+      if (event.keyCode === 9) {
+        document.body.classList.remove('using-mouse');
+      }
+    });
+  }
+
+  focusStates();
+ 
+
+
   document.title = "Lucky For Sum"
   return (
    <Router>
