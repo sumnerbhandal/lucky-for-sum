@@ -28,6 +28,11 @@ body, * {
   scroll-behavior: smooth;
 }
 
+*:focus {
+  box-shadow: 0 0 0 4px black;
+  outline: 4px solid blue;
+}
+
 body {
   background: #F0EEE9;
 }

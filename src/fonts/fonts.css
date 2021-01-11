@@ -1,5 +1,14 @@
 @font-face {
     font-family: 'Palanquin';
+    src: url('Palanquin-Light.woff2') format('woff2'),
+        url('Palanquin-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Palanquin';
     src: url('Palanquin-Regular.woff2') format('woff2'),
         url('Palanquin-Regular.woff') format('woff');
     font-weight: 400;
@@ -31,11 +40,13 @@ h1, h2 {
     font-weight: 600;
     font-size: 1.5rem;
     margin-top: 1.25rem;
+    width: fit-content;
 }
 
 h3, h4, h5, h6 {
     font-family: Palanquin, Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 500;
+    width: fit-content;
 }
 
 p {

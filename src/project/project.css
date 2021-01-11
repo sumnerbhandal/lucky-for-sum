@@ -12,19 +12,22 @@
 
 .project-preview-container.header {
     overflow: hidden;
-    pointer-events: none;
     flex-wrap: wrap;
 }
 
 .project-preview-container.header .project-preview {
     position: fixed;
+    width: 100%;
+    height: 13rem;
+    cursor: initial;
+    margin-top: 5rem;
+    display: flex;
+    align-items: center;
 }
 
 .project-preview-container.header .banner.full-width {
     width: 100%;
     z-index: 1;
-    position: fixed;
-    left: 0;
     top: 5.5rem;
 }
 
@@ -64,9 +67,59 @@
     max-width: 1280px;
 }
 
+.project-content section {
+    padding-bottom: 1.5rem;
+    border-bottom: 3px solid #f7f7f7;
+}
+
+p.intro {
+    font-size: 1.25rem;
+    font-weight: 300;
+    max-width: 36rem;
+}
+
+.project-content h3, .project-content .col {
+    margin-top: 0.75rem;
+}
+
+.project-content h3 {
+    font-size: 1.125rem;
+}
+
+.project-content h2 {
+    position: relative;
+}
+
+.project-content h2:after {
+    content: "";
+    position: absolute;
+    bottom: 2px;
+    left: 12%;
+    background: #1F1E20;
+    width: 76%;
+    height: 0.75rem;
+    z-index: -1;
+    opacity: 0.08;
+}
+
 @media (min-width: 768px) {
     .project-content {
-        padding: 2rem 2.5rem;
+        padding: 1rem 2.5rem;
+    }
+    .project-content .col {
+        width: calc((100% / 2) - 1.25rem);
+    }
+    .project-content p {
+        margin-top: 1rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .project-content {
+        font-size: 1.125rem;
+    }
+    p.intro {
+        font-size: 1.625rem;
     }
 }
 

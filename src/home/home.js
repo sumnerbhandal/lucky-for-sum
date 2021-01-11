@@ -33,9 +33,9 @@ const previews = [
 const Bio = () => {
     return (
         <div className="aboutIntro">
-        <h1>Hi, my name's Sumner 👋🏽</h1>
-        <p>I’m a Senior User Interface Designer with a fondness for front-end development and inclusive design.</p>
-        <p>Currently attempting to make digital interfaces a bit more humane.</p>
+            <h1 role="heading" aria-level="1" tabIndex="0">Hi, my name's Sumner 👋🏽</h1>
+            <p tabIndex="0">I’m a Senior User Interface Designer with a fondness for front-end development and inclusive design.</p>
+            <p tabIndex="0">Currently attempting to make digital interfaces a bit more humane.</p>
         </div>
     )
 
@@ -49,7 +49,6 @@ const HomePage = (props) => {
         const currentProjectPosition = project.getBoundingClientRect();
         project.style.background = "#FEC155";
         project.parentNode.style.transform = "scale(0.92)";
-        // project.style.boxShadow = "0 0 0 2px #000";
         props.PreviewPosition(currentProjectPosition);
         setTimeout(function(){ 
             navigate(`/project/_${project.id}`, { 
@@ -60,6 +59,11 @@ const HomePage = (props) => {
             window.scrollTo(0, 0);
         }, 500);
     }
+    function pressEnter(e) {
+        if(e.key === 'Enter'){
+            projectImageOpen(e)
+          } return;
+    }
   
     return (
         <div className="section">
@@ -69,11 +73,11 @@ const HomePage = (props) => {
                 </div>
                 < Bio />
             </div>
-            <h1>The Sizzle</h1>
+            <h2 role="heading" aria-level="2" tabIndex="0">The Sizzle</h2>
             <div className="project-preview-container">
-             {previews.map(item => (
-                <a className="project-preview" >
-                    <div className="project-preview-thumbnail" id={item.image} onClick={projectImageOpen}>
+             {previews.map((item, index) => (
+                <a className="project-preview" key={index}>
+                    <div className="project-preview-thumbnail" id={item.image} onClick={projectImageOpen} onKeyPress={pressEnter} tabindex="0" role="link">
                         <img src={require('./images/' + item.image + '.png')} alt={item.title}  />
                     </div>
                     <h2>
