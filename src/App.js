@@ -16,6 +16,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom/index";
 export default function App() {
   const [projectPreviewPosition, setProjectPreviewPosition] = useState(null);
 
+
   function focusStates() {
     // Let the document know when the mouse is being used
     document.body.addEventListener('mousedown', function() {

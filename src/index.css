@@ -52,6 +52,7 @@ body.using-mouse :focus {
   box-shadow: none;
 }
 
+
 body.using-mouse .section.banner-title h1:focus {
   outline: none;
   box-shadow: 12px 12px 0px 0px #15171d;
