@@ -79,7 +79,7 @@ p.intro {
 }
 
 .project-content h3, .project-content .col {
-    margin-top: 0.75rem;
+    margin-top: 1rem;
 }
 
 .project-content h3 {
@@ -88,18 +88,28 @@ p.intro {
 
 .project-content h2 {
     position: relative;
+    font-weight: 300;
 }
+
+.project-content .col p {
+    margin-top: 0.875rem;
+}
+
+.project-content .col p:first-of-type {
+    margin-top: 0.75rem;
+}
+
 
 .project-content h2:after {
     content: "";
     position: absolute;
-    bottom: 2px;
-    left: 12%;
-    background: #1F1E20;
-    width: 76%;
-    height: 0.75rem;
+    bottom: -0.125rem;
+    left: -0.5rem;
+    background: #FEC155;
+    width: calc(100% + 1rem);
+    height: 2.5rem;
     z-index: -1;
-    opacity: 0.08;
+    opacity: 1;
 }
 
 @media (min-width: 768px) {
@@ -109,8 +119,13 @@ p.intro {
     .project-content .col {
         width: calc((100% / 2) - 1.25rem);
     }
-    .project-content p {
-        margin-top: 1rem;
+    .project-content h2 {
+        position: relative;
+        font-size: 1.75rem;
+        font-weight: 300;
+    }
+    .project-content h3 {
+        font-size: 1.25rem;
     }
 }
 
