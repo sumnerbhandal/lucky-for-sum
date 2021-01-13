@@ -50,7 +50,7 @@ export default function App() {
         <Route path="/contact" element={<ContactForm/>} />
         <Route path="*" element={<NotFound />} />
       </Routes>
-      <Footer />
+      {/* <Footer /> */}
     </main>
   </Router>
   );

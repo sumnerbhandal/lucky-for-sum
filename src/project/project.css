@@ -13,6 +13,7 @@
 .project-preview-container.header {
     overflow: hidden;
     flex-wrap: wrap;
+    pointer-events: none;
 }
 
 .project-preview-container.header .project-preview {

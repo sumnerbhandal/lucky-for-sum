@@ -20,7 +20,7 @@ export const Project = (props) => {
 
     return (
         <div className="project-preview-container header">
-                <div className="project-preview" >
+                <div className="project-preview">
                     <div style={projectPreviewPosition} className="project-preview-thumbnail header">
                         <img src={require('./images/' + imagePath + 'header.png')} alt={pdp.headerAlt}  />
                     </div>

@@ -2,7 +2,9 @@
 .introSection {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    min-height: 568px;
+    height: 100vh;
 }
 .heroVideo--container {
     width: 100%;
@@ -23,6 +25,24 @@
    flex-shrink: 0;
 }
 
+.homepage {
+    display: flex;
+    flex-basis: 100%;
+    height: calc(100vh - 5rem);
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    flex-wrap: wrap;
+    width: 100%;
+    position: absolute;
+    top: 5rem;
+}
+
+.hp-section {
+	height: 100%;
+    scroll-snap-align: start;
+    flex-basis: 100%;
+}
+
 @media (min-width: 768px) {
     .heroVideo--container {
         margin-top: 2.5rem;
@@ -30,8 +50,16 @@
     .aboutIntro {
         margin-top: 0.75rem;
     }
+    .homepage {
+        min-height: 40rem;
+    }
+    .introSection {
+        display: flex;
+        flex-wrap: wrap;
+        padding-bottom: 2rem;
+        min-height: 768px;
+    }
 }
-
 
 @media (min-width: 1024px) {
 
@@ -57,19 +85,21 @@
 /* Project Previews */
 
 .project-preview-container {
-    margin-bottom: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
 .project-preview {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    margin-top: 2.5rem;
     justify-content: center;
     cursor: pointer;
     transition: 0.3s ease;
     z-index: 1;
     top: 0;
+    align-items: center;
 }
 
 .project-preview:not(:first-child) {
@@ -105,9 +135,13 @@
 }
 
 .project-preview h2 {
-    margin-top: 2.5rem;
+    margin-top: 4rem;
     width: 100%;
     text-align: center;
+}
+
+.image-right {
+    display: none;
 }
 
 @media (min-width: 768px) {
@@ -116,40 +150,44 @@
         align-items: center;
         justify-content: space-between;
     }
-    .project-preview-thumbnail {
-        width: 9rem;
-        height: 9rem;
+
+    .project-preview {
+        width: calc(100% / 2);
     }
-    .project-preview, .project-preview:not(:first-child) {
-        width: calc(100% / 3);
-        margin-top: 3rem;
+
+    .image-right {
+        display: flex;
+        background: white;
+        width: calc(100% / 2);
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .project-preview-thumbnail {
+        width: 14rem;
+        height: 14rem;
     }
     .project-preview h2 {
-        font-size: 1.25rem;
-        margin-top: 2rem;
         padding: 0 1rem;
     }
 
-    .project-preview-thumbnail:hover, .project-preview-thumbnail:hover > img, .project-preview:nth-child(even):hover img, .project-preview:nth-child(even):hover .project-preview-thumbnail {
+    .project-preview:hover .project-preview-thumbnail, .project-preview:hover img, .project-preview:nth-child(even):hover img, .project-preview:nth-child(even):hover .project-preview-thumbnail {
         transform: rotate(0);
         top: 0;
     }
     
-    .project-preview-thumbnail:hover, .project-preview:nth-child(even):hover .project-preview-thumbnail {
+    .project-preview:hover .project-preview-thumbnail, .project-preview:nth-child(even):hover .project-preview-thumbnail {
         background: #FEC155;
     }
 }
 
 @media (min-width: 1024px) {
-    .project-preview {
-        width: calc(33% - 1.25rem);
-    }
     .project-preview-thumbnail {
-        width: 13rem;
-        height: 13rem;
+        width: 17rem;
+        height: 17rem;
     }
     .project-preview h2 {
-        margin-top: 2.5rem;
         font-size: 1.375rem;
     }
 }

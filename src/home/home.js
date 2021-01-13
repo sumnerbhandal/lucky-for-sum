@@ -26,25 +26,28 @@ const HomePage = (props) => {
     }
   
     return (
-        <div className="section">
-            <div className="introSection">
+        <div className="homepage">
+            <div className="introSection hp-section section">
                 <div className="heroVideo--container"> 
                     <video playsInline className="heroVideo" controls controlsList="nofullscreen nodownload" src={heroVideo} type="video/mp4" />
                 </div>
                 < Bio />
             </div>
-            <h2 role="heading" aria-level="2" tabIndex="0">The Sizzle</h2>
-            <div className="project-preview-container">
-             {homePageProjects.map((item, index) => (
-                <a className="project-preview" key={index}>
-                    <div className="project-preview-thumbnail" id={item.id} onClick={projectImageOpen} onKeyPress={pressEnter} tabindex="0" role="link">
-                        <img src={require('./images/' + item.image + '.png')} alt={item.title}  />
+                {/* <h2 role="heading" aria-level="2" tabIndex="0">The Sizzle</h2> */}
+                 {homePageProjects.map((item, index) => (
+                    <div className="project-preview-container hp-section">
+                
+                        <a className="project-preview" key={index}>
+                            <div className="project-preview-thumbnail" id={item.id} onClick={projectImageOpen} onKeyPress={pressEnter} tabindex="0" role="link">
+                                <img src={require('./images/' + item.image + '.png')} alt={item.title}  />
+                            </div>
+                            <h2>
+                                {item.title}
+                            </h2>
+                        </a>
+                        <div className="image-right">Hi Res Image Preview Goes Here</div>
                     </div>
-                    <h2>
-                        {item.title}
-                    </h2>
-                </a>))}
-          </div>    
+                        ))}  
         </div>
     );
 }

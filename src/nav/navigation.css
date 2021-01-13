@@ -36,12 +36,12 @@ nav {
     transition: all 0.3s ease;
 }
 
-@media (min-width: 1024px) {
+/* @media (min-width: 1024px) {
     .masthead a {
         width: 4rem;
         height: 4rem;
     }
- }
+ } */
 
 .masthead.hovered a {
     transform: scale(1.2);
