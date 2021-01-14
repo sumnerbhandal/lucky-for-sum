@@ -3,7 +3,7 @@
     display: flex;
     flex-wrap: wrap;
     padding-bottom: 2rem;
-    min-height: 568px;
+    /* min-height: 568px; */
     height: 100vh;
 }
 .heroVideo--container {
@@ -51,13 +51,13 @@
         margin-top: 0.75rem;
     }
     .homepage {
-        min-height: 40rem;
+        /* min-height: 40rem; */
     }
     .introSection {
         display: flex;
         flex-wrap: wrap;
         padding-bottom: 2rem;
-        min-height: 768px;
+        /* min-height: 768px; */
     }
 }
 
