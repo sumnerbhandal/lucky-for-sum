@@ -1,7 +1,7 @@
 import "./reset.css";
 import "./index.css";
 import "./fonts/fonts.css";
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 import ProductPage from './pdp/pdp';
 import {Project} from './project/project';
 import Plp from './plp/plp';
@@ -44,7 +44,12 @@ export default function App() {
              <HomePage PreviewPosition={(value) => setProjectPreviewPosition(value)}/>
           </div>
         }/>
-        <Route path="/project/*" element={<Project position={projectPreviewPosition} />}/>
+        <Route path="/project/*" element={
+        
+        
+        <Project position={projectPreviewPosition} />
+        
+        }/>
         <Route path="/services" element={<Services />}/>
         <Route path="/pdp/*" element={<ProductPage />} />
         <Route path="/contact" element={<ContactForm/>} />

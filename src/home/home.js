@@ -26,19 +26,6 @@ const HomePage = (props) => {
           } return;
     }
 
-
-    // const [isLogoActive, setLogoActive] = useState(true);
-
-    // const onScroll = e => {
-    // //   setLogoActive(e.target.scrollTop < 100);
-    // console.log(e);
-    //   console.log("scrolled");
-    //   e.scrollBy({
-    //     top: 100,
-    //     behavior: 'smooth'
-    //   });
-    // };
-
     return (
         <div className="homepage">
             <div className="introSection hp-section section">

@@ -18,6 +18,30 @@ export const Project = (props) => {
         transform: "rotate(0deg)"
     }
 
+    const [scrollY, setScrollY] = useState(0);
+
+    function logit() {
+      setScrollY(window.pageYOffset);
+      console.log(scrollY);
+      console.log(window.innerHeight);
+
+      if ((window.innerHeight + ( scrollY - 64)) >= document.body.offsetHeight) {
+        console.log("you're at the bottom of the page");
+        //show loading spinner and make fetch request to api
+     }
+    }
+  
+    useEffect(() => {
+      function watchScroll() {
+        window.addEventListener("scroll", logit);
+      }
+      watchScroll();
+      return () => {
+        window.removeEventListener("scroll", logit);
+      };
+    });
+
+
     return (
         <div className="project-preview-container header">
                 <div className="project-preview">
@@ -51,6 +75,11 @@ export const Project = (props) => {
                         </section>
                     ))}
                 </article>
+                <div className="next-project-section">
+                    <div className="next-project-intro">
+                        <h4>Next Project intro</h4>
+                    </div>
+                </div>
         </div>
     )
 }

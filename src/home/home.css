@@ -59,17 +59,12 @@
         padding-bottom: 2rem;
         /* min-height: 768px; */
     }
-}
-
-@media (min-width: 1024px) {
-
-    .introSection {
-        flex-direction: row-reverse;
-        flex-wrap: nowrap;
-        justify-content: space-between;
+    .aboutIntro  {
+        width: calc(40%);
     }
-    .aboutIntro, .heroVideo--container  {
-        width: calc(50% - 1.25rem);
+
+    .heroVideo--container  {
+        width: calc(60% - 1.25rem);
     }
     .aboutIntro {
         margin-top: 3rem;
@@ -80,6 +75,18 @@
         /*   aspect ratio of 4:5 */
         position: relative;
       }
+
+      .introSection {
+        flex-direction: row-reverse;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+}
+
+@media (min-width: 1024px) {
+
+    
+
 }
 
 /* Project Previews */
@@ -100,6 +107,7 @@
     z-index: 1;
     top: 0;
     align-items: center;
+    padding-top: 3rem;
 }
 
 .project-preview:not(:first-child) {

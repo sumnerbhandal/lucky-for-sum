@@ -21,7 +21,7 @@
     width: 100%;
     height: 13rem;
     cursor: initial;
-    margin-top: 5rem;
+    margin-top: 3rem;
     display: flex;
     align-items: center;
 }
@@ -47,6 +47,10 @@
         top: 35rem;
         left: 50vw;
     }
+
+    .project-preview-container.header .project-preview {
+        margin-top: 1.5rem;
+     }
 }
 
 @media (min-width: 768px) {
@@ -99,6 +103,31 @@ p.intro {
 .project-content .col p:first-of-type {
     margin-top: 0.75rem;
 }
+
+.next-project-section {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    justify-content: center;
+}
+.next-project-intro {
+    height: 15rem;
+    width: 15rem;
+    background: black;
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+    transform: translateY(7.5rem);
+    display: flex;
+    padding-top: 3.75rem;
+    font-size: 1.25rem;
+}
+
+.next-project-intro h4 {
+    color: #fff;
+}
+
 
 
 .project-content h2:after {
