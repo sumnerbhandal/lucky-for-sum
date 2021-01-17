@@ -143,20 +143,6 @@ p.intro {
     color: #fff;
 }
 
-
-/* @keyframes loadingNextProject {
-    0%   { 
-
-        transform: translateY(4rem);
-    }
-
-    100% { 
-  
-        transform: translateY(13rem);
-        border: 0r;
-    }
-  } */
-
   @keyframes loadingNextProject {
     0%   { 
 
@@ -187,9 +173,6 @@ p.intro {
         border: 0.25rem solid #F0EEE9;
     }
   }
-
-
-
 
 
 .project-content h2:after {
