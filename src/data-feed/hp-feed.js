@@ -1,17 +1,20 @@
 export const homePageProjects = [
   {
       "title": "A Portfolio For All",
-      "id": "portfolio-for-all",
+      "url": "portfolio-for-all",
+      "id": "0",
       "image": "Portfolio-Thumbnail"
   },
   {
       "title": "Ligamend - ACL Injury Support Community",
-      "id": "ligamend",
+      "url": "ligamend",
+      "id": "1",
       "image": "Ligamend-Thumbnail"
   },
   {
       "title": "Enriched Autocomplete",
-      "id": "enriched-autocomplete",
+      "url": "enriched-autocomplete",
+      "id": "2",
       "image": "Autocomplete-Thumbnail"
   }
 ]

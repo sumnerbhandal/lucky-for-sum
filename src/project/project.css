@@ -17,11 +17,10 @@
 }
 
 .project-preview-container.header .project-preview {
-    position: fixed;
+    position: relative;
     width: 100%;
     height: 13rem;
     cursor: initial;
-    margin-top: 3rem;
     display: flex;
     align-items: center;
 }
@@ -29,7 +28,8 @@
 .project-preview-container.header .banner.full-width {
     width: 100%;
     z-index: 1;
-    top: 5.5rem;
+    top: -1.5rem;
+    position: relative;
 }
 
 .project-preview-thumbnail.header > img {
@@ -41,6 +41,10 @@
         transition: background 0.5s ease;
         animation-name: project-landing-tablet;
         animation-duration: 0.5s;
+    }
+
+    .project-preview-container.header .banner.full-width {
+        top: -4rem;
     }
 
     .project-preview-thumbnail.header > img {
@@ -60,7 +64,6 @@
 }
 
 .project-content {
-    margin-top: 13rem;
     z-index: 1;
     background: #FFF;
     position: relative;
@@ -104,29 +107,88 @@ p.intro {
     margin-top: 0.75rem;
 }
 
+
+
+
 .next-project-section {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     position: relative;
     justify-content: center;
+    height: 10rem;
 }
-.next-project-intro {
-    height: 15rem;
-    width: 15rem;
-    background: black;
+.next-project-section > div {
+    height: 2rem;
+    width: 2rem;
+    border: 0.25rem solid #F0EEE9;
     display: flex;
     justify-content: center;
     border-radius: 50%;
-    transform: translateY(7.5rem);
     display: flex;
-    padding-top: 3.75rem;
     font-size: 1.25rem;
+    transition: all 0.5s ease;
+}
+
+.next-project-section > div.loading {
+    animation-name: loadingNextProject;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-direction: alternate; 
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
 }
 
 .next-project-intro h4 {
     color: #fff;
 }
+
+
+/* @keyframes loadingNextProject {
+    0%   { 
+
+        transform: translateY(4rem);
+    }
+
+    100% { 
+  
+        transform: translateY(13rem);
+        border: 0r;
+    }
+  } */
+
+  @keyframes loadingNextProject {
+    0%   { 
+
+        transform: translateY(4rem) scale(1.25);
+        border: 0.25rem solid #F0EEE9;
+    }
+    
+    25% { 
+  
+        transform: translateY(4rem) scale(0.75);
+        border: 0.25rem solid #FEC155;
+    }
+
+    50%   { 
+
+        transform: translateY(4rem) scale(1.25);
+        border: 0.25rem solid #F0EEE9;
+    }
+    75% { 
+  
+        transform: translateY(4rem) scale(0.75);
+        border: 0.25rem solid #FEC155;
+    }
+    
+    100% { 
+  
+        transform: translateY(4rem) scale(1.25);
+        border: 0.25rem solid #F0EEE9;
+    }
+  }
+
+
 
 
 
@@ -171,7 +233,7 @@ p.intro {
 
 @keyframes project-landing {
     100% {  
-            top: -18rem;
+            top: -22.5rem;
             transform: rotate(-20deg) translate(-60vw, -2rem);
             width: 150vw;
             height: 30rem;
@@ -180,7 +242,7 @@ p.intro {
 
 @keyframes project-landing-tablet {
     100% {  width: 150vw;
-            top: -35rem;
+            top: -40rem;
             transform: rotate(-4deg) translate(-50vw, -2rem);
             height: 50rem;
             left: 0
@@ -198,3 +260,4 @@ p.intro {
         opacity: 1; 
     }
   }
+

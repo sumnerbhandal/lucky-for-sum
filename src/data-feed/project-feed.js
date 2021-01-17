@@ -1,9 +1,11 @@
-export const homePageProjects = {
-    "portfolio-for-all": {
+export const homePageProjects = [
+    {
       "title": "A Portfolio For All",
       "path": "portfolio/",
       "headerAlt": "Portfolio for all header image", 
       "intro": "Documenting (for once) the process of creating the latest iteration of my website.",
+      "url": "portfolio-for-all",
+      "id": "0",
       "article" : [
         {
               "h2": "Background",
@@ -36,11 +38,13 @@ export const homePageProjects = {
         }
     ]
     },
-    "ligamend": {
+    {
         "title": "Ligamend - ACL Injury Support Community",
         "path": "ligamend/",
         "headerAlt": "Portfolio for all header image",
         "intro": "Building a support community set up to aid the rehabilitation of people who have suffered an anterior cruciate ligament (ACL) injury.",
+        "url": "ligamend",
+        "id": "1",
         "article" : [
             {
                   "h2": "Background",
@@ -73,11 +77,13 @@ export const homePageProjects = {
             }
         ]
     },
-    "enriched-autocomplete": {
+    {
         "title": "Enriched Autocomplete",
         "path": "autocomplete/",
         "headerAlt": "Portfolio for all header image",
         "intro": "In need of a new portfolio update, I looked to ",
+        "url": "enriched-autocomplete",
+        "id": "2",
         "article" : [
             {
                   "h2": "Background",
@@ -110,4 +116,4 @@ export const homePageProjects = {
             }
         ]
     }
-} 
+] 

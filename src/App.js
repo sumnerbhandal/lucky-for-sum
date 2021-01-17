@@ -12,11 +12,8 @@ import { MarketingBanner, MarketingBannerTwo } from './banners/marketing-banner'
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom/index";
 
 
-
 export default function App() {
   const [projectPreviewPosition, setProjectPreviewPosition] = useState(null);
-
-
   function focusStates() {
     // Let the document know when the mouse is being used
     document.body.addEventListener('mousedown', function() {
@@ -33,6 +30,8 @@ export default function App() {
 
   focusStates();
 
+
+
   document.title = "Lucky For Sum"
   return (
    <Router>
@@ -46,9 +45,10 @@ export default function App() {
         }/>
         <Route path="/project/*" element={
         
-        
+        <div>
         <Project position={projectPreviewPosition} />
-        
+        </div>
+    
         }/>
         <Route path="/services" element={<Services />}/>
         <Route path="/pdp/*" element={<ProductPage />} />

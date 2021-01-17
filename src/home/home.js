@@ -16,7 +16,7 @@ const HomePage = (props) => {
         project.parentNode.style.transform = "scale(0.92)";
         props.PreviewPosition(currentProjectPosition);
         setTimeout(function(){ 
-            navigate(`/project/pid-${project.id}`);
+            navigate(`/project/${project.title}_pid-${project.id}`);
             window.scrollTo(0, 0);
         }, 500);
     }
@@ -38,7 +38,7 @@ const HomePage = (props) => {
             <div className="project-preview-container hp-section">
         
                 <a className="project-preview" key={index}>
-                    <div className="project-preview-thumbnail" id={item.id} onClick={projectImageOpen} onKeyPress={pressEnter} tabindex="0" role="link">
+                    <div className="project-preview-thumbnail" id={item.id} title={item.url} onClick={projectImageOpen} onKeyPress={pressEnter} tabindex="0" role="link">
                         <img src={require('./images/' + item.image + '.png')} alt={item.title}  />
                     </div>
                     <h2>

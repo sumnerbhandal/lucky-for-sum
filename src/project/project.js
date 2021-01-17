@@ -5,29 +5,45 @@ import { homePageProjects } from '../data-feed/project-feed';
 
 export const Project = (props) => {
 
+  
+
     const verticalPosition = props.position == null ? 0 : props.position.y;
     const leftPosition = props.position == null ? 0 : props.position.x;
 
-    const projectID = window.location.href.split('pid-')[1];
-    const pdp = homePageProjects[projectID];
-    const imagePath = pdp.path;
+    const projectIndex = window.location.href.split('pid-')[1];
+
+
+    const [projectsShown, setProjectsShown] = useState([homePageProjects[projectIndex]])
+    const [nextProjectIndex, setNextProjectIndex] = useState(parseInt(projectIndex) + 1); 
+    const [loaderAnimationId, setLoaderAnimationId] = useState(0);
+
     const projectPreviewPosition = {
         top: verticalPosition,
         left: leftPosition,
-        position: "fixed",
+        position: "absolute",
         transform: "rotate(0deg)"
     }
 
     const [scrollY, setScrollY] = useState(0);
-
+  
     function logit() {
       setScrollY(window.pageYOffset);
-      console.log(scrollY);
-      console.log(window.innerHeight);
+  
+      if ((window.innerHeight + ( scrollY + 0)) >= document.body.offsetHeight) {
 
-      if ((window.innerHeight + ( scrollY - 64)) >= document.body.offsetHeight) {
-        console.log("you're at the bottom of the page");
-        //show loading spinner and make fetch request to api
+        let loaderBlob = document.getElementById('load-next-item' + loaderAnimationId);
+        console.log(loaderBlob);
+        const nextToBeLoaded = nextProjectIndex + 1;
+        setNextProjectIndex(nextToBeLoaded);
+        let projectExists = homePageProjects[nextProjectIndex];
+        if (nextProjectIndex < homePageProjects.length) {
+            loaderBlob.classList.add("loading");
+            projectsShown.push(homePageProjects[nextProjectIndex]);
+            setLoaderAnimationId(loaderAnimationId + 1)
+            const currentProjectURL = homePageProjects[nextProjectIndex].url;
+            const currentProjectID = homePageProjects[nextProjectIndex].id;
+            window.history.pushState('page2', 'Title', '/project/' + currentProjectURL + '_pid-' + currentProjectID);
+        } return;
      }
     }
   
@@ -40,13 +56,15 @@ export const Project = (props) => {
         window.removeEventListener("scroll", logit);
       };
     });
-
+  
 
     return (
+        <div>
+        {projectsShown.map((pdp, index) => (
         <div className="project-preview-container header">
                 <div className="project-preview">
                     <div style={projectPreviewPosition} className="project-preview-thumbnail header">
-                        <img src={require('./images/' + imagePath + 'header.png')} alt={pdp.headerAlt}  />
+                        <img src={require('./images/' + pdp.path + 'header.png')} alt={pdp.headerAlt}  />
                     </div>
                     <MarketingBannerTwo message={pdp.title} />
                 </div>
@@ -59,13 +77,12 @@ export const Project = (props) => {
                         <section key={index}>
                             <h2 role="heading" aria-level="2" tabIndex="0">
                             {content.h2}
-                            {console.log(content.subsection)}
                         </h2>
                         {content.subsection.map((subsection, index) => (
                            <div className="col">
                             <h3 role="heading" aria-level="3" tabIndex="0">
                                 {subsection.h3}
-                                {console.log(subsection.copy)}
+    
                             </h3>
                                 {subsection.copy.map((copy, index) => (
                                     <p tabIndex="0">{copy}</p>
@@ -76,10 +93,14 @@ export const Project = (props) => {
                     ))}
                 </article>
                 <div className="next-project-section">
-                    <div className="next-project-intro">
-                        <h4>Next Project intro</h4>
+                    <div id={`load-next-item${index}`} className="next-project-intro">  
                     </div>
                 </div>
+               
+                
+
+        </div>
+        ))}
         </div>
     )
 }
