@@ -182,6 +182,7 @@
         align-items: center;
         overflow: hidden;
         position: relative;
+        padding: 2rem;
     }
 
     .project-preview-container:nth-child(even) .image-right {
