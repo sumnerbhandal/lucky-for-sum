@@ -21,7 +21,6 @@ export const Project = (props) => {
     }
 
     const [scrollY, setScrollY] = useState(0);
-  
     function logit() {
       setScrollY(window.pageYOffset);
   
@@ -39,7 +38,6 @@ export const Project = (props) => {
         } return;
      }
     }
-  
     useEffect(() => {
       function watchScroll() {
         window.addEventListener("scroll", logit);

@@ -27,10 +27,7 @@ export default function App() {
       }
     });
   }
-
   focusStates();
-
-
 
   document.title = "Lucky For Sum"
   return (
@@ -39,9 +36,7 @@ export default function App() {
       <NavDefault onChange={() => alert('test')} />
       <Routes>
         <Route path="/" element={ 
-          <div className="PageContent">
-             <HomePage PreviewPosition={(value) => setProjectPreviewPosition(value)}/>
-          </div>
+            <HomePage PreviewPosition={(value) => setProjectPreviewPosition(value)}/>
         }/>
         <Route path="/project/*" element={
         
