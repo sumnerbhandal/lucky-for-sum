@@ -3,7 +3,9 @@ export const homePageProjects = [
       "title": "A Portfolio For All",
       "path": "portfolio/",
       "headerAlt": "Portfolio for all header image", 
-      "intro": "Documenting (for once) the process of creating the latest iteration of my website.",
+      "intro": [
+          "Documenting (for once) the process of creating the latest iteration of my website."
+      ],
       "url": "portfolio-for-all",
       "id": "0",
       "article" : [
@@ -42,7 +44,9 @@ export const homePageProjects = [
         "title": "Ligamend - ACL Injury Support Community",
         "path": "ligamend/",
         "headerAlt": "Portfolio for all header image",
-        "intro": "Building a support community set up to aid the rehabilitation of people who have suffered an anterior cruciate ligament (ACL) injury.",
+        "intro": [
+            "Building a support community set up to aid the rehabilitation of people who have suffered an anterior cruciate ligament (ACL) injury."
+        ],
         "url": "ligamend",
         "id": "1",
         "article" : [
@@ -81,7 +85,10 @@ export const homePageProjects = [
         "title": "Enriched Autocomplete",
         "path": "autocomplete/",
         "headerAlt": "Portfolio for all header image",
-        "intro": "In need of a new portfolio update, I looked to ",
+        "intro": [
+            "As stock diversifies, taxonomies grow and it gets just that much more difficult to find anything.",
+            "Giving the consumers an alternative means of finding products helps alleviate the pressure of mislabelling menus or categories."
+        ],
         "url": "enriched-autocomplete",
         "id": "2",
         "article" : [

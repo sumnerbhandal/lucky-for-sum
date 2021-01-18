@@ -4,20 +4,30 @@ export const homePageProjects = [
       "url": "portfolio-for-all",
       "id": "0",
       "image": "Portfolio-Thumbnail",
-      "feature": "Portfolio-Feature"
+      "feature": "Portfolio-Feature",
+      "intro": [
+          "Documenting (for once) the process of creating the latest iteration of my website."
+      ]
   },
   {
       "title": "Ligamend - ACL Injury Support Community",
       "url": "ligamend",
       "id": "1",
       "image": "Ligamend-Thumbnail",
-      "feature": "Ligamend-Feature"
+      "feature": "Ligamend-Feature",
+      "intro": [
+          "Building a support community set up to aid the rehabilitation of people who have suffered an anterior cruciate ligament (ACL) injury."
+      ]
   },
   {
-      "title": "Enriched Autocomplete",
+      "title": "Enriched Site Search",
       "url": "enriched-autocomplete",
       "id": "2",
       "image": "Autocomplete-Thumbnail",
-      "feature": "Autocomplete-Feature"
+      "feature": "Autocomplete-Feature",
+      "intro": [
+          "As stock diversifies, taxonomies grow and it gets just that much more difficult to find anything.",
+          "Giving the consumers an alternative means of finding products helps alleviate the pressure of mislabelling menus or categories."
+      ]
   }
 ]

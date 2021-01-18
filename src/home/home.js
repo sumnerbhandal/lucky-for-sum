@@ -46,7 +46,11 @@ const HomePage = (props) => {
                     </h2>
                 </a>
                 {/* <div className="image-right">  <img src={require('./images/' + item.feature + '.png')} alt={item.title}  /></div> */}
-                <div className="image-right"> <p className="intro" tabIndex="0" role="article">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nunc tortor, aliquet vitae convallis vitae, imperdiet ut diam. Vestibulum sit amet nulla vestibulum, fermentum dolor sed, sodales ante. Maecenas a enim pellentesque, interdum elit vulputate, consectetur nibh. Praesent quis dapibus nisi.</p> </div>
+                <div className="image-right">
+                    {item.intro.map((paragraph, index) => (
+                    <p className="intro" tabIndex="0" role="article">{paragraph}</p>
+                    ))}
+                </div>
             </div>
             ))}  
         </div>

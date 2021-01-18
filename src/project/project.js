@@ -61,7 +61,9 @@ export const Project = (props) => {
                 </div>
                 <article className="project-content section" >
                     <section>
-                        <p className="intro" tabIndex="0" role="article">{pdp.intro}</p>
+                        {pdp.intro.map((paragraph, index) => (
+                            <p className="intro" tabIndex="0" role="article">{paragraph}</p>
+                        ))}
                     </section>
                     {pdp.article.map((content, index) => (
                         <section key={index}>
