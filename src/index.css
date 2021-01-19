@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
 }
 
 /* @media (prefers-color-scheme: dark) {
@@ -10,6 +11,7 @@
     background: #eaeaea;
   }
 } */
+
 
 @media screen and (min-width: 960px) {
   html {
