@@ -4,6 +4,7 @@ import "./home.css";
 import heroVideo from './video/hero-video.mp4'
 import { homePageProjects } from '../data-feed/hp-feed';
 import { Bio } from './home--bio';
+import { useInView } from 'react-intersection-observer';
 
 const HomePage = (props) => {
 
@@ -25,19 +26,27 @@ const HomePage = (props) => {
           } return;
     }
 
+    const { ref, inView, entry } = useInView({
+        /* Optional options */
+        threshold: 0.2,
+    });
+    
+    console.log(inView);
+      
+
     
        
     return (
         <div id="homepage" className="homepage">
             <div className="introSection hp-section section">
                 <div className="heroVideo--container"> 
-                    <video playsInline className="heroVideo" controls controlsList="nofullscreen nodownload" src={heroVideo} type="video/mp4" />
+                    <video playsInline className="heroVideo" controls controlsList="nofullscreen nodownload" src={heroVideo} type="video/mp4"  ref={ref} />
                 </div>
                 < Bio />
             </div>
             {homePageProjects.map((item, index) => (
             <div className="project-preview-container hp-section">
-                <a className="project-preview" key={index}>
+                <a className={`project-preview ${inView ? "before" : ""}`} key={index}>
                     <div className="project-preview-thumbnail" id={item.id} title={item.url} onClick={projectImageOpen} onKeyPress={pressEnter} tabindex="0" role="link">
                         <img src={require('./images/' + item.image + '.png')} alt={item.title}  />
                     </div>
@@ -45,8 +54,7 @@ const HomePage = (props) => {
                         {item.title}
                     </h2>
                 </a>
-                {/* <div className="image-right">  <img src={require('./images/' + item.feature + '.png')} alt={item.title}  /></div> */}
-                <div className="image-right">
+                <div className={`image-right ${inView ? "before" : ""}`}>
                     {item.intro.map((paragraph, index) => (
                     <p className="intro" tabIndex="0" role="article">{paragraph}</p>
                     ))}

@@ -13,6 +13,7 @@
     "node-sass": "^5.0.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-intersection-observer": "^8.31.0",
     "react-router-dom": "^6.0.0-beta.0",
     "react-scripts": "^3.4.3",
     "swiper": "^6.4.5"
