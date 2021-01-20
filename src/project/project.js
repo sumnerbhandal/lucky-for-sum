@@ -34,7 +34,7 @@ export const Project = (props) => {
             setLoaderAnimationId(loaderAnimationId + 1)
             const currentProjectURL = homePageProjects[nextProjectIndex].url;
             const currentProjectID = homePageProjects[nextProjectIndex].id;
-            window.history.pushState('page2', 'Title', '/project/' + currentProjectURL + '_pid-' + currentProjectID);
+            // window.history.pushState('page2', 'Title', '/project/' + currentProjectURL + '_pid-' + currentProjectID);
         } return;
      }
     }
@@ -72,10 +72,11 @@ export const Project = (props) => {
                         </h2>
                         {content.subsection.map((subsection, index) => (
                         <div className="col">
+                            {subsection.h3 === undefined ? null :
                             <h3 role="heading" aria-level="3" tabIndex="0">
                                 {subsection.h3}
-    
                             </h3>
+                            }
                                 {subsection.copy.map((copy, index) => (
                                     <p tabIndex="0">{copy}</p>
                                 ))}

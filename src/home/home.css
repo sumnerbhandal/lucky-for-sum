@@ -267,7 +267,7 @@
     }
 }
 
-@media (min-width: 1440px) {
+/* @media (min-width: 1600px) {
     .project-preview-thumbnail {
         width: 24rem;
         height: 24rem;
@@ -275,7 +275,7 @@
     .project-preview h2 {
         font-size: 2rem;
     }
-}
+} */
 
 
 
