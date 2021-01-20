@@ -136,12 +136,36 @@ p.intro {
 }
 
 .next-project-section > div.loading {
-    animation-name: loadingNextProject;
+    /* animation-name: loadingNextProject;
     animation-duration: 3s;
     animation-iteration-count: 1;
     animation-direction: alternate; 
     animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards; */
+    content: "";
+    position: absolute;
+    border-radius: 100%;
+    width: 2rem;
+    height: 2rem;
+    border: 0.25rem solid rgba(255,255,255, 0.05);
+    border-left-color: #FEC155;
+    border-top-color: #FEC155;
+    top: 37%;
+    animation: spin 1.25s linear;
     animation-fill-mode: forwards;
+}
+
+@keyframes spin {
+
+    50% {
+        border-left-color: #FEC155;
+        border-top-color: #FEC155;
+    }
+    100% {
+        transform: rotate(1000deg);
+        border-left-color: #F0EEE9;
+        border-top-color: #F0EEE9;  
+    } 
 }
 
 .next-project-intro h4 {

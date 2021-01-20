@@ -48,6 +48,7 @@ h3, h4, h5, h6 {
     font-family: Palanquin, Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 500;
     width: fit-content;
+    color: #222222;
 }
 
 p {
@@ -58,6 +59,7 @@ p {
     letter-spacing: 0.12px;
     margin-block-start: 0.5rem;
     margin-block-end: 1rem;
+    color: #333333;
 }
 
 p.intro {

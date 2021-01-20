@@ -6,7 +6,7 @@ export const homePageProjects = [
       "image": "Portfolio-Thumbnail",
       "feature": "Portfolio-Feature",
       "intro": [
-          "Documenting (for once) the process of creating the latest iteration of my website."
+          "The consequence of being a designer is that you're only ever as good as your latest portfolio."
       ]
   },
   {

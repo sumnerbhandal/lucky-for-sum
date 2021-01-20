@@ -211,6 +211,7 @@
 
     .image-right p { 
         transition: transform 1s ease;
+        min-width: 70%;
     }
 
     .image-right.before p {
@@ -257,7 +258,7 @@
     }
 }
 
-@media (min-width: 1280px) {
+/* @media (min-width: 1280px) {
     .project-preview-thumbnail {
         width: 20rem;
         height: 20rem;
@@ -265,9 +266,9 @@
     .project-preview h2 {
         font-size: 1.75rem;
     }
-}
+} */
 
-/* @media (min-width: 1600px) {
+@media (min-width: 1800px) {
     .project-preview-thumbnail {
         width: 24rem;
         height: 24rem;
@@ -275,7 +276,7 @@
     .project-preview h2 {
         font-size: 2rem;
     }
-} */
+}
 
 
 
