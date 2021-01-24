@@ -208,6 +208,10 @@
         box-shadow: -12rem 0px 0px 0px #FEC155;
     }
 
+    .project-preview-container:nth-child(odd) .image-right.before {
+        box-shadow: -12rem 0px 0px 0px white;
+    }
+
 
     .image-right p { 
         transition: transform 1s ease;
