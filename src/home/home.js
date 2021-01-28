@@ -42,6 +42,8 @@ const HomePage = (props) => {
                 <div className="heroVideo--container"> 
                     <video playsInline className="heroVideo" controls controlsList="nofullscreen nodownload" src={heroVideo} type="video/mp4"  ref={ref} />
                 </div>
+            </div>
+            <div className="bioSection hp-section section">
                 < Bio />
             </div>
             {homePageProjects.map((item, index) => (

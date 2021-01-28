@@ -35,6 +35,10 @@
     width: 100%;
     position: absolute;
     top: 5rem;
+    background: linear-gradient(135deg, #F0EEE9 62%, transparent 38%), radial-gradient(#dedace 4px, transparent 4px), radial-gradient(#dedace 4px, transparent 4px), transparent;
+    background-size: 100%, 24px 24px, 24px 24px, 100%;
+    background-position: 0 0, -2px 6px, 10px 18px, 0 0;
+    background-color: #F0EEE9;
 }
 
 @media (pointer: fine) {
@@ -52,6 +56,7 @@
 @media (min-width: 768px) {
     .heroVideo--container {
         margin-top: 2.5rem;
+        width: calc(90% - 1.25rem);
     }
     .aboutIntro {
         margin-top: 0.75rem;
@@ -63,14 +68,15 @@
         display: flex;
         flex-wrap: wrap;
         padding-bottom: 2rem;
+        justify-content: center;
         /* min-height: 768px; */
+    }
+
+    .bioSection {
+        justify-content: flex-start;
     }
     .aboutIntro  {
         width: calc(40%);
-    }
-
-    .heroVideo--container  {
-        width: calc(60% - 1.25rem);
     }
     .aboutIntro {
         margin-top: 3rem;
@@ -82,11 +88,6 @@
         position: relative;
       }
 
-      .introSection {
-        flex-direction: row-reverse;
-        flex-wrap: nowrap;
-        justify-content: space-between;
-    }
 }
 
 /* Project Previews */
@@ -97,7 +98,7 @@
     align-items: center;
 }
 
-.homepage .project-preview-container:nth-child(even) {
+.homepage .project-preview-container:nth-child(odd) {
     background: white;
 }
 
@@ -199,16 +200,16 @@
         /* transform: translateX(-7.5rem); */
     } 
 
-    .project-preview-container:nth-child(even) .image-right {
+    .project-preview-container:nth-child(odd) .image-right {
         background: #FEC155;
         box-shadow: 0 0px 0px 0px #FEC155;
     }
 
-    .project-preview-container:nth-child(even) .image-right.before {
+    .project-preview-container:nth-child(odd) .image-right.before {
         box-shadow: -12rem 0px 0px 0px #FEC155;
     }
 
-    .project-preview-container:nth-child(odd) .image-right.before {
+    .project-preview-container:nth-child(even) .image-right.before {
         box-shadow: -12rem 0px 0px 0px white;
     }
 
