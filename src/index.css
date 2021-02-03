@@ -25,6 +25,12 @@
   }
 }
 
+@media (prefers-reduced-motion) {
+  * {
+    transition: 0s !important;
+  }
+}
+
 
 @media screen and (min-width: 960px) {
   html {
@@ -50,7 +56,7 @@ body, * {
 /* The default outline styling, for greatest accessibility. */
 /* You can skip this to just use the browser's defaults. */
 :focus {
-  box-shadow: 0 0 0 2px var(--deep-purple), 0 0 0 4px var(--deep-purple), 0 0 0 6px var(--happy-mustard);
+  box-shadow: 0 0 0 2px var(--deep-purple), 0 0 0 4px var(--happy-mustard), 0 0 0 6px var(--deep-purple);
   border-radius: 2px;
   outline: 0;
 }
