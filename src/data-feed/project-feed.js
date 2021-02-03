@@ -54,7 +54,7 @@ export const homePageProjects = [
                     ]
                 },
                 {
-                    "h3": "Making it feel like an app",
+                    "h3": "Speed, Glorious Speed",
                     "copy": [
                         "Two of my favourite things about native mobile apps are the perception of speed, 'everything's faster on the app' and the intricate animations, 'it feels appy'.",
                         "Part of recapturing that magic is through optimisation, that's where the speed comes in and improving the feedback the user receives when interacting with the site. When they go to click on something, what do they expect will happen?"

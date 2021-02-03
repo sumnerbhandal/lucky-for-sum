@@ -22,12 +22,12 @@
 }
 
 .section.banner-title h1 {
-  color: #15171d;
+  color: var(--deep-purple);
   animation: bannerLoadUp 1s forwards;
-  box-shadow: 12px 12px 0px 0px #15171d;
+  box-shadow: 12px 12px 0px 0px var(--deep-purple);
   padding: 0.25rem 1.5rem;
   max-width: 20rem;
-  background: white;
+  background: var(--white);
   margin: 0 auto;
   display: block;
 }
