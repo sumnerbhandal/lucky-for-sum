@@ -47,6 +47,11 @@ export const Project = (props) => {
         window.removeEventListener("scroll", logit);
       };
     });
+
+    document.title = projectsShown[0].title + "| Lucky For Sum" ;
+
+
+
   
 
     return (

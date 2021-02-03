@@ -31,7 +31,7 @@ const HomePage = (props) => {
         threshold: 0.2,
     });
     
-    console.log(inView);
+    document.title = "Lucky For Sum | UX/UI Design | Sumner Bhandal" ;
       
 
     
