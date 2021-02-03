@@ -1,24 +1,20 @@
-import { useNavigate } from "react-router-dom/index";
-import React, {useState, useEffect} from "react";
+import React from "react";
 import "./home.css";
 import heroVideo from './video/hero-video.mp4'
 import { homePageProjects } from '../data-feed/hp-feed';
 import { Bio } from './home--bio';
 import { useInView } from 'react-intersection-observer';
+import { Link } from "react-router-dom/index";
 
 const HomePage = (props) => {
 
-    let navigate = useNavigate();
     function projectImageOpen(e) {
         const project = e.target;
         const currentProjectPosition = project.getBoundingClientRect();
         project.style.background = "#FEC155";
         project.parentNode.style.transform = "scale(0.92)";
         props.PreviewPosition(currentProjectPosition);
-        setTimeout(function(){ 
-            navigate(`/project/${project.title}_pid-${project.id}`);
-            window.scrollTo(0, 0);
-        }, 500);
+        window.scrollTo(0, 0);
     }
     function pressEnter(e) {
         if(e.key === 'Enter'){
@@ -48,14 +44,14 @@ const HomePage = (props) => {
             </div>
             {homePageProjects.map((item, index) => (
             <div className="project-preview-container hp-section">
-                <a className={`project-preview ${inView ? "before" : ""}`} key={index}>
+                <Link to={`/project/${item.url}_pid-${item.id}`} className={`project-preview ${inView ? "before" : ""}`} key={index}>
                     <div className="project-preview-thumbnail" id={item.id} title={item.url} onClick={projectImageOpen} onKeyPress={pressEnter} tabindex="0" role="link">
                         <img src={require('./images/' + item.image + '.png')} alt={item.title}  />
                     </div>
                     <h2>
                         {item.title}
                     </h2>
-                </a>
+                </Link>
                 <div className={`image-right ${inView ? "before" : ""}`}>
                     {item.intro.map((paragraph, index) => (
                     <p className="intro" tabIndex="0" role="article">{paragraph}</p>
