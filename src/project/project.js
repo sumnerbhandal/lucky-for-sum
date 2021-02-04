@@ -32,9 +32,6 @@ export const Project = (props) => {
             loaderBlob.classList.add("loading");
             projectsShown.push(homePageProjects[nextProjectIndex]);
             setLoaderAnimationId(loaderAnimationId + 1)
-            const currentProjectURL = homePageProjects[nextProjectIndex].url;
-            const currentProjectID = homePageProjects[nextProjectIndex].id;
-            // window.history.pushState('page2', 'Title', '/project/' + currentProjectURL + '_pid-' + currentProjectID);
         } return;
      }
     }
@@ -49,10 +46,6 @@ export const Project = (props) => {
     });
 
     document.title = projectsShown[0].title + "| Lucky For Sum" ;
-
-
-
-  
 
     return (
         <div>

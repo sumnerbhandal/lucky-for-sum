@@ -43,8 +43,8 @@ const HomePage = (props) => {
                 < Bio />
             </div>
             {homePageProjects.map((item, index) => (
-            <div className="project-preview-container hp-section">
-                <Link to={`/project/${item.url}_pid-${item.id}`} className={`project-preview ${inView ? "before" : ""}`} key={index}>
+            <div className="project-preview-container hp-section" key={index}>
+                <Link to={`/project/${item.url}_pid-${item.id}`} className={`project-preview ${inView ? "before" : ""}`}>
                     <div className="project-preview-thumbnail" id={item.id} title={item.url} onClick={projectImageOpen} onKeyPress={pressEnter} tabindex="0" role="link">
                         <img src={require('./images/' + item.image + '.png')} alt={item.title}  />
                     </div>
