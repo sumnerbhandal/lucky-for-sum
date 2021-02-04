@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import "./home.css";
 import heroVideo from './video/hero-video.mp4'
 import { homePageProjects } from '../data-feed/hp-feed';
@@ -18,8 +18,21 @@ const HomePage = (props) => {
     }
     function pressEnter(e) {
         if(e.key === 'Enter'){
-            projectImageOpen(e)
+            videoButton(e)
           } return;
+    }
+
+      const [videoPlaying, setVideoPlaying] = useState(false);
+
+    function videoButton(e) {
+        const video = document.getElementById("hero-video");
+        if (videoPlaying) {
+        setVideoPlaying(false);
+        video.pause();
+        } else {
+        setVideoPlaying(true);
+        video.play(); 
+        }
     }
 
     const { ref, inView, entry } = useInView({
@@ -36,7 +49,20 @@ const HomePage = (props) => {
         <div id="homepage" className="homepage">
             <div className="introSection hp-section section">
                 <div className="heroVideo--container"> 
-                    <video playsInline className="heroVideo" controls controlsList="nofullscreen nodownload" src={heroVideo} type="video/mp4"  ref={ref} />
+                <video playsInline className="heroVideo" src={heroVideo} type="video/mp4" id="hero-video"  ref={ref} onClick={videoButton} onKeyPress={pressEnter} tabIndex="0" aria-label="Lucky for Sum promo video"  />
+                {videoPlaying ? (
+                    ""
+                ) : (
+                    <img role="button"
+                    aria-label="Play Lucky for Sum promo video"
+                    className="play-button"
+                    src="https://i.ibb.co/hC6jqY7/01-atom-icon-utility-button-play-3x.png"
+                    tabIndex="0"
+                    onClick={videoButton}
+                    onKeyPress={pressEnter}
+                    />
+                )}
+                    
                 </div>
             </div>
             <div className="bioSection hp-section section">
@@ -44,17 +70,17 @@ const HomePage = (props) => {
             </div>
             {homePageProjects.map((item, index) => (
             <div className="project-preview-container hp-section" key={index}>
-                <Link to={`/project/${item.url}_pid-${item.id}`} className={`project-preview ${inView ? "before" : ""}`}>
-                    <div className="project-preview-thumbnail" id={item.id} title={item.url} onClick={projectImageOpen} onKeyPress={pressEnter} tabindex="0" role="link">
+                <div className={`project-preview ${inView ? "before" : ""}`}>
+                    <Link to={`/project/${item.url}_pid-${item.id}`} className="project-preview-thumbnail" id={item.id} title={item.url} onClick={projectImageOpen}  tabindex="0">
                         <img src={require('./images/' + item.image + '.png')} alt={item.title}  />
-                    </div>
+                    </Link>
                     <h2>
                         {item.title}
                     </h2>
-                </Link>
+                </div>
                 <div className={`image-right ${inView ? "before" : ""}`}>
                     {item.intro.map((paragraph, index) => (
-                    <p className="intro" tabIndex="0" role="article">{paragraph}</p>
+                <p className="intro" tabIndex="0">{paragraph}</p>
                     ))}
                 </div>
             </div>

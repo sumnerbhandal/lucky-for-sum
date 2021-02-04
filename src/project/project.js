@@ -60,18 +60,18 @@ export const Project = (props) => {
                 <article className="project-content section" >
                     <section>
                         {pdp.intro.map((paragraph, index) => (
-                            <p className="intro" tabIndex="0" role="article">{paragraph}</p>
+                            <p className="intro" tabIndex="0">{paragraph}</p>
                         ))}
                     </section>
                     {pdp.article.map((content, index) => (
                         <section key={index}>
-                            <h2 role="heading" aria-level="2" tabIndex="0">
+                            <h2 aria-level="2" tabIndex="0">
                             {content.h2}
                         </h2>
                         {content.subsection.map((subsection, index) => (
                         <div className="col">
                             {subsection.h3 === undefined ? null :
-                            <h3 role="heading" aria-level="3" tabIndex="0">
+                            <h3 aria-level="3" tabIndex="0">
                                 {subsection.h3}
                             </h3>
                             }
