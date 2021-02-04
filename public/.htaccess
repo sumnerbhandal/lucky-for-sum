@@ -1,6 +1,6 @@
+RequestHeader set X-Prerender-Token "eIJKjOZwplJlT7eRuzme"
+
 Options -MultiViews
 RewriteEngine On
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^ index.html [QSA,L]
-
-RequestHeader set X-Prerender-Token "eIJKjOZwplJlT7eRuzme"
