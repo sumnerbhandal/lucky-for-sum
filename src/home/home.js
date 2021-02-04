@@ -33,6 +33,9 @@ const HomePage = (props) => {
         setVideoPlaying(true);
         video.play(); 
         }
+        video.onended = function() {
+        setVideoPlaying(false);
+        };
     }
 
     const { ref, inView, entry } = useInView({
@@ -64,10 +67,9 @@ const HomePage = (props) => {
                 )}
                     
                 </div>
-            </div>
-            <div className="bioSection hp-section section">
                 < Bio />
             </div>
+
             {homePageProjects.map((item, index) => (
             <div className="project-preview-container hp-section" key={index}>
                 <div className={`project-preview ${inView ? "before" : ""}`}>

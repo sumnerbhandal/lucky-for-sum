@@ -1,6 +1,7 @@
 * {
   box-sizing: border-box;
   -webkit-tap-highlight-color: transparent;
+  transition: 0.3s ease;
 }
 
 :root {
@@ -24,6 +25,7 @@
     --happy-mustard-text: #1F1E20;
   }
 }
+
 
 @media (prefers-reduced-motion) {
   * {

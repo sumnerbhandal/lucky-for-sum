@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom/index";
 import React, { useState } from "react";
-import "./navigation.css"
+import {ThemeToggle} from "./components/dark-light-toggle";
+import "./navigation.css";
 
 const NavDefault = () => {
     const [isShown, setIsShown] = useState(false);
@@ -9,17 +10,21 @@ const NavDefault = () => {
     }
     return (
         <nav role="navigation">
-        <div className={`masthead ${!isShown ? "" : "hovered"}`}>
-            <Link
-            // className={isScrolled}
-            onMouseEnter={() => setIsShown(true)}
-            onMouseLeave={() => setIsShown(false)}
-            onClick={backToTop} 
-            to="/">
-                <img src={require('./icons/lucky-for-sum-logo.svg')} alt="Home"/>
-            </Link>
-            {/* <p className="site-name">Lucky For Sum</p> */}
-        </div>
+            <div className={`masthead ${!isShown ? "" : "hovered"}`}>
+                <div className="section">
+                    <ThemeToggle />
+                    <Link
+                    // className={isScrolled}
+                    onMouseEnter={() => setIsShown(true)}
+                    onMouseLeave={() => setIsShown(false)}
+                    onClick={backToTop} 
+                    to="/">
+                        <img src={require('./icons/lucky-for-sum-logo.svg')} alt="Home"/>
+                    </Link>
+                    <p>Navigation</p>
+                    {/* <p className="site-name">Lucky For Sum</p> */}
+                </div>
+            </div>
         </nav>
     )
 }

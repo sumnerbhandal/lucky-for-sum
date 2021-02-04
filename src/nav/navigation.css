@@ -9,13 +9,21 @@ nav {
 
 .masthead {
     display: flex;
-    justify-content: center;
+
     font-size: 1.5rem;
-    padding: 0.75rem;
     font-weight: bold;
     border-bottom: 1px solid var(--deep-purple);
     background: var(--white);
-    transition: all 0.3s ease;
+    /* transition: all 0.3s ease; */
+
+}
+
+.masthead > .section {
+    display: flex;
+    width: 100%;
+    height: 4.5rem;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .masthead.hovered {
@@ -114,5 +122,43 @@ ul.lower-navigation a:hover {
         transform:  translateY(0px));
     }
   }
+
+.light-dark-switcher {
+    display: flex;
+    width: 5rem;
+    align-items: center;
+}
+
+.light-dark-switcher label {
+    padding: 0 0.5rem;
+}
+.toggle-switch {
+    background: red;
+    width: 3.5rem;
+    height: 2rem;
+    border-radius: 2rem;
+    display: flex;
+    flex-shrink: 0;
+    background: var(--white);
+    border: 2px solid var(--deep-purple);
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+    justify-content: flex-start;
+    padding: 0 0.125rem;
+    align-items: center;
+    cursor: pointer;
+}
+
+.toggle-switch div.indicator {
+    height: 1.5rem;
+    width: 1.5rem;
+    border-radius: 50%;
+    background: var(--deep-purple);
+    transition: all 0.3s ease;
+}
+.toggle-switch.dark div.indicator {
+    transform: translateX(1.5rem);
+    /* background: var(--white); */
+}
 
 
