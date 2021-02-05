@@ -5,8 +5,13 @@ import "./navigation.css";
 
 const NavDefault = () => {
     const [isShown, setIsShown] = useState(false);
-    function backToTop() {
-        window.scrollTo(0, 0)
+
+    function scrollSectionIntoView(e) {
+        console.log(e.target.id);
+        const id = e.target.id;
+        const scrollId = id.replace("link_", "");
+        const elmnt = document.getElementById(scrollId);
+        elmnt.scrollIntoView();
     }
     return (
         <nav role="navigation">
@@ -14,15 +19,25 @@ const NavDefault = () => {
                 <div className="section">
                     <ThemeToggle />
                     <Link
-                    // className={isScrolled}
                     onMouseEnter={() => setIsShown(true)}
                     onMouseLeave={() => setIsShown(false)}
-                    onClick={backToTop} 
+                    id="link_homepage"
+                    onClick={scrollSectionIntoView}
+                    className="logo-image"
                     to="/">
                         <img src={require('./icons/lucky-for-sum-logo.svg')} alt="Home"/>
                     </Link>
-                    <p>Navigation</p>
-                    {/* <p className="site-name">Lucky For Sum</p> */}
+                    <ul className="header-side-container">
+                        <li>
+                            <Link to='/#project-container' id="link_project-container" onClick={scrollSectionIntoView}>Projects</Link>
+                        </li>
+                        <li>
+                        <Link to='/#design-snippets' id="link_project-container" onClick={scrollSectionIntoView}>Design Snippets</Link>
+                        </li>
+                        <li>
+                            <Link to="#">Contact</Link>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </nav>

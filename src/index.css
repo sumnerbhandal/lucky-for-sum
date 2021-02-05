@@ -10,7 +10,7 @@
   --off-white: #F0EEE9;
   --white: #fff;
   --subtext: #333;
-  --dots-grey: #E0E0E0;
+  --dots-grey: rgba(0, 0, 0, 0.03);
   --happy-mustard-text: #1F1E20;
   transition: all 0.3s ease;
 }
@@ -22,7 +22,7 @@
     --off-white: #000;
     --white: #1F1E20;
     --subtext: #eaeaea;
-    --dots-grey: #0D0D0D;
+    --dots-grey: rgba(255, 255, 255, 0.05);
     --happy-mustard-text: #1F1E20;
   }
 }
@@ -129,6 +129,7 @@ main {
   background: linear-gradient(135deg, var(--happy-mustard) 62%, transparent 38%), radial-gradient(var(--off-white) 4px, transparent 4px), radial-gradient(var(--off-white) 4px, transparent 4px), transparent;
   background-size: 100%, 24px 24px, 24px 24px, 100%;
   background-position: 0 0, -2px 6px, 10px 18px, 0 0;
+  transition: all 0.3s ease;
 }
 
 .bg-stripes {

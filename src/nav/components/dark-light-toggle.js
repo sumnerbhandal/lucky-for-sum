@@ -15,13 +15,13 @@ export const ThemeToggle = (props) => {
             document.documentElement.style.setProperty('--off-white', '#000');
             document.documentElement.style.setProperty('--white', '#1F1E20');
             document.documentElement.style.setProperty('--subtext', '#eaeaea');
-            document.documentElement.style.setProperty('--dots-grey', '#0D0D0D');
+            document.documentElement.style.setProperty('--dots-grey', 'rgba(255, 255, 255, 0.05)');
         } else {
             document.documentElement.style.setProperty('--deep-purple', '#1F1E20');
             document.documentElement.style.setProperty('--off-white', '#F0EEE9');
             document.documentElement.style.setProperty('--white', '#FFF');
             document.documentElement.style.setProperty('--subtext', '#333');
-            document.documentElement.style.setProperty('--dots-grey', '#E0E0E0');
+            document.documentElement.style.setProperty('--dots-grey', 'rgba(0, 0, 0, 0.03)');
         }
     }
 
@@ -45,9 +45,9 @@ export const ThemeToggle = (props) => {
     detectTheme();
 
     return (
-        <div >
+        <div className="header-side-container">
             <div className="light-dark-switcher">
-                <button className={isToggled ? "toggle-switch dark" : "toggle-switch"} onClick={toggleTrueFalse}>
+                <button className={isToggled ? "toggle-switch dark" : "toggle-switch"} onClick={toggleTrueFalse} aria-label={isToggled ? "Switch to light mode" : "Switch to dark mode"}>
                     <div className="indicator"></div>
                 </button>
             </div>

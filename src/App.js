@@ -1,15 +1,16 @@
-import "./reset.css";
-import "./index.css";
-import "./fonts/fonts.css";
 import React, {useState} from "react";
 import ProductPage from './pdp/pdp';
 import {Project} from './project/project';
 import Plp from './plp/plp';
 import ContactForm from './contact/contact';
 import NavDefault from './nav/navigation';
-import HomePage from './home/home'
+import HomePage from './home/home';
+import { Footer } from './footer/footer';
 import { MarketingBanner, MarketingBannerTwo } from './banners/marketing-banner';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom/index";
+import "./reset.css";
+import "./index.css";
+import "./fonts/fonts.css";
 
 
 export default function App() {
@@ -33,24 +34,25 @@ export default function App() {
   return (
    <Router>
     <main>
-      <NavDefault onChange={() => alert('test')} />
+      <NavDefault />
       <Routes>
         <Route path="/" element={ 
+            <div>
             <HomePage PreviewPosition={(value) => setProjectPreviewPosition(value)}/>
+            {/* <Footer /> */}
+            </div>
         }/>
         <Route path="/project/*" element={
-        
-        <div>
-        <Project position={projectPreviewPosition} />
-        </div>
-    
+          <div>
+            <Project position={projectPreviewPosition} />
+            <Footer />
+          </div>
         }/>
         <Route path="/services" element={<Services />}/>
         <Route path="/pdp/*" element={<ProductPage />} />
         <Route path="/contact" element={<ContactForm/>} />
         <Route path="*" element={<NotFound />} />
       </Routes>
-      {/* <Footer /> */}
     </main>
   </Router>
   );
@@ -75,17 +77,5 @@ function Services() {
     </div>
   )
 }
-
-const Footer = () => {
-  const date = new Date().getFullYear();
-  return (
-    <div className="footer">
-      <div className="section">
-      © {date} Lucky For Sum
-      </div>
-    </div>
-  )
-}
-
 
 
