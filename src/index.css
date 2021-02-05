@@ -12,6 +12,7 @@
   --subtext: #333;
   --dots-grey: #E0E0E0;
   --happy-mustard-text: #1F1E20;
+  transition: all 0.3s ease;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -91,7 +92,7 @@ code {
 
 main {
   overflow: hidden;
-  margin-top: 5rem;
+  margin-top: 4.5rem;
 }
 
 .section {

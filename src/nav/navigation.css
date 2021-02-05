@@ -133,7 +133,6 @@ ul.lower-navigation a:hover {
     padding: 0 0.5rem;
 }
 .toggle-switch {
-    background: red;
     width: 3.5rem;
     height: 2rem;
     border-radius: 2rem;
@@ -142,23 +141,41 @@ ul.lower-navigation a:hover {
     background: var(--white);
     border: 2px solid var(--deep-purple);
     box-sizing: border-box;
-    transition: all 0.3s ease;
     justify-content: flex-start;
     padding: 0 0.125rem;
     align-items: center;
     cursor: pointer;
+    transition: all 0.3s ease;
 }
-
 .toggle-switch div.indicator {
     height: 1.5rem;
     width: 1.5rem;
     border-radius: 50%;
     background: var(--deep-purple);
     transition: all 0.3s ease;
+    position: relative;
+}
+.toggle-switch div.indicator:after {
+    content: "";
+    height: 1.5rem;
+    width: 1.5rem;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: var(--deep-purple);
+    transition: all 0.3s ease;
 }
 .toggle-switch.dark div.indicator {
     transform: translateX(1.5rem);
-    /* background: var(--white); */
+}
+
+.toggle-switch.dark div.indicator:after {
+    height: 1.0625rem;
+    width: 1.0625rem;
+    border-radius: 0;
+    border-bottom-right-radius: 0.75rem;
+    background: var(--white);
 }
 
 

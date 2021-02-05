@@ -2,10 +2,15 @@ import React, {useState} from "react";
 
 export const ThemeToggle = (props) => {
     const [isToggled, setToggled] = useState(false);
-    const toggleTrueFalse = () => setToggled(!isToggled);
+
+    function toggleTrueFalse() {
+        setToggled(!isToggled);
+        siteTheme();
+        console.log(isToggled);
+    }
 
     function siteTheme() {
-        if (isToggled) {
+        if (!isToggled) {
             document.documentElement.style.setProperty('--deep-purple', '#FFF');
             document.documentElement.style.setProperty('--off-white', '#000');
             document.documentElement.style.setProperty('--white', '#1F1E20');
@@ -20,16 +25,31 @@ export const ThemeToggle = (props) => {
         }
     }
 
-    siteTheme();
+    const [runOnce, setRunOnce] = useState(false);
+    
+    function detectTheme() {
+        if (!runOnce && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            setToggled(true);
+            setRunOnce(true);
+        } else if (!runOnce && window.matchMedia('(prefers-color-scheme: light)').matches) {
+            setToggled(false);
+            setRunOnce(true);
+        } else return;
+    }
+
+    window.matchMedia('(prefers-color-scheme: dark)', '(prefers-color-scheme: light)').addEventListener('change', e => {
+        setRunOnce(false);
+        detectTheme()
+    });
+
+    detectTheme();
 
     return (
         <div >
             <div className="light-dark-switcher">
-                {/* <label>Light</label> */}
                 <button className={isToggled ? "toggle-switch dark" : "toggle-switch"} onClick={toggleTrueFalse}>
                     <div className="indicator"></div>
                 </button>
-                {/* <label>Dark</label> */}
             </div>
             
         </div>
