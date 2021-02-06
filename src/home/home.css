@@ -318,8 +318,8 @@ img.play-button {
     background: white;
 }
 
-.design-snippets .project-summaries:hover img {
-    transform: scale(0.9);
+.design-snippets .project-summaries:hover img, .design-snippets .project-summaries:hover video  {
+    transform: scale(1.25);
     border-radius: 0.25rem;
 }
 
