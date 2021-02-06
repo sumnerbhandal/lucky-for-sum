@@ -51,6 +51,7 @@ img.play-button {
     background-position: 0 0, -2px 6px, 10px 18px, 0 0;
     transition: all 0.3s ease;
     background-color: var(--off-white);
+    overflow-x: hidden;
 }
 
 @media (pointer: fine) {
@@ -121,7 +122,6 @@ img.play-button {
     z-index: 1;
     top: 0;
     align-items: center;
-    padding-top: 3rem;
     text-decoration: none;
 }
 
@@ -277,6 +277,8 @@ img.play-button {
     flex-wrap: wrap;
     justify-content: space-between;
     width: 100%;
+    height: auto;
+    padding-bottom: 4rem;
 }
 
 .design-snippets h3 {
@@ -289,11 +291,12 @@ img.play-button {
 .design-snippets .project-summaries {
     display: flex;
     width: 100%;
-    margin-bottom: 2rem;
+    /* margin-bottom: 2rem; */
     overflow: hidden;
-    border-radius: 0.5rem;
+    /* border-radius: 0.5rem; */
     flex-wrap: wrap;
     background: var(--white);
+    transition: transform 0.5s ease;
 }
 
 .design-snippets .project-summaries .image-container {
@@ -302,31 +305,36 @@ img.play-button {
     width: 100%;
 }
 
-.design-snippets .project-summaries .image-container img {
+.design-snippets .project-summaries .image-container img, .design-snippets .project-summaries .image-container video {
     width: 100%;
     position: absolute;
     top: 0;
+    height: 100%;
+    object-fit: cover;
+}
+
+.design-snippets .project-summaries .image-container video {
+    object-fit: contain;
+    background: white;
+}
+
+.design-snippets .project-summaries:hover img {
+    transform: scale(0.9);
+    border-radius: 0.25rem;
 }
 
 .design-snippets .project-summaries h4 { 
     padding: 0.75rem 1rem;
 }
 
+
+
 @media (min-width: 768px) {
     .design-snippets .project-summaries {
-        width: calc(50% - 1rem);
+        width: 25%;
     }
-}
-
-@media (min-width: 1024px) {
-    .design-snippets .project-summaries {
-        width: calc(33.33% - 1.33rem);
-    }
-}
-
-@media (min-width: 1280px) {
-    .design-snippets .project-summaries {
-        width: calc(25% - 1.5rem);
+    .design-snippets .project-summaries:nth-child(2), .design-snippets .project-summaries:nth-child(6), .design-snippets .project-summaries:nth-child(10) {
+        width: 50%;
     }
 }
 

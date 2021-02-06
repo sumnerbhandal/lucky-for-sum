@@ -5,7 +5,12 @@ import { useInView } from 'react-intersection-observer';
 import { Link } from "react-router-dom/index";
 import { HeroVideo } from "./components/hero--video";
 import { DesignSnippets } from "./components/design--snippets";
+import { Footer } from "../footer/footer";
 import "./home.css";
+
+const footerStyle = {
+    height: "auto"
+}
 
 const HomePage = (props) => {
     function projectImageOpen(e) {
@@ -65,6 +70,9 @@ const HomePage = (props) => {
                 </div>
             ))}
             <DesignSnippets />
+            <div style={footerStyle} className="hp-section">
+                <Footer />
+            </div>
         </div>
     );
 }
