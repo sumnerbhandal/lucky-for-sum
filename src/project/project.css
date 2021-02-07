@@ -73,11 +73,20 @@
     animation: projectContentLoadIn 0.5s forwards;
     animation-delay: 0.8s;
     max-width: 1280px;
+    width: 100%;
 }
 
 .project-content section {
     padding-bottom: 1.5rem;
     border-bottom: 2px dashed var(--off-white);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+.project-content section .subsection .col:nth-child(1n) > div:nth-child(1) h3  {
+    margin-top: 1rem;
 }
 
 p.intro {
@@ -99,6 +108,33 @@ p.intro {
     font-size: 1.125rem;
 }
 
+.project-content .responsibilities {
+    background: var(--deep-purple);
+    padding: 1.75rem 2rem;
+    margin-top: 1rem;
+}
+
+.project-content .responsibilities h3 {
+    margin-top: 0;
+    color: var(--white);
+}
+
+.project-content .responsibilities ul {
+    list-style-type: circle;
+    margin-inline-start: 1.5rem;
+    margin-block-start: 0.5rem;
+}
+
+.project-content .responsibilities ul li {
+    font-size: 1rem;
+    margin-block-start: 0.25rem;
+    color: var(--white);
+}
+
+.project-content .heading-container {
+    width: 100%;
+}
+
 .project-content h2 {
     position: relative;
     font-weight: 300;
@@ -112,6 +148,45 @@ p.intro {
 .project-content .col p:first-of-type {
     margin-top: 0.75rem;
 }
+
+.project-content .featured-image-container {
+    width: 100vw;
+    height: 20rem;
+    overflow: hidden;
+    margin-top: 3rem;
+    margin-left: -2rem;
+    margin-right: -2rem;
+}
+
+.project-content .featured-image-container img {
+    width: 100%;
+    position: relative;
+    /* top: -75%; */
+}
+
+.project-content .subsection {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.project-content .subsection .col img {
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .project-content .featured-image-container {
+        width: 100%;
+        margin: 0;
+    }
+    .project-content .featured-image-container img {
+        top: -40%;
+    }
+    .project-content .subsection .col img {
+        margin-top: 1.25rem;
+    }
+}
+
 
 
 

@@ -63,23 +63,81 @@ export const Project = (props) => {
                             <p className="intro" tabIndex="0">{paragraph}</p>
                         ))}
                     </section>
-                    {pdp.article.map((content, index) => (
+                    {pdp.background.map((content, index) => (
                         <section key={index}>
+                            <div className="heading-container">
                             <h2 aria-level="2" tabIndex="0">
-                            {content.h2}
-                        </h2>
-                        {content.subsection.map((subsection, index) => (
-                        <div className="col">
-                            {subsection.h3 === undefined ? null :
-                            <h3 aria-level="3" tabIndex="0">
-                                {subsection.h3}
-                            </h3>
-                            }
-                                {subsection.copy.map((copy, index) => (
-                                    <p tabIndex="0">{copy}</p>
+                                {content.h2}
+                            </h2>
+                            </div>
+                            <div className="col">
+                                {content.subsection.map((subsection, index) => (
+                                    <div className="">
+                                        {subsection.h3 === undefined ? null :
+                                        <h3 aria-level="3" tabIndex="0">
+                                            {subsection.h3}
+                                        </h3>
+                                        }
+                                        {subsection.copy.map((copy, index) => (
+                                            <p tabIndex="0">{copy}</p>
+                                        ))}
+                                    </div>
                                 ))}
                             </div>
-                        ))}
+                            <div className="col">
+                                {content.responsibilities.map((subsection, index) => (
+                                    <div className="responsibilities">
+                                        {subsection.h3 === undefined ? null :
+                                        <h3 aria-level="3" tabIndex="0">
+                                            {subsection.h3}
+                                        </h3>
+                                        }
+                                        <ul>
+                                            {subsection.skills.map((skills, index) => (
+                                                <li tabIndex="0">{skills}</li>
+                                            ))}
+                                        </ul>
+                                    </div>
+                                ))}
+                            </div>
+                            {content.featuredImage === undefined ? null :
+                                <div className="featured-image-container">
+                                    <img src={require('./images/' + pdp.path + content.featuredImage)} alt={"hellow"} loading="lazy"   />
+                                </div>
+                            }
+                        </section>
+                    ))}
+                    {pdp.article.map((content, index) => (
+                        <section key={index}>
+                            <div className="heading-container">
+                            <h2 aria-level="2" tabIndex="0">
+                                {content.h2}
+                            </h2>
+                            </div>
+ 
+                                {content.subsection.map((subsection, index) => (
+                                <div className="subsection">
+                                    <div className="col">
+                                        <div className="">
+                                            {subsection.h3 === undefined ? null :
+                                            <h3 aria-level="3" tabIndex="0">
+                                                {subsection.h3}
+                                            </h3>
+                                            }
+                                            {subsection.copy.map((copy, index) => (
+                                                <p tabIndex="0">{copy}</p>
+                                            ))}
+                                        </div>
+                                    </div>
+                                    <div className="col">
+                                        {subsection.subsectionImage === undefined ? null :
+                                            <img src={require('./images/' + pdp.path + subsection.subsectionImage.image)} alt={subsection.subsectionImage.alt} loading="lazy"  />
+                                        }
+                                    </div>
+                                </div>
+                                ))}
+
+            
                         </section>
                     ))}
                 </article>
