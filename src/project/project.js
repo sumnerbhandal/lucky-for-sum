@@ -4,7 +4,7 @@ import './project.css'
 import { homePageProjects } from '../data-feed/project-feed';
 
 export const Project = (props) => {
-
+    const target = React.createRef();
     const verticalPosition = props.position == null ? 0 : props.position.y;
     const leftPosition = props.position == null ? 0 : props.position.x;
     const projectIndex = window.location.href.split('pid-')[1];
@@ -48,7 +48,7 @@ export const Project = (props) => {
     document.title = projectsShown[0].title + "| Lucky For Sum" ;
 
     return (
-        <div>
+        <div ref={props.target}>
         {projectsShown.map((pdp, index) => (
             <div className="project-preview-container header">
                 <div className="project-preview">
@@ -57,7 +57,7 @@ export const Project = (props) => {
                     </div>
                     <MarketingBannerTwo message={pdp.title} />
                 </div>
-                <article className="project-content section" >
+                <article className="project-content section">
                     <section>
                         {pdp.intro.map((paragraph, index) => (
                             <p className="intro" tabIndex="0">{paragraph}</p>

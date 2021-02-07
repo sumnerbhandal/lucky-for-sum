@@ -56,7 +56,7 @@ const HomePage = (props) => {
                 <div className="project-preview-container hp-section" id="project-container" key={index}>
                     <div className={`project-preview ${inView ? "before" : ""}`}>
                         <Link to={`/project/${item.url}_pid-${item.id}`} className="project-preview-thumbnail" id={item.id} title={item.url} onClick={projectImageOpen}  tabindex="0">
-                            <img src={require('./images/' + item.image + '.png')} alt={item.title}  />
+                            <img src={require('./images/' + item.image + '.png')} alt={item.title} loading="lazy" />
                         </Link>
                         <h2>
                             {item.title}

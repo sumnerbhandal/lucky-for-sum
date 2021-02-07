@@ -160,6 +160,11 @@ button.action, input.action {
   min-width: 10rem;
 }
 
+img {
+  animation: fadeIn 1s forwards;
+  /* transition: all 0.3s ease; */
+}
+
 button:hover, form input[type="submit"]:hover {
   /* transform: translate(1rem, 1rem); */
   box-shadow: none;
@@ -192,3 +197,17 @@ button:hover, form input[type="submit"]:hover {
       opacity: 1; 
   }
 }
+
+
+  /* progress indicator */ 
+
+  
+  .reading-progress-bar {
+    position: fixed;
+    height: 0.375rem;
+    top: 4.5rem;
+    left: 0;
+    z-index: 4;
+    background-color: var(--deep-purple);
+    transition: 0s;
+  }

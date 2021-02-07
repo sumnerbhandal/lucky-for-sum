@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useState, createRef} from "react";
 import ProductPage from './pdp/pdp';
 import {Project} from './project/project';
 import Plp from './plp/plp';
@@ -6,6 +6,7 @@ import ContactForm from './contact/contact';
 import NavDefault from './nav/navigation';
 import HomePage from './home/home';
 import { Footer } from './footer/footer';
+import { ReadingProgress } from "./read-progress";
 import { MarketingBanner, MarketingBannerTwo } from './banners/marketing-banner';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom/index";
 import "./reset.css";
@@ -14,6 +15,7 @@ import "./fonts/fonts.css";
 
 
 export default function App() {
+  const target = createRef();
   const [projectPreviewPosition, setProjectPreviewPosition] = useState(null);
   function focusStates() {
     // Let the document know when the mouse is being used
@@ -44,7 +46,8 @@ export default function App() {
         }/>
         <Route path="/project/*" element={
           <div>
-            <Project position={projectPreviewPosition} />
+            <ReadingProgress target={target} />
+            <Project position={projectPreviewPosition}  target={target} />
             <Footer />
           </div>
         }/>

@@ -80,7 +80,7 @@ img.play-button {
         display: flex;
         flex-wrap: wrap;
         padding-bottom: 2rem;
-        justify-content: center;
+        /* justify-content: center; */
         /* min-height: 768px; */
     }
 
@@ -88,7 +88,7 @@ img.play-button {
         justify-content: flex-start;
     }
     .aboutIntro  {
-        width: calc(40%);
+        width: calc(50%);
     }
     .aboutIntro {
         margin-top: 3rem;
@@ -319,7 +319,7 @@ img.play-button {
 }
 
 .design-snippets .project-summaries:hover img, .design-snippets .project-summaries:hover video  {
-    transform: scale(1.25);
+    transform: scale(1.15);
     border-radius: 0.25rem;
 }
 
