@@ -52,7 +52,7 @@ nav {
 }
 
 .header-side-container {
-    width: 25%;
+    width: calc(50% - 3rem);
 }
 
 .masthead ul {
@@ -61,6 +61,7 @@ nav {
     display: flex;
     margin-block-start: 0;
     margin-block-end: 0;
+    justify-content: flex-end;
 }
 
 .masthead ul li {

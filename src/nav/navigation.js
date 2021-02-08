@@ -28,14 +28,14 @@ const NavDefault = () => {
                         <img src={require('./icons/lucky-for-sum-logo.svg')} alt="Home"/>
                     </Link>
                     <ul className="header-side-container">
-                        <li>
+                        {/* <li>
                             <Link to='/#project-container' id="link_project-container" onClick={scrollSectionIntoView}>Projects</Link>
                         </li>
                         <li>
-                        <Link to='/#design-snippets' id="link_project-container" onClick={scrollSectionIntoView}>Design Snippets</Link>
-                        </li>
+                        <Link to='/#design-snippets' id="link_design-snippets" onClick={scrollSectionIntoView}>Design Snippets</Link>
+                        </li> */}
                         <li>
-                            <Link to="#">Contact</Link>
+                            <Link to="#">Site Under Construction</Link>
                         </li>
                     </ul>
                 </div>
