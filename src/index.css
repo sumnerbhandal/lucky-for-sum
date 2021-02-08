@@ -160,11 +160,6 @@ button.action, input.action {
   min-width: 10rem;
 }
 
-img {
-  animation: fadeIn 1s forwards;
-  /* transition: all 0.3s ease; */
-}
-
 button:hover, form input[type="submit"]:hover {
   /* transform: translate(1rem, 1rem); */
   box-shadow: none;
