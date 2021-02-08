@@ -291,18 +291,17 @@ img.play-button {
 .design-snippets .project-summaries {
     display: flex;
     width: 100%;
-    /* margin-bottom: 2rem; */
     overflow: hidden;
-    /* border-radius: 0.5rem; */
     flex-wrap: wrap;
-    background: var(--white);
     transition: transform 0.5s ease;
+    padding: 1rem;
 }
 
 .design-snippets .project-summaries .image-container {
     padding-top: 75%;
     position: relative;
     width: 100%;
+    overflow: hidden;
 }
 
 .design-snippets .project-summaries .image-container img, .design-snippets .project-summaries .image-container video {

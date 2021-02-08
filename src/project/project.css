@@ -13,7 +13,6 @@
 .project-preview-container.header {
     overflow: hidden;
     flex-wrap: wrap;
-    pointer-events: none;
 }
 
 .project-preview-container.header .project-preview {
@@ -23,6 +22,7 @@
     cursor: initial;
     display: flex;
     align-items: center;
+    pointer-events: none;
 }
 
 .project-preview-container.header .banner.full-width {
@@ -178,9 +178,6 @@ p.intro {
     .project-content .featured-image-container {
         width: 100%;
         margin: 0;
-    }
-    .project-content .featured-image-container img {
-        top: -40%;
     }
     .project-content .subsection .col img {
         margin-top: 1.25rem;

@@ -1,6 +1,6 @@
 export const homePageProjects = [
   {
-      "title": "A Portfolio For All",
+      "title": "A Designer Portfolio For All",
       "url": "portfolio-for-all",
       "id": "0",
       "image": "Portfolio-Thumbnail",

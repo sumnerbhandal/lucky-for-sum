@@ -16,6 +16,7 @@ export const HeroVideo = (props) => {
                     tabIndex="0"
                     onClick={props.videoButton}
                     onKeyPress={props.pressEnter}
+                    alt="Play Button"
                 />
             )}
         </div>
