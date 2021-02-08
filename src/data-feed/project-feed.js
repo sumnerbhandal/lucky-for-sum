@@ -344,11 +344,11 @@ export const homePageProjects = [
         ],
         "article" : [
             {
-                "h2": "Background",
+                "h2": "Dummy Content",
                 "subsection": [
                     {
                         "copy": [
-                            "As online shopping sites transition to mobile first experience, giving the user a better search experience to cut through the product catalogue faster has never been more important.",
+                            "Detailed stuff coming real soon!",
                         ], 
                     }
                 ]

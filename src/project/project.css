@@ -168,6 +168,7 @@ p.intro {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    width: 100%;
 }
 
 .project-content .subsection .col img {

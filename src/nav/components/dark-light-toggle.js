@@ -6,7 +6,6 @@ export const ThemeToggle = (props) => {
     function toggleTrueFalse() {
         setToggled(!isToggled);
         siteTheme();
-        console.log(isToggled);
     }
 
     function siteTheme() {

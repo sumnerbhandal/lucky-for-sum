@@ -32,6 +32,7 @@ export default function App() {
   }
   focusStates();
 
+
   document.title = "Lucky For Sum"
   return (
    <Router>

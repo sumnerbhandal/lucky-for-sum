@@ -48,7 +48,7 @@ const HomePage = (props) => {
        
     return (
         <div id="homepage" className="homepage">
-            <div className="introSection hp-section section">
+            <div id="introSection" className="introSection hp-section section">
                 < HeroVideo pressEnter={pressEnter} videoButton={videoButton} ref={ref} videoPlaying={videoPlaying} />
                 < Bio />
             </div>
