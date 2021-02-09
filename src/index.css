@@ -91,7 +91,7 @@ code {
 }
 
 main {
-  overflow: hidden;
+  /* overflow: hidden; */
   margin-top: 4.5rem;
 }
 

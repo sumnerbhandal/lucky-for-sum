@@ -3,7 +3,7 @@ nav {
     width: 100%;
     top: 0;
     background: var(--off-white);
-    z-index: 2;
+    z-index: 3;
     border-bottom: 0.0625rem solid var(--deep-purple);
 }
 
@@ -299,12 +299,12 @@ nav {
     transform: translateX(100%);
     transition: 0.3s ease-in;
     border-left: 0.0625rem solid var(--deep-purple);
-    -webkit-box-shadow: -1rem 0px 1rem 0px rgba(0,0,0,0.2);  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
-    -moz-box-shadow:    -1rem 0px 1rem 0px rgba(0,0,0,0.2);  /* Firefox 3.5 - 3.6 */
-    box-shadow:         -1rem 0px 1rem 0px rgba(0,0,0,0.2);
   }
 
   .main-menu.open {
       transform: translateX(0);
+      -webkit-box-shadow: -1rem 0px 1rem 0px rgba(0,0,0,0.2);  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+      -moz-box-shadow:    -1rem 0px 1rem 0px rgba(0,0,0,0.2);  /* Firefox 3.5 - 3.6 */
+      box-shadow:         -1rem 0px 1rem 0px rgba(0,0,0,0.2);
   }
 

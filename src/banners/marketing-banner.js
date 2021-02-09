@@ -18,7 +18,7 @@ export function MarketingBanner({ message }) {
     return (
       <div className="banner full-width" >
         <div className="section banner-title">
-          <h1 role="heading" aria-level="1" tabIndex="0">
+          <h1 aria-level="1" tabIndex="0">
           { message }
           </h1>
         </div>

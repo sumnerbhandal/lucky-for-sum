@@ -8,21 +8,25 @@
     animation-fill-mode: forwards;
     background: var(--happy-mustard);
     overflow: hidden;
+    clip-path: polygon(100% 0, 100% 60%, 0 100%, 0 0);
 }
 
 .project-preview-container.header {
-    overflow: hidden;
+    /* overflow: hidden; */
     flex-wrap: wrap;
 }
 
 .project-preview-container.header .project-preview {
-    position: relative;
+    position: sticky;
+    top: 4.5rem;
     width: 100%;
     height: 13rem;
     cursor: initial;
     display: flex;
     align-items: center;
     pointer-events: none;
+    box-shadow: 0 -12rem 0 var(--off-white);
+    /* overflow: hidden; */
 }
 
 .project-preview-container.header .banner.full-width {
@@ -43,12 +47,12 @@
         animation-duration: 0.5s;
     }
 
-    .project-preview-container.header .banner.full-width {
+    /* .project-preview-container.header .banner.full-width {
         top: -4rem;
-    }
+    } */
 
     .project-preview-thumbnail.header > img {
-        top: 35rem;
+        /* top: 35rem; */
         left: 50vw;
     }
 
@@ -64,7 +68,6 @@
 }
 
 .project-content {
-    z-index: 1;
     background: var(--white);
     position: relative;
     padding: 1.5rem 2rem;
@@ -74,6 +77,7 @@
     animation-delay: 0.8s;
     max-width: 1280px;
     width: 100%;
+    z-index: 2;
 }
 
 .project-content section {
@@ -196,6 +200,8 @@ p.intro {
     position: relative;
     justify-content: center;
     height: 10rem;
+    background: var(--off-white);
+    z-index: 2;
 }
 .next-project-section > div {
     height: 2rem;
@@ -207,6 +213,7 @@ p.intro {
     display: flex;
     font-size: 1.25rem;
     transition: all 0.5s ease;
+    
 }
 
 .next-project-section > div.loading {
@@ -227,6 +234,7 @@ p.intro {
     top: 37%;
     animation: spin 1.25s linear;
     animation-fill-mode: forwards;
+    z-index: 2;
 }
 
 @keyframes spin {
@@ -319,26 +327,28 @@ p.intro {
 
 @keyframes project-landing {
     100% {  
-            top: -22.5rem;
-            transform: rotate(-20deg) translate(-60vw, -2rem);
+            top: 0vw;
+            transform: translate(-50vw, -2rem);
             width: 150vw;
-            height: 30rem;
+            height: 15rem;
+            border-radius: 0;
     }
 }
 
 @keyframes project-landing-tablet {
     100% {  width: 150vw;
-            top: -40rem;
-            transform: rotate(-4deg) translate(-50vw, -2rem);
-            height: 50rem;
-            left: 0
+            top: -5vw;
+            transform:translate(-50vw, -2rem);
+            height: 25rem;
+            left: 0;
+            border-radius: 0;
         }
 }
 
 @keyframes projectContentLoadIn {
     0%   { 
         opacity: 0; 
-        transform: translateY(1rem);
+        transform: translateY(1rem)
     }
     100% { 
   

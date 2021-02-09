@@ -4,7 +4,7 @@ import './project.css'
 import { homePageProjects } from '../data-feed/project-feed';
 
 export const Project = (props) => {
-    const target = React.createRef();
+    // const target = React.createRef();
     const verticalPosition = props.position == null ? 0 : props.position.y;
     const leftPosition = props.position == null ? 0 : props.position.x;
     const projectIndex = window.location.href.split('pid-')[1];
@@ -59,9 +59,11 @@ export const Project = (props) => {
                 </div>
                 <article className="project-content section">
                     <section>
-                        {pdp.intro.map((paragraph, index) => (
-                            <p className="intro" tabIndex="0">{paragraph}</p>
-                        ))}
+                         <div className="col">
+                            {pdp.intro.map((paragraph, index) => (
+                                <p className="intro" tabIndex="0">{paragraph}</p>
+                            ))}
+                        </div>
                     </section>
                     {pdp.background.map((content, index) => (
                         <section key={index}>
