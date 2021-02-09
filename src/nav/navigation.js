@@ -4,14 +4,12 @@ import { Menu } from './components/menu';
 import { Link } from "react-router-dom/index";
 import "./navigation.css";
 
-
 const NavDefault = () => {
     const [isShown, setIsShown] = useState(false);
 
     const [isToggled, setToggled] = useState(false);
 
     function scrollSectionIntoView(e) {
-        console.log(e.target.id);
         const id = e.target.id;
         const scrollId = id.replace("link_", "");
         const elmnt = document.getElementById(scrollId);
@@ -25,24 +23,13 @@ const NavDefault = () => {
 
     function useOutsideAlerter(ref, e) {
         useEffect(() => {
-            /**
-             * Alert if clicked on outside of element
-             */
             function handleClickOutside(event) {
-                console.log(event.target)
                 if (ref.current && !ref.current.contains(event.target) && event.target.id !== 'burger-button') {
-                    // alert("You clicked outside of me!");
                     setToggled(false);
-                    console.log(isToggled);
                 }
             }
-
-            // && e.target.id !== 'burger-button'
-      
-            // Bind the event listener
             document.addEventListener("mousedown", handleClickOutside);
             return () => {
-                // Unbind the event listener on clean up
                 document.removeEventListener("mousedown", handleClickOutside);
             };
         }, [ref]);

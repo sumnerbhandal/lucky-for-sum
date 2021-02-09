@@ -4,7 +4,6 @@ import './project.css'
 import { homePageProjects } from '../data-feed/project-feed';
 
 export const Project = (props) => {
-    // const target = React.createRef();
     const verticalPosition = props.position == null ? 0 : props.position.y;
     const leftPosition = props.position == null ? 0 : props.position.x;
     const projectIndex = window.location.href.split('pid-')[1];
@@ -102,9 +101,10 @@ export const Project = (props) => {
                                     </div>
                                 ))}
                             </div>
+                           
                             {content.featuredImage === undefined ? null :
                                 <div className="featured-image-container">
-                                    <img src={require('./images/' + pdp.path + content.featuredImage)} alt={"hellow"} loading="lazy"   />
+                                    <img tabIndex="0" src={require('./images/' + pdp.path + content.featuredImage.image)} alt={content.featuredImage.alt} loading="lazy"   />
                                 </div>
                             }
                         </section>
@@ -133,7 +133,7 @@ export const Project = (props) => {
                                     </div>
                                     <div className="col">
                                         {subsection.subsectionImage === undefined ? null :
-                                            <img src={require('./images/' + pdp.path + subsection.subsectionImage.image)} alt={subsection.subsectionImage.alt} loading="lazy"  />
+                                            <img tabIndex="0" src={require('./images/' + pdp.path + subsection.subsectionImage.image)} alt={subsection.subsectionImage.alt} loading="lazy"  />
                                         }
                                     </div>
                                 </div>

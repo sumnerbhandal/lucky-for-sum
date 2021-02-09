@@ -5,7 +5,7 @@ export const DesignSnippets = (props) => {
     return (
         <div id="design-snippets" className="design-snippets hp-section section">
             <h3>
-                Design Snippets
+                Design Snippets (Placeholder Content)
             </h3>
             {designSnippetFeed.map((item, index) => (
                 <div className="project-summaries">

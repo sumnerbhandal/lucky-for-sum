@@ -291,6 +291,7 @@ nav {
     position: fixed;
     width: 30rem;
     max-width: 80vw;
+    min-width: 20rem;
     right: 0;
     background: var(--white);
     z-index: -1;
@@ -308,3 +309,53 @@ nav {
       box-shadow:         -1rem 0px 1rem 0px rgba(0,0,0,0.2);
   }
 
+  
+  /* Social */ 
+
+  ul.social {
+    list-style-type: none;
+    padding-inline-start: 0;
+    justify-content: center;
+    border-top: 0.0625rem solid var(--deep-purple);
+  }
+
+  ul.social li {
+    display: inline-block;
+    flex-basis: auto;
+  }
+
+  ul.social li a {
+    width: 2.75rem;
+    height: 2.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+  }
+
+  ul.social li.label  {
+    text-align: center;
+    flex-basis: 100%;
+    height: auto;
+    margin-top: 1rem;
+
+  }
+
+  ul.social li.label p {
+    margin: 0;
+    font-weight: 400;
+  }
+
+  ul.social li .svg-inline--fa {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  ul.social li svg path {
+    color: var(--deep-purple);
+    transition: 0s; 
+  }
+
+  ul.social li a:hover svg path {
+    color: var(--happy-mustard-text); 
+  }

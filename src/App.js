@@ -42,7 +42,6 @@ export default function App() {
         <Route path="/" element={ 
             <div>
             <HomePage PreviewPosition={(value) => setProjectPreviewPosition(value)}/>
-            {/* <Footer /> */}
             </div>
         }/>
         <Route path="/project/*" element={

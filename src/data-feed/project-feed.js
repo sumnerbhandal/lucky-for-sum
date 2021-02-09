@@ -34,7 +34,10 @@ export const homePageProjects = [
                     ]
                 }
             ],
-            "featuredImage": "preview.jpg"
+            "featuredImage": {
+                "image": "placeholder.png",
+                "alt": "Placeholder"
+            }
         }
       ],
       "article" : [
@@ -58,9 +61,8 @@ export const homePageProjects = [
                         "I had a pretty good idea of the UI experience I wanted, it wanted to feel as much like a native app as possible, but be a web app. It would consist of a maximum of 3 main pages, the hompage, the project page and if I'm feeling adventurous, a contact page."
                     ],
                     "subsectionImage" : {
-    
-                        "image": "preview.jpg",
-                        "alt": "Preview"
+                        "image": "placeholder-shallow.png",
+                        "alt": "Placeholder"
                     }
                 },
                 {
@@ -71,9 +73,8 @@ export const homePageProjects = [
                         "We can start by making sure that text elements have sufficient colour contrasts and font sizes. You'll quickly realise that in making this small conscious decisions, you'll also start to make your UI that much more usable."
                     ],
                     "subsectionImage" : {
-    
-                        "image": "preview.jpg",
-                        "alt": "Preview"
+                        "image": "placeholder.png",
+                        "alt": "Placeholder"
                     }
                 },
                 {
@@ -83,9 +84,8 @@ export const homePageProjects = [
                         "Part of recapturing that magic is through optimisation, that's where the speed comes in and improving the feedback the user receives when interacting with the site. When they go to click on something, what do they expect will happen?"
                     ],
                     "subsectionImage" : {
-    
-                        "image": "preview.jpg",
-                        "alt": "Preview"
+                        "image": "placeholder-shallow.png",
+                        "alt": "Placeholder"
                     }
                 },
             ] 
@@ -101,9 +101,8 @@ export const homePageProjects = [
                         "Once I have an idea of how the content will reflow, I look to build in a grid system at a higher level that means that the canvas I now have to work in will always adhere to these constraints"
                     ],
                     "subsectionImage" : {
-    
-                        "image": "preview.jpg",
-                        "alt": "Preview"
+                        "image": "placeholder.png",
+                        "alt": "Placeholder"
                     }
                 },
                 {
@@ -114,9 +113,8 @@ export const homePageProjects = [
                         "However, my favourite part of using these is that it works almost like magic. In fact, I'm writing the contents of this article straight into the API as though it is a markdown file and it is automatically updating the site. Great for those pesky spelling mistakes."
                     ],
                     "subsectionImage" : {
-    
-                        "image": "preview.jpg",
-                        "alt": "Preview"
+                        "image": "placeholder.png",
+                        "alt": "Placeholder"
                     }
                 },
                 {
@@ -127,9 +125,8 @@ export const homePageProjects = [
                         "Another favourite of mine is focus states. Too often I have seen websites actively removing the browsers focus states as they are deemed to interfere with the aesthetics of the site. I prefer to embrace and enhance then, so why not try and tab through the site and see if you can use it just with your keyboard alone!"
                     ],
                     "subsectionImage" : {
-    
-                        "image": "preview.jpg",
-                        "alt": "Preview"
+                        "image": "placeholder.png",
+                        "alt": "Placeholder"
                     }
                 },
                
@@ -144,9 +141,8 @@ export const homePageProjects = [
                         "When I've got the key core functionality and content locked down, I can start to have some fun with things and inject moments of delight across the site. You'll have probably encountered some of these on your way to this project (unless you've set a preference for not wanting things to move around)."
                     ],
                     "subsectionImage" : {
-    
-                        "image": "preview.jpg",
-                        "alt": "Preview"
+                        "image": "placeholder-shallow.png",
+                        "alt": "Placeholder"
                     }
                 },
                 {
@@ -155,9 +151,8 @@ export const homePageProjects = [
                         "Most modern browsers have the ability to indetify some of your operating system preferences that indicate how you want things to behave. The most popular being whether you like browsing in light mode or dark mode, but also things such as whether you don't like things moving or animating as they cause feelings of nausea."
                     ],
                     "subsectionImage" : {
-    
-                        "image": "preview.jpg",
-                        "alt": "Preview"
+                        "image": "placeholder-shallow.png",
+                        "alt": "Placeholder"
                     }
                 },
                 {
@@ -166,9 +161,8 @@ export const homePageProjects = [
                         "I'm a big believer in testing and iterating, so this will continue to grow and improve over time."
                     ],
                     "subsectionImage" : {
-    
-                        "image": "preview.jpg",
-                        "alt": "Preview"
+                        "image": "placeholder-shallow.png",
+                        "alt": "Placeholder"
                     }
                 }                     
             ] 
@@ -206,7 +200,11 @@ export const homePageProjects = [
                             "Front-End Development"
                         ]
                     }
-                ]
+                ],
+                "featuredImage": {
+                    "image": "placeholder.png",
+                    "alt": "Placeholder"
+                }
           }
         ],
         "article" : [
@@ -217,13 +215,21 @@ export const homePageProjects = [
                         "h3": "Aims",
                         "copy": [
                             "My ambition with this project is to create a positive, supportive community that can offer informative resources and a support network for people who have suffered from an anterior cruciate ligament injury."
-                        ]
+                        ],
+                        "subsectionImage" : {
+                            "image": "placeholder-shallow.png",
+                            "alt": "Preview"
+                        }
                     },
                     {
                         "h3": "Outcomes",
                         "copy": [
                             "The main outcome I hope to achieve is to inspire and empower those who have suffered from this injury and I believe the best medium to do so is by creating a brand that encourages people on their road to recovery."
-                        ]
+                        ],
+                        "subsectionImage" : {
+                            "image": "placeholder-shallow.png",
+                            "alt": "Preview"
+                        }
                     }
                 ] 
             },
@@ -234,13 +240,21 @@ export const homePageProjects = [
                         "h3": "Building A Support Community",
                         "copy": [
                             "One of the first things that I did was to see the ways in which support was offered to those who suffered from physical ailments. After extensive UK specific research, the charitable organisation that struck the perfect tone with exemplary support offerings was Macmillan Cancer Support. Their human centric brand has provided people with the support they have needed since its foundation."
-                        ]
+                        ],
+                        "subsectionImage" : {
+                            "image": "placeholder-shallow.png",
+                            "alt": "Preview"
+                        }
                     },
                     {
                         "h3": "Building A Brand",
                         "copy": [
                             "By building the Macmillan brand, the organisation has allowed itself to become a powerful tool in their mission to reach those who are in need and inspire people to support their cause. By producing such a recognisable brand, it instills trust and facilitates their cause."
-                        ]
+                        ],
+                        "subsectionImage" : {
+                            "image": "placeholder-shallow.png",
+                            "alt": "Preview"
+                        }
                     }
                 ] 
             },
@@ -253,7 +267,11 @@ export const homePageProjects = [
                             "I went through a series of back and forths choosing an appropriate shape form and colourway that I felt could represent the organisation in the most sympathetic manner. The concept behind the logo I created is that it replicates the shape of the ligament within the knee itself, with the two ligaments wrapping around one another to create an ‘x’ like shape.",
                             "It is composed of triangles due to characteristics of the shape. It stands alone, strong but alienated, however it has the capability to be much more. When together with other triangles, they create beautiful forms, fitting alongside one another, reflecting the strong supportive community it hopes to embody.",
                             "The colourway is, in my opinion, one of the most important features of a brand. I led with the idea of transition, reflecting the idea of injury through to recovery; a concept applied to the mark through the gradient of colour present in the triangles."
-                        ]
+                        ],
+                        "subsectionImage" : {
+                            "image": "placeholder.png",
+                            "alt": "Preview"
+                        }
                     }
                 ] 
             },
@@ -263,7 +281,11 @@ export const homePageProjects = [
                     {
                         "copy": [
                             "The tone of the brand had to be sympathetic, understanding what people are suffering from and the best way to support that. Having spoken to others during both my time in the hospital and then also during rehabilitation classes, it soon became apparent that they were all keen to get back to being active again and to come back just as strong as before. This pairing of recovery and progression formed the basis for a lot of the content as it focuses not only on the present but the next step."
-                        ]
+                        ],
+                        "subsectionImage" : {
+                            "image": "placeholder.png",
+                            "alt": "Preview"
+                        }
                     }
                 ] 
             },
@@ -275,7 +297,11 @@ export const homePageProjects = [
                         "copy": [
                             "When you're physically restricted, accessibility to content is more important that ever. By engaging with Instagram, it provided a platform for people to share their experiences, promote their journeys and interact with others in order to see what they're going through and where they're heading.",
                             "By showcasing public and non-public figures and their journeys, it helped to humanise the experience and to demonstrate that while it is a struggle, it is possible to get yourself back to where you were."
-                        ]
+                        ],
+                        "subsectionImage" : {
+                            "image": "placeholder.png",
+                            "alt": "Preview"
+                        }
                     }
                 ] 
             },
@@ -286,13 +312,21 @@ export const homePageProjects = [
                         "h3": "A Platform To Offer Advice",
                         "copy": [
                             "We live in an era where information is more accessible than ever, and as such the best way to get information to the audience is to publish it online. An ACL injury can often make any movement difficult, so the idea of booking an appointment to travel to see a doctor isn't beneficial in the immediacy. From a personal perspective, the first doctor I visited said that he was unable to diagnose the extent of my injury due to excessive swelling, so I was advised to rest and apply ice. Now, if there was a place that had answers specific to my problem, I would have saved both the doctors time, and my own. Something to consider..."
-                        ]
+                        ],
+                        "subsectionImage" : {
+                            "image": "placeholder.png",
+                            "alt": "Preview"
+                        }
                     },
                     {
                         "h3": "Getting The Answers You Need",
                         "copy": [
                             "A feeling that is common among recovering patients is loneliness, it is a time where you can feel isolated, so getting instant answers from people who have been going through something similar can offer a little lift. The idea of having a chat functionality is something that would be very useful, as demonstrated in the interactive chat below."
-                        ]
+                        ],
+                        "subsectionImage" : {
+                            "image": "placeholder-shallow.png",
+                            "alt": "Preview"
+                        }
                     }
                 ] 
             },
@@ -304,7 +338,11 @@ export const homePageProjects = [
                         "copy": [
                             "Of course talking about post-injury communication is important, but even more important is preventative measures. Something that I wanted to do was design a kit to send out to sports teams, something to help educate them on how to deal with small niggles before they turn into something more serious.",
                             "It's not uncommon to pick up knocks and sprains playing sports, so suggestions for recovery ideas and exercises that could be implemented as part of training or warm ups could go a long way towards injury prevention."
-                        ]
+                        ],
+                        "subsectionImage" : {
+                            "image": "placeholder.png",
+                            "alt": "Preview"
+                        }
                     }
                 ] 
             }
@@ -339,7 +377,11 @@ export const homePageProjects = [
                             "Front-End Development"
                         ]
                     }
-                ]
+                ],
+                "featuredImage": {
+                    "image": "placeholder.png",
+                    "alt": "Placeholder"
+                }
           }
         ],
         "article" : [
@@ -349,7 +391,11 @@ export const homePageProjects = [
                     {
                         "copy": [
                             "Detailed stuff coming real soon!",
-                        ], 
+                        ],
+                        "subsectionImage" : {
+                            "image": "placeholder-shallow.png",
+                            "alt": "Placeholder"
+                        }
                     }
                 ]
             }
