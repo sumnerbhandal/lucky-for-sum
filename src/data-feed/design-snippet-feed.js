@@ -22,17 +22,17 @@ export const designSnippetFeed = [
     {
         "title": "Impero Industry Insight",
         "type": "image",
-        "image": "industry_insights_2.gif",
+        "image": "industry_insight.gif",
     },
     {
-        "title": "Iconography",
+        "title": "Web Store Design",
         "type": "image",
-        "image": "online-safety-workshop.png",
+        "image": "lucky-for-sum-shop.png",
     },
     {
-        "title": "Next Filters",
+        "title": "Ligamend Logo Animation",
         "type": "image",
-        "image": "next-filters.png",
+        "image": "subtle-animated-icon.gif",
     },   
     {
         "title": "Save Time Campaign",

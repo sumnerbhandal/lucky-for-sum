@@ -51,10 +51,6 @@
     .project-preview-thumbnail.header > img {
         left: 50vw;
     }
-
-    .project-preview-container.header .project-preview {
-        margin-top: 1.5rem;
-     }
 }
 
 @media (min-width: 768px) {
@@ -329,7 +325,7 @@ p.intro {
 
 @keyframes project-landing-tablet {
     100% {  width: 150vw;
-            top: -5vw;
+            /* top: -5vw; */
             transform:translate(-50vw, -2rem);
             height: 25rem;
             left: 0;

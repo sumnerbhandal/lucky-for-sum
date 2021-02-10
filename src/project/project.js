@@ -2,6 +2,7 @@ import { MarketingBannerTwo } from '../banners/marketing-banner';
 import React, { useEffect, useState } from "react";
 import './project.css'
 import { homePageProjects } from '../data-feed/project-feed';
+import ProgressiveImageHook from "../reusable-functions/progressive-image-load";
 
 export const Project = (props) => {
     const verticalPosition = props.position == null ? 0 : props.position.y;
@@ -104,7 +105,13 @@ export const Project = (props) => {
                            
                             {content.featuredImage === undefined ? null :
                                 <div className="featured-image-container">
-                                    <img tabIndex="0" src={require('./images/' + pdp.path + content.featuredImage.image)} alt={content.featuredImage.alt} loading="lazy"   />
+                                    <ProgressiveImageHook
+                            key={index}
+                            src={require('./images/' + pdp.path + content.featuredImage.image)}
+                            placeholder={require('./images/' + pdp.path + content.featuredImage.image)}
+                            alt={content.featuredImage.alt}
+                        />
+                                  
                                 </div>
                             }
                         </section>

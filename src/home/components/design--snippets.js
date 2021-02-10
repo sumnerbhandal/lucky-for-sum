@@ -1,5 +1,6 @@
 import React from "react";
 import { designSnippetFeed } from "../../data-feed/design-snippet-feed";
+import ProgressiveImageHook from "../../reusable-functions/progressive-image-load";
 
 export const DesignSnippets = (props) => {
     return (
@@ -13,7 +14,13 @@ export const DesignSnippets = (props) => {
                         {item.type === "video" ? (
                         <video autoPlay muted loop src={require('./design-img/' + item.image)}></video>
                         ) : (
-                        <img src={require('./design-img/' + item.image)} alt={item.title} loading="lazy" />
+                        
+                        <ProgressiveImageHook
+                            key={index}
+                            src={require('./design-img/' + item.image)}
+                            placeholder={require('./design-img/' + item.image.replace(".png" || ".gif", "_placeholder.png"))}
+                            alt={item.title}
+                        />
                         ) }
                     
                     </div>
