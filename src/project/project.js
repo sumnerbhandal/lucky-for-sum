@@ -4,6 +4,7 @@ import './project.css'
 import { homePageProjects } from '../data-feed/project-feed';
 import ProgressiveImageHook from "../reusable-functions/progressive-image-load";
 
+
 export const Project = (props) => {
     const verticalPosition = props.position == null ? 0 : props.position.y;
     const leftPosition = props.position == null ? 0 : props.position.x;
@@ -53,7 +54,8 @@ export const Project = (props) => {
             <div className="project-preview-container header">
                 <div className="project-preview">
                     <div style={projectPreviewPosition} className="project-preview-thumbnail header">
-                        <img src={require('./images/' + pdp.path + 'header.png')} alt={pdp.headerAlt}  />
+                        {pdp.headerImage}
+                        {/* <img src={require('./images/' + pdp.path + 'header.png')} alt={pdp.headerAlt}  /> */}
                     </div>
                     <MarketingBannerTwo message={pdp.title} />
                 </div>
@@ -106,11 +108,11 @@ export const Project = (props) => {
                             {content.featuredImage === undefined ? null :
                                 <div className="featured-image-container">
                                     <ProgressiveImageHook
-                            key={index}
-                            src={require('./images/' + pdp.path + content.featuredImage.image)}
-                            placeholder={require('./images/' + pdp.path + content.featuredImage.image)}
-                            alt={content.featuredImage.alt}
-                        />
+                                        key={index}
+                                        src={require('./images/' + pdp.path + content.featuredImage.image)}
+                                        placeholder={require('./images/' + pdp.path + content.featuredImage.image)}
+                                        alt={content.featuredImage.alt}
+                                    />
                                   
                                 </div>
                             }

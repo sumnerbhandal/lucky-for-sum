@@ -1,9 +1,12 @@
+import { Ligamend, Portfolio, EnrichedSearch } from "../home/components/svg-illustrations";
+import React from 'react';
+
 export const homePageProjects = [
   {
       "title": "A Designer Portfolio For All",
       "url": "portfolio-for-all",
       "id": "0",
-      "image": "Portfolio-Thumbnail",
+      "image": <Portfolio />,
       "feature": "Portfolio-Feature",
       "intro": [
           "The consequence of being a designer is that you're only ever as good as your latest portfolio."
@@ -13,7 +16,7 @@ export const homePageProjects = [
       "title": "Ligamend - ACL Injury Support Community",
       "url": "ligamend",
       "id": "1",
-      "image": "Ligamend-Thumbnail",
+      "image": <Ligamend />,
       "feature": "Ligamend-Feature",
       "intro": [
           "Building a support community set up to aid the rehabilitation of people who have suffered an anterior cruciate ligament (ACL) injury."
@@ -23,7 +26,7 @@ export const homePageProjects = [
       "title": "Enriched Site Search",
       "url": "enriched-autocomplete",
       "id": "2",
-      "image": "Autocomplete-Thumbnail",
+      "image": <EnrichedSearch />,
       "feature": "Autocomplete-Feature",
       "intro": [
           "As stock diversifies, taxonomies grow and it gets just that much more difficult to find anything.",

@@ -144,21 +144,26 @@ img.play-button {
     transform: rotate(20deg);
 }
 
-.project-preview-thumbnail > img {
+.project-preview-thumbnail > svg {
     position: absolute;
     top: 1.25rem;
     width: 125%;
     transform: rotate(20deg)translate(-3rem, -0.75rem);
     transition: 0.3s ease;
     pointer-events: none;
+    height: 100%;
 }
 
-.project-preview:nth-child(even) img {
+.project-preview-thumbnail > svg g {
+    transition: 0s;
+}
+
+.project-preview:nth-child(even) svg {
     transform: rotate(-20deg)translate(0px, -1rem);
 }
 
 .project-preview h2 {
-    margin-top: 4rem;
+    margin-top: 3rem;
     width: 100%;
     text-align: center;
 }
@@ -183,7 +188,7 @@ img.play-button {
         transform: scale(0.75);
     }
     
-    .image-right > img {
+    .image-right > svg {
         object-fit: cover;
         width: 100%;
         height: 100%;
@@ -238,13 +243,20 @@ img.play-button {
         padding: 0 1rem;
     }
 
-    .project-preview:hover .project-preview-thumbnail, .project-preview:hover img, .project-preview:nth-child(even):hover img, .project-preview:nth-child(even):hover .project-preview-thumbnail {
+    .project-preview:hover .project-preview-thumbnail, .project-preview:hover svg, .project-preview:nth-child(even):hover svg, .project-preview:nth-child(even):hover .project-preview-thumbnail {
         transform: rotate(0);
         top: 0;
     }
     
     .project-preview:hover .project-preview-thumbnail, .project-preview:nth-child(even):hover .project-preview-thumbnail {
         background: var(--happy-mustard);
+    }
+
+    body.dark .project-preview-container:nth-child(odd) .project-preview:hover .project-preview-thumbnail {
+        background: var(--white);
+    }
+    body.dark .project-preview-container:nth-child(even) .project-preview:hover .project-preview-thumbnail {
+        background: var(--off-white);
     }
 }
 

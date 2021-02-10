@@ -1,7 +1,11 @@
+import { ProjectEnrichedSearch, ProjectLigamend, ProjectPortfolio } from "../project/components/project-svg-illustrations";
+import React from 'react';
+
 export const homePageProjects = [
     {
       "title": "A Portfolio For All",
       "path": "portfolio/",
+      "headerImage": <ProjectPortfolio />,
       "headerAlt": "Portfolio for all header image", 
       "intro": [
           "The consequence of being a designer is that you're only ever as good as your latest portfolio."
@@ -172,6 +176,7 @@ export const homePageProjects = [
     {
         "title": "Ligamend - ACL Injury Support Community",
         "path": "ligamend/",
+        "headerImage": <ProjectLigamend />,
         "headerAlt": "Portfolio for all header image",
         "intro": [
             "Building a support community set up to aid the rehabilitation of people who have suffered an anterior cruciate ligament (ACL) injury."
@@ -293,7 +298,6 @@ export const homePageProjects = [
                 "h2": "Emotional Branding",
                 "subsection": [
                     {
-                        // "h3": "Visual",
                         "copy": [
                             "When you're physically restricted, accessibility to content is more important that ever. By engaging with Instagram, it provided a platform for people to share their experiences, promote their journeys and interact with others in order to see what they're going through and where they're heading.",
                             "By showcasing public and non-public figures and their journeys, it helped to humanise the experience and to demonstrate that while it is a struggle, it is possible to get yourself back to where you were."
@@ -351,6 +355,7 @@ export const homePageProjects = [
     {
         "title": "Enriched Site Search",
         "path": "autocomplete/",
+        "headerImage": <ProjectEnrichedSearch />,
         "headerAlt": "Portfolio for all header image",
         "intro": [
             "As stock diversifies, taxonomies grow and it gets just that much more difficult to find anything.",
