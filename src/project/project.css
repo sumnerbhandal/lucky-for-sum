@@ -36,6 +36,8 @@
 .project-preview-thumbnail.header > svg {
     width: auto;
     position: relative;
+    transform: rotate(0deg) translateY(-5rem) scale(0.75);
+    animation: imageTransition 0.5s forwards;
 }
 
 @media (min-width: 768px) {
@@ -320,3 +322,10 @@ p.intro {
         opacity: 1; 
     }
   }
+
+
+  @keyframes imageTransition {
+    100% {  
+        transform: rotate(20deg) translateY(0) scale(1);
+    }
+}
