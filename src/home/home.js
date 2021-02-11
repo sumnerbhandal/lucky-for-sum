@@ -6,6 +6,7 @@ import { Link } from "react-router-dom/index";
 import { HeroVideo } from "./components/hero--video";
 import { DesignSnippets } from "./components/design--snippets";
 import { Footer } from "../footer/footer";
+import {Helmet} from "react-helmet";
 import "./home.css";
 
 
@@ -49,6 +50,11 @@ const HomePage = (props) => {
        
     return (
         <div id="homepage" className="homepage">
+            <Helmet>
+                <title>Lucky For Sum | UX/UI Design Portfolio | Sumner Bhandal</title>
+                <meta name="description" content="The digital portfolio of Sumner Bhandal. Senior User Interface Designer with a fondness for front-end development and inclusive design." />  
+                <meta name="keywords" content="portfolio,UX,user experience,UI,user interface,product design, designer, digital design,online,digital, support, community, injury, snippets, acl, support community, acl injury, design snippets"/>
+            </Helmet>
             <div id="introSection" className="introSection hp-section section">
                 < HeroVideo pressEnter={pressEnter} videoButton={videoButton} ref={ref} videoPlaying={videoPlaying} />
                 < Bio />

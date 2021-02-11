@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import './project.css'
 import { homePageProjects } from '../data-feed/project-feed';
 import ProgressiveImageHook from "../reusable-functions/progressive-image-load";
+import {Helmet} from "react-helmet";
 
 
 export const Project = (props) => {
@@ -46,12 +47,20 @@ export const Project = (props) => {
       };
     });
 
-    document.title = projectsShown[0].title + "| Lucky For Sum" ;
+    const pageTitle = projectsShown[0].SEOTitle;
+    const metaKeywords = projectsShown[0].keywords;
+    const metaDescription = projectsShown[0].SEODescription;
 
     return (
         <div ref={props.target}>
+            <Helmet>
+                <title>{pageTitle}</title>
+                <meta name="description" content={metaDescription} />
+                <meta name="keywords" content={metaKeywords} />
+            </Helmet>
         {projectsShown.map((pdp, index) => (
             <div className="project-preview-container header">
+           
                 <div className="project-preview">
                     <div style={projectPreviewPosition} className="project-preview-thumbnail header">
                         {pdp.headerImage}

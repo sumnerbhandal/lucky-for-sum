@@ -4,6 +4,9 @@ import React from 'react';
 export const homePageProjects = [
     {
       "title": "A Portfolio For All",
+      "SEOTitle": "How To Make An Accessible UI Experience Fun",
+      "SEODescription": "Deconstruction of a UX/UI portfolio designed and built with accessibility considerations in mind, tailored using some of your browsers preferences.",
+      "keywords": "Portfolio, UX Design, Accessibility, A11Y, Front-End Development, app, optimisation, responsive design, native mobile apps, API Endpoints, Interactions, user preferences, dark mode",
       "path": "portfolio/",
       "headerImage": <ProjectPortfolio />,
       "headerAlt": "Portfolio for all header image", 
@@ -175,6 +178,9 @@ export const homePageProjects = [
     },
     {
         "title": "Ligamend - ACL Injury Support Community",
+        "SEOTitle": "Ligamend - ACL Knee Injury Support Community",
+        "SEODescription": "Building a platform and community for those who have sufferered from an Anterior Cruciate Ligament injury.",
+        "keywords": "Ligamend, ACL, acl, Anterior Cruciate Ligament, sprain, knee ligaments, injury support group, support group, physio, physical therapy, recovery, knee rehabilitation, post-injury support",
         "path": "ligamend/",
         "headerImage": <ProjectLigamend />,
         "headerAlt": "Portfolio for all header image",
@@ -192,7 +198,7 @@ export const homePageProjects = [
                         "copy": [
                             "Like most active people, I enjoy keeping fit through playing sport, and I know sprains and strains are part of the package. However, sometimes it's more than a sprain, and it's at those serious moments that you need somewhere to turn for support, but more importantly hope.",
                             "The ACL is one of four major ligaments in the knee, it serves to act as a stabiliser that prevents your knee from bending too far in any direction. The injury itself is commonly associated with sports that involve sudden stops and changes in direction, this can result in the ligament stretching or even tearing.",
-                            "The main course of action, for those who opt for it, is surgery followed by several months of physical therapy. It's safe to3say that the whole process is draining both mentally and physically, and the long road to recovery can be very isolating."
+                            "The main course of action, for those who opt for it, is surgery followed by several months of physical therapy. It's safe to say that the whole process is draining both mentally and physically, and the long road to recovery can be very isolating."
                         ]
                     }
                 ],
@@ -354,6 +360,9 @@ export const homePageProjects = [
     },
     {
         "title": "Enriched Site Search",
+        "SEOTitle": "How To Improve Engagement Through Enriched Site Search",
+        "SEODescription": "Overview of how to improve site search through enriched content and semantic searches.",
+        "keywords": "E-commerce, enriched search, site search, semantic search, bloomreach, simple search, search images, search preview, search optimisation",
         "path": "autocomplete/",
         "headerImage": <ProjectEnrichedSearch />,
         "headerAlt": "Portfolio for all header image",
