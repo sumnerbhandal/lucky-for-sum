@@ -64,7 +64,6 @@ export const Project = (props) => {
                 <div className="project-preview">
                     <div style={projectPreviewPosition} className="project-preview-thumbnail header">
                         {pdp.headerImage}
-                        {/* <img src={require('./images/' + pdp.path + 'header.png')} alt={pdp.headerAlt}  /> */}
                     </div>
                     <MarketingBannerTwo message={pdp.title} />
                 </div>

@@ -9,7 +9,6 @@ import { Footer } from "../footer/footer";
 import {Helmet} from "react-helmet";
 import "./home.css";
 
-
 const footerStyle = {
     height: "auto"
 }
