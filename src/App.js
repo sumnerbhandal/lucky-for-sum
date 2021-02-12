@@ -1,4 +1,4 @@
-import React, {useState, createRef, Suspense, lazy} from "react";
+import React, {useState, createRef } from "react";
 import NavDefault from './nav/navigation';
 import HomePage from './home/home';
 import { Footer } from './footer/footer';
