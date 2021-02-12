@@ -7,17 +7,6 @@ import {Helmet} from "react-helmet";
 import LazyLoad from 'react-lazy-load';
 
 
-const ProjectPortfolio = lazy(() => import('./components/ProjectPortfolioIllustration'));
-const ProjectLigamend = lazy(() => import('./components/ProjectLigamendIllustration'));
-const ProjectEnrichedSearch = lazy(() => import('./components/ProjectEnrichedSearchIllustration'));
-
-// Rendering order for this is very very important - done to code split illustrations
-const headerImageList = [
-    <ProjectPortfolio />,
-    <ProjectLigamend />,
-    <ProjectEnrichedSearch />
-]
-
 
 const Project = (props) => {
     const verticalPosition = props.position == null ? 0 : props.position.y;
@@ -75,11 +64,7 @@ const Project = (props) => {
             <div key={index} className="project-preview-container header">
                 <div className="project-preview">
                     <div style={projectPreviewPosition} className="project-preview-thumbnail header">
-                    <Suspense fallback={<div></div>}>
-                        {headerImageList[projectIndex]}
-                    </Suspense>
-{/*                         
-                        {pdp.headerImage} */}
+                    {pdp.headerImage}
                     </div>
                     <MarketingBannerTwo message={pdp.title} />
                 </div>

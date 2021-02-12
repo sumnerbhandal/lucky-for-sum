@@ -10,6 +10,10 @@
     clip-path: polygon(100% 0, 100% 60%, 0 100%, 0 0);
 }
 
+body.dark .project-preview-thumbnail.header {
+    background: var(--off-white);
+}
+
 .project-preview-container.header {
     flex-wrap: wrap;
 }
@@ -36,8 +40,7 @@
 .project-preview-thumbnail.header > svg {
     width: auto;
     position: relative;
-    /* animation: imageTransition 0.5s forwards;
-    animation-delay: 0.8s; */
+    animation: imageTransition 0.5s forwards;
 }
 
 @media (min-width: 768px) {
@@ -326,10 +329,8 @@ p.intro {
   @keyframes imageTransition {
     0% {
     transform: rotate(0deg);
-    margin-top: -3rem;
     }
     100% {  
         transform: rotate(20deg);
-        margin-top: 0;
     }
 }
