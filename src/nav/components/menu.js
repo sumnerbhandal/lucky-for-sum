@@ -50,7 +50,7 @@ export const Menu = (props) => {
             <ul className="social" aria-label="Social Links">
                 <li className="label"><p>Find me on social networks at:</p></li>
                 {socialLinks.map((social, index) => (
-                    <li>
+                    <li key={index}>
                         <a href={social.link} target="_blank" tabIndex={props.isToggled ? "0" : "-1"} aria-label={social.description} rel="noopener noreferrer">
                             <FontAwesomeIcon icon={social.image} />
                          </a>

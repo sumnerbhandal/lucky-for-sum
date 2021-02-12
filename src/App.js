@@ -1,17 +1,16 @@
-import React, {useState, createRef} from "react";
-import ProductPage from './pdp/pdp';
-import {Project} from './project/project';
-import Plp from './plp/plp';
-import ContactForm from './contact/contact';
+import React, {useState, createRef, Suspense, lazy} from "react";
 import NavDefault from './nav/navigation';
 import HomePage from './home/home';
 import { Footer } from './footer/footer';
 import { ReadingProgress } from "./read-progress";
-import { MarketingBanner, MarketingBannerTwo } from './banners/marketing-banner';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom/index";
-import "./reset.css";
 import "./index.css";
-import "./fonts/fonts.css";
+import "./reset.css";
+
+import Project from "./project/project";
+
+
+// const Project = lazy(() => import('./project/project'));
 
 
 export default function App() {
@@ -45,15 +44,12 @@ export default function App() {
             </div>
         }/>
         <Route path="/project/*" element={
-          <div>
-            <ReadingProgress target={target} />
-            <Project position={projectPreviewPosition}  target={target} />
-            <Footer />
-          </div>
+              <div>
+                <ReadingProgress target={target} />
+                <Project position={projectPreviewPosition}  target={target} />
+                <Footer />
+              </div>
         }/>
-        <Route path="/services" element={<Services />}/>
-        <Route path="/pdp/*" element={<ProductPage />} />
-        <Route path="/contact" element={<ContactForm/>} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </main>
@@ -70,15 +66,15 @@ const NotFound = () => {
 }
 
 
-function Services() {
-  document.title = "Lucky For Sum - Services"
-  return (
-    <div className="PageContent">
-      <MarketingBanner message="Just For You" />
-      <Plp category="2" />
-      <MarketingBannerTwo message="Thanks For Visiting" />
-    </div>
-  )
-}
+// function Services() {
+//   document.title = "Lucky For Sum - Services"
+//   return (
+//     <div className="PageContent">
+//       <MarketingBanner message="Just For You" />
+//       <Plp category="2" />
+//       <MarketingBannerTwo message="Thanks For Visiting" />
+//     </div>
+//   )
+// }
 
 

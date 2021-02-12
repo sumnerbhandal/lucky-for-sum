@@ -9,7 +9,6 @@ export const ReadingProgress = ({ target }) => {
       }
       const element         = target.current;
       const totalHeight     = element.clientHeight - element.offsetTop - (window.innerHeight);
-      console.log(totalHeight);
       const windowScrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
   
       if (windowScrollTop === 0) {

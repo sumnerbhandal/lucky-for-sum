@@ -1,4 +1,4 @@
-import React, {useState, lazy, Suspense} from "react";
+import React, {useState} from "react";
 import { homePageProjects } from '../data-feed/hp-feed';
 import { Bio } from './components/home--bio';
 import { useInView } from 'react-intersection-observer';
@@ -58,13 +58,13 @@ const HomePage = (props) => {
                 <meta name="keywords" content="portfolio,UX,user experience,UI,user interface,product design, designer, digital design,online,digital, support, community, injury, snippets, acl, support community, acl injury, design snippets"/>
             </Helmet>
             <div id="introSection" className="introSection hp-section section">
-                < HeroVideo pressEnter={pressEnter} videoButton={videoButton} ref={ref} videoPlaying={videoPlaying} />
+                < HeroVideo pressEnter={pressEnter} videoButton={videoButton} forwardRef={ref} videoPlaying={videoPlaying} />
                 < Bio />
             </div>
             {homePageProjects.map((item, index) => (
                 <div className="project-preview-container hp-section" id="project-container" key={index}>
                     <div className={`project-preview ${inView ? "before" : ""}`}>
-                        <Link to={`/project/${item.url}-pid-${item.id}`} className="project-preview-thumbnail" id={item.id} title={item.url} onClick={projectImageOpen}  tabindex="0">
+                        <Link to={`/project/${item.url}-pid-${item.id}`} className="project-preview-thumbnail" id={item.id} title={item.url} onClick={projectImageOpen}  tabIndex="0">
                             {item.image}
                         </Link>
                         <h2>
@@ -73,7 +73,7 @@ const HomePage = (props) => {
                     </div>
                     <div className={`image-right ${inView ? "before" : ""}`}>
                         {item.intro.map((paragraph, index) => (
-                    <p className="intro" tabIndex="0">{paragraph}</p>
+                    <p key={index} className="intro" tabIndex="0">{paragraph}</p>
                         ))}
                     </div>
                 </div>

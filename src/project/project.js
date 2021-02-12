@@ -1,5 +1,5 @@
 import { MarketingBannerTwo } from '../banners/marketing-banner';
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, Suspense, lazy } from "react";
 import './project.css'
 import { homePageProjects } from '../data-feed/project-feed';
 import ProgressiveImageHook from "../reusable-functions/progressive-image-load";
@@ -7,12 +7,24 @@ import {Helmet} from "react-helmet";
 import LazyLoad from 'react-lazy-load';
 
 
-export const Project = (props) => {
+const ProjectPortfolio = lazy(() => import('./components/ProjectPortfolioIllustration'));
+const ProjectLigamend = lazy(() => import('./components/ProjectLigamendIllustration'));
+const ProjectEnrichedSearch = lazy(() => import('./components/ProjectEnrichedSearchIllustration'));
+
+// Rendering order for this is very very important - done to code split illustrations
+const headerImageList = [
+    <ProjectPortfolio />,
+    <ProjectLigamend />,
+    <ProjectEnrichedSearch />
+]
+
+
+const Project = (props) => {
     const verticalPosition = props.position == null ? 0 : props.position.y;
     const leftPosition = props.position == null ? 0 : props.position.x;
     const projectIndex = window.location.href.split('pid-')[1];
 
-    const [projectsShown, setProjectsShown] = useState([homePageProjects[projectIndex]])
+    const [projectsShown, setProjectsShown] = useState([homePageProjects[projectIndex]]);
     const [nextProjectIndex, setNextProjectIndex] = useState(parseInt(projectIndex) + 1); 
     const [loaderAnimationId, setLoaderAnimationId] = useState(0);
 
@@ -60,11 +72,14 @@ export const Project = (props) => {
                 <meta name="keywords" content={metaKeywords} />
             </Helmet>
         {projectsShown.map((pdp, index) => (
-            <div className="project-preview-container header">
-           
+            <div key={index} className="project-preview-container header">
                 <div className="project-preview">
                     <div style={projectPreviewPosition} className="project-preview-thumbnail header">
-                        {pdp.headerImage}
+                    <Suspense fallback={<div></div>}>
+                        {headerImageList[projectIndex]}
+                    </Suspense>
+{/*                         
+                        {pdp.headerImage} */}
                     </div>
                     <MarketingBannerTwo message={pdp.title} />
                 </div>
@@ -72,7 +87,7 @@ export const Project = (props) => {
                     <section>
                          <div className="col">
                             {pdp.intro.map((paragraph, index) => (
-                                <p className="intro" tabIndex="0">{paragraph}</p>
+                                <p key={index} className="intro" tabIndex="0">{paragraph}</p>
                             ))}
                         </div>
                     </section>
@@ -85,21 +100,21 @@ export const Project = (props) => {
                             </div>
                             <div className="col">
                                 {content.subsection.map((subsection, index) => (
-                                    <div className="">
+                                    <div key={index} className="">
                                         {subsection.h3 === undefined ? null :
                                         <h3 aria-level="3" tabIndex="0">
                                             {subsection.h3}
                                         </h3>
                                         }
                                         {subsection.copy.map((copy, index) => (
-                                            <p tabIndex="0">{copy}</p>
+                                            <p key={index} tabIndex="0">{copy}</p>
                                         ))}
                                     </div>
                                 ))}
                             </div>
                             <div className="col">
                                 {content.responsibilities.map((subsection, index) => (
-                                    <div className="responsibilities">
+                                    <div key={index} className="responsibilities">
                                         {subsection.h3 === undefined ? null :
                                         <h3 aria-level="3" tabIndex="0">
                                             {subsection.h3}
@@ -107,7 +122,7 @@ export const Project = (props) => {
                                         }
                                         <ul>
                                             {subsection.skills.map((skills, index) => (
-                                                <li tabIndex="0">{skills}</li>
+                                                <li key={index} tabIndex="0">{skills}</li>
                                             ))}
                                         </ul>
                                     </div>
@@ -132,13 +147,12 @@ export const Project = (props) => {
                     {pdp.article.map((content, index) => (
                         <section key={index}>
                             <div className="heading-container">
-                            <h2 aria-level="2" tabIndex="0">
-                                {content.h2}
-                            </h2>
+                                <h2 aria-level="2" tabIndex="0">
+                                    {content.h2}
+                                </h2>
                             </div>
- 
-                                {content.subsection.map((subsection, index) => (
-                                <div className="subsection">
+                            {content.subsection.map((subsection, index) => (
+                                <div key={index} className="subsection">
                                     <div className="col">
                                         <div className="">
                                             {subsection.h3 === undefined ? null :
@@ -147,26 +161,24 @@ export const Project = (props) => {
                                             </h3>
                                             }
                                             {subsection.copy.map((copy, index) => (
-                                                <p tabIndex="0">{copy}</p>
+                                                <p key={index} tabIndex="0">{copy}</p>
                                             ))}
                                         </div>
                                     </div>
                                     <div className="col">
                                         {subsection.subsectionImage === undefined ? null :
-                                         <LazyLoad offsetVertical={1000}>
-                                             <ProgressiveImageHook
+                                        <LazyLoad key={index} offsetVertical={1000}>
+                                            <ProgressiveImageHook
                                                 key={index}
-                                                src={require('./images/' + pdp.path + subsection.subsectionImage.image)} alt={subsection.subsectionImage.alt}
-                                                placeholder={require('./images/' + pdp.path + subsection.subsectionImage.image)} alt={subsection.subsectionImage.alt}
+                                                src={require('./images/' + pdp.path + subsection.subsectionImage.image)}
+                                                placeholder={require('./images/' + pdp.path + subsection.subsectionImage.image.replace(".png" || ".gif", "_placeholder.png"))}
                                                 alt={subsection.subsectionImage.alt}
                                             />                                        
                                         </LazyLoad>
                                         }
                                     </div>
                                 </div>
-                                ))}
-
-            
+                            ))}            
                         </section>
                     ))}
                 </article>
@@ -179,3 +191,5 @@ export const Project = (props) => {
         </div>
     )
 }
+
+export default Project;

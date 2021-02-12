@@ -19,8 +19,8 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
-	font: inherit;
+	/* font-size: 100%; */
+	/* font: inherit; */
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
@@ -46,3 +46,43 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+
+h1, h2 {
+	font-family: Palanquin, Verdana, Geneva, Tahoma, sans-serif;
+	font-weight: 600;
+	font-size: 1.5rem;
+	margin-top: 1.25rem;
+	width: fit-content;
+  }
+  
+  
+  h3, h4, h5, h6 {
+	font-family: Palanquin, Verdana, Geneva, Tahoma, sans-serif;
+	font-weight: 500;
+	width: fit-content;
+	color: var(--deep-purple);
+  }
+  
+  p {
+	padding: 0.125rem;
+	margin-top: 0.5rem;
+	font-size: 1rem;
+	line-height: 1.5;
+	letter-spacing: 0.12px;
+	margin-block-start: 0.5rem;
+	margin-block-end: 1rem;
+	color: var(--subtext);
+  }
+  
+  p.intro {
+	font-size: 1.25rem;
+	font-weight: 300;
+	max-width: 36rem;
+  }
+  
+  @media (min-width: 1024px) {
+	p.intro {
+		font-size: 1.625rem;
+	}
+  }

@@ -1,6 +1,3 @@
-import { ProjectEnrichedSearch, ProjectLigamend, ProjectPortfolio } from "../project/components/project-svg-illustrations";
-import React from 'react';
-
 export const homePageProjects = [
     {
       "title": "A Portfolio For All",
@@ -8,7 +5,6 @@ export const homePageProjects = [
       "SEODescription": "Deconstruction of a UX/UI portfolio designed and built with accessibility considerations in mind, tailored using some of your browsers preferences.",
       "keywords": "Portfolio, UX Design, Accessibility, A11Y, Front-End Development, app, optimisation, responsive design, native mobile apps, API Endpoints, Interactions, user preferences, dark mode",
       "path": "portfolio/",
-      "headerImage": <ProjectPortfolio />,
       "headerAlt": "Portfolio for all header image", 
       "intro": [
           "The consequence of being a designer is that you're only ever as good as your latest portfolio."
@@ -56,7 +52,7 @@ export const homePageProjects = [
                         "To create an inclusive experience that showcases some of the skills I have to offer, while showing that accessible design can still be fun."
                     ]
                 }
-            ],
+            ]
         },
         {
             "h2": "The Design Process",
@@ -97,7 +93,6 @@ export const homePageProjects = [
                 },
             ] 
         },
-        ,
         {
             "h2": "Designing in the Browser",
             "subsection": [
@@ -182,7 +177,6 @@ export const homePageProjects = [
         "SEODescription": "Building a platform and community for those who have sufferered from an Anterior Cruciate Ligament injury.",
         "keywords": "Ligamend, ACL, acl, Anterior Cruciate Ligament, sprain, knee ligaments, injury support group, support group, physio, physical therapy, recovery, knee rehabilitation, post-injury support",
         "path": "ligamend/",
-        "headerImage": <ProjectLigamend />,
         "headerAlt": "Portfolio for all header image",
         "intro": [
             "Building a support community set up to aid the rehabilitation of people who have suffered an anterior cruciate ligament (ACL) injury."
@@ -364,7 +358,6 @@ export const homePageProjects = [
         "SEODescription": "Overview of how to improve site search through enriched content and semantic searches.",
         "keywords": "E-commerce, enriched search, site search, semantic search, bloomreach, simple search, search images, search preview, search optimisation",
         "path": "autocomplete/",
-        "headerImage": <ProjectEnrichedSearch />,
         "headerAlt": "Portfolio for all header image",
         "intro": [
             "As stock diversifies, taxonomies grow and it gets just that much more difficult to find anything.",
