@@ -97,6 +97,11 @@ img.play-button {
 
 }
 
+
+.aboutIntro p {
+    font-size: 1.0625rem;
+}
+
 /* Project Previews */
 
 .project-preview-container {

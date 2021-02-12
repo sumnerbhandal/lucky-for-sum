@@ -264,7 +264,8 @@ nav {
 
   #burger-button p {
     font-size: 1rem;
-    font-weight: 600;
+    font-family: 'Palanquin Dark', sans-serif;
+    font-weight: 400;
     margin: 0;
     margin-bottom: 0.125rem;
     pointer-events: none;

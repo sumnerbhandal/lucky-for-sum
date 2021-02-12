@@ -6,7 +6,6 @@ import { ReadingProgress } from "./read-progress";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom/index";
 import "./index.css";
 import "./reset.css";
-import "./fonts/fonts.css"
 
 import Project from "./project/project";
 

@@ -68,7 +68,7 @@
 }
 
 
-.project-content section .subsection .col:nth-child(1n) > div:nth-child(1) h3  {
+.project-content .project-content section .subsection .col:nth-child(1n) > div:nth-child(1) h3  {
     margin-top: 1rem;
 }
 
@@ -282,6 +282,7 @@ p.intro {
         position: relative;
         font-size: 1.75rem;
         font-weight: 300;
+        font-family: 'Palanquin', sans-serif;
     }
     .project-content h3 {
         font-size: 1.25rem;

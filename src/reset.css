@@ -47,19 +47,30 @@ table {
 	border-spacing: 0;
 }
 
+body, * {
+	margin: 0;
+	font-family: 'Palanquin', sans-serif;
+	font-weight: 400;
+	font-size: 1rem;
+	line-height: 1.5;
+	color: var(--deep-purple);
+	scroll-behavior: smooth;
+  }
+
 
 h1, h2 {
-	font-family: Palanquin, Verdana, Geneva, Tahoma, sans-serif;
-	font-weight: 600;
+	font-family: 'Palanquin Dark', sans-serif;
+	font-weight: 400;
 	font-size: 1.5rem;
 	margin-top: 1.25rem;
+	letter-spacing: 0.4px;
 	width: fit-content;
   }
   
   
   h3, h4, h5, h6 {
-	font-family: Palanquin, Verdana, Geneva, Tahoma, sans-serif;
-	font-weight: 500;
+	font-family: 'Palanquin', sans-serif;
+	font-weight: 400;
 	width: fit-content;
 	color: var(--deep-purple);
   }
@@ -74,15 +85,7 @@ h1, h2 {
 	margin-block-end: 1rem;
 	color: var(--subtext);
   }
-  
+
   p.intro {
-	font-size: 1.25rem;
 	font-weight: 300;
-	max-width: 36rem;
-  }
-  
-  @media (min-width: 1024px) {
-	p.intro {
-		font-size: 1.625rem;
-	}
   }
