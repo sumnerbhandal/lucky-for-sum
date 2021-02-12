@@ -165,7 +165,7 @@ p.intro {
         margin: 0;
         margin-top: 2rem;
     }
-    .project-content .subsection .col img {
+    .project-content .subsection .col  .LazyLoad {
         margin-top: 1.25rem;
     }
 }

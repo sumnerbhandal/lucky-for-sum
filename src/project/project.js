@@ -4,6 +4,7 @@ import './project.css'
 import { homePageProjects } from '../data-feed/project-feed';
 import ProgressiveImageHook from "../reusable-functions/progressive-image-load";
 import {Helmet} from "react-helmet";
+import LazyLoad from 'react-lazy-load';
 
 
 export const Project = (props) => {
@@ -115,12 +116,14 @@ export const Project = (props) => {
                            
                             {content.featuredImage === undefined ? null :
                                 <div className="featured-image-container">
-                                    <ProgressiveImageHook
-                                        key={index}
-                                        src={require('./images/' + pdp.path + content.featuredImage.image)}
-                                        placeholder={require('./images/' + pdp.path + content.featuredImage.image)}
-                                        alt={content.featuredImage.alt}
-                                    />
+                                      <LazyLoad offsetVertical={1000}>
+                                        <ProgressiveImageHook
+                                            key={index}
+                                            src={require('./images/' + pdp.path + content.featuredImage.image)}
+                                            placeholder={require('./images/' + pdp.path + content.featuredImage.image.replace(".png" || ".gif", "_placeholder.png"))}
+                                            alt={content.featuredImage.alt}
+                                        />
+                                    </LazyLoad>
                                   
                                 </div>
                             }
@@ -150,7 +153,14 @@ export const Project = (props) => {
                                     </div>
                                     <div className="col">
                                         {subsection.subsectionImage === undefined ? null :
-                                            <img tabIndex="0" src={require('./images/' + pdp.path + subsection.subsectionImage.image)} alt={subsection.subsectionImage.alt} loading="lazy"  />
+                                         <LazyLoad offsetVertical={1000}>
+                                             <ProgressiveImageHook
+                                                key={index}
+                                                src={require('./images/' + pdp.path + subsection.subsectionImage.image)} alt={subsection.subsectionImage.alt}
+                                                placeholder={require('./images/' + pdp.path + subsection.subsectionImage.image)} alt={subsection.subsectionImage.alt}
+                                                alt={subsection.subsectionImage.alt}
+                                            />                                        
+                                        </LazyLoad>
                                         }
                                     </div>
                                 </div>

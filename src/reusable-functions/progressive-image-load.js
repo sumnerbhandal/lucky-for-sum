@@ -20,11 +20,11 @@ const ProgressiveImageHook = React.memo(({ src, placeholder, alt = "" }) => {
       src={currentSrc}
       style={{
         opacity: loading ? 0.5 : 1,
-        filter: loading ? 'blur(4px)' : 'blur(0)'
-        // transition: "opacity .15s linear"
+        filter: loading ? 'blur(4px)' : 'blur(0)',
+        transition: "all 0.3s ease, filter 1s ease-out"
       }}
       alt={alt}
-      loading="lazy"
+      tabIndex="0"
     />
   )
 });

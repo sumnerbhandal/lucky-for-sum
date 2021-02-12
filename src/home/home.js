@@ -1,13 +1,16 @@
-import React, {useState} from "react";
+import React, {useState, lazy, Suspense} from "react";
 import { homePageProjects } from '../data-feed/hp-feed';
 import { Bio } from './components/home--bio';
 import { useInView } from 'react-intersection-observer';
 import { Link } from "react-router-dom/index";
 import { HeroVideo } from "./components/hero--video";
-import { DesignSnippets } from "./components/design--snippets";
+import DesignSnippets from "./components/design--snippets";
 import { Footer } from "../footer/footer";
 import {Helmet} from "react-helmet";
 import "./home.css";
+import LazyLoad from 'react-lazy-load';
+
+// const DesignSnippets = lazy(() => import('./components/design--snippets'));
 
 const footerStyle = {
     height: "auto"
@@ -75,7 +78,9 @@ const HomePage = (props) => {
                     </div>
                 </div>
             ))}
-            <DesignSnippets />
+            <LazyLoad offsetVertical={600}>
+                <DesignSnippets />
+            </LazyLoad>
             <div style={footerStyle} className="hp-section">
                 <Footer />
             </div>

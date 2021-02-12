@@ -206,3 +206,11 @@ button:hover, form input[type="submit"]:hover {
     background-color: var(--deep-purple);
     transition: 0s;
   }
+
+
+  /* Lazy Load Component */
+
+  .LazyLoad {
+    width: 100%;
+    overflow: hidden;
+  }
