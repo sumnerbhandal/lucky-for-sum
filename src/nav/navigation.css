@@ -126,6 +126,10 @@ nav {
     cursor: pointer;
     transition: all 0.3s ease;
 }
+
+.toggle-switch:focus {
+  border-radius: 2rem;
+}
 .toggle-switch div.indicator {
     height: 1.5rem;
     width: 1.5rem;
