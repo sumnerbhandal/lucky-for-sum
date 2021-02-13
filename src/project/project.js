@@ -1,5 +1,5 @@
 import { MarketingBannerTwo } from '../banners/marketing-banner';
-import React, { useEffect, useState, Suspense, lazy } from "react";
+import React, { useEffect, useState } from "react";
 import './project.css'
 import { homePageProjects } from '../data-feed/project-feed';
 import ProgressiveImageHook from "../reusable-functions/progressive-image-load";
