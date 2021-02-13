@@ -2,7 +2,7 @@ import React from "react";
 
 export const Portfolio = () => {
     return (
-    <svg width="781.83px" height="672.16px" overflow="visible" viewBox="121.44 128.75 781.83 672.16">
+    <svg overflow="visible" viewBox="121.44 128.75 781.83 672.16">
     <g fill="var(--deep-purple)" >
     <g transform="translate(271 173) scale(1)" fill="var(--deep-purple)">
     <g fill="var(--deep-purple)" >
@@ -86,7 +86,7 @@ export const Portfolio = () => {
 export const EnrichedSearch = () => {
     return (
    
-        <svg width="804.52px" height="524.08px" overflow="visible" viewBox="108.74 248.66 804.52 524.08">
+        <svg overflow="visible" viewBox="108.74 248.66 804.52 524.08">
         <g fill="var(--deep-purple)" blush-i="0">
         <g transform="translate(272 173) scale(1)">
         <g fill="var(--deep-purple)"  blush-i="0.0.0">
@@ -176,7 +176,7 @@ export const EnrichedSearch = () => {
 
 export const Ligamend = () => {
     return (
-        <svg width="665.19px" height="609.62px" overflow="visible" viewBox="183.07 188.47 665.19 609.62">
+        <svg overflow="visible" viewBox="183.07 188.47 665.19 609.62">
         <g fill="var(--deep-purple)" blush-i="0">
         <g transform="translate(271 173) scale(1)">
         <g fill="var(--deep-purple)"  blush-i="0.0.0">
