@@ -6,11 +6,7 @@ import { ReadingProgress } from "./read-progress";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom/index";
 import "./index.css";
 import "./reset.css";
-
 import Project from "./project/project";
-
-
-// const Project = lazy(() => import('./project/project'));
 
 
 export default function App() {
@@ -64,17 +60,4 @@ const NotFound = () => {
     </div>
   )
 }
-
-
-// function Services() {
-//   document.title = "Lucky For Sum - Services"
-//   return (
-//     <div className="PageContent">
-//       <MarketingBanner message="Just For You" />
-//       <Plp category="2" />
-//       <MarketingBannerTwo message="Thanks For Visiting" />
-//     </div>
-//   )
-// }
-
 
