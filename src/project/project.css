@@ -147,7 +147,7 @@ p.intro {
 .project-content .featured-image-container img {
     object-fit: cover;
     object-position: 50% 50%;
-    width: 100%;
+    /* width: 100%; */
 }
 
 .project-content .subsection {
