@@ -120,7 +120,7 @@ const Project = (props) => {
                                         <ProgressiveImageHook
                                             key={index}
                                             src={require('./images/' + pdp.path + content.featuredImage.image)}
-                                            placeholder={require('./images/' + pdp.path + content.featuredImage.image.replace(".png" || ".gif", "_placeholder.png"))}
+                                            placeholder={require('./images/' + pdp.path + content.featuredImage.image.replace(".png" || ".gif" || ".jpg", "_placeholder.png"))}
                                             alt={content.featuredImage.alt}
                                             tabIndex={-1}
                                         />
@@ -152,12 +152,12 @@ const Project = (props) => {
                                         </div>
                                     </div>
                                     <div className="col">
-                                        {subsection.subsectionImage === undefined ? null :
+                                        {subsection.subsectionImage === undefined || subsection.subsectionImage.image === ""  ? null :
                                         <LazyLoad key={index} offsetVertical={1000}>
                                             <ProgressiveImageHook
                                                 key={index}
                                                 src={require('./images/' + pdp.path + subsection.subsectionImage.image)}
-                                                placeholder={require('./images/' + pdp.path + subsection.subsectionImage.image.replace(".png" || ".gif", "_placeholder.png"))}
+                                                placeholder={require('./images/' + pdp.path + subsection.subsectionImage.image.replace(".png" || ".gif" || ".jpg", "_placeholder.png"))}
                                                 alt={subsection.subsectionImage.alt}
                                                 tabIndex={0}
                                             />

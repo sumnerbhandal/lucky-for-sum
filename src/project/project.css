@@ -159,6 +159,7 @@ p.intro {
 
 .project-content .subsection .col .LazyLoad {
     overflow: visible;
+    min-height: 15rem;
 }
 
 .project-content .subsection .col img {

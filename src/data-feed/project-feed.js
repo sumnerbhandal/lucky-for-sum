@@ -206,14 +206,14 @@ export const homePageProjects = [
                         "h3": "Responsibilities",
                         "skills": [
                             "Design",
-                            "Copywriting",
-                            "Front-End Development"
+                            "Branding",
+                            "Illustration"
                         ]
                     }
                 ],
                 "featuredImage": {
-                    "image": "placeholder.png",
-                    "alt": "Placeholder"
+                    "image": "header.jpg",
+                    "alt": "Header divider"
                 }
           }
         ],
@@ -227,8 +227,8 @@ export const homePageProjects = [
                             "My ambition with this project is to create a positive, supportive community that can offer informative resources and a support network for people who have suffered from an anterior cruciate ligament injury."
                         ],
                         "subsectionImage" : {
-                            "image": "placeholder-shallow.png",
-                            "alt": "Preview"
+                            "image": "knee-injury.jpg",
+                            "alt": "Knee injury recovery"
                         }
                     },
                     {
@@ -237,8 +237,8 @@ export const homePageProjects = [
                             "The main outcome I hope to achieve is to inspire and empower those who have suffered from this injury and I believe the best medium to do so is by creating a brand that encourages people on their road to recovery."
                         ],
                         "subsectionImage" : {
-                            "image": "placeholder-shallow.png",
-                            "alt": "Preview"
+                            "image": "statement-of-intent.png",
+                            "alt": "Statement of intent"
                         }
                     }
                 ] 
@@ -252,8 +252,8 @@ export const homePageProjects = [
                             "One of the first things that I did was to see the ways in which support was offered to those who suffered from physical ailments. After extensive UK specific research, the charitable organisation that struck the perfect tone with exemplary support offerings was Macmillan Cancer Support. Their human centric brand has provided people with the support they have needed since its foundation."
                         ],
                         "subsectionImage" : {
-                            "image": "placeholder-shallow.png",
-                            "alt": "Preview"
+                            "image": "inspiration.png",
+                            "alt": "Inspiration"
                         }
                     },
                     {
@@ -262,8 +262,8 @@ export const homePageProjects = [
                             "By building the Macmillan brand, the organisation has allowed itself to become a powerful tool in their mission to reach those who are in need and inspire people to support their cause. By producing such a recognisable brand, it instills trust and facilitates their cause."
                         ],
                         "subsectionImage" : {
-                            "image": "placeholder-shallow.png",
-                            "alt": "Preview"
+                            "image": "",
+                            "alt": ""
                         }
                     }
                 ] 
@@ -279,8 +279,8 @@ export const homePageProjects = [
                             "The colourway is, in my opinion, one of the most important features of a brand. I led with the idea of transition, reflecting the idea of injury through to recovery; a concept applied to the mark through the gradient of colour present in the triangles."
                         ],
                         "subsectionImage" : {
-                            "image": "placeholder.png",
-                            "alt": "Preview"
+                            "image": "visual-branding.jpg",
+                            "alt": "Visual branding"
                         }
                     }
                 ] 
@@ -293,8 +293,8 @@ export const homePageProjects = [
                             "The tone of the brand had to be sympathetic, understanding what people are suffering from and the best way to support that. Having spoken to others during both my time in the hospital and then also during rehabilitation classes, it soon became apparent that they were all keen to get back to being active again and to come back just as strong as before. This pairing of recovery and progression formed the basis for a lot of the content as it focuses not only on the present but the next step."
                         ],
                         "subsectionImage" : {
-                            "image": "placeholder.png",
-                            "alt": "Preview"
+                            "image": "tonal-branding.png",
+                            "alt": "Tonal branding"
                         }
                     }
                 ] 
@@ -308,8 +308,8 @@ export const homePageProjects = [
                             "By showcasing public and non-public figures and their journeys, it helped to humanise the experience and to demonstrate that while it is a struggle, it is possible to get yourself back to where you were."
                         ],
                         "subsectionImage" : {
-                            "image": "placeholder.png",
-                            "alt": "Preview"
+                            "image": "emotional-branding.jpg",
+                            "alt": "Emotional branding"
                         }
                     }
                 ] 
@@ -323,8 +323,8 @@ export const homePageProjects = [
                             "We live in an era where information is more accessible than ever, and as such the best way to get information to the audience is to publish it online. An ACL injury can often make any movement difficult, so the idea of booking an appointment to travel to see a doctor isn't beneficial in the immediacy. From a personal perspective, the first doctor I visited said that he was unable to diagnose the extent of my injury due to excessive swelling, so I was advised to rest and apply ice. Now, if there was a place that had answers specific to my problem, I would have saved both the doctors time, and my own. Something to consider..."
                         ],
                         "subsectionImage" : {
-                            "image": "placeholder.png",
-                            "alt": "Preview"
+                            "image": "web-presence.jpg",
+                            "alt": "Reaching the audience web mockup"
                         }
                     },
                     {
@@ -333,8 +333,8 @@ export const homePageProjects = [
                             "A feeling that is common among recovering patients is loneliness, it is a time where you can feel isolated, so getting instant answers from people who have been going through something similar can offer a little lift. The idea of having a chat functionality is something that would be very useful, as demonstrated in the interactive chat below."
                         ],
                         "subsectionImage" : {
-                            "image": "placeholder-shallow.png",
-                            "alt": "Preview"
+                            "image": "reaching-out.png",
+                            "alt": "Web chat"
                         }
                     }
                 ] 
@@ -349,8 +349,8 @@ export const homePageProjects = [
                             "It's not uncommon to pick up knocks and sprains playing sports, so suggestions for recovery ideas and exercises that could be implemented as part of training or warm ups could go a long way towards injury prevention."
                         ],
                         "subsectionImage" : {
-                            "image": "placeholder.png",
-                            "alt": "Preview"
+                            "image": "support-kit.jpg",
+                            "alt": "Support kit mockup"
                         }
                     }
                 ] 
