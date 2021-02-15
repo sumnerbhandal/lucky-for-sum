@@ -121,8 +121,9 @@ p.intro {
 
 .project-content h2 {
     position: relative;
-    font-weight: 300;
+    font-weight: 400;
     color: var(--happy-mustard-text);
+    font-family: 'Palanquin', sans-serif;
 }
 
 .project-content .col p {
@@ -268,7 +269,6 @@ p.intro {
 .project-content h2:after {
     content: "";
     position: absolute;
-    bottom: -0.125rem;
     left: -0.5rem;
     background: var(--happy-mustard);
     width: calc(100% + 1rem);
@@ -292,6 +292,10 @@ p.intro {
     }
     .project-content h3 {
         font-size: 1.25rem;
+    }
+
+    .project-content h2:after {
+        height: 2.75rem;
     }
 }
 
