@@ -88,10 +88,8 @@ p.intro {
 
 .project-content h3 {
     margin-top: 2rem;
-}
-
-.project-content h3 {
     font-size: 1.125rem;
+    font-family: "Palanquin Dark",sans-serif;
 }
 
 .project-content .responsibilities {
@@ -158,9 +156,14 @@ p.intro {
     width: 100%;
 }
 
+.project-content .subsection .col .LazyLoad {
+    overflow: visible;
+}
+
 .project-content .subsection .col img {
     width: 100%;
 }
+
 
 @media (min-width: 768px) {
     .project-content .featured-image-container {

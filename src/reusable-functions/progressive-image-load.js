@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-const ProgressiveImageHook = React.memo(({ src, placeholder, alt = "" }) => {
+const ProgressiveImageHook = React.memo(({ src, placeholder, alt, tabIndex = "" }) => {
   const [loading, setLoading] = useState(true);
   const [currentSrc, updateSrc] = useState(placeholder);
 
@@ -24,7 +24,7 @@ const ProgressiveImageHook = React.memo(({ src, placeholder, alt = "" }) => {
         transition: "all 0.3s ease, filter 1s ease-out"
       }}
       alt={alt}
-      tabIndex="0"
+      tabIndex={tabIndex}
     />
   )
 });

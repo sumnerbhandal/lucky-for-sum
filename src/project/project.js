@@ -115,13 +115,14 @@ const Project = (props) => {
                             </div>
                            
                             {content.featuredImage === undefined ? null :
-                                <div className="featured-image-container">
+                                <div className="featured-image-container" tabIndex="0" role="image" aria-label={content.featuredImage.alt}>
                                       <LazyLoad offsetVertical={1000}>
                                         <ProgressiveImageHook
                                             key={index}
                                             src={require('./images/' + pdp.path + content.featuredImage.image)}
                                             placeholder={require('./images/' + pdp.path + content.featuredImage.image.replace(".png" || ".gif", "_placeholder.png"))}
                                             alt={content.featuredImage.alt}
+                                            tabIndex={-1}
                                         />
                                     </LazyLoad>
                                   
@@ -158,7 +159,8 @@ const Project = (props) => {
                                                 src={require('./images/' + pdp.path + subsection.subsectionImage.image)}
                                                 placeholder={require('./images/' + pdp.path + subsection.subsectionImage.image.replace(".png" || ".gif", "_placeholder.png"))}
                                                 alt={subsection.subsectionImage.alt}
-                                            />                                        
+                                                tabIndex={0}
+                                            />
                                         </LazyLoad>
                                         }
                                     </div>

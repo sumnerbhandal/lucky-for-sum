@@ -78,7 +78,7 @@ const HomePage = (props) => {
                     </div>
                 </div>
             ))}
-            <LazyLoad offsetVertical={600}>
+            <LazyLoad offsetVertical={600} className="design-snippets hp-section section">
                 <DesignSnippets />
             </LazyLoad>
             <div style={footerStyle} className="hp-section">
