@@ -9,6 +9,7 @@ import { Footer } from "../footer/footer";
 import {Helmet} from "react-helmet";
 import "./home.css";
 import LazyLoad from 'react-lazy-load';
+import { Fragment } from "react";
 
 // const DesignSnippets = lazy(() => import('./components/design--snippets'));
 
@@ -78,9 +79,11 @@ const HomePage = (props) => {
                     </div>
                 </div>
             ))}
-            <LazyLoad offsetVertical={600} className="design-snippets hp-section section">
+            <LazyLoad offsetVertical={600} className="hp-section section">
+
                 <DesignSnippets />
             </LazyLoad>
+            <div id="design-snippets"></div>
             <div style={footerStyle} className="hp-section">
                 <Footer />
             </div>

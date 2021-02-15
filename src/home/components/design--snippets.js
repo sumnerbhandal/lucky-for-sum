@@ -4,7 +4,7 @@ import ProgressiveImageHook from "../../reusable-functions/progressive-image-loa
 
 const DesignSnippets = (props) => {
     return (
-            <div id="design-snippets">
+            <div className="design-snippets">
                 <h3>
                     Design Snippets (Placeholder Content)
                 </h3>

@@ -208,5 +208,6 @@ button:hover, form input[type="submit"]:hover {
   .LazyLoad {
     width: 100%;
     overflow: hidden;
+    height: auto;
   }
 
