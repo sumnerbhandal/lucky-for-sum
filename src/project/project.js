@@ -146,9 +146,21 @@ const Project = (props) => {
                                                 {subsection.h3}
                                             </h3>
                                             }
-                                            {subsection.copy.map((copy, index) => (
-                                                <p key={index} tabIndex="0">{copy}</p>
-                                            ))}
+                                            {subsection.copy === undefined || subsection.copy === ""  ? null :
+                                                subsection.copy.map((copy, index) => (
+                                                    <p key={index} tabIndex="0">{copy}</p>
+                                                ))
+                                            }
+                                            {subsection.bullet === undefined || subsection.bullet === ""  ? null :
+                                                <ul>
+                                                    {subsection.bullet.map((bullet, index) => (
+                                                        <li key={index} tabIndex="0">{bullet}</li>
+                                                    ))}
+                                                </ul>
+                                            }
+                                            {subsection.link === undefined || subsection.link === ""  ? null :
+                                                <a href={subsection.link.url} target="new">{subsection.link.text}</a>
+                                            }
                                         </div>
                                     </div>
                                     <div className="col">

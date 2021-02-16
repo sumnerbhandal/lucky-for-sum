@@ -130,6 +130,18 @@ p.intro {
     margin-top: 0.875rem;
 }
 
+.project-content .col ul {
+    margin-top: 0.875rem;
+    list-style-type: circle;
+}
+.project-content .col li {
+    margin: 0.5rem 0 0.75rem 2rem;
+}
+.project-content .col a {
+    font-family: 'Palanquin Dark', sans-serif;
+    font-weight: 400;
+}
+
 .project-content .col p:first-of-type {
     margin-top: 0.75rem;
 }
