@@ -320,7 +320,8 @@ export const homePageProjects = [
                     {
                         "h3": "A platform to offer advice",
                         "copy": [
-                            "We live in an era where information is more accessible than ever, and as such the best way to get information to the audience is to publish it online. An ACL injury can often make any movement difficult, so the idea of booking an appointment to travel to see a doctor isn't beneficial in the immediacy. From a personal perspective, the first doctor I visited said that he was unable to diagnose the extent of my injury due to excessive swelling, so I was advised to rest and apply ice. Now, if there was a place that had answers specific to my problem, I would have saved both the doctors time, and my own. Something to consider..."
+                            "We live in an era where information is more accessible than ever, and as such the best way to get information to the audience is to publish it online. An ACL injury can often make any movement difficult, so the idea of booking an appointment to travel to see a doctor isn't beneficial in the immediacy. From a personal perspective, the first doctor I visited said that he was unable to diagnose the extent of my injury due to excessive swelling, so I was advised to rest and apply ice. Now, if there was a place that had answers specific to my problem, I would have saved both the doctors time, and my own. Something to consider...",
+                            "Requires responsive web design examples."
                         ],
                         "subsectionImage" : {
                             "image": "web-presence.jpg",
@@ -328,9 +329,20 @@ export const homePageProjects = [
                         }
                     },
                     {
+                        "h3": "Sharing experiences",
+                        "copy": [
+                            "Blog post example, encouraging others to improve. Show interactive UI with posts and people following / liking the responses"
+                        ],
+                        "subsectionImage" : {
+                            "image": "placeholder.png",
+                            "alt": "Placeholder"
+                        }
+                    },
+                    {
                         "h3": "Getting the answers you need",
                         "copy": [
-                            "A feeling that is common among recovering patients is loneliness, it is a time where you can feel isolated, so getting instant answers from people who have been going through something similar can offer a little lift. The idea of having a chat functionality is something that would be very useful, as demonstrated in the interactive chat below."
+                            "A feeling that is common among recovering patients is loneliness, it is a time where you can feel isolated, so getting instant answers from people who have been going through something similar can offer a little lift. The idea of having a chat functionality is something that would be very useful, as demonstrated in the interactive chat below.",
+                            "Change this to to a video using the prototype."
                         ],
                         "subsectionImage" : {
                             "image": "reaching-out.png",
@@ -351,6 +363,16 @@ export const homePageProjects = [
                         "subsectionImage" : {
                             "image": "support-kit.jpg",
                             "alt": "Support kit mockup"
+                        }
+                    },
+                    {
+                        "h3": "Exercise examples",
+                        "copy": [
+                            "Show animated example of the image illustrations version"
+                        ],
+                        "subsectionImage" : {
+                            "image": "step-ups.png",
+                            "alt": "Step up exercise illustration"
                         }
                     }
                 ] 
@@ -443,7 +465,7 @@ export const homePageProjects = [
                         "skills": [
                             "Heuristic Evaluation",
                             "Web Design",
-                            "Marketing"
+                            "Marketing Support"
                         ]
                     }
                 ],
