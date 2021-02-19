@@ -35,8 +35,8 @@ export const homePageProjects = [
                 {
                     "h3": "Responsibilities",
                     "skills": [
-                        "Design",
-                        "Copywriting",
+                        "UX/UI Design",
+                        "Accessibility",
                         "Front-End Development"
                     ]
                 }
@@ -85,7 +85,7 @@ export const homePageProjects = [
                     }
                 },
                 {
-                    "h3": "Speed, Glorious Speed",
+                    "h3": "Speed, glorious speed",
                     "copy": [
                         "Two of my favourite things about native mobile apps are the perception of speed, 'everything's faster on the app' and the intricate animations, 'it feels appy'.",
                         "Part of recapturing that magic is through optimisation, that's where the speed comes in and improving the feedback the user receives when interacting with the site. When they go to click on something, what do they expect will happen?"
@@ -112,7 +112,7 @@ export const homePageProjects = [
                     }
                 },
                 {
-                    "h3": "Using real API data",
+                    "h3": "Lightweight and resusable",
                     "copy": [
                         "Having done my servitude building websites through hard coding html pages and using PHP reusable components, I am now living firmly in the world of React JS.",
                         "One of the blessings of adapting my world into a javascript based world is moving to mapping data from API endpoints, being that static or dynamic so that you can look to reduce the amount of code you write and the weight of your site.",
@@ -205,9 +205,9 @@ export const homePageProjects = [
                     {
                         "h3": "Responsibilities",
                         "skills": [
-                            "Design",
                             "Branding",
-                            "Illustration"
+                            "Illustration",
+                            "UI Design"
                         ]
                     }
                 ],
@@ -247,7 +247,7 @@ export const homePageProjects = [
                 "h2": "Inspiration",
                 "subsection": [
                     {
-                        "h3": "Building A Support Community",
+                        "h3": "Building a support community",
                         "copy": [
                             "One of the first things that I did was to see the ways in which support was offered to those who suffered from physical ailments. After extensive UK specific research, the charitable organisation that struck the perfect tone with exemplary support offerings was Macmillan Cancer Support. Their human centric brand has provided people with the support they have needed since its foundation."
                         ],
@@ -257,7 +257,7 @@ export const homePageProjects = [
                         }
                     },
                     {
-                        "h3": "Building A Brand",
+                        "h3": "Building a brand",
                         "copy": [
                             "By building the Macmillan brand, the organisation has allowed itself to become a powerful tool in their mission to reach those who are in need and inspire people to support their cause. By producing such a recognisable brand, it instills trust and facilitates their cause."
                         ],
@@ -318,7 +318,7 @@ export const homePageProjects = [
                 "h2": "Reaching The Audience",
                 "subsection": [
                     {
-                        "h3": "A Platform To Offer Advice",
+                        "h3": "A platform to offer advice",
                         "copy": [
                             "We live in an era where information is more accessible than ever, and as such the best way to get information to the audience is to publish it online. An ACL injury can often make any movement difficult, so the idea of booking an appointment to travel to see a doctor isn't beneficial in the immediacy. From a personal perspective, the first doctor I visited said that he was unable to diagnose the extent of my injury due to excessive swelling, so I was advised to rest and apply ice. Now, if there was a place that had answers specific to my problem, I would have saved both the doctors time, and my own. Something to consider..."
                         ],
@@ -328,7 +328,7 @@ export const homePageProjects = [
                         }
                     },
                     {
-                        "h3": "Getting The Answers You Need",
+                        "h3": "Getting the answers you need",
                         "copy": [
                             "A feeling that is common among recovering patients is loneliness, it is a time where you can feel isolated, so getting instant answers from people who have been going through something similar can offer a little lift. The idea of having a chat functionality is something that would be very useful, as demonstrated in the interactive chat below."
                         ],
@@ -343,7 +343,7 @@ export const homePageProjects = [
                 "h2": "Proactive Steps",
                 "subsection": [
                     {
-                        "h3": "Rolling Out Support Kits",
+                        "h3": "Rolling out support kits",
                         "copy": [
                             "Of course talking about post-injury communication is important, but even more important is preventative measures. Something that I wanted to do was design a kit to send out to sports teams, something to help educate them on how to deal with small niggles before they turn into something more serious.",
                             "It's not uncommon to pick up knocks and sprains playing sports, so suggestions for recovery ideas and exercises that could be implemented as part of training or warm ups could go a long way towards injury prevention."
@@ -467,7 +467,7 @@ export const homePageProjects = [
                         }
                     },
                     {
-                        "h3": "Consistency And Standards",
+                        "h3": "Consistency and standards",
                         "bullet": [
                             "Two different colour call to actions, confusing as to what action will be completed",
                             "High reliance on stock imagery, not consistent",
@@ -481,7 +481,7 @@ export const homePageProjects = [
                         }
                     },
                     {
-                        "h3": "Recognition Rather Than Recall",
+                        "h3": "Recognition rather than recall",
                         "bullet": [
                             "Very copy heavy, can be perceived as intimidating to users",
                             "While reading the page, there are several links away from the page that are more visually appealing, but actually have little to do with the task at hand - it makes it difficult to stay on task",
@@ -493,7 +493,7 @@ export const homePageProjects = [
                         }
                     },
                     {
-                        "h3": "Aesthetic And Minimalist Design",
+                        "h3": "Aesthetic and minimalist design",
                         "bullet": [
                             "Very feature heavy page within a limited space",
                             "Layout of copy is very intimidating",
@@ -505,7 +505,7 @@ export const homePageProjects = [
                         }
                     },
                     {
-                        "h3": "Flexibility And Efficiency Of Use",
+                        "h3": "Flexibility and efficiency of use",
                         "bullet": [
                             "Difficult to quickly access the featured product page",
                             "Once on one form page, it is difficult to navigate away from or choose another product",
@@ -517,7 +517,7 @@ export const homePageProjects = [
                         }
                     },
                     {
-                        "h3": "User Control And Freedom",
+                        "h3": "User control and freedom",
                         "bullet": [
                             "Difficult to quickly access the featured product page",
                             "Linear approach, good for getting to forms, but not adaptable for multiple products",
@@ -543,7 +543,7 @@ export const homePageProjects = [
                         }
                     },
                     {
-                        "h3": "Required Business Objectives",
+                        "h3": "Required business objectives",
                         "bullet": [
                             "Ability to create new country specific websites",
                             "Full form customisability with certain ones pushing information into the CRM",
@@ -576,7 +576,7 @@ export const homePageProjects = [
                 "h2": "Design and Re-evaluation",
                 "subsection": [
                     {
-                        "h3": "Consistency And Standards",
+                        "h3": "Consistency and standards",
                         "copy": [
                             "My main aim from a visual standpoint was to create a consistent method of implementing visuals throughout the website. This included an overhaul to our call to actions, which are now located on almost every page to drive users towards their goals and an image audit to ensure that software features are represented consistently. Likewise, the marketing manager went through an audit of the content to ensure that the tone and terminology was consistent too."
                         ],
@@ -586,7 +586,7 @@ export const homePageProjects = [
                         }
                     },
                     {
-                        "h3": "Recognition Rather Than Recall",
+                        "h3": "Recognition rather than recall",
                         "copy": [
                             "This is to do with minimising the cognitive load. Human attention is limited, and we are only capable of maintaining around five items in our short-term memory at one time. By employing visual representations of product features, it allows the users to recognise features without having to read through the descriptions and recall what they are. This is mirrored again in our literature."
                         ],
@@ -596,7 +596,7 @@ export const homePageProjects = [
                         }
                     },
                     {
-                        "h3": "Aesthetic And Minimalist Design",
+                        "h3": "Aesthetic and minimalist design",
                         "copy": [
                             "The website needed an aesthetic refresh, so I prioritised switching the heavy blocks of content for a lighter, cleaner design with substantial white space allowing the users to focus on the elements that matter without losing content."
                         ],
@@ -606,7 +606,7 @@ export const homePageProjects = [
                         }
                     },
                     {
-                        "h3": "Flexibility And Efficiency Of Use",
+                        "h3": "Flexibility and efficiency of use",
                         "copy": [
                             "The primary business aim of the website is to educate and on-board new customers. A secondary aim is to encourage existing customers to invest in new products. Users who are unfamiliar with the product and company are presented with an overview of what the company does and can explore this through the home page.",
                             "Users who visit the website and are already familiar with what we do are able to accomplish the actions they want by immediately booking a trial by clicking on the main call to action button."
@@ -617,7 +617,7 @@ export const homePageProjects = [
                         }
                     },
                     {
-                        "h3": "User Control And Freedom",
+                        "h3": "User control and freedom",
                         "copy": [
                             "It is the nature of websites that employ multi-page design that you can navigate back and forth, however it doesn’t always allow you contextual clues as to where you are. A big focus I made was to include a header, so that you know what section of the website you are on, as well as having a clearly identifiable breadcrumb trail so you can see where the feature you are on fits into the product you want as well as working your way backwards."
                         ],
@@ -681,7 +681,7 @@ export const homePageProjects = [
                 "h2": "Improving Incoming Enquiries",
                 "subsection": [
                     {
-                        "h3": "Versatile Forms",
+                        "h3": "Versatile forms",
                         "copy": [
                             "Like many B2B companies, Impero uses it's website in order to generate leads. This is the culmination of marketing strategies and brand exposure. In order to capitalise on the ease of use with the new website, several new methods of obtaining such leads were implemented. These included the installation of gravity forms, an easy to manipulate form system that allows for forms to be created ad-hoc and to be added to pages when needed."
                         ],
@@ -691,7 +691,7 @@ export const homePageProjects = [
                         }
                     },
                     {
-                        "h3": "HTML Newsletters",
+                        "h3": "HTML newsletters",
                         "copy": [
                             "In line with the release of the new website, I worked to create variety of refreshed e-shot templates that would are used for all digital marketing. These templates adopted several kinetic techniques including inline CSS animation and a short animated header to make the newsletters more memorable. All of which were designed with fallbacks in place in case of the email client stripping out the kinetic elements. The template was built with expansion in mind, much like website in that as much content as necessary could be added."
                         ],

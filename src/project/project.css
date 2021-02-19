@@ -43,12 +43,6 @@ body.dark .project-preview-thumbnail.header {
     animation: imageTransition 0.5s forwards;
 }
 
-@media (min-width: 768px) {
-    .project-preview-container.header .banner.full-width {
-        top: -1.5rem;
-    }
-}
-
 .project-content {
     background: var(--white);
     position: relative;
