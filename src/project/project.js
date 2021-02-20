@@ -175,9 +175,13 @@ const Project = (props) => {
                                             />
                                         </LazyLoad>
                                         }
-                                        {subsection.subsectionVideo === undefined || subsection.subsectionVideo.video === ""  ? null :
-                                            <video autoPlay muted loop src={require('./images/' + pdp.path + subsection.subsectionVideo.video)}></video>
-                                        }
+
+                                            {subsection.subsectionVideo === undefined || subsection.subsectionVideo.video === ""  ? null :
+                                                <LazyLoad key={index} offsetVertical={1000}>
+                                                      <video autoPlay muted loop src={require('./images/' + pdp.path + subsection.subsectionVideo.video)}></video>
+                                                </LazyLoad>
+                                            }
+                                        
                                     </div>
                                 </div>
                             ))}            
