@@ -341,12 +341,11 @@ export const homePageProjects = [
                     {
                         "h3": "Getting the answers you need",
                         "copy": [
-                            "A feeling that is common among recovering patients is loneliness, it is a time where you can feel isolated, so getting instant answers from people who have been going through something similar can offer a little lift. The idea of having a chat functionality is something that would be very useful, as demonstrated in the interactive chat below.",
-                            "Change this to to a video using the prototype."
+                            "A feeling that is common among recovering patients is loneliness, it is a time where you can feel isolated, so getting instant answers from people who have been going through something similar can offer a little lift. The idea of having a chat functionality is something that would be very useful, as demonstrated in the interactive chat below."
                         ],
-                        "subsectionImage" : {
-                            "image": "reaching-out.png",
-                            "alt": "Web chat"
+                        "subsectionVideo" : {
+                            "video": "reaching-out.mp4",
+                            "alt": ""
                         }
                     }
                 ] 

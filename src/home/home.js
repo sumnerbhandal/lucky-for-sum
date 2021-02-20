@@ -9,7 +9,6 @@ import { Footer } from "../footer/footer";
 import {Helmet} from "react-helmet";
 import "./home.css";
 import LazyLoad from 'react-lazy-load';
-import { Fragment } from "react";
 
 // const DesignSnippets = lazy(() => import('./components/design--snippets'));
 

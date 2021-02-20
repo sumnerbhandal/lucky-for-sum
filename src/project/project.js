@@ -115,7 +115,7 @@ const Project = (props) => {
                             </div>
                            
                             {content.featuredImage === undefined ? null :
-                                <div className="featured-image-container" tabIndex="0" role="image" aria-label={content.featuredImage.alt}>
+                                <div className="featured-image-container" tabIndex="0" role="image" aria-label="image" aria-description={content.featuredImage.alt}>
                                       <LazyLoad offsetVertical={1000}>
                                         <ProgressiveImageHook
                                             key={index}
@@ -174,6 +174,9 @@ const Project = (props) => {
                                                 tabIndex={0}
                                             />
                                         </LazyLoad>
+                                        }
+                                        {subsection.subsectionVideo === undefined || subsection.subsectionVideo.video === ""  ? null :
+                                            <video autoPlay muted loop src={require('./images/' + pdp.path + subsection.subsectionVideo.video)}></video>
                                         }
                                     </div>
                                 </div>
