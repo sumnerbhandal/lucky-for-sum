@@ -142,7 +142,7 @@ p.intro {
 
 .project-content .featured-image-container {
     width: 100vw;
-    height: 20rem;
+    height: auto;
     overflow: hidden;
     margin-top: 3rem;
     margin-left: -2rem;
@@ -153,7 +153,7 @@ p.intro {
 .project-content .featured-image-container img {
     object-fit: cover;
     object-position: 50% 50%;
-    /* width: 100%; */
+    width: 100%;
 }
 
 .project-content .subsection {

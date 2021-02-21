@@ -469,8 +469,8 @@ export const homePageProjects = [
                     }
                 ],
                 "featuredImage": {
-                    "image": "placeholder.png",
-                    "alt": "Placeholder"
+                    "image": "header.jpg",
+                    "alt": "Header image"
                 }
           }
         ],
@@ -483,8 +483,8 @@ export const homePageProjects = [
                             "What I set about doing first was to complete an evaluation of the old website. This consisted of selecting five relevant heuristic techniques from Nielsen and Molich’s user interface design guidelines.",
                         ],
                         "subsectionImage" : {
-                            "image": "placeholder-shallow.png",
-                            "alt": "Placeholder"
+                            "image": "",
+                            "alt": ""
                         }
                     },
                     {
@@ -497,8 +497,8 @@ export const homePageProjects = [
                             "Partner logos used in white, not necessarily in line with their brand guidelines"
                         ],
                         "subsectionImage" : {
-                            "image": "",
-                            "alt": ""
+                            "image": "consistency-old.png",
+                            "alt": "Consistency and standards example"
                         }
                     },
                     {
@@ -509,8 +509,8 @@ export const homePageProjects = [
                             "Natural process is to progress down the page, and at that point, you lose sight of the call to action buttons and can forget what the options are"
                         ],
                         "subsectionImage" : {
-                            "image": "",
-                            "alt": ""
+                            "image": "recognition-old.png",
+                            "alt": "Recognition rather than recall example"
                         }
                     },
                     {
@@ -521,8 +521,8 @@ export const homePageProjects = [
                             "Despite having light colour tones throughout, it is primarily a grey design, which dominates attention and leads away from the information on the page"
                         ],
                         "subsectionImage" : {
-                            "image": "",
-                            "alt": ""
+                            "image": "aesthetic-old.png",
+                            "alt": "Aesthetic and minimalist design example"
                         }
                     },
                     {
@@ -533,20 +533,19 @@ export const homePageProjects = [
                             "Call to action is prominent, useful for linear approach"
                         ],
                         "subsectionImage" : {
-                            "image": "",
-                            "alt": ""
+                            "image": "flexibility-old.png",
+                            "alt": "Flexibility and efficiency of use example"
                         }
                     },
                     {
                         "h3": "User control and freedom",
                         "bullet": [
-                            "Difficult to quickly access the featured product page",
                             "Linear approach, good for getting to forms, but not adaptable for multiple products",
                             "Self generated exploration isn't encouraged"
                         ],
                         "subsectionImage" : {
-                            "image": "",
-                            "alt": ""
+                            "image": "user-control-old.png",
+                            "alt": "User control example"
                         }
                     },
                 ]
@@ -559,8 +558,8 @@ export const homePageProjects = [
                             "Having identified the necessary elements to focus on in the improvement of the end user, it was also necessary to work out what was needed to make the process easier to maintain from a marketing and content perspective. It was agreed that we would have a multiple site website and have the functionality to create a country should the need arise.",
                         ],
                         "subsectionImage" : {
-                            "image": "placeholder-shallow.png",
-                            "alt": "Placeholder"
+                            "image": "scoping.png",
+                            "alt": "Scoping preview"
                         }
                     },
                     {
@@ -573,8 +572,8 @@ export const homePageProjects = [
                             "Be built with expansion in mind"
                         ],
                         "subsectionImage" : {
-                            "image": "placeholder-shallow.png",
-                            "alt": "Placeholder"
+                            "image": "",
+                            "alt": ""
                         }
                     },
                 ]
@@ -587,8 +586,8 @@ export const homePageProjects = [
                             "With the scoping documents agreed and necessities outlined, I set about working out how to visually represent each page in a way that would allow the user to be best informed and support their goals. This included several internal meetings and visits to the web development agency to determine what is possible and suggested best practices that serve our purpose best. In order to ensure that I addressed all the problematic areas that I discovered when conducting my initial heuristic evaluation, I conducted another when I reached the high fidelity mockup phase."
                         ],
                         "subsectionImage" : {
-                            "image": "placeholder-shallow.png",
-                            "alt": "Placeholder"
+                            "image": "journey-mapping.jpg",
+                            "alt": "Journey mapping"
                         }
                     }
                 ]
@@ -602,8 +601,8 @@ export const homePageProjects = [
                             "My main aim from a visual standpoint was to create a consistent method of implementing visuals throughout the website. This included an overhaul to our call to actions, which are now located on almost every page to drive users towards their goals and an image audit to ensure that software features are represented consistently. Likewise, the marketing manager went through an audit of the content to ensure that the tone and terminology was consistent too."
                         ],
                         "subsectionImage" : {
-                            "image": "placeholder-shallow.png",
-                            "alt": "Placeholder"
+                            "image": "consistency-new.png",
+                            "alt": "Consistency and standards example"
                         }
                     },
                     {
@@ -612,8 +611,8 @@ export const homePageProjects = [
                             "This is to do with minimising the cognitive load. Human attention is limited, and we are only capable of maintaining around five items in our short-term memory at one time. By employing visual representations of product features, it allows the users to recognise features without having to read through the descriptions and recall what they are. This is mirrored again in our literature."
                         ],
                         "subsectionImage" : {
-                            "image": "placeholder-shallow.png",
-                            "alt": "Placeholder"
+                            "image": "recognition-new.png",
+                            "alt": "Recognition rather than recall example"
                         }
                     },
                     {
@@ -622,8 +621,8 @@ export const homePageProjects = [
                             "The website needed an aesthetic refresh, so I prioritised switching the heavy blocks of content for a lighter, cleaner design with substantial white space allowing the users to focus on the elements that matter without losing content."
                         ],
                         "subsectionImage" : {
-                            "image": "placeholder-shallow.png",
-                            "alt": "Placeholder"
+                            "image": "aesthetic-new.png",
+                            "alt": "Aesthetic and minimalist design example"
                         }
                     },
                     {
@@ -633,8 +632,8 @@ export const homePageProjects = [
                             "Users who visit the website and are already familiar with what we do are able to accomplish the actions they want by immediately booking a trial by clicking on the main call to action button."
                         ],
                         "subsectionImage" : {
-                            "image": "placeholder-shallow.png",
-                            "alt": "Placeholder"
+                            "image": "flexibility-new.png",
+                            "alt": "Flexibility and efficiency of use example"
                         }
                     },
                     {
@@ -643,8 +642,8 @@ export const homePageProjects = [
                             "It is the nature of websites that employ multi-page design that you can navigate back and forth, however it doesn’t always allow you contextual clues as to where you are. A big focus I made was to include a header, so that you know what section of the website you are on, as well as having a clearly identifiable breadcrumb trail so you can see where the feature you are on fits into the product you want as well as working your way backwards."
                         ],
                         "subsectionImage" : {
-                            "image": "placeholder-shallow.png",
-                            "alt": "Placeholder"
+                            "image": "hi-fidelity.png",
+                            "alt": "New website"
                         }
                     }
                 ]
@@ -657,13 +656,9 @@ export const homePageProjects = [
                             "While wireframing and getting an idea of how the website should look, it is often easy to overlook features and functionality that could cause problems. So I decided to take it upon myself to build a working interactive prototype of my website design in order to give it some context and to bring it to life.",
                             "Using the website building software Webflow, I was able to replicate my developed wireframes and also explore additional functionality that I hadn't even considered introducing."
                         ],
-                        // "link": {
-                        //     "url": "https://www.imperosoftware.com/uk/",
-                        //     "text": "Visit the website"
-                        // },
                         "subsectionImage" : {
-                            "image": "placeholder-shallow.png",
-                            "alt": "Placeholder"
+                            "image": "webflow.jpg",
+                            "alt": "Webflow interactive build"
                         }
                     }
                 ]
@@ -677,8 +672,8 @@ export const homePageProjects = [
                             "Having identified the necessary elements to focus on in the improvement of the end user, it was also necessary to work out what was needed to make the process easier to maintain from a marketing perspective. It was agreed that we would have a multiple site website and have the functionality to create a country should the need arise."
                         ],
                         "subsectionImage" : {
-                            "image": "placeholder-shallow.png",
-                            "alt": "Placeholder"
+                            "image": "homepage.jpg",
+                            "alt": "New homepage designs"
                         }
                     }
                 ]
@@ -692,8 +687,8 @@ export const homePageProjects = [
                             "As a way of making all imagery consistent, I designed and implemented over 300 new images, most of which are in SVG form for maximum scalability as well as going back through the predated pages and posts and refreshing their visual style."
                         ],
                         "subsectionImage" : {
-                            "image": "placeholder-shallow.png",
-                            "alt": "Placeholder"
+                            "image": "rollout.png",
+                            "alt": "Site illustrations"
                         }
                     }
                 ]
@@ -707,8 +702,8 @@ export const homePageProjects = [
                             "Like many B2B companies, Impero uses it's website in order to generate leads. This is the culmination of marketing strategies and brand exposure. In order to capitalise on the ease of use with the new website, several new methods of obtaining such leads were implemented. These included the installation of gravity forms, an easy to manipulate form system that allows for forms to be created ad-hoc and to be added to pages when needed."
                         ],
                         "subsectionImage" : {
-                            "image": "placeholder-shallow.png",
-                            "alt": "Placeholder"
+                            "image": "forms.png",
+                            "alt": "Website forms"
                         }
                     },
                     {
@@ -717,8 +712,8 @@ export const homePageProjects = [
                             "In line with the release of the new website, I worked to create variety of refreshed e-shot templates that would are used for all digital marketing. These templates adopted several kinetic techniques including inline CSS animation and a short animated header to make the newsletters more memorable. All of which were designed with fallbacks in place in case of the email client stripping out the kinetic elements. The template was built with expansion in mind, much like website in that as much content as necessary could be added."
                         ],
                         "subsectionImage" : {
-                            "image": "placeholder-shallow.png",
-                            "alt": "Placeholder"
+                            "image": "E-Newsletter.png",
+                            "alt": "HTML newsletter example"
                         }
                     }
                 ]
