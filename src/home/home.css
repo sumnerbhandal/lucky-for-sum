@@ -122,7 +122,6 @@ img.play-button {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    cursor: pointer;
     transition: 0.3s ease;
     z-index: 1;
     top: 0;
@@ -143,6 +142,7 @@ img.play-button {
     border-radius: 1.25rem;
     transform: rotate(-20deg);
     transition: background 0.5s ease, transform 0.3s ease;
+    cursor: pointer;
     /* border: 0.1875rem solid #FFF; */
 }
 
@@ -173,10 +173,27 @@ img.play-button {
 }
 
 .project-preview h2 {
-    margin-top: 3rem;
+    margin-bottom: 3rem;
     width: 100%;
     text-align: center;
 }
+
+.project-preview a.buttonLink {
+    z-index: 1;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    text-decoration: none;
+}
+
+.project-preview a.buttonLink button {
+    background: var(--white);
+    padding: 0.375rem 3rem;
+    border: 0.125rem solid var(--deep-purple);
+	font-family: 'Palanquin', sans-serif;
+}
+
 
 .image-right {
     display: none;

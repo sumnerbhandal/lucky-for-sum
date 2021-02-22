@@ -140,7 +140,7 @@ main {
 button.block, form input[type="submit"] {
   font-size: 1rem;
   color: var(--deep-purple);
-  box-shadow: 12px 12px 0px 0px var(--deep-purple);
+  box-shadow: 8px 8px 0px 0px var(--deep-purple);
   padding: 0.25rem 1.5rem;
   background: var(--off-white);
   cursor: pointer;

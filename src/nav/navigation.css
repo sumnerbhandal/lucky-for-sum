@@ -279,12 +279,18 @@ nav {
       display: none;
   }
 
+  a.get-in-touch {
+    margin-right: 2rem;
+    display: none;
+    align-items: center;
+  }
+
   @media (min-width: 768px) {
     #burger-button {
         width: 9rem;
     }
-    #burger-button p.tabletUpwards {
-        display: block;
+    #burger-button p.tabletUpwards, a.get-in-touch {
+        display: flex;
     }
   }
   

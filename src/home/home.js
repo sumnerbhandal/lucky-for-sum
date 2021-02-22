@@ -64,12 +64,16 @@ const HomePage = (props) => {
             {homePageProjects.map((item, index) => (
                 <div className="project-preview-container hp-section" id="project-container" key={index}>
                     <div className={`project-preview ${inView ? "before" : ""}`}>
+                    <h2>
+                            {item.title}
+                        </h2>
                         <Link to={`/project/${item.url}-pid-${item.id}`} className="project-preview-thumbnail" id={item.id} title={item.url} onClick={projectImageOpen}  tabIndex="0">
                             {item.image}
                         </Link>
-                        <h2>
-                            {item.title}
-                        </h2>
+
+                        <Link className="buttonLink" to={`/project/${item.url}-pid-${item.id}`} onClick={projectImageOpen}>
+                            <button className="block">View Project</button>
+                        </Link>
                     </div>
                     <div className={`image-right ${inView ? "before" : ""}`}>
                         {item.intro.map((paragraph, index) => (

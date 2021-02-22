@@ -52,7 +52,9 @@ const NavDefault = () => {
                     to="/">
                         <img src={require('./icons/lucky-for-sum-logo.svg')} alt="Home"/>
                     </Link>
+                   
                     <div className="header-side-container right">
+                        <a className="get-in-touch" target="new" href="mailto:sumnerbhandal@gmail.com">Get In Touch &nbsp; <span role="img" aria-label="Welcome Wave"> 👋🏽</span></a>
                         <button id="burger-button" className={isToggled ? "open" : ""} onClick={toggleTrueFalse}>
                             <span></span>
                             <span></span>

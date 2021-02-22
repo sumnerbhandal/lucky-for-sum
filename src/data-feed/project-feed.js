@@ -11,7 +11,8 @@ export const homePageProjects = [
       "headerImage":  <Portfolio />,
       "headerAlt": "Portfolio for all header image", 
       "intro": [
-          "The consequence of being a designer is that you're only ever as good as your latest portfolio."
+          "The consequence of being a designer is that you're only ever as good as your latest portfolio.",
+          "Documenting the journey to creating an inclusive design experience."
       ],
       "url": "portfolio-for-all",
       "id": "0",
@@ -24,12 +25,12 @@ export const homePageProjects = [
                         "I make it an annual challenge to design and build a new personal website. The issue with this is that I'm often more critical of my own work than I am of others, so I don't always appreciate the level of consideration that goes into a project.",
                     ]
                 },
-                {
-                    "h3": "Tell, don't show",
-                    "copy": [
-                        "If you've enjoyed interacting with this site, then the odds are that you've probably experienced it a way that is tailored  to your browsing preferences without even knowing."
-                    ]
-                }
+                // {
+                //     "h3": "Tell, don't show",
+                //     "copy": [
+                //         "If you've enjoyed interacting with this site, then the odds are that you've probably experienced it a way that is tailored  to your browsing preferences without even knowing."
+                //     ]
+                // }
             ],
             "responsibilities": [
                 {
@@ -42,14 +43,14 @@ export const homePageProjects = [
                 }
             ],
             "featuredImage": {
-                "image": "placeholder.png",
+                "image": "placeholder-shallow.png",
                 "alt": "Placeholder"
             }
         }
       ],
       "article" : [
         {
-            "h2": "Statement of Intent",
+            "h2": "The Challenge",
             "subsection": [
                 {
                     "copy": [
@@ -59,13 +60,13 @@ export const homePageProjects = [
             ]
         },
         {
-            "h2": "The Design Process",
+            "h2": "The Must Haves",
             "subsection": [
                 {
-                    "h3": "The foundation",
+                    "h3": "Self imposed limitations",
                     "copy": [
-                        "The benefit of developing your own site means that you can start with a vision and take it from there.",
-                        "I had a pretty good idea of the UI experience I wanted, it wanted to feel as much like a native app as possible, but be a web app. It would consist of a maximum of 3 main pages, the hompage, the project page and if I'm feeling adventurous, a contact page."
+                        "Designers are their own worst client. We want everything and we want to show you how we did everything, but curation and restraint is crucial.",
+                        "I needed to cherry pick a handful of projects that showcase the work I want to do more of (that I'm able to share) and from an archetectural point of view, I want to limit it to a maximum of 3 main page templates. The hompage, the project page and if I'm feeling adventurous, a contact page."
                     ],
                     "subsectionImage" : {
                         "image": "placeholder-shallow.png",
@@ -85,10 +86,20 @@ export const homePageProjects = [
                     }
                 },
                 {
-                    "h3": "Speed, glorious speed",
+                    "h3": "Delivering appetising, digestible content",
                     "copy": [
-                        "Two of my favourite things about native mobile apps are the perception of speed, 'everything's faster on the app' and the intricate animations, 'it feels appy'.",
-                        "Part of recapturing that magic is through optimisation, that's where the speed comes in and improving the feedback the user receives when interacting with the site. When they go to click on something, what do they expect will happen?"
+                        "Time is precious, especially to potential clients or hiring managers. So breaking down content into clearly labelled sections, using headings and maximum content widths to allow users to absorb smaller chunks of content and making your users just a little more likely to skim your content.",
+                    ],
+                    "subsectionImage" : {
+                        "image": "placeholder-shallow.png",
+                        "alt": "Placeholder"
+                    }
+                },
+                {
+                    "h3": "Refine, optimise improve",
+                    "copy": [
+                        "My time working in the e-commerce industry has taught me the importance of speed and forever optimising. By leveraging features that I helped implement there, such as progressive lazy loading of images, loading perception speed and reducing cumulative layout shifts it helps the user prepare and adjust for an experience not limited by their internet connection.",
+                        "These elements of UI design and implementation are really reaping benefits now, especially with googles latest search engine optimisation considerations."
                     ],
                     "subsectionImage" : {
                         "image": "placeholder-shallow.png",
@@ -98,13 +109,13 @@ export const homePageProjects = [
             ] 
         },
         {
-            "h2": "Designing in the Browser",
+            "h2": "Start Small, Then Scale",
             "subsection": [
                 {
-                    "h3": "Responsive design",
+                    "h3": "Who is this for?",
                     "copy": [
-                        "One of the most important things with designing for the web is understanding that users have so many ways of consuming web content now, and it's your responsibility to try and tailor the experience so that it's usable for them all at the very least.",
-                        "Once I have an idea of how the content will reflow, I look to build in a grid system at a higher level that means that the canvas I now have to work in will always adhere to these constraints"
+                        "The default stance in the design community is mobile first, which is great as it encourages you to evaluate the hierarchy of your site based offf the smallest viewport. However, when it comes to things like portfolios, the audience is often a hiring manager, who is probably looking at this as part of their workplace tasks.",
+                        "It is therefore safe to assume that the individual responsible for making the leap to hire you won't be conducting their assessment primarily on a mobile device, so the scope for impressing people is equally as important for wider screen resolutions."
                     ],
                     "subsectionImage" : {
                         "image": "placeholder.png",
@@ -219,7 +230,7 @@ export const homePageProjects = [
         ],
         "article" : [
             {
-                "h2": "Statement of Intent",
+                "h2": "The Challenge",
                 "subsection": [
                     {
                         "h3": "Aims",

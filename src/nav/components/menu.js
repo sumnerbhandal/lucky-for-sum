@@ -45,6 +45,9 @@ export const Menu = (props) => {
               <li>
                 <Link to='/#design-snippets' id="link_design-snippets" onClick={props.scrollSectionIntoView} tabIndex={props.isToggled ? "0" : "-1"}>Design Snippets</Link>
               </li>
+              <li>
+              <a className="get-in-touch" target="new" href="mailto:sumnerbhandal@gmail.com">Get In Touch &nbsp; <span role="img" aria-label="Welcome Wave"> 👋🏽</span></a>
+              </li>
             </ul>
             
             <ul className="social" aria-label="Social Links">

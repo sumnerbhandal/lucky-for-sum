@@ -9,7 +9,8 @@ export const homePageProjects = [
       "image": <Portfolio />,
       "feature": "Portfolio-Feature",
       "intro": [
-          "The consequence of being a designer is that you're only ever as good as your latest portfolio."
+          "The consequence of being a designer is that you're only ever as good as your latest portfolio.",
+          "Documenting the journey to creating an inclusive design experience."
       ]
   },
   {
