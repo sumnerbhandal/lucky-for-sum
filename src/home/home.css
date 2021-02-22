@@ -176,6 +176,7 @@ img.play-button {
     margin-bottom: 3rem;
     width: 100%;
     text-align: center;
+    margin-top: -2.5rem;
 }
 
 .project-preview a.buttonLink {
