@@ -25,6 +25,14 @@ const HomePage = (props) => {
         props.PreviewPosition(currentProjectPosition);
         window.scrollTo(0, 0);
     }
+    function projectImageOpenButton(e) {
+        const project = e.target.parentNode.parentNode.firstChild;
+        const currentProjectPosition = project.getBoundingClientRect();
+        project.style.background = "#FEC155";
+        project.parentNode.style.transform = "scale(0.92)";
+        props.PreviewPosition(currentProjectPosition);
+        window.scrollTo(0, 0);
+    }
     function pressEnter(e) {
         if(e.key === 'Enter'){
             videoButton(e)
@@ -64,14 +72,13 @@ const HomePage = (props) => {
             {homePageProjects.map((item, index) => (
                 <div className="project-preview-container hp-section" id="project-container" key={index}>
                     <div className={`project-preview ${inView ? "before" : ""}`}>
-                        <h2>
-                            {item.title}
-                        </h2>
                         <Link to={`/project/${item.url}-pid-${item.id}`} className="project-preview-thumbnail" id={item.id} title={item.url} onClick={projectImageOpen}  tabIndex="0">
                             {item.image}
                         </Link>
-
-                        <Link className="buttonLink" to={`/project/${item.url}-pid-${item.id}`} onClick={projectImageOpen}>
+                        <h2>
+                            {item.title}
+                        </h2>
+                        <Link className="buttonLink" to={`/project/${item.url}-pid-${item.id}`} onClick={projectImageOpenButton}>
                             <button className="block">View Project</button>
                         </Link>
                     </div>

@@ -113,6 +113,10 @@ img.play-button {
 .homepage .project-preview-container:nth-child(even) {
     background: var(--white);
 }
+
+.project-preview-container:nth-child(even) .project-preview-thumbnail {
+    background: var(--off-white);
+}
 .homepage .project-preview-container:nth-child(odd) {
     background: var(--off-white);
 }
@@ -173,10 +177,10 @@ img.play-button {
 }
 
 .project-preview h2 {
-    margin-bottom: 3rem;
+    margin-bottom: 0;
     width: 100%;
     text-align: center;
-    margin-top: -2.5rem;
+    margin-top: 2.5rem;
 }
 
 .project-preview a.buttonLink {
@@ -276,9 +280,10 @@ img.play-button {
         top: 0;
     }
     
-    .project-preview:hover .project-preview-thumbnail, .project-preview:nth-child(even):hover .project-preview-thumbnail {
+    .project-preview:hover .project-preview-thumbnail {
         background: var(--happy-mustard);
     }
+    
 
     body.dark .project-preview-container:nth-child(odd) .project-preview:hover .project-preview-thumbnail {
         background: var(--white);
