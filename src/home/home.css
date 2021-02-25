@@ -147,7 +147,8 @@ img.play-button {
     transform: rotate(-20deg);
     transition: background 0.5s ease, transform 0.3s ease;
     cursor: pointer;
-    /* border: 0.1875rem solid #FFF; */
+    max-width: 52vw;
+    max-height: 52vw;
 }
 
 .project-preview-thumbnail:focus {
