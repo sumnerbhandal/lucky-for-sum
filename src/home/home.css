@@ -139,16 +139,15 @@ img.play-button {
 }
 
 .project-preview-thumbnail {
-    width: 15rem;
-    height: 15rem;
+    width: 13rem;
+    height: 13rem;
     background: var(--white);
     position: relative;
     border-radius: 1.25rem;
     transform: rotate(-20deg);
     transition: background 0.5s ease, transform 0.3s ease;
     cursor: pointer;
-    max-width: 52vw;
-    max-height: 52vw;
+    margin-top: -2rem;
 }
 
 .project-preview-thumbnail:focus {
@@ -182,6 +181,12 @@ img.play-button {
     width: 100%;
     text-align: center;
     margin-top: 2.5rem;
+    font-size: 1.25rem;
+}
+
+.project-preview p.project-summary {
+    margin-block-start: 0;
+    margin-block-end: 0;
 }
 
 .project-preview a.buttonLink {

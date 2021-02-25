@@ -78,6 +78,9 @@ const HomePage = (props) => {
                         <h2>
                             {item.title}
                         </h2>
+                        <p className="project-summary">
+                            {item.summary}
+                        </p>
                         <Link className="buttonLink" to={`/project/${item.url}-pid-${item.id}`} onClick={projectImageOpenButton}>
                             <button className="block">View Project</button>
                         </Link>

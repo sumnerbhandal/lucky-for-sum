@@ -4,6 +4,7 @@ import React from 'react';
 export const homePageProjects = [
   {
       "title": "A Designer Portfolio For All",
+      "summary": "UX/UI Design, Accessibility, Front-End Development",
       "url": "portfolio-for-all",
       "id": "0",
       "image": <Portfolio />,
@@ -15,6 +16,7 @@ export const homePageProjects = [
   },
   {
       "title": "Ligamend - ACL Injury Support Community",
+      "summary": "Branding, Illustration, UI Design",
       "url": "ligamend",
       "id": "1",
       "image": <Ligamend />,
@@ -25,6 +27,7 @@ export const homePageProjects = [
   },
   {
       "title": "Enriched Site Search",
+      "summary": "UX/UI Design, Prototyping, Front-End Support",
       "url": "enriched-autocomplete",
       "id": "2",
       "image": <EnrichedSearch />,
@@ -36,6 +39,7 @@ export const homePageProjects = [
   },
   {
         "title": "Website Redesign Using Heuristics",
+        "summary": "Heuristic Evaluation, Web Design, Marketing Support",
         "url": "web-redesign-heuristics",
         "id": "3",
         "image": <Heuristic />,

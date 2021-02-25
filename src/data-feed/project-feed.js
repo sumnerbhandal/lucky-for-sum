@@ -6,7 +6,7 @@ export const homePageProjects = [
       "title": "A Portfolio For All",
       "SEOTitle": "How To Make An Accessible UI Experience Fun",
       "SEODescription": "Deconstruction of a UX/UI portfolio designed and built with accessibility considerations in mind, tailored using some of your browsers preferences.",
-      "keywords": "Portfolio, UX Design, Accessibility, A11Y, Front-End Development, app, optimisation, responsive design, native mobile apps, API Endpoints, Interactions, user preferences, dark mode",
+      "keywords": "Portfolio, UX Design, Accessibility, A11Y, Front-End Development, app, optimisation, responsive design, native mobile apps, API Endpoints, Interactions, user preferences, dark mode, SEO, optimisation",
       "path": "portfolio/",
       "headerImage":  <Portfolio />,
       "headerAlt": "Portfolio for all header image", 
@@ -22,22 +22,17 @@ export const homePageProjects = [
             "subsection": [
                 {
                     "copy": [
-                        "I make it an annual challenge to design and build a new personal website. The issue with this is that I'm often more critical of my own work than I am of others, so I don't always appreciate the level of consideration that goes into a project.",
+                        "I make it a regular challenge to create a new online presence. The main aim is to showcase and leverage the skills I've learned since the last iteration.",
                     ]
-                },
-                // {
-                //     "h3": "Tell, don't show",
-                //     "copy": [
-                //         "If you've enjoyed interacting with this site, then the odds are that you've probably experienced it a way that is tailored  to your browsing preferences without even knowing."
-                //     ]
-                // }
+                }
             ],
             "responsibilities": [
                 {
                     "h3": "Responsibilities",
                     "skills": [
                         "UX/UI Design",
-                        "Accessibility",
+                        "Accessibility considerations",
+                        "SEO & Optimisation",
                         "Front-End Development"
                     ]
                 }
