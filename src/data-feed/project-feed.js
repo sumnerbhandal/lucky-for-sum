@@ -73,7 +73,7 @@ export const homePageProjects = [
                     "copy": [
                         "Through good intentions, or through threat of being penalised, companies are now starting to get more on board with being more accessible. I have taken it on as part of my role at Next to bake usability and accessibility into the future UI framework for the company.",
                         "The truth is that a lot of the implementation falls within the front-end developers realm of execution, but as designers, we have a role to play too.",
-                        "We can start by making sure that text elements have sufficient colour contrasts and font sizes. You'll quickly realise that in making this small conscious decisions, you'll also start to make your UI that much more usable."
+                        "We can start by making sure that text elements have sufficient colour contrasts and font sizes. You'll quickly realise that in making this small conscious decisions, you'll also start to make your website and apps that much more usable."
                     ],
                     "subsectionImage" : {
                         "image": "placeholder.png",
@@ -419,7 +419,7 @@ export const homePageProjects = [
                     }
                 ],
                 "featuredImage": {
-                    "image": "placeholder.png",
+                    "image": "placeholder-shallow.png",
                     "alt": "Placeholder"
                 }
           }

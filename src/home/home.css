@@ -114,7 +114,7 @@ img.play-button {
     background: var(--white);
 }
 
-.project-preview-container:nth-child(even) .project-preview-thumbnail {
+.homepage .project-preview-container:nth-child(even) .project-preview-thumbnail {
     background: var(--off-white);
 }
 .homepage .project-preview-container:nth-child(odd) {
@@ -290,7 +290,7 @@ img.play-button {
         top: 0;
     }
     
-    .project-preview:hover .project-preview-thumbnail {
+    .homepage .project-preview:hover .project-preview-thumbnail {
         background: var(--happy-mustard);
     }
     
