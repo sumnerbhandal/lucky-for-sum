@@ -18,6 +18,11 @@
     clip-path: polygon(100% 0, 100% 60%, 0 100%, 0 0);
 }
 
+.project-page.direct-link .project-preview-thumbnail.header {
+    width: 0;
+    height: 25rem;
+}
+
 body.dark .project-preview-thumbnail.header {
     background: #333;
 
@@ -338,7 +343,7 @@ body.dark .project-preview-thumbnail.header {
 @keyframes project-landing {
     100% {  
             top: 0;
-            transform: translate(0, -2rem);
+            /* transform: translate(0, -2rem); */
             width: 100%;
             height: 25rem;
             border-radius: 0;

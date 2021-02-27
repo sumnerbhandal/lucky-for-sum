@@ -48,7 +48,7 @@ export default function App() {
                 <HomePage HpReferrer={(value) => setHpReferrer(value)} PreviewPosition={(value) => setProjectPreviewPosition(value)}  />
               </Suspense>
               ) : null}
-              <div className="project-page" id="project-page">
+              <div className={`project-page ${hpReferrer ? "" : "direct-link" }`} id="project-page">
                 <Suspense fallback={<div></div>}>
                   <ReadingProgress target={target} />
                   <Project position={projectPreviewPosition}  target={target} />
