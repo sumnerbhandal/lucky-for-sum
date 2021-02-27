@@ -1,14 +1,16 @@
 import React, {useState, createRef, lazy, Suspense } from "react";
 import NavDefault from './nav/navigation';
-import HomePage from './home/home';
+// import HomePage from './home/home';
 import { Footer } from './footer/footer';
-import { ReadingProgress } from "./read-progress";
+// import { ReadingProgress } from "./read-progress";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom/index";
 import "./index.css";
 import "./reset.css";
 // import Project from "./project/project";
 
 const Project = lazy(() => import('./project/project'));
+const HomePage = lazy(() => import('./home/home'));
+const ReadingProgress = lazy(() => import('./read-progress'));
 
 export default function App() {
   const target = createRef();
@@ -29,7 +31,6 @@ export default function App() {
   }
   focusStates();
 
-
   document.title = "Lucky For Sum"
   return (
    <Router>
@@ -38,15 +39,21 @@ export default function App() {
       <Routes>
         <Route path="/" element={ 
             <div>
-              <HomePage HpReferrer={(value) => setHpReferrer(value)} PreviewPosition={(value) => setProjectPreviewPosition(value)}/>
+              <Suspense fallback={<div></div>}>
+                <HomePage HpReferrer={(value) => setHpReferrer(value)} PreviewPosition={(value) => setProjectPreviewPosition(value)}/>
+              </Suspense>
             </div>
         }/>
         <Route path="/project/*" element={
            <div>
-            {hpReferrer ? (<HomePage HpReferrer={(value) => setHpReferrer(value)} PreviewPosition={(value) => setProjectPreviewPosition(value)}  />) : null}
-              <div className="project-page">
-                <ReadingProgress target={target} />
+            {hpReferrer ? (
+              <Suspense fallback={<div></div>}>
+                <HomePage HpReferrer={(value) => setHpReferrer(value)} PreviewPosition={(value) => setProjectPreviewPosition(value)}  />
+              </Suspense>
+              ) : null}
+              <div className="project-page" id="project-page">
                 <Suspense fallback={<div></div>}>
+                  <ReadingProgress target={target} />
                   <Project position={projectPreviewPosition}  target={target} />
                   <Footer />
                 </Suspense>

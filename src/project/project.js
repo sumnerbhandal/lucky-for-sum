@@ -2,11 +2,9 @@ import { MarketingBannerTwo } from '../banners/marketing-banner';
 import React, { useEffect, useState, lazy, Suspense } from "react";
 import './project.css'
 import { homePageProjects } from '../data-feed/project-feed';
-// import ProgressiveImageHook from "../reusable-functions/progressive-image-load";
+import ProgressiveImageHook from "../reusable-functions/progressive-image-load";
 import {Helmet} from "react-helmet";
 import LazyLoad from 'react-lazy-load';
-
-const ProgressiveImageHook  = lazy(() => import('../reusable-functions/progressive-image-load'));
 
 
 
@@ -27,19 +25,20 @@ const Project = (props) => {
     }
 
     const [scrollY, setScrollY] = useState(0);
+
     function logit() {
-      setScrollY(window.pageYOffset);
-  
-      if ((window.innerHeight + ( scrollY + 0)) >= document.body.offsetHeight) {
-        let loaderBlob = document.getElementById('load-next-item' + loaderAnimationId);
-        const nextToBeLoaded = nextProjectIndex + 1;
-        setNextProjectIndex(nextToBeLoaded);
-        if (nextProjectIndex < homePageProjects.length) {
-            loaderBlob.classList.add("loading");
-            projectsShown.push(homePageProjects[nextProjectIndex]);
-            setLoaderAnimationId(loaderAnimationId + 1)
-        } return;
-     }
+        const ProjectPage = document.getElementById("project-page");
+        setScrollY(window.pageYOffset);
+        if ((window.innerHeight + scrollY ) >= ProjectPage.offsetHeight) {
+            let loaderBlob = document.getElementById('load-next-item' + loaderAnimationId);
+            const nextToBeLoaded = nextProjectIndex + 1;
+            setNextProjectIndex(nextToBeLoaded);
+            if (nextProjectIndex < homePageProjects.length) {
+                loaderBlob.classList.add("loading");
+                projectsShown.push(homePageProjects[nextProjectIndex]);
+                setLoaderAnimationId(loaderAnimationId + 1)
+            } return;
+        }
     }
     useEffect(() => {
       function watchScroll() {
@@ -70,7 +69,7 @@ const Project = (props) => {
                     </div>
                     <MarketingBannerTwo message={pdp.title} />
                 </div>
-                <article className="project-content section">
+                <article id={index + 1} className="project-content section">
                     <section>
                          <div className="col">
                             {pdp.intro.map((paragraph, index) => (

@@ -3,6 +3,7 @@
     top: 4.5rem;
     background: var(--off-white);
     z-index: 2;
+    width: 100%;
 }
 
 .project-preview-thumbnail.header {
@@ -24,6 +25,16 @@ body.dark .project-preview-thumbnail.header {
 
 .project-preview-container.header {
     flex-wrap: wrap;
+}
+
+.project-preview-thumbnail > svg {
+    position: absolute;
+    top: 1.25rem;
+    width: 125%;
+    transform: rotate(20deg)translate(-3rem, -0.75rem);
+    transition: 0.3s ease;
+    pointer-events: none;
+    height: 100%;
 }
 
 .project-preview-container.header .project-preview {

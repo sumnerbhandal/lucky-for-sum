@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from "react";
 
 
-export const ReadingProgress = ({ target }) => {
+const ReadingProgress = ({ target }) => {
     const [readingProgress, setReadingProgress] = useState(0);
     const scrollListener = () => {
       if (!target.current) {
@@ -29,3 +29,4 @@ export const ReadingProgress = ({ target }) => {
   
     return <div className={`reading-progress-bar`} style={{width: `${readingProgress}%`}} />;
   };
+  export default ReadingProgress;
