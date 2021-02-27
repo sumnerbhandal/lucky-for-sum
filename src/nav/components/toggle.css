@@ -1,0 +1,55 @@
+/* Theme toggle */
+
+.toggle-switch {
+    width: 3.5rem;
+    height: 2rem;
+    border-radius: 2rem;
+    display: flex;
+    flex-shrink: 0;
+    background: var(--white);
+    border: 2px solid var(--deep-purple);
+    box-sizing: border-box;
+    justify-content: flex-start;
+    padding: 0 0.125rem;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.toggle-switch:focus {
+  border-radius: 2rem;
+}
+.toggle-switch div.indicator {
+    height: 1.5rem;
+    width: 1.5rem;
+    border-radius: 50%;
+    background: var(--happy-mustard);
+    transition: all 0.3s ease;
+    position: relative;
+}
+.toggle-switch div.indicator:after {
+    content: "";
+    height: 1.5rem;
+    width: 1.5rem;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: var(--happy-mustard);
+    transition: all 0.3s ease;
+    border: 2px dotted white;
+    box-sizing: border-box;
+}
+.toggle-switch.dark div.indicator {
+    transform: translateX(1.5rem);
+    background: var(--deep-purple);
+}
+
+.toggle-switch.dark div.indicator:after {
+    height: 1.0625rem;
+    width: 1.0625rem;
+    border-radius: 0;
+    border-bottom-right-radius: 0.75rem;
+    background: var(--white);
+    border: 0;
+}

@@ -1,8 +1,9 @@
-import React, { useState, useRef, useEffect } from "react";
-import { ThemeToggle } from "./components/dark-light-toggle";
-import { Menu } from './components/menu';
+import React, { useState, useRef, useEffect, lazy, Suspense } from "react";
 import { Link } from "react-router-dom/index";
 import "./navigation.css";
+
+const ThemeToggle = lazy(() => import('./components/dark-light-toggle'));
+const Menu = lazy(() => import('./components/menu'));
 
 const NavDefault = () => {
     const [isShown, setIsShown] = useState(false);
@@ -42,7 +43,9 @@ const NavDefault = () => {
         <nav role="navigation">
             <div className={`masthead ${!isShown ? "" : "hovered"}`}>
                 <div className="section">
-                    <ThemeToggle />
+                    <Suspense fallback={<div></div>}>
+                        <ThemeToggle />
+                     </Suspense>
                     <Link
                     onMouseEnter={() => setIsShown(true)}
                     onMouseLeave={() => setIsShown(false)}
@@ -62,7 +65,9 @@ const NavDefault = () => {
                             <p>{isToggled ? "Close" : "Open"}</p><p className="tabletUpwards">Menu</p>
                         </button>
                     </div>
-                    <Menu isToggled={isToggled} scrollSectionIntoView={scrollSectionIntoView} wrapperRef={wrapperRef} />
+                    <Suspense fallback={<div></div>}>
+                        <Menu isToggled={isToggled} scrollSectionIntoView={scrollSectionIntoView} wrapperRef={wrapperRef} />
+                    </Suspense>
                 </div>
             </div>
         </nav>

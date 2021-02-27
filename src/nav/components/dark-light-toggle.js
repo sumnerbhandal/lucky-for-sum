@@ -1,4 +1,5 @@
 import React, {useState} from "react";
+import "./toggle.css"
 
 export const ThemeToggle = (props) => {
     const [isToggled, setToggled] = useState(false);
@@ -58,3 +59,5 @@ export const ThemeToggle = (props) => {
         </div>
     )
 }
+
+export default ThemeToggle;

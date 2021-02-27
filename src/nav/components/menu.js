@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom/index";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {  faCodepen, faTwitter, faLinkedin, faDribbble, faGithub } from '@fortawesome/free-brands-svg-icons';
+import "./menu.css";
 
 const socialLinks = [
         {
@@ -31,7 +32,7 @@ const socialLinks = [
         }
 ]
 
-export const Menu = (props) => {
+const Menu = (props) => {
 
     return (
         <div ref={props.wrapperRef} className={`main-menu ${props.isToggled ? "open" : ""}`}>
@@ -63,3 +64,5 @@ export const Menu = (props) => {
         </div>
     )
 }
+
+export default Menu;

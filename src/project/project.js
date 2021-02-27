@@ -117,7 +117,7 @@ const Project = (props) => {
                            
                             {content.featuredImage === undefined ? null :
                                 <div className="featured-image-container" tabIndex="0" role="image" aria-label="image" aria-description={content.featuredImage.alt}>
-                                     <Suspense fallback={<div>Loading...</div>}>
+                                     <Suspense fallback={<div></div>}>
                                         <LazyLoad offset={1000} throttle={50}>
                                             <ProgressiveImageHook
                                                 key={index}
@@ -167,7 +167,7 @@ const Project = (props) => {
                                     </div>
                                     <div className="col">
                                         {subsection.subsectionImage === undefined || subsection.subsectionImage.image === ""  ? null :
-                                         <Suspense fallback={<div>Loading...</div>}>
+                                         <Suspense fallback={<div></div>}>
                                             <LazyLoad key={index} offset={1000} throttle={50}>
                                                 <ProgressiveImageHook
                                                     key={index}
@@ -181,7 +181,7 @@ const Project = (props) => {
                                         }
 
                                             {subsection.subsectionVideo === undefined || subsection.subsectionVideo.video === ""  ? null :
-                                             <Suspense fallback={<div>Loading...</div>}>
+                                             <Suspense fallback={<div></div>}>
                                                 <LazyLoad key={index} offset={1000} throttle={50}>
                                                       <video autoPlay muted loop src={require('./images/' + pdp.path + subsection.subsectionVideo.video)}></video>
                                                 </LazyLoad>
