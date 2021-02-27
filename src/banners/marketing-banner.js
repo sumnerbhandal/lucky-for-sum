@@ -26,4 +26,4 @@ export function MarketingBanner({ message }) {
     );
   }
 
-  export default { MarketingBanner, MarketingBannerTwo };
+  export default MarketingBannerTwo;

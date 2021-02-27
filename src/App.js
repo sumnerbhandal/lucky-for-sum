@@ -1,12 +1,9 @@
 import React, {useState, createRef, lazy, Suspense } from "react";
 import NavDefault from './nav/navigation';
-// import HomePage from './home/home';
 import { Footer } from './footer/footer';
-// import { ReadingProgress } from "./read-progress";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom/index";
 import "./index.css";
 import "./reset.css";
-// import Project from "./project/project";
 
 const Project = lazy(() => import('./project/project'));
 const HomePage = lazy(() => import('./home/home'));

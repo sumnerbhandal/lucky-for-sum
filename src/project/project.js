@@ -1,11 +1,11 @@
-import { MarketingBannerTwo } from '../banners/marketing-banner';
 import React, { useEffect, useState, lazy, Suspense } from "react";
 import './project.css'
 import { homePageProjects } from '../data-feed/project-feed';
-import ProgressiveImageHook from "../reusable-functions/progressive-image-load";
 import {Helmet} from "react-helmet";
-import LazyLoad from 'react-lazy-load';
 
+const ProgressiveImageHook = lazy(() => import('../reusable-functions/progressive-image-load'));
+const MarketingBannerTwo = lazy(() => import('../banners/marketing-banner'));
+const LazyLoad = lazy(() => import('react-lazy-load'));
 
 
 const Project = (props) => {
