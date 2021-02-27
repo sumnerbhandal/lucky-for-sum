@@ -180,7 +180,7 @@ img.play-button {
     margin-bottom: 0;
     width: 100%;
     text-align: center;
-    margin-top: 2.5rem;
+    margin-top: 2.75rem;
     font-size: 1.25rem;
     padding: 0 1rem;
 }
@@ -315,11 +315,19 @@ img.play-button {
 
 @media (min-width: 1800px) {
     .project-preview-thumbnail {
-        width: 24rem;
-        height: 24rem;
+        width: 20rem;
+        height: 20rem;
     }
     .project-preview h2 {
-        font-size: 2rem;
+        font-size: 1.75rem;
+    }
+    .project-preview a.buttonLink button {
+        font-size: 1.125rem;
+        padding-bottom: 0.5rem;
+        margin-top: 0.25rem;
+    }
+    .project-preview p.project-summary {
+        font-size: 1.125rem;
     }
 }
 

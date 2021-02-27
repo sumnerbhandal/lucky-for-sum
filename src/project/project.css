@@ -11,7 +11,8 @@
 }
 
 body.dark .project-preview-thumbnail.header {
-    background: var(--off-white);
+    background: #333;
+
 }
 
 .project-preview-container.header {
@@ -62,6 +63,10 @@ body.dark .project-preview-thumbnail.header {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+}
+
+.project-content section:last-of-type {
+    border-bottom: 0;
 }
 
 

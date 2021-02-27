@@ -1,10 +1,12 @@
 import { MarketingBannerTwo } from '../banners/marketing-banner';
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, lazy, Suspense } from "react";
 import './project.css'
 import { homePageProjects } from '../data-feed/project-feed';
-import ProgressiveImageHook from "../reusable-functions/progressive-image-load";
+// import ProgressiveImageHook from "../reusable-functions/progressive-image-load";
 import {Helmet} from "react-helmet";
 import LazyLoad from 'react-lazy-load';
+
+const ProgressiveImageHook  = lazy(() => import('../reusable-functions/progressive-image-load'));
 
 
 
@@ -116,16 +118,17 @@ const Project = (props) => {
                            
                             {content.featuredImage === undefined ? null :
                                 <div className="featured-image-container" tabIndex="0" role="image" aria-label="image" aria-description={content.featuredImage.alt}>
-                                      <LazyLoad offsetVertical={1000}>
-                                        <ProgressiveImageHook
-                                            key={index}
-                                            src={require('./images/' + pdp.path + content.featuredImage.image)}
-                                            placeholder={require('./images/' + pdp.path + content.featuredImage.image.replace(".png" || ".gif" || ".jpg", "_placeholder.png"))}
-                                            alt={content.featuredImage.alt}
-                                            tabIndex={-1}
-                                        />
-                                    </LazyLoad>
-                                  
+                                     <Suspense fallback={<div>Loading...</div>}>
+                                        <LazyLoad offsetVertical={1000}>
+                                            <ProgressiveImageHook
+                                                key={index}
+                                                src={require('./images/' + pdp.path + content.featuredImage.image)}
+                                                placeholder={require('./images/' + pdp.path + content.featuredImage.image.replace(".png" || ".gif" || ".jpg", "_placeholder.png"))}
+                                                alt={content.featuredImage.alt}
+                                                tabIndex={-1}
+                                            />
+                                        </LazyLoad>
+                                    </Suspense>
                                 </div>
                             }
                         </section>
@@ -165,21 +168,25 @@ const Project = (props) => {
                                     </div>
                                     <div className="col">
                                         {subsection.subsectionImage === undefined || subsection.subsectionImage.image === ""  ? null :
-                                        <LazyLoad key={index} offsetVertical={1000}>
-                                            <ProgressiveImageHook
-                                                key={index}
-                                                src={require('./images/' + pdp.path + subsection.subsectionImage.image)}
-                                                placeholder={require('./images/' + pdp.path + subsection.subsectionImage.image.replace(".png" || ".gif" || ".jpg", "_placeholder.png"))}
-                                                alt={subsection.subsectionImage.alt}
-                                                tabIndex={0}
-                                            />
-                                        </LazyLoad>
+                                         <Suspense fallback={<div>Loading...</div>}>
+                                            <LazyLoad key={index} offsetVertical={1000}>
+                                                <ProgressiveImageHook
+                                                    key={index}
+                                                    src={require('./images/' + pdp.path + subsection.subsectionImage.image)}
+                                                    placeholder={require('./images/' + pdp.path + subsection.subsectionImage.image.replace(".png" || ".gif" || ".jpg", "_placeholder.png"))}
+                                                    alt={subsection.subsectionImage.alt}
+                                                    tabIndex={0}
+                                                />
+                                            </LazyLoad>
+                                        </Suspense>
                                         }
 
                                             {subsection.subsectionVideo === undefined || subsection.subsectionVideo.video === ""  ? null :
+                                             <Suspense fallback={<div>Loading...</div>}>
                                                 <LazyLoad key={index} offsetVertical={1000}>
                                                       <video autoPlay muted loop src={require('./images/' + pdp.path + subsection.subsectionVideo.video)}></video>
                                                 </LazyLoad>
+                                            </Suspense>
                                             }
                                         
                                     </div>

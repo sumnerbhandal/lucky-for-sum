@@ -1,4 +1,4 @@
-import React, {useState, createRef } from "react";
+import React, {useState, createRef, lazy } from "react";
 import NavDefault from './nav/navigation';
 import HomePage from './home/home';
 import { Footer } from './footer/footer';
@@ -7,6 +7,8 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom/index";
 import "./index.css";
 import "./reset.css";
 import Project from "./project/project";
+
+// const Project = lazy(() => import('./project/project'));
 
 
 export default function App() {
