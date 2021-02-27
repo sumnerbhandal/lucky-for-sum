@@ -1,4 +1,4 @@
-import React, {useState, createRef, lazy } from "react";
+import React, {useState, createRef, lazy, Suspense } from "react";
 import NavDefault from './nav/navigation';
 import HomePage from './home/home';
 import { Footer } from './footer/footer';
@@ -6,14 +6,14 @@ import { ReadingProgress } from "./read-progress";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom/index";
 import "./index.css";
 import "./reset.css";
-import Project from "./project/project";
+// import Project from "./project/project";
 
-// const Project = lazy(() => import('./project/project'));
-
+const Project = lazy(() => import('./project/project'));
 
 export default function App() {
   const target = createRef();
   const [projectPreviewPosition, setProjectPreviewPosition] = useState(null);
+  const [hpReferrer, setHpReferrer] = useState(false);
   function focusStates() {
     // Let the document know when the mouse is being used
     document.body.addEventListener('mousedown', function() {
@@ -38,16 +38,21 @@ export default function App() {
       <Routes>
         <Route path="/" element={ 
             <div>
-              <HomePage PreviewPosition={(value) => setProjectPreviewPosition(value)}/>
+              <HomePage HpReferrer={(value) => setHpReferrer(value)} PreviewPosition={(value) => setProjectPreviewPosition(value)}/>
             </div>
         }/>
         <Route path="/project/*" element={
-              <div>
+           <div>
+            {hpReferrer ? (<HomePage HpReferrer={(value) => setHpReferrer(value)} PreviewPosition={(value) => setProjectPreviewPosition(value)}  />) : null}
+              <div className="project-page">
                 <ReadingProgress target={target} />
-                <Project position={projectPreviewPosition}  target={target} />
-                <Footer />
+                <Suspense fallback={<div></div>}>
+                  <Project position={projectPreviewPosition}  target={target} />
+                  <Footer />
+                </Suspense>
               </div>
-        }/>
+              </div>
+          }/>
         <Route path="*" element={<NotFound />} />
       </Routes>
     </main>

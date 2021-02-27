@@ -1,3 +1,10 @@
+.project-page {
+    position: absolute;
+    top: 4.5rem;
+    background: var(--off-white);
+    z-index: 2;
+}
+
 .project-preview-thumbnail.header {
     animation-name: project-landing;
     animation-duration: 0.75s;
@@ -72,13 +79,6 @@ body.dark .project-preview-thumbnail.header {
 
 .project-content .project-content section .subsection .col:nth-child(1n) > div:nth-child(1) h3  {
     margin-top: 1rem;
-}
-
-p.intro {
-    font-size: 1.25rem;
-    font-weight: 300;
-    max-width: 36rem;
-    padding-bottom: 0.5rem;
 }
 
 .project-content .col {
@@ -252,10 +252,6 @@ p.intro {
     } 
 }
 
-.next-project-intro h4 {
-    color: var(--white);
-}
-
   @keyframes loadingNextProject {
     0%   { 
 
@@ -324,9 +320,6 @@ p.intro {
 @media (min-width: 1024px) {
     .project-content {
         font-size: 1.125rem;
-    }
-    p.intro {
-        font-size: 1.625rem;
     }
 }
 

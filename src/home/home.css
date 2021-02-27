@@ -145,7 +145,7 @@ img.play-button {
     position: relative;
     border-radius: 1.25rem;
     transform: rotate(-20deg);
-    transition: background 0.5s ease, transform 0.3s ease;
+    transition: background 0.5s ease, transform 0.3s ease opacity 0.3s ease;
     cursor: pointer;
     margin-top: -2rem;
 }

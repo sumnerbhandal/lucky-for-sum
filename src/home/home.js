@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import { homePageProjects } from '../data-feed/hp-feed';
 import { Bio } from './components/home--bio';
-import { Link } from "react-router-dom/index";
+import { Link, useNavigate } from "react-router-dom/index";
 import { HeroVideo } from "./components/hero--video";
 import { Footer } from "../footer/footer";
 import {Helmet} from "react-helmet";
@@ -12,21 +12,43 @@ const footerStyle = {
 }
 
 const HomePage = (props) => {
+    const history = useNavigate();
+
     function projectImageOpen(e) {
         const project = e.target;
+        e.preventDefault();
+        const projectLink = project.getAttribute('href');
         const currentProjectPosition = project.getBoundingClientRect();
-        project.style.background = "#FEC155";
-        project.parentNode.style.transform = "scale(0.92)";
+        project.style.transform = "scale(0.85)";
         props.PreviewPosition(currentProjectPosition);
+        props.HpReferrer(true);
         window.scrollTo(0, 0);
+        setTimeout(function(){ 
+            history(projectLink);
+            project.style.opacity = 0;
+        }, 400);
+        setTimeout(function(){ 
+            project.style.transform = "";
+            project.style.opacity = 1;
+        }, 2000);
     }
     function projectImageOpenButton(e) {
         const project = e.target.parentNode.parentNode.firstChild;
+        e.preventDefault();
+        const projectLink = project.getAttribute('href');
         const currentProjectPosition = project.getBoundingClientRect();
-        project.style.background = "#FEC155";
-        project.parentNode.style.transform = "scale(0.92)";
+        project.style.transform = "scale(0.85)";
         props.PreviewPosition(currentProjectPosition);
+        props.HpReferrer(true);
         window.scrollTo(0, 0);
+        setTimeout(function(){ 
+            history(projectLink);
+            project.style.opacity = 0;
+        }, 400);
+        setTimeout(function(){ 
+            project.style.transform = "";
+            project.style.opacity = 1;
+        }, 2000);
     }
     function pressEnter(e) {
         if(e.key === 'Enter'){
