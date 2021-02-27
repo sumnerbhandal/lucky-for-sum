@@ -1,6 +1,7 @@
 import React from "react";
 import { designSnippetFeed } from "../../data-feed/design-snippet-feed";
 import ProgressiveImageHook from "../../reusable-functions/progressive-image-load";
+import "./design-snippets.css";
 
 const DesignSnippets = (props) => {
     return (

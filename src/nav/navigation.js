@@ -43,7 +43,7 @@ const NavDefault = () => {
         <nav role="navigation">
             <div className={`masthead ${!isShown ? "" : "hovered"}`}>
                 <div className="section">
-                    <Suspense fallback={<div></div>}>
+                    <Suspense fallback={<div className="header-side-container"></div>}>
                         <ThemeToggle />
                      </Suspense>
                     <Link

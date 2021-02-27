@@ -25,7 +25,6 @@ img.play-button {
     cursor: pointer;
 }
 .heroVideo {
-   width: 100%;
    position: absolute;
    top: 0;
    left: 0;
@@ -69,17 +68,6 @@ img.play-button {
     .aboutIntro {
         margin-top: 0.75rem;
     }
-    .homepage {
-        /* min-height: 40rem; */
-    }
-    .introSection.hp-section {
-        display: flex;
-        flex-wrap: wrap;
-        padding-bottom: 2rem;
-        /* justify-content: center; */
-        /* min-height: 768px; */
-    }
-
     .bioSection {
         justify-content: flex-start;
     }
@@ -90,7 +78,6 @@ img.play-button {
         margin-top: 3rem;
         padding-right: 4rem;
     }
-
 }
 
 
@@ -141,7 +128,7 @@ img.play-button {
     position: relative;
     border-radius: 1.25rem;
     transform: rotate(-20deg);
-    transition: background 0.5s ease, transform 0.3s ease opacity 0.3s ease;
+    transition: background 0.5s ease, transform 0.3s ease;
     cursor: pointer;
     margin-top: -2rem;
 }
@@ -182,8 +169,7 @@ img.play-button {
 }
 
 .project-preview p.project-summary {
-    margin-block-start: 0;
-    margin-block-end: 0;
+    margin-block-start: 0.25rem;
     width: 100%;
     text-align: center;
     padding: 0 1rem;
@@ -194,7 +180,6 @@ img.play-button {
     width: 100%;
     display: flex;
     justify-content: center;
-    margin-top: 1rem;
     text-decoration: none;
 }
 
@@ -205,15 +190,12 @@ img.play-button {
     font-family: 'Palanquin Dark', sans-serif;
 }
 
-
 .image-right {
     display: none;
 }
 
 @media (min-width: 768px) {
     .project-preview-container {
-        display: flex;
-        align-items: center;
         justify-content: space-between;
         width: 100%;
     }
@@ -277,9 +259,6 @@ img.play-button {
         width: 14rem;
         height: 14rem;
     }
-    .project-preview h2 {
-        padding: 0 1rem;
-    }
 
     .project-preview:hover .project-preview-thumbnail, .project-preview:hover svg, .project-preview:nth-child(even):hover svg, .project-preview:nth-child(even):hover .project-preview-thumbnail {
         transform: rotate(0);
@@ -326,74 +305,4 @@ img.play-button {
         font-size: 1.125rem;
     }
 }
-
-
-/* Design Snippets */
-
-
-.design-snippets {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    width: 100%;
-    height: auto;
-    padding-bottom: 4rem;
-}
-
-.design-snippets h3 {
-    width: 100%;
-    font-size: 1.5rem;
-    text-align: center;
-    padding: 3rem 0;
-}
-
-.design-snippets .project-summaries {
-    display: flex;
-    width: 100%;
-    overflow: hidden;
-    flex-wrap: wrap;
-    transition: transform 0.5s ease;
-    padding: 1rem;
-}
-
-.design-snippets .project-summaries .image-container {
-    padding-top: 75%;
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-}
-
-.design-snippets .project-summaries .image-container img, .design-snippets .project-summaries .image-container video {
-    width: 100%;
-    position: absolute;
-    top: 0;
-    height: 100%;
-    object-fit: cover;
-}
-
-.design-snippets .project-summaries .image-container video {
-    object-fit: contain;
-    background: white;
-}
-
-.design-snippets .project-summaries:hover img, .design-snippets .project-summaries:hover video  {
-    transform: scale(1.15);
-    border-radius: 0.25rem;
-}
-
-.design-snippets .project-summaries h4 { 
-    padding: 0.75rem 1rem;
-}
-
-
-
-@media (min-width: 768px) {
-    .design-snippets .project-summaries {
-        width: 25%;
-    }
-    .design-snippets .project-summaries:nth-child(2), .design-snippets .project-summaries:nth-child(6), .design-snippets .project-summaries:nth-child(10) {
-        width: 50%;
-    }
-}
-
 

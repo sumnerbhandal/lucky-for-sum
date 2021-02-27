@@ -1,0 +1,65 @@
+
+.design-snippets {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+    padding-bottom: 4rem;
+}
+
+.design-snippets h3 {
+    width: 100%;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 3rem 0;
+}
+
+.design-snippets .project-summaries {
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+    flex-wrap: wrap;
+    transition: transform 0.5s ease;
+    padding: 1rem;
+}
+
+.design-snippets .project-summaries .image-container {
+    padding-top: 75%;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.design-snippets .project-summaries .image-container img, .design-snippets .project-summaries .image-container video {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    object-fit: cover;
+}
+
+.design-snippets .project-summaries .image-container video {
+    object-fit: contain;
+    background: white;
+}
+
+.design-snippets .project-summaries:hover img, .design-snippets .project-summaries:hover video  {
+    transform: scale(1.15);
+    border-radius: 0.25rem;
+}
+
+.design-snippets .project-summaries h4 { 
+    padding: 0.75rem 1rem;
+}
+
+
+
+@media (min-width: 768px) {
+    .design-snippets .project-summaries {
+        width: 25%;
+    }
+    .design-snippets .project-summaries:nth-child(2), .design-snippets .project-summaries:nth-child(6), .design-snippets .project-summaries:nth-child(10) {
+        width: 50%;
+    }
+}
