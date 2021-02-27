@@ -25,11 +25,9 @@ const HomePage = (props) => {
         window.scrollTo(0, 0);
         setTimeout(function(){ 
             history(projectLink);
-            project.style.opacity = 0;
-        }, 400);
+        }, 250);
         setTimeout(function(){ 
             project.style.transform = "";
-            project.style.opacity = 1;
         }, 2000);
     }
     function projectImageOpenButton(e) {
@@ -43,11 +41,9 @@ const HomePage = (props) => {
         window.scrollTo(0, 0);
         setTimeout(function(){ 
             history(projectLink);
-            project.style.opacity = 0;
-        }, 400);
+        }, 250);
         setTimeout(function(){ 
             project.style.transform = "";
-            project.style.opacity = 1;
         }, 2000);
     }
     function pressEnter(e) {
