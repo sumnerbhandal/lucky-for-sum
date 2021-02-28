@@ -1,10 +1,10 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import { homePageProjects } from '../data-feed/hp-feed';
 import { Bio } from './components/home--bio';
-import { Link, useNavigate } from "react-router-dom/index";
+import { Link } from "react-router-dom/index";
 import { HeroVideo } from "./components/hero--video";
 import { Footer } from "../footer/footer";
-import {Helmet} from "react-helmet";
+import { Helmet } from "react-helmet";
 import "./home.css";
 
 const footerStyle = {
@@ -12,39 +12,19 @@ const footerStyle = {
 }
 
 const HomePage = (props) => {
-    const history = useNavigate();
-
     function projectImageOpen(e) {
         const project = e.target;
-        e.preventDefault();
-        const projectLink = project.getAttribute('href');
         const currentProjectPosition = project.getBoundingClientRect();
-        project.style.transform = "scale(0.85)";
         props.PreviewPosition(currentProjectPosition);
         props.HpReferrer(true);
         window.scrollTo(0, 0);
-        setTimeout(function(){ 
-            history(projectLink);
-        }, 250);
-        setTimeout(function(){ 
-            project.style.transform = "";
-        }, 2000);
     }
     function projectImageOpenButton(e) {
         const project = e.target.parentNode.parentNode.firstChild;
-        e.preventDefault();
-        const projectLink = project.getAttribute('href');
         const currentProjectPosition = project.getBoundingClientRect();
-        project.style.transform = "scale(0.85)";
         props.PreviewPosition(currentProjectPosition);
         props.HpReferrer(true);
         window.scrollTo(0, 0);
-        setTimeout(function(){ 
-            history(projectLink);
-        }, 250);
-        setTimeout(function(){ 
-            project.style.transform = "";
-        }, 2000);
     }
     function pressEnter(e) {
         if(e.key === 'Enter'){
@@ -65,8 +45,6 @@ const HomePage = (props) => {
             setVideoPlaying(false);
         };
     }
-    
-    document.title = "Lucky For Sum | UX/UI Design | Sumner Bhandal" ;
        
     return (
         <div id="homepage" className="homepage">

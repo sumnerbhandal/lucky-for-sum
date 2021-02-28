@@ -55,17 +55,16 @@ const NavDefault = () => {
                     to="/">
                         <img src={require('./icons/lucky-for-sum-logo.svg')} alt="Home"/>
                     </Link>
-                   
-                    <div className="header-side-container right">
-                        <a className="get-in-touch" target="new" href="mailto:sumnerbhandal@gmail.com">Get In Touch &nbsp; <span role="img" aria-label="Welcome Wave"> 👋🏽</span></a>
-                        <button id="burger-button" className={isToggled ? "open" : ""} onClick={toggleTrueFalse}>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <p>{isToggled ? "Close" : "Open"}</p><p className="tabletUpwards">Menu</p>
-                        </button>
-                    </div>
-                    <Suspense fallback={<div></div>}>
+                    <Suspense fallback={<div className="header-side-container right"></div>}>
+                        <div className="header-side-container right">
+                            <a className="get-in-touch" target="new" href="mailto:sumnerbhandal@gmail.com">Get In Touch &nbsp; <span role="img" aria-label="Welcome Wave"> 👋🏽</span></a>
+                            <button id="burger-button" className={isToggled ? "open" : ""} onClick={toggleTrueFalse}>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <p>{isToggled ? "Close" : "Open"}</p><p className="tabletUpwards">Menu</p>
+                            </button>
+                        </div>
                         <Menu isToggled={isToggled} scrollSectionIntoView={scrollSectionIntoView} wrapperRef={wrapperRef} />
                     </Suspense>
                 </div>
