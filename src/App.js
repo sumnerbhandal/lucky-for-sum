@@ -54,13 +54,10 @@ export default function App() {
                 </Suspense>
                 <Suspense fallback={<div></div>}>
                   <Project position={projectPreviewPosition}  target={target} />
-                </Suspense>
-                <Suspense fallback={<div></div>}>
                   <Footer />
                 </Suspense>
-
               </div>
-              </div>
+            </div>
           }/>
         <Route path="*" element={<NotFound />} />
       </Routes>

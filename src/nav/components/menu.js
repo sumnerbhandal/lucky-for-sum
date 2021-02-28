@@ -43,9 +43,9 @@ const Menu = (props) => {
               <li>
                   <Link to='/#project-container' id="link_project-container" onClick={props.scrollSectionIntoView} tabIndex={props.isToggled ? "0" : "-1"}>Projects</Link>
               </li>
-              <li>
+              {/* <li>
                 <Link to='/#design-snippets' id="link_design-snippets" onClick={props.scrollSectionIntoView} tabIndex={props.isToggled ? "0" : "-1"}>Design Snippets</Link>
-              </li>
+              </li> */}
               <li>
               <a className="get-in-touch" target="new" href="mailto:sumnerbhandal@gmail.com">Get In Touch &nbsp; <span role="img" aria-label="Welcome Wave"> 👋🏽</span></a>
               </li>
