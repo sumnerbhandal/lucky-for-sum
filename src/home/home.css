@@ -68,11 +68,15 @@ img.play-button {
     .aboutIntro {
         margin-top: 0.75rem;
     }
+
+    .aboutIntro h1, .aboutIntro span {
+        font-size: 2rem;
+    }
     .bioSection {
         justify-content: flex-start;
     }
     .aboutIntro  {
-        width: calc(50%);
+        width: calc(75%);
     }
     .aboutIntro {
         margin-top: 3rem;
@@ -82,7 +86,7 @@ img.play-button {
 
 
 .aboutIntro p {
-    font-size: 1.0625rem;
+    font-size: 1.125rem;
 }
 
 /* Project Previews */
@@ -306,3 +310,26 @@ img.play-button {
     }
 }
 
+.aboutMe {
+    margin-top: 4rem;
+    background: var(--white);
+    padding: 2rem 2.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.aboutMe h3 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.aboutMe img {
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .aboutMe .column {
+        width: calc(50% - 2rem);
+    }
+}

@@ -2,7 +2,6 @@ import React, { useState, useRef, useEffect, lazy, Suspense } from "react";
 import { Link } from "react-router-dom/index";
 import "./navigation.css";
 
-const ThemeToggle = lazy(() => import('./components/dark-light-toggle'));
 const Menu = lazy(() => import('./components/menu'));
 
 const NavDefault = () => {
@@ -43,18 +42,20 @@ const NavDefault = () => {
         <nav role="navigation">
             <div className={`masthead ${!isShown ? "" : "hovered"}`}>
                 <div className="section">
-                    <Suspense fallback={<div className="header-side-container"></div>}>
-                        <ThemeToggle />
-                     </Suspense>
-                    <Link
-                    onMouseEnter={() => setIsShown(true)}
-                    onMouseLeave={() => setIsShown(false)}
-                    id="link_homepage"
-                    onClick={scrollSectionIntoView}
-                    className="logo-image"
-                    to="/">
-                        <img src={require('./icons/lucky-for-sum-logo.svg')} alt="Home"/>
-                    </Link>
+                    <div className="header-side-container" >
+                        <Link
+                        onMouseEnter={() => setIsShown(true)}
+                        onMouseLeave={() => setIsShown(false)}
+                        id="link_homepage"
+                        onClick={scrollSectionIntoView}
+                        className="logo-image"
+                        to="/">
+                            <img src={require('./icons/lucky-for-sum-logo.svg')} alt="Home"/>
+                        </Link>
+                        <Link className="brand-name" to="/">
+                            <img src={require('./icons/lfs-logo-dark.svg')} alt="Home"/>
+                        </Link>
+                    </div>
                     <Suspense fallback={<div className="header-side-container right"></div>}>
                         <div className="header-side-container right">
                             <a className="get-in-touch" target="new" href="mailto:sumnerbhandal@gmail.com">Get In Touch &nbsp; <span role="img" aria-label="Welcome Wave"> 👋🏽</span></a>
@@ -62,7 +63,7 @@ const NavDefault = () => {
                                 <span></span>
                                 <span></span>
                                 <span></span>
-                                <p>{isToggled ? "Close" : "Open"}</p><p className="tabletUpwards">Menu</p>
+                                <p>{isToggled ? "Close" : "Open"} Menu</p>
                             </button>
                         </div>
                         <Menu isToggled={isToggled} scrollSectionIntoView={scrollSectionIntoView} wrapperRef={wrapperRef} />

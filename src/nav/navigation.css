@@ -53,7 +53,8 @@ nav {
 }
 
 .header-side-container {
-    width: calc(50% - 3rem);
+    display: flex;
+    align-items: center;
 }
 
 .header-side-container.right {
@@ -112,7 +113,7 @@ nav {
 /* Burger Menu */
   
 #burger-button {
-    width: 6rem;
+    width: 9rem;
     height: 2.5rem;
     padding: 0.375rem 0.5rem;
     position: relative;
@@ -160,6 +161,7 @@ nav {
     -moz-transition: .25s ease-in-out;
     -o-transition: .25s ease-in-out;
     transition: .25s ease-in-out;
+    pointer-events: none;
   }
   
   #burger-button span:nth-child(1) {
@@ -218,8 +220,14 @@ nav {
     pointer-events: none;
   }
 
-  #burger-button p.tabletUpwards {
+  .brand-name {
       display: none;
+      align-items: center;
+      margin-left: 0.9375rem;
+  }
+  .brand-name img {
+    height: 1.5rem;
+    margin-top: 0.25rem;
   }
 
   a.get-in-touch {
@@ -232,10 +240,24 @@ nav {
     #burger-button {
         width: 9rem;
     }
-    #burger-button p.tabletUpwards, a.get-in-touch {
+    a.get-in-touch  {
         display: flex;
     }
+    .brand-name {
+      display: flex;
+    }
   }
+
+  .desktop-links {
+    display: none;
+  }
+
+  @media (min-width: 1024px) {
+    .desktop-links {
+      display: flex;
+    }
+  }
+
 
 
 /* Theme toggle */

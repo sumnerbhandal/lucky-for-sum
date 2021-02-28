@@ -5,6 +5,8 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom/index";
 import "./index.css";
 import "./reset.css";
 
+const ThemeToggle = lazy(() => import('./dark-light-toggle'));
+
 const Project = lazy(() => import('./project/project'));
 const HomePage = lazy(() => import('./home/home'));
 const ReadingProgress = lazy(() => import('./read-progress'));
@@ -33,6 +35,9 @@ export default function App() {
    <Router>
     <main>
       <NavDefault />
+      <Suspense fallback={<div className="header-side-container"></div>}>
+        <ThemeToggle />
+      </Suspense>
       <Routes>
         <Route path="/" element={ 
             <div>

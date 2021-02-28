@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { homePageProjects } from '../data-feed/hp-feed';
 import { Bio } from './components/home--bio';
+import { About } from './components/home---about-me';
 import { Link } from "react-router-dom/index";
 import { HeroVideo } from "./components/hero--video";
 import { Footer } from "../footer/footer";
@@ -54,8 +55,8 @@ const HomePage = (props) => {
                 <meta name="keywords" content="portfolio,UX,user experience,UI,user interface,product design, designer, digital design,online,digital, support, community, injury, snippets, acl, support community, acl injury, design snippets"/>
             </Helmet>
             <div id="introSection" className="introSection hp-section section">
-                < HeroVideo pressEnter={pressEnter} videoButton={videoButton} videoPlaying={videoPlaying} />
-                < Bio />
+                <HeroVideo pressEnter={pressEnter} videoButton={videoButton} videoPlaying={videoPlaying} />
+                <Bio />
             </div>
             {homePageProjects.map((item, index) => (
                 <div className="project-preview-container hp-section" id="project-container" key={index}>
@@ -80,7 +81,9 @@ const HomePage = (props) => {
                     </div>
                 </div>
             ))}
-            
+            <div id="about" className="introSection hp-section section">
+                <About />
+            </div>
             <div style={footerStyle} className="hp-section">
                 <Footer />
             </div>
