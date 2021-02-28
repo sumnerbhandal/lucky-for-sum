@@ -58,7 +58,16 @@ const NavDefault = () => {
                     </div>
                     <Suspense fallback={<div className="header-side-container right"></div>}>
                         <div className="header-side-container right">
-                            <a className="get-in-touch" target="new" href="mailto:sumnerbhandal@gmail.com">Get In Touch &nbsp; <span role="img" aria-label="Welcome Wave"> 👋🏽</span></a>
+                            <Link Link to='/#introSection' id="link_introSection" onClick={scrollSectionIntoView} className="desktop-links">
+                                Showreel
+                            </Link>
+                            <Link to='/#project-container' id="link_project-container" onClick={scrollSectionIntoView} className="desktop-links">
+                                Projects
+                            </Link>
+                            <Link to='/#about' id="link_about" onClick={scrollSectionIntoView} className="desktop-links">
+                                About
+                            </Link>
+                            <a className="get-in-touch-header" target="new" href="mailto:sumnerbhandal@gmail.com">Get In Touch &nbsp; <span role="img" aria-label="Welcome Wave"> 👋🏽</span></a>
                             <button id="burger-button" className={isToggled ? "open" : ""} onClick={toggleTrueFalse}>
                                 <span></span>
                                 <span></span>

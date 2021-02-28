@@ -54,6 +54,10 @@ const Project = (props) => {
     const metaKeywords = projectsShown[0].keywords;
     const metaDescription = projectsShown[0].SEODescription;
 
+    document.addEventListener('DOMContentLoaded', function() {
+        document.getElementById("project-page").focus();
+    }, false);
+
     return (
         <div ref={props.target}>
             <Helmet>
@@ -62,7 +66,7 @@ const Project = (props) => {
                 <meta name="keywords" content={metaKeywords} />
             </Helmet>
         {projectsShown.map((pdp, index) => (
-            <div key={index} className="project-preview-container header">
+            <div key={index} className="project-preview-container header" >
                 <div className="project-preview">
                     <div style={projectPreviewPosition} className="project-preview-thumbnail header">
                     {pdp.headerImage}

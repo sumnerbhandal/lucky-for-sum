@@ -50,10 +50,12 @@ export default function App() {
            <div>
             {hpReferrer ? (
               <Suspense fallback={<div></div>}>
-                <HomePage HpReferrer={(value) => setHpReferrer(value)} PreviewPosition={(value) => setProjectPreviewPosition(value)}  />
+                <div tabIndex="-1">
+                  <HomePage HpReferrer={(value) => setHpReferrer(value)} PreviewPosition={(value) => setProjectPreviewPosition(value)}  />
+                </div>
               </Suspense>
               ) : null}
-              <div className={`project-page ${hpReferrer ? "" : "direct-link" }`} id="project-page">
+              <div className={`project-page ${hpReferrer ? "" : "direct-link" }`} id="project-page" tabIndex="1">
                 <Suspense fallback={<div></div>}>
                   <ReadingProgress target={target} />
                 </Suspense>

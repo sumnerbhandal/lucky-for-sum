@@ -19,6 +19,7 @@ const HomePage = (props) => {
         props.PreviewPosition(currentProjectPosition);
         props.HpReferrer(true);
         window.scrollTo(0, 0);
+        document.getElementById("project-page").focus();
     }
     function projectImageOpenButton(e) {
         const project = e.target.parentNode.parentNode.firstChild;
@@ -26,6 +27,7 @@ const HomePage = (props) => {
         props.PreviewPosition(currentProjectPosition);
         props.HpReferrer(true);
         window.scrollTo(0, 0);
+        document.getElementById("project-page").focus();
     }
     function pressEnter(e) {
         if(e.key === 'Enter'){
