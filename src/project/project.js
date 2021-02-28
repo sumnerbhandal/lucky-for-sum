@@ -54,10 +54,6 @@ const Project = (props) => {
     const metaKeywords = projectsShown[0].keywords;
     const metaDescription = projectsShown[0].SEODescription;
 
-    document.addEventListener('DOMContentLoaded', function() {
-        document.getElementById("project-page").focus();
-    }, false);
-
     return (
         <div ref={props.target}>
             <Helmet>
