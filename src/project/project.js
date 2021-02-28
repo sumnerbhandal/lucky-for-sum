@@ -118,7 +118,7 @@ const Project = (props) => {
                             {content.featuredImage === undefined ? null :
                                 <div className="featured-image-container" tabIndex="0" role="image" aria-label="image" aria-description={content.featuredImage.alt}>
                                      <Suspense fallback={<div></div>}>
-                                        <LazyLoad offset={1000} throttle={50}>
+                                        <LazyLoad offset={400} throttle={50}>
                                             <ProgressiveImageHook
                                                 key={index}
                                                 src={require('./images/' + pdp.path + content.featuredImage.image)}
@@ -168,7 +168,7 @@ const Project = (props) => {
                                     <div className="col">
                                         {subsection.subsectionImage === undefined || subsection.subsectionImage.image === ""  ? null :
                                          <Suspense fallback={<div></div>}>
-                                            <LazyLoad key={index} offset={1000} throttle={50}>
+                                            <LazyLoad key={index} offset={400} throttle={50}>
                                                 <ProgressiveImageHook
                                                     key={index}
                                                     src={require('./images/' + pdp.path + subsection.subsectionImage.image)}
@@ -182,7 +182,7 @@ const Project = (props) => {
 
                                             {subsection.subsectionVideo === undefined || subsection.subsectionVideo.video === ""  ? null :
                                              <Suspense fallback={<div></div>}>
-                                                <LazyLoad key={index} offset={1000} throttle={50}>
+                                                <LazyLoad key={index} offset={400} throttle={50}>
                                                       <video autoPlay muted loop src={require('./images/' + pdp.path + subsection.subsectionVideo.video)}></video>
                                                 </LazyLoad>
                                             </Suspense>

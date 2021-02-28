@@ -51,9 +51,14 @@ export default function App() {
               <div className={`project-page ${hpReferrer ? "" : "direct-link" }`} id="project-page">
                 <Suspense fallback={<div></div>}>
                   <ReadingProgress target={target} />
+                </Suspense>
+                <Suspense fallback={<div></div>}>
                   <Project position={projectPreviewPosition}  target={target} />
+                </Suspense>
+                <Suspense fallback={<div></div>}>
                   <Footer />
                 </Suspense>
+
               </div>
               </div>
           }/>
