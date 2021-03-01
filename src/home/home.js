@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, lazy } from "react";
 import { homePageProjects } from '../data-feed/hp-feed';
 import { Bio } from './components/home--bio';
 import { About } from './components/home---about-me';
@@ -7,6 +7,7 @@ import { HeroVideo } from "./components/hero--video";
 import { Footer } from "../footer/footer";
 import { Helmet } from "react-helmet";
 import "./home.css";
+const LazyLoad = lazy(() => import('react-lazy-load'));
 
 const footerStyle = {
     height: "auto"
@@ -85,7 +86,9 @@ const HomePage = (props) => {
                 </div>
             ))}
             <div id="about" className="introSection hp-section section">
-                <About />
+                <LazyLoad offset={400} throttle={50}>
+                    <About />
+                </LazyLoad>
             </div>
             <div style={footerStyle} className="hp-section">
                 <Footer />
