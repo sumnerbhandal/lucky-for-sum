@@ -1,8 +1,7 @@
-import React, { useState, useRef, useEffect, lazy, Suspense } from "react";
+import React, { useState, useRef, useEffect } from "react";
+import Menu from "./components/menu";
 import { Link } from "react-router-dom/index";
 import "./navigation.css";
-
-const Menu = lazy(() => import('./components/menu'));
 
 const NavDefault = () => {
     const [isShown, setIsShown] = useState(false);
@@ -51,7 +50,6 @@ const NavDefault = () => {
                             <img src={require('./icons/lfs-logo-dark.svg')} alt="Home"/>
                         </Link>
                     </div>
-                    <Suspense fallback={<div className="header-side-container right"></div>}>
                         <div className="header-side-container right">
                             <Link Link to='/#introSection' id="link_introSection" onClick={scrollSectionIntoView} className="desktop-links">
                                 Showreel
@@ -71,7 +69,6 @@ const NavDefault = () => {
                             </button>
                         </div>
                         <Menu isToggled={isToggled} scrollSectionIntoView={scrollSectionIntoView} wrapperRef={wrapperRef} />
-                    </Suspense>
                 </div>
             </div>
         </nav>
