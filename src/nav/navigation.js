@@ -9,7 +9,7 @@ const NavDefault = () => {
 
     function scrollSectionIntoView(e) {
         const id = e.target.id;
-        const scrollId = id.replace("link_", "");
+        const scrollId = id.replace("link_", "").replace("menu_", "");
         const elmnt = document.getElementById(scrollId);
         elmnt.scrollIntoView();
         setToggled(false);

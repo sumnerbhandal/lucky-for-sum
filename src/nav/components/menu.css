@@ -61,11 +61,3 @@
 .masthead ul.social li a:hover svg path {
   color: var(--happy-mustard-text); 
 }
-@media (min-width: 1024px) {
-  .masthead ul.touch-links {
-    display: none;
-  }
-  .masthead ul.social {
-    border: 0;
-  }
-}
