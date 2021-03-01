@@ -41,13 +41,13 @@ const Project = (props) => {
         }
     }
     useEffect(() => {
-      function watchScroll() {
-        window.addEventListener("scroll", logit);
-      }
-      watchScroll();
-      return () => {
-        window.removeEventListener("scroll", logit);
-      };
+        function watchScroll() {
+            window.addEventListener("scroll", logit);
+        }
+        watchScroll();
+        return () => {
+            window.removeEventListener("scroll", logit);
+        };
     });
 
     const pageTitle = projectsShown[0].SEOTitle;

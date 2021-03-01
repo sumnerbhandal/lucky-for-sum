@@ -18,16 +18,12 @@ const HomePage = (props) => {
         const currentProjectPosition = project.getBoundingClientRect();
         props.PreviewPosition(currentProjectPosition);
         props.HpReferrer(true);
-        window.scrollTo(0, 0);
-        document.getElementById("project-page").focus();
     }
     function projectImageOpenButton(e) {
         const project = e.target.parentNode.parentNode.firstChild;
         const currentProjectPosition = project.getBoundingClientRect();
         props.PreviewPosition(currentProjectPosition);
         props.HpReferrer(true);
-        window.scrollTo(0, 0);
-        document.getElementById("project-page").focus();
     }
     function pressEnter(e) {
         if(e.key === 'Enter'){
@@ -73,7 +69,7 @@ const HomePage = (props) => {
                         <p className="project-summary">
                             {item.summary}
                         </p>
-                        <Link className="buttonLink" to={`/project/${item.url}-pid-${item.id}`} onClick={projectImageOpenButton}>
+                        <Link tabIndex="-1" className="buttonLink" to={`/project/${item.url}-pid-${item.id}`} onClick={projectImageOpenButton}>
                             <button className="block">View Project</button>
                         </Link>
                     </div>

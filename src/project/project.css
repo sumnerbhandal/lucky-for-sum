@@ -5,7 +5,6 @@
     z-index: 2;
     width: 100%;
 }
-
 .project-preview-thumbnail.header {
     animation-name: project-landing;
     animation-duration: 0.75s;
@@ -17,21 +16,17 @@
     overflow: hidden;
     clip-path: polygon(100% 0, 100% 60%, 0 100%, 0 0);
 }
-
 .project-page.direct-link .project-preview-thumbnail.header {
     width: 0;
     height: 25rem;
 }
-
 body.dark .project-preview-thumbnail.header {
     background: #333;
 
 }
-
 .project-preview-container.header {
     flex-wrap: wrap;
 }
-
 .project-preview-thumbnail > svg {
     position: absolute;
     top: 1.25rem;
@@ -41,7 +36,6 @@ body.dark .project-preview-thumbnail.header {
     pointer-events: none;
     height: 100%;
 }
-
 .project-preview-container.header .project-preview {
     position: sticky;
     top: 4.5rem;
@@ -53,20 +47,17 @@ body.dark .project-preview-thumbnail.header {
     pointer-events: none;
     box-shadow: 0 -16rem 0 var(--off-white);
 }
-
 .project-preview-container.header .banner.full-width {
     width: 100%;
     z-index: 1;
     top: 0;
     position: relative;
 }
-
 .project-preview-thumbnail.header > svg {
     width: auto;
     position: relative;
     animation: imageTransition 0.5s forwards;
 }
-
 .project-content {
     background: var(--white);
     position: relative;
@@ -79,7 +70,6 @@ body.dark .project-preview-thumbnail.header {
     width: 100%;
     z-index: 2;
 }
-
 .project-content section {
     padding-bottom: 1.5rem;
     border-bottom: 2px dashed var(--off-white);
@@ -87,26 +77,20 @@ body.dark .project-preview-thumbnail.header {
     flex-wrap: wrap;
     justify-content: space-between;
 }
-
 .project-content section:last-of-type {
     border-bottom: 0;
 }
-
-
 .project-content .project-content section .subsection .col:nth-child(1n) > div:nth-child(1) h3  {
     margin-top: 1rem;
 }
-
 .project-content .col {
     margin-top: 1rem;
 }
-
 .project-content h3 {
     margin-top: 2rem;
     font-size: 1.125rem;
     font-family: "Palanquin Dark",sans-serif;
 }
-
 .project-content .responsibilities {
     background: var(--deep-purple);
     padding: 1.75rem 2rem;

@@ -39,26 +39,28 @@ export default function App() {
                 <Suspense fallback={<div></div>}>
                   <HomePage HpReferrer={(value) => setHpReferrer(value)} PreviewPosition={(value) => setProjectPreviewPosition(value)}/>
                 </Suspense>
+                {/* <Suspense fallback={<div></div>}>
+                  <Footer />
+                </Suspense> */}
               </div>
           }/>
           <Route path="/project/*" element={
             <div>
-              {hpReferrer ? (
-                <Suspense fallback={<div></div>}>
-                  <div tabIndex="-1">
-                    <HomePage HpReferrer={(value) => setHpReferrer(value)} PreviewPosition={(value) => setProjectPreviewPosition(value)}  />
-                  </div>
-                </Suspense>
-                ) : null}
-                <div className={`project-page ${hpReferrer ? "" : "direct-link" }`} id="project-page" tabIndex="1">
+                <div className={`project-page ${!hpReferrer ? "" : "direct-link" }`} id="project-page" tabIndex="1">
                   <Suspense fallback={<div></div>}>
                     <ReadingProgress target={target} />
                   </Suspense>
                   <Suspense fallback={<div></div>}>
                     <Project position={projectPreviewPosition}  target={target} />
-                    <Footer />
+                      {hpReferrer ? (
+                        <div tabIndex="-1">
+                          <HomePage HpReferrer={(value) => setHpReferrer(value)} PreviewPosition={(value) => setProjectPreviewPosition(value)}  />
+                        </div>
+                      ) : null}
+                      <Footer />
                   </Suspense>
                 </div>
+
               </div>
             }/>
           <Route path="*" element={<NotFound />} />
