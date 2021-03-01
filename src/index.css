@@ -46,13 +46,6 @@ body, * {
   scroll-behavior: smooth;
 }
 
-/* *:focus {
-  box-shadow: 0 0 0 4px black;
-  outline: 4px solid blue;
-} */
-
-/* The default outline styling, for greatest accessibility. */
-/* You can skip this to just use the browser's defaults. */
 :focus {
   box-shadow: 0 0 0 2px var(--happy-mustard), 0 0 0 4px var(--happy-mustard), 0 0 0 6px var(--deep-purple);
   border-radius: 2px;
@@ -64,12 +57,10 @@ body, * {
   border-radius: 0;
 }
 
-/* When mouse is detected, ALL focused elements have outline removed. */
 body.using-mouse :focus {
   outline: none;
   box-shadow: none;
 }
-
 
 body.using-mouse .section.banner-title h1:focus {
   outline: none;
@@ -86,7 +77,6 @@ code {
 }
 
 main {
-  /* overflow: hidden; */
   margin-top: 4.5rem;
 }
 
@@ -127,11 +117,6 @@ main {
   transition: all 0.3s ease;
 }
 
-.bg-stripes {
-  background-image: linear-gradient(135deg, var(--off-white) 62%, transparent 38%), linear-gradient(var(--off-white), var(--off-white) 7px, var(--off-white) 7px, var(--off-white));
-  background-size: 100%, 100% 14px;
-}
-
 .footer {
   border-top: 1px solid var(--deep-purple);
   padding: 1rem 0;
@@ -156,25 +141,9 @@ button.action, input.action {
 }
 
 button:hover, form input[type="submit"]:hover {
-  /* transform: translate(1rem, 1rem); */
   box-shadow: none;
 }
 
-@keyframes fadeIn {
-  0%   { opacity: 0; }
-  100% { opacity: 1; }
-}
-
-@keyframes blurIn {
-  0%   { 
-    filter: blur(1px);
-    transform: scale(0.95);
-   }
-  100% { 
-    filter: blur(0);
-    transform: scale(1)
-  }
-}
 
 @keyframes bannerLoadUp {
   0%   { 

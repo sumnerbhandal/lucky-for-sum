@@ -1,9 +1,10 @@
-import React, {useState, createRef, lazy, Suspense } from "react";
+import React, {useState, createRef, lazy, Suspense, useEffect } from "react";
 import NavDefault from './nav/navigation';
 import { Footer } from './footer/footer';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom/index";
 import "./index.css";
 import "./reset.css";
+import useGTM from '@elgorditosalsero/react-gtm-hook'
 
 const ThemeToggle = lazy(() => import('./dark-light-toggle'));
 
@@ -16,12 +17,9 @@ export default function App() {
   const [projectPreviewPosition, setProjectPreviewPosition] = useState(null);
   const [hpReferrer, setHpReferrer] = useState(false);
   function focusStates() {
-    // Let the document know when the mouse is being used
     document.body.addEventListener('mousedown', function() {
       document.body.classList.add('using-mouse');
     });
-
-    // Re-enable focus styling when Tab is pressed
     document.body.addEventListener('keydown', function(event) {
       if (event.keyCode === 9) {
         document.body.classList.remove('using-mouse');
@@ -30,9 +28,12 @@ export default function App() {
   }
   focusStates();
 
-  document.title = "Lucky For Sum"
+  const { init, UseGTMHookProvider } = useGTM()
+  useEffect(() => init({ id: 'G-XMFWXQBE3T' }), []);
+
   return (
    <Router>
+         <UseGTMHookProvider>
     <main>
       <NavDefault />
       <Suspense fallback={<div className="header-side-container"></div>}>
@@ -69,6 +70,7 @@ export default function App() {
         <Route path="*" element={<NotFound />} />
       </Routes>
     </main>
+    </UseGTMHookProvider>
   </Router>
   );
 }
