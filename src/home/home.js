@@ -37,6 +37,7 @@ const HomePage = (props) => {
     const [videoPlaying, setVideoPlaying] = useState(false);
     function videoButton(e) {
         const video = document.getElementById("hero-video");
+        video.src = "/hero-video.mp4";
         if (videoPlaying) {
             setVideoPlaying(false);
             video.pause();
