@@ -1,0 +1,272 @@
+nav {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background: var(--off-white);
+  z-index: 3;
+  border-bottom: 0.0625rem solid var(--deep-purple);
+}
+.masthead {
+  display: flex;
+  font-size: 1.5rem;
+  border-bottom: 0.0625rem solid var(--deep-purple);
+  background: var(--white);
+}
+.masthead.hovered {
+  background: var(--happy-mustard);
+}
+.masthead > .section {
+  display: flex;
+  width: 100%;
+  height: 4.5rem;
+  align-items: center;
+  justify-content: space-between;
+}
+.masthead a.logo-image {
+  text-decoration: none;
+  color: var(--deep-purple);
+  background: var(--happy-mustard);
+  width: 3.5rem;
+  height: 3.5rem;
+  padding: 0.5rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: all 0.3s ease;
+}
+.masthead.hovered a.logo-image {
+  transform: scale(1.2);
+}
+.masthead a.logo-image img {
+  height: 110%;
+  width: 110%;
+  transform: rotate(-90deg);
+}
+.header-side-container {
+  display: flex;
+  align-items: center;
+}
+.header-side-container.right {
+  display: flex;
+  justify-content: flex-end;
+}
+.masthead ul {
+  list-style-type: circle;
+  padding-inline-start: 3.25rem;
+  display: flex;
+  flex-wrap: wrap;
+  margin-block-start: 1rem;
+  margin-block-end: 1rem;
+}
+.masthead ul li {
+  height: 2.5rem;
+  align-items: center;
+  padding: 0 0.5rem;
+  flex-basis: 100%;
+  margin: 0.25rem 0;
+}
+.masthead ul li::marker {
+  font-size: 1rem;
+}
+.masthead ul li a {
+  font-size: 1.125rem;
+  height: 100%;
+  text-decoration: none;
+  color: var(--deep-purple);
+  background: none;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  padding: 0 0.5rem;
+  white-space: nowrap;
+  width: fit-content;
+  transition: all 0s;
+  text-decoration: underline;
+}
+.masthead ul li a:hover {
+  background: var(--happy-mustard);
+  color: var(--happy-mustard-text);
+}
+.masthead a:hover, ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Burger Menu */
+#burger-button {
+  width: 9rem;
+  height: 2.5rem;
+  padding: 0.375rem 0.5rem;
+  position: relative;
+  transform: rotate(0deg);
+  transition: .5s ease-in-out;
+  cursor: pointer;
+  border: 0.125rem solid var(--deep-purple);
+  background: none;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+#burger-button:hover {
+  background: var(--happy-mustard);
+}
+#burger-button:hover p  {
+  color: var(--happy-mustard-text);
+}
+#burger-button:hover span {
+  background: var(--happy-mustard-text);
+}
+#burger-button span {
+  width: 1.25rem;
+  display: block;
+  position: absolute;
+  height: 0.125rem;
+  background: var(--deep-purple);
+  opacity: 1;
+  right: 0.75rem;
+  transform: rotate(0deg);
+  transition: .25s ease-in-out;
+  pointer-events: none;
+}
+#burger-button span:nth-child(1) {
+  top: 0.675rem;
+  transform-origin: left center;
+}
+#burger-button span:nth-child(2) {
+  top: 1.0625rem;
+  transform-origin: left center;
+}
+#burger-button span:nth-child(3) {
+  top: 1.4375rem;
+  transform-origin: left center;
+}
+#burger-button.open span:nth-child(1) {
+  transform: rotate(45deg);
+  top: 0.6275rem;
+  right: 0.5rem;
+}
+#burger-button.open span:nth-child(2) {
+  width: 0%;
+  opacity: 0;
+}
+#burger-button.open span:nth-child(3) {
+  transform: rotate(-45deg);
+  top: 1.5rem;
+  right: 0.5rem;
+}
+#burger-button p {
+  font-size: 1rem;
+  font-family: 'Palanquin Dark', sans-serif;
+  font-weight: 400;
+  margin: 0;
+  margin-bottom: 0.125rem;
+  pointer-events: none;
+}
+.brand-name {
+  display: none;
+  align-items: center;
+  margin-left: 0.9375rem;
+}
+.brand-name img {
+  height: 1.5rem;
+  margin-top: 0.25rem;
+}
+@media (min-width: 440px) {
+  .brand-name {
+    display: flex;
+  }
+}
+.desktop-links, a.get-in-touch-header {
+  display: none;
+  margin-right: 1.5rem;
+  text-decoration: none;
+  font-size: 1.125rem;
+  margin-top: -0.25rem;
+  align-items: center;
+  position: relative;
+  z-index: 0;
+}
+.desktop-links:hover:after, a.get-in-touch-header:hover:after {
+  content: "";
+  position: absolute;
+  left: -0.5rem;
+  top: -0.25rem;
+  background: var(--happy-mustard);
+  width: calc(100% + 1rem);
+  height: 2.5rem;
+  z-index: -1;
+  opacity: 1;
+}
+@media (min-width: 768px) {
+  #burger-button {
+      width: 9rem;
+  }
+  a.get-in-touch-header  {
+      display: flex;
+  }
+}
+@media (min-width: 1024px) {
+  .desktop-links {
+    display: flex;
+  }
+}
+
+/* Theme toggle */
+.light-dark-switcher {
+  position: fixed;
+  right: 1.5rem;
+  bottom: 1.5rem;
+  z-index: 5;
+}
+.toggle-switch {
+  width: 3.5rem;
+  height: 2rem;
+  border-radius: 2rem;
+  display: flex;
+  flex-shrink: 0;
+  background: var(--white);
+  border: 2px solid var(--deep-purple);
+  box-sizing: border-box;
+  justify-content: flex-start;
+  padding: 0 0.125rem;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.toggle-switch:focus {
+  border-radius: 2rem;
+}
+.toggle-switch div.indicator {
+  height: 1.5rem;
+  width: 1.5rem;
+  border-radius: 50%;
+  background: var(--happy-mustard);
+  transition: all 0.3s ease;
+  position: relative;
+}
+.toggle-switch div.indicator:after {
+  content: "";
+  height: 1.5rem;
+  width: 1.5rem;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: var(--happy-mustard);
+  transition: all 0.3s ease;
+  border: 2px dotted white;
+  box-sizing: border-box;
+}
+.toggle-switch.dark div.indicator {
+  transform: translateX(1.5rem);
+  background: var(--deep-purple);
+}
+.toggle-switch.dark div.indicator:after {
+  height: 1.0625rem;
+  width: 1.0625rem;
+  border-radius: 0;
+  border-bottom-right-radius: 0.75rem;
+  background: var(--white);
+  border: 0;
+}
