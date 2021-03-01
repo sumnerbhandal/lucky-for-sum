@@ -36,7 +36,7 @@ const Menu = (props) => {
 
     return (
         <div ref={props.wrapperRef} className={`main-menu ${props.isToggled ? "open" : ""}`}>
-            <ul className="">
+            <ul className="touch-links">
               <li>
                   <Link to='/#introSection' id="link_introSection" onClick={props.scrollSectionIntoView} tabIndex={props.isToggled ? "0" : "-1"}>Showreel</Link>
               </li>
