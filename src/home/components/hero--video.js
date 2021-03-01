@@ -1,15 +1,8 @@
-import React, {useEffect, useState} from "react";
-// import heroVideo from '../video/hero-video.mp4';
+import React from "react";
 import playButton from "../video/play-button.svg";
 import heroPoster from "../video/poster.png";
 
 export const HeroVideo = (props) => {
-
-    // const [videoSource, setVideoSource] = useState(null);
-
-    // useEffect(() => {
-    //     setVideoSource("/hero-video.mp4");
-    //   });
 
     return (
         <div className="heroVideo--container"> 
