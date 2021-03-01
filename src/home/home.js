@@ -12,7 +12,6 @@ const LazyLoad = lazy(() => import('react-lazy-load'));
 const footerStyle = {
     height: "auto"
 }
-
 const HomePage = (props) => {
     function projectImageOpen(e) {
         const project = e.target;

@@ -6,7 +6,6 @@ const Menu = lazy(() => import('./components/menu'));
 
 const NavDefault = () => {
     const [isShown, setIsShown] = useState(false);
-
     const [isToggled, setToggled] = useState(false);
 
     function scrollSectionIntoView(e) {
@@ -16,11 +15,9 @@ const NavDefault = () => {
         elmnt.scrollIntoView();
         setToggled(false);
     }
-
     function toggleTrueFalse(e) {
         setToggled(!isToggled);
     }
-
     function useOutsideAlerter(ref, e) {
         useEffect(() => {
             function handleClickOutside(event) {
@@ -34,10 +31,8 @@ const NavDefault = () => {
             };
         }, [ref]);
       }
-  
     const wrapperRef = useRef(null);
     useOutsideAlerter(wrapperRef);
-
     return (
         <nav role="navigation">
             <div className={`masthead ${!isShown ? "" : "hovered"}`}>

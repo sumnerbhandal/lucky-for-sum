@@ -4,10 +4,8 @@ import { Footer } from './footer/footer';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom/index";
 import "./index.css";
 import "./reset.css";
-import useGTM from '@elgorditosalsero/react-gtm-hook'
 
 const ThemeToggle = lazy(() => import('./dark-light-toggle'));
-
 const Project = lazy(() => import('./project/project'));
 const HomePage = lazy(() => import('./home/home'));
 const ReadingProgress = lazy(() => import('./read-progress'));
@@ -28,49 +26,44 @@ export default function App() {
   }
   focusStates();
 
-  const { init, UseGTMHookProvider } = useGTM()
-  useEffect(() => init({ id: 'G-XMFWXQBE3T' }), []);
-
   return (
    <Router>
-         <UseGTMHookProvider>
-    <main>
-      <NavDefault />
-      <Suspense fallback={<div className="header-side-container"></div>}>
-        <ThemeToggle />
-      </Suspense>
-      <Routes>
-        <Route path="/" element={ 
-            <div>
-              <Suspense fallback={<div></div>}>
-                <HomePage HpReferrer={(value) => setHpReferrer(value)} PreviewPosition={(value) => setProjectPreviewPosition(value)}/>
-              </Suspense>
-            </div>
-        }/>
-        <Route path="/project/*" element={
-           <div>
-            {hpReferrer ? (
-              <Suspense fallback={<div></div>}>
-                <div tabIndex="-1">
-                  <HomePage HpReferrer={(value) => setHpReferrer(value)} PreviewPosition={(value) => setProjectPreviewPosition(value)}  />
-                </div>
-              </Suspense>
-              ) : null}
-              <div className={`project-page ${hpReferrer ? "" : "direct-link" }`} id="project-page" tabIndex="1">
+      <main>
+        <NavDefault />
+        <Suspense fallback={<div className="header-side-container"></div>}>
+          <ThemeToggle />
+        </Suspense>
+        <Routes>
+          <Route path="/" element={ 
+              <div>
                 <Suspense fallback={<div></div>}>
-                  <ReadingProgress target={target} />
-                </Suspense>
-                <Suspense fallback={<div></div>}>
-                  <Project position={projectPreviewPosition}  target={target} />
-                  <Footer />
+                  <HomePage HpReferrer={(value) => setHpReferrer(value)} PreviewPosition={(value) => setProjectPreviewPosition(value)}/>
                 </Suspense>
               </div>
-            </div>
           }/>
-        <Route path="*" element={<NotFound />} />
-      </Routes>
-    </main>
-    </UseGTMHookProvider>
+          <Route path="/project/*" element={
+            <div>
+              {hpReferrer ? (
+                <Suspense fallback={<div></div>}>
+                  <div tabIndex="-1">
+                    <HomePage HpReferrer={(value) => setHpReferrer(value)} PreviewPosition={(value) => setProjectPreviewPosition(value)}  />
+                  </div>
+                </Suspense>
+                ) : null}
+                <div className={`project-page ${hpReferrer ? "" : "direct-link" }`} id="project-page" tabIndex="1">
+                  <Suspense fallback={<div></div>}>
+                    <ReadingProgress target={target} />
+                  </Suspense>
+                  <Suspense fallback={<div></div>}>
+                    <Project position={projectPreviewPosition}  target={target} />
+                    <Footer />
+                  </Suspense>
+                </div>
+              </div>
+            }/>
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </main>
   </Router>
   );
 }
