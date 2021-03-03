@@ -19,6 +19,7 @@
 .project-page.direct-link .project-preview-thumbnail.header {
     width: 0;
     height: 25rem;
+    animation-timing-function: ease-in-out;
 }
 body.dark .project-preview-thumbnail.header {
     background: #333;

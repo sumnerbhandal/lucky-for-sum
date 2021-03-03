@@ -46,12 +46,13 @@ export default function App() {
           }/>
           <Route path="/project/*" element={
             <div>
-                <div className={`project-page ${!hpReferrer ? "" : "direct-link" }`} id="project-page" tabIndex="1">
+                <div className={`project-page ${!hpReferrer ? "direct-link" : "" }`} id="project-page" tabIndex="1">
                   <Suspense fallback={<div></div>}>
                     <ReadingProgress target={target} />
                   </Suspense>
                   <Suspense fallback={<div></div>}>
                     <Project position={projectPreviewPosition}  target={target} />
+                    <Footer />
                   </Suspense>
                 </div>
                 <Suspense fallback={<div></div>}>
@@ -60,7 +61,6 @@ export default function App() {
                           <HomePage HpReferrer={(value) => setHpReferrer(value)} PreviewPosition={(value) => setProjectPreviewPosition(value)}  />
                         </div>
                       ) : null}
-                      <Footer />
                   </Suspense>
 
               </div>
