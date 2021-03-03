@@ -46,7 +46,7 @@ export default function App() {
           }/>
           <Route path="/project/*" element={
             <div>
-                <div className={`project-page ${!hpReferrer ? "direct-link" : "" }`} id="project-page" tabIndex="1">
+                <div className={`project-page ${!hpReferrer ? "direct-link" : "" }`} id="project-page" tabIndex="0">
                   <Suspense fallback={<div></div>}>
                     <ReadingProgress target={target} />
                   </Suspense>
