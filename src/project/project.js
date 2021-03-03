@@ -2,20 +2,82 @@ import React, { useEffect, useState, lazy, Suspense } from "react";
 import './project.css'
 import { homePageProjects } from '../data-feed/project-feed';
 import {Helmet} from "react-helmet";
-
 const ProgressiveImageHook = lazy(() => import('../reusable-functions/progressive-image-load'));
 const MarketingBannerTwo = lazy(() => import('../banners/marketing-banner'));
 const LazyLoad = lazy(() => import('react-lazy-load'));
 
-
 const Project = (props) => {
+
+    const hpPreload = [
+        {
+            "title": "Lucky For Sum | UX/UI Design Portfolio | Sumner Bhandal",
+            "SEOTitle": "Lucky For Sum | UX/UI Design Portfolio | Sumner Bhandal",
+            "SEODescription": "The digital portfolio of Sumner Bhandal. Senior User Interface Designer with a fondness for front-end development and inclusive design.",
+            "keywords": "portfolio,UX,user experience,UI,user interface,product design, designer, digital design,online,digital, support, community, injury, snippets, acl, support community, acl injury, design snippets",
+            "path": "autocomplete/",
+            "headerImage":  "",
+            "headerAlt": "Portfolio for all header image",
+            "intro": [
+                "As stock diversifies, taxonomies grow and it gets just that much more difficult to find anything.",
+                "Giving the consumers an alternative means of finding products helps alleviate the pressure of mislabelling menus or categories."
+            ],
+            "url": "enriched-autocomplete",
+            "id": "2",
+            "background" : [
+                {
+                    "h2": "Background",
+                    "subsection": [
+                        {
+                            "copy": [
+                                "As online shopping sites transition to mobile first experience, giving the user a better search experience to cut through the product catalogue faster has never been more important.",
+                            ], 
+                        }
+                    ],
+                    "responsibilities": [
+                        {
+                            "h3": "Responsibilities",
+                            "skills": [
+                                "Design",
+                                "Copywriting",
+                                "Front-End Development"
+                            ]
+                        }
+                    ],
+                    "featuredImage": {
+                        "image": "placeholder-shallow.png",
+                        "alt": "Placeholder"
+                    }
+              }
+            ],
+            "article" : [
+                {
+                    "h2": "Dummy Content",
+                    "subsection": [
+                        {
+                            "copy": [
+                                "Detailed stuff coming real soon!",
+                            ],
+                            "subsectionImage" : {
+                                "image": "placeholder-shallow.png",
+                                "alt": "Placeholder"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+    ]
+
     const verticalPosition = props.position == null ? 0 : props.position.y;
     const leftPosition = props.position == null ? 0 : props.position.x;
-    const projectIndex = window.location.href.split('pid-')[1];
+    const projectIndex = window.location.href.split('pid-')[1] === undefined ? 0 : window.location.href.split('pid-')[1];
+    const jSONReferrer = window.location.href.split('pid-')[1] === undefined ? hpPreload : homePageProjects;
 
-    const [projectsShown, setProjectsShown] = useState([homePageProjects[projectIndex]]);
+    const [projectsShown, setProjectsShown] = useState([jSONReferrer[projectIndex]]);
     const [nextProjectIndex, setNextProjectIndex] = useState(parseInt(projectIndex) + 1); 
     const [loaderAnimationId, setLoaderAnimationId] = useState(0);
+
+    console.log(projectsShown);
 
     const projectPreviewPosition = {
         top: verticalPosition,
@@ -50,16 +112,16 @@ const Project = (props) => {
         };
     });
 
-    const pageTitle = projectsShown[0].SEOTitle;
-    const metaKeywords = projectsShown[0].keywords;
-    const metaDescription = projectsShown[0].SEODescription;
+    const SEOTitle = projectsShown[0].SEOTitle;
+    const SEODescription = projectsShown[0].SEODescription;
+    const SEOKeywords = projectsShown[0].keywords
 
     return (
         <div ref={props.target}>
             <Helmet>
-                <title>{pageTitle}</title>
-                <meta name="description" content={metaDescription} />
-                <meta name="keywords" content={metaKeywords} />
+                <title>{SEOTitle}</title>
+                <meta name="description" content={SEODescription} />
+                <meta name="keywords" content={SEOKeywords} />
             </Helmet>
         {projectsShown.map((pdp, index) => (
             <div key={index} className="project-preview-container header" >

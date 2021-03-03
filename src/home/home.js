@@ -1,4 +1,4 @@
-import React, { useState, lazy } from "react";
+import React, { useState, lazy, useEffect, Suspense } from "react";
 import { homePageProjects } from '../data-feed/hp-feed';
 import { Bio } from './components/home--bio';
 import { About } from './components/home---about-me';
@@ -8,6 +8,7 @@ import { Footer } from "../footer/footer";
 import { Helmet } from "react-helmet";
 import "./home.css";
 const LazyLoad = lazy(() => import('react-lazy-load'));
+const Project = lazy(() => import('../project/project'));
 
 const footerStyle = {
     height: "auto"
@@ -45,6 +46,20 @@ const HomePage = (props) => {
             setVideoPlaying(false);
         };
     }
+    const [loadProjects, setLoadProjects] = useState(false);
+    function logit() {
+        setLoadProjects(true);        
+    }
+    useEffect(() => {
+        const Hp = document.getElementById("homepage");
+        function watchScroll() {
+            Hp.addEventListener("scroll", logit);
+        }
+        watchScroll();
+        return () => {
+            Hp.removeEventListener("scroll", logit);
+        };
+    });
        
     return (
         <div id="homepage" className="homepage">
@@ -88,6 +103,13 @@ const HomePage = (props) => {
             <div style={footerStyle} className="hp-section">
                 <Footer />
             </div>
+            <Suspense fallback={<div></div>}>
+            {loadProjects ? (
+                <div style={{display: "none"}}>
+                    <Project/>
+                </div>
+            ) : null}
+            </Suspense>
         </div>
     );
 }

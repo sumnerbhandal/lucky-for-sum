@@ -1,4 +1,4 @@
-import React, {useState, createRef, lazy, Suspense, useEffect } from "react";
+import React, {useState, createRef, lazy, Suspense } from "react";
 import NavDefault from './nav/navigation';
 import { Footer } from './footer/footer';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom/index";
@@ -52,14 +52,16 @@ export default function App() {
                   </Suspense>
                   <Suspense fallback={<div></div>}>
                     <Project position={projectPreviewPosition}  target={target} />
-                      {hpReferrer ? (
+                  </Suspense>
+                </div>
+                <Suspense fallback={<div></div>}>
+                    {hpReferrer ? (
                         <div tabIndex="-1">
                           <HomePage HpReferrer={(value) => setHpReferrer(value)} PreviewPosition={(value) => setProjectPreviewPosition(value)}  />
                         </div>
                       ) : null}
                       <Footer />
                   </Suspense>
-                </div>
 
               </div>
             }/>
