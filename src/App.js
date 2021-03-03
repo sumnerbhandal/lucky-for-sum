@@ -57,7 +57,7 @@ export default function App() {
                 </div>
                 <Suspense fallback={<div></div>}>
                     {hpReferrer ? (
-                        <div tabIndex="-1">
+                        <div tabIndex="0">
                           <HomePage HpReferrer={(value) => setHpReferrer(value)} PreviewPosition={(value) => setProjectPreviewPosition(value)}  />
                         </div>
                       ) : null}

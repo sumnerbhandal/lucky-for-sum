@@ -117,7 +117,7 @@ const Project = (props) => {
                             </div>
                            
                             {content.featuredImage === undefined ? null :
-                                <div className="featured-image-container" tabIndex="0" role="image" aria-label="image" aria-description={content.featuredImage.alt}>
+                                <div className="featured-image-container" tabIndex="0" aria-label="image" aria-describedby={content.featuredImage.alt}>
                                      <Suspense fallback={<div></div>}>
                                         <LazyLoad offset={400} throttle={50}>
                                             <ProgressiveImageHook
@@ -125,7 +125,7 @@ const Project = (props) => {
                                                 src={require('./images/' + pdp.path + content.featuredImage.image)}
                                                 placeholder={require('./images/' + pdp.path + content.featuredImage.image.replace(".png" || ".gif" || ".jpg", "_placeholder.png"))}
                                                 alt={content.featuredImage.alt}
-                                                tabIndex={-1}
+                                                tabIndex={0}
                                             />
                                         </LazyLoad>
                                     </Suspense>
