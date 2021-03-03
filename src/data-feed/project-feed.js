@@ -1,7 +1,7 @@
 import { Ligamend, Portfolio, EnrichedSearch, Heuristic } from "../home/components/svg-illustrations";
 import React from 'react';
 
-export const homePageProjects = [
+const ProjectPageFeed = [
     {
       "title": "A Portfolio For All",
       "SEOTitle": "How To Make An Accessible UI Experience Fun",
@@ -727,3 +727,5 @@ export const homePageProjects = [
         ]
     }
 ] 
+
+export default ProjectPageFeed;

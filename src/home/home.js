@@ -1,5 +1,4 @@
 import React, { useState, lazy, useEffect, Suspense } from "react";
-import { homePageProjects } from '../data-feed/hp-feed';
 import { Bio } from './components/home--bio';
 import { About } from './components/home---about-me';
 import { Link } from "react-router-dom/index";
@@ -8,11 +7,45 @@ import { Footer } from "../footer/footer";
 import { Helmet } from "react-helmet";
 import "./home.css";
 const LazyLoad = lazy(() => import('react-lazy-load'));
+const Portfolio = lazy(() => import('./components/portfolio-illustration'));
+const EnrichedSearch = lazy(() => import('./components/search-illustration'));
+const Ligamend = lazy(() => import('./components/ligamend-illustration'));
+const Heuristic = lazy(() => import('./components/heuristic-illustration'));
 const Project = lazy(() => import('../project/project'));
 
 const footerStyle = {
     height: "auto"
 }
+
+const numberOfProjects = [
+    "1", "2", "3"
+]
+const HPTemplate = () => {
+    return (
+        numberOfProjects.map((item, index) => (
+            <div className="project-preview-container hp-section" id="project-container" key={index}>
+                <div className="project-preview">
+                    <Link to="#" className="project-preview-thumbnail" tabIndex="0">
+                        
+                    </Link>
+                    <h2>
+                        Title
+                    </h2>
+                    <p className="project-summary">
+                        Summary
+                    </p>
+                    <Link to="#" tabIndex="-1" className="buttonLink">
+                        <button className="block">View Project</button>
+                    </Link>
+                </div>
+                <div className="image-right">
+                </div>
+            </div>
+        ))    
+    );
+};
+
+
 const HomePage = (props) => {
     function projectImageOpen(e) {
         const project = e.target;
@@ -48,7 +81,7 @@ const HomePage = (props) => {
     }
     const [loadProjects, setLoadProjects] = useState(false);
     function logit() {
-        setLoadProjects(true);        
+        setLoadProjects(true);    
     }
     useEffect(() => {
         const Hp = document.getElementById("homepage");
@@ -60,6 +93,18 @@ const HomePage = (props) => {
             Hp.removeEventListener("scroll", logit);
         };
     });
+
+    const [homePageProjects, setHomePageProjects] = useState(null);
+
+    useEffect(() => {
+      fetch("/hp-feed.json")
+        .then((response) => response.json())
+        .then((data) => {
+            setHomePageProjects(data);
+        });
+    }, []);
+    console.log(homePageProjects);
+    
        
     return (
         <div id="homepage" className="homepage">
@@ -72,29 +117,36 @@ const HomePage = (props) => {
                 <HeroVideo pressEnter={pressEnter} videoButton={videoButton} videoPlaying={videoPlaying} />
                 <Bio />
             </div>
-            {homePageProjects.map((item, index) => (
-                <div className="project-preview-container hp-section" id="project-container" key={index}>
-                    <div className={`project-preview `}>
-                        <Link to={`/project/${item.url}-pid-${item.id}`} className="project-preview-thumbnail" id={item.id} title={item.url} onClick={projectImageOpen}  tabIndex="0">
-                            {item.image}
-                        </Link>
-                        <h2>
-                            {item.title}
-                        </h2>
-                        <p className="project-summary">
-                            {item.summary}
-                        </p>
-                        <Link tabIndex="-1" className="buttonLink" to={`/project/${item.url}-pid-${item.id}`} onClick={projectImageOpenButton}>
-                            <button className="block">View Project</button>
-                        </Link>
-                    </div>
-                    <div className={`image-right`}>
-                        {item.intro.map((paragraph, index) => (
-                    <p key={index} className="intro" tabIndex="0">{paragraph}</p>
-                        ))}
-                    </div>
-                </div>
-            ))}
+            {!homePageProjects ? (
+                <HPTemplate />
+            ) : (
+                    homePageProjects.homePageProjects.map((item, index) => (
+                        <div className="project-preview-container hp-section" id="project-container" key={index}>
+                            <div className={`project-preview `}>
+                                <Link to={`/project/${item.url}-pid-${item.id}`} className="project-preview-thumbnail" id={item.id} title={item.url} onClick={projectImageOpen}  tabIndex="0">
+                                    <Suspense fallback={<div></div>}>
+                                         {index === 0 ? <Portfolio /> : index === 1 ? <Ligamend /> : index === 2 ? <EnrichedSearch /> : index === 3 ? <Heuristic /> : null }
+                                    </Suspense>
+                                </Link>
+                                <h2>
+                                    {item.title}
+                                </h2>
+                                <p className="project-summary">
+                                    {item.summary}
+                                </p>
+                                <Link tabIndex="-1" className="buttonLink" to={`/project/${item.url}-pid-${item.id}`} onClick={projectImageOpenButton}>
+                                    <button className="block">View Project</button>
+                                </Link>
+                            </div>
+                            <div className={`image-right`}>
+                                {item.intro.map((paragraph, index) => (
+                            <p key={index} className="intro" tabIndex="0">{paragraph}</p>
+                                ))}
+                            </div>
+                        </div>
+                    ))
+                )
+            }
             <div id="about" className="introSection hp-section section">
                 <LazyLoad offset={400} throttle={50}>
                     <About />
