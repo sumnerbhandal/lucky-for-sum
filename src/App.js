@@ -26,6 +26,10 @@ export default function App() {
   }
   focusStates();
 
+  const hide = {
+    display: "none"
+  }
+
   return (
    <Router>
       <main>
@@ -57,7 +61,7 @@ export default function App() {
                 </div>
                 <Suspense fallback={<div></div>}>
                     {hpReferrer ? (
-                        <div tabIndex="0">
+                        <div tabIndex="0" style={hide}>
                           <HomePage HpReferrer={(value) => setHpReferrer(value)} PreviewPosition={(value) => setProjectPreviewPosition(value)}  />
                         </div>
                       ) : null}
