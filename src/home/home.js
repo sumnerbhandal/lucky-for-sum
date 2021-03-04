@@ -102,9 +102,7 @@ const HomePage = (props) => {
         .then((data) => {
             setHomePageProjects(data);
         });
-    }, []);
-    console.log(homePageProjects);
-    
+    }, []);  
        
     return (
         <div id="homepage" className="homepage">

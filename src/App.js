@@ -1,4 +1,4 @@
-import React, {useState, createRef, lazy, Suspense } from "react";
+import React, {useState, createRef, lazy, Suspense, useEffect } from "react";
 import NavDefault from './nav/navigation';
 import { Footer } from './footer/footer';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom/index";
@@ -10,7 +10,8 @@ const Project = lazy(() => import('./project/project'));
 const HomePage = lazy(() => import('./home/home'));
 const ReadingProgress = lazy(() => import('./read-progress'));
 
-export default function App() {
+const App = () => {
+
   const target = createRef();
   const [projectPreviewPosition, setProjectPreviewPosition] = useState(null);
   const [hpReferrer, setHpReferrer] = useState(false);
@@ -43,9 +44,6 @@ export default function App() {
                 <Suspense fallback={<div></div>}>
                   <HomePage HpReferrer={(value) => setHpReferrer(value)} PreviewPosition={(value) => setProjectPreviewPosition(value)}/>
                 </Suspense>
-                {/* <Suspense fallback={<div></div>}>
-                  <Footer />
-                </Suspense> */}
               </div>
           }/>
           <Route path="/project/*" element={
@@ -84,3 +82,5 @@ const NotFound = () => {
   )
 }
 
+
+export default App;

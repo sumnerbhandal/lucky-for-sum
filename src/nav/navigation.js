@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 import Menu from "./components/menu";
-import { Link } from "react-router-dom/index";
+import { Link, useLocation } from "react-router-dom/index";
 import "./navigation.css";
 
 const NavDefault = () => {
@@ -32,6 +32,7 @@ const NavDefault = () => {
       }
     const wrapperRef = useRef(null);
     useOutsideAlerter(wrapperRef);
+
     return (
         <nav role="navigation">
             <div className={`masthead ${!isShown ? "" : "hovered"}`}>
