@@ -1,7 +1,7 @@
 import React from "react";
-import { Link } from "react-router-dom/index";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {  faCodepen, faTwitter, faLinkedin, faDribbble, faGithub } from '@fortawesome/free-brands-svg-icons';
+import { NavHashLink } from 'react-router-hash-link';
 import "./menu.css";
 
 const socialLinks = [
@@ -32,23 +32,22 @@ const socialLinks = [
         }
 ]
 
+
 const Menu = (props) => {
+
 
     return (
         <div ref={props.wrapperRef} className={`main-menu ${props.isToggled ? "open" : ""}`}>
             <ul className="touch-links">
               <li>
-                  <Link to='/#introSection' id="menu_introSection" onClick={props.scrollSectionIntoView} tabIndex={props.isToggled ? "0" : "-1"}>Showreel</Link>
+                  <NavHashLink to='/#introSection'  onClick={props.toggleTrueFalse}   tabIndex={props.isToggled ? "0" : "-1"}>Showreel</NavHashLink>
               </li>
               <li>
-                  <Link to='/#project-container' id="menu_project-container" onClick={props.scrollSectionIntoView} tabIndex={props.isToggled ? "0" : "-1"}>Projects</Link>
+                  <NavHashLink to='/#project-container' onClick={props.toggleTrueFalse}  tabIndex={props.isToggled ? "0" : "-1"}>Projects</NavHashLink>
               </li>
               <li>
-                  <Link to='/#about' id="menu_about" onClick={props.scrollSectionIntoView} tabIndex={props.isToggled ? "0" : "-1"}>About</Link>
+                  <NavHashLink to='/#about'  onClick={props.toggleTrueFalse}   tabIndex={props.isToggled ? "0" : "-1"}>About</NavHashLink>
               </li>
-              {/* <li>
-                <Link to='/#design-snippets' id="link_design-snippets" onClick={props.scrollSectionIntoView} tabIndex={props.isToggled ? "0" : "-1"}>Design Snippets</Link>
-              </li> */}
               <li>
               <a className="get-in-touch" target="new" href="mailto:sumnerbhandal@gmail.com" tabIndex={props.isToggled ? "0" : "-1"}>Get In Touch &nbsp; <span role="img" aria-label="Welcome Wave"> 👋🏽</span></a>
               </li>

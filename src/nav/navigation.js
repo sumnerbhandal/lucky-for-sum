@@ -1,19 +1,12 @@
 import React, { useState, useRef, useEffect } from "react";
 import Menu from "./components/menu";
-import { Link, useLocation } from "react-router-dom/index";
 import "./navigation.css";
+import { NavHashLink } from 'react-router-hash-link';
 
-const NavDefault = () => {
+const NavDefault = (props) => {
     const [isShown, setIsShown] = useState(false);
     const [isToggled, setToggled] = useState(false);
 
-    function scrollSectionIntoView(e) {
-        const id = e.target.id;
-        const scrollId = id.replace("link_", "").replace("menu_", "");
-        const elmnt = document.getElementById(scrollId);
-        elmnt.scrollIntoView();
-        setToggled(false);
-    }
     function toggleTrueFalse(e) {
         setToggled(!isToggled);
     }
@@ -38,29 +31,29 @@ const NavDefault = () => {
             <div className={`masthead ${!isShown ? "" : "hovered"}`}>
                 <div className="section">
                     <div className="header-side-container" >
-                        <Link
+                        <NavHashLink
                         onMouseEnter={() => setIsShown(true)}
                         onMouseLeave={() => setIsShown(false)}
                         id="link_homepage"
-                        onClick={scrollSectionIntoView}
+                        // onClick={scrollSectionIntoView}
                         className="logo-image"
-                        to="/">
+                        to="/#introSection">
                             <img src={require('./icons/lucky-for-sum-logo.svg')} alt="Home"/>
-                        </Link>
-                        <Link className="brand-name" to="/">
+                        </NavHashLink>
+                        <NavHashLink className="brand-name" to="/#introSection">
                             <img src={require('./icons/lfs-logo-dark.svg')} alt="Home"/>
-                        </Link>
+                        </NavHashLink>
                     </div>
                         <div className="header-side-container right">
-                            <Link Link to='/#introSection' id="link_introSection" onClick={scrollSectionIntoView} className="desktop-links">
+                            <NavHashLink Link to='/#introSection' id="link_introSection" className="desktop-links">
                                 Showreel
-                            </Link>
-                            <Link to='/#project-container' id="link_project-container" onClick={scrollSectionIntoView} className="desktop-links">
+                            </NavHashLink>
+                            <NavHashLink to='/#project-container' id="link_project-container" className="desktop-links">
                                 Projects
-                            </Link>
-                            <Link to='/#about' id="link_about" onClick={scrollSectionIntoView} className="desktop-links">
+                            </NavHashLink>
+                            <NavHashLink to='/#about' id="link_about" className="desktop-links">
                                 About
-                            </Link>
+                            </NavHashLink>
                             <a className="get-in-touch-header" target="new" href="mailto:sumnerbhandal@gmail.com">Get In Touch &nbsp; <span role="img" aria-label="Welcome Wave"> 👋🏽</span></a>
                             <button id="burger-button" className={isToggled ? "open" : ""} onClick={toggleTrueFalse}>
                                 <span></span>
@@ -69,7 +62,7 @@ const NavDefault = () => {
                                 <p>{isToggled ? "Close" : "Open"} Menu</p>
                             </button>
                         </div>
-                        <Menu isToggled={isToggled} scrollSectionIntoView={scrollSectionIntoView} wrapperRef={wrapperRef} />
+                        <Menu isToggled={isToggled} toggleTrueFalse={toggleTrueFalse} wrapperRef={wrapperRef} />
                 </div>
             </div>
         </nav>

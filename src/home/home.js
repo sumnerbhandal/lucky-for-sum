@@ -6,7 +6,6 @@ import { HeroVideo } from "./components/hero--video";
 import { Footer } from "../footer/footer";
 import { Helmet } from "react-helmet";
 import "./home.css";
-const LazyLoad = lazy(() => import('react-lazy-load'));
 const Portfolio = lazy(() => import('./components/portfolio-illustration'));
 const EnrichedSearch = lazy(() => import('./components/search-illustration'));
 const Ligamend = lazy(() => import('./components/ligamend-illustration'));
@@ -146,9 +145,7 @@ const HomePage = (props) => {
                 )
             }
             <div id="about" className="introSection hp-section section">
-                <LazyLoad offset={400} throttle={50}>
-                    <About />
-                </LazyLoad>
+                <About />
             </div>
             <div style={footerStyle} className="hp-section">
                 <Footer />

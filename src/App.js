@@ -1,4 +1,4 @@
-import React, {useState, createRef, lazy, Suspense, useEffect } from "react";
+import React, {useState, createRef, lazy, Suspense } from "react";
 import NavDefault from './nav/navigation';
 import { Footer } from './footer/footer';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom/index";
