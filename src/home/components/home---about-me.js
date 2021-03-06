@@ -1,5 +1,6 @@
 import React, {lazy, Suspense} from "react";
 import LazyLoad from 'react-lazy-load';
+import { Link } from "react-router-dom/index";
 const ProgressiveImageHook = lazy(() => import('../../reusable-functions/progressive-image-load'));
 
 const imageSrc = "about-768.jpg";
@@ -8,10 +9,12 @@ export const About = () => {
     return (
         <div className="aboutMe">
             <div className="column">
-                <h3 aria-level="1" tabIndex="0">This is where I say a lot of nice things about myself and put an inspirational quote about design</h3>
-                <p className="intro" tabIndex="0">"Good design is obvious, great design is transparent" - Joe Sparan</p>
-                <p tabIndex="0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            </div>
+                <p className="intro" aria-level="1" tabIndex="0">This is where I say a lot of nice things about myself</p>
+                <h1 aria-level="1" tabIndex="0">Hi, my name's Sumner Bhandal <span role="img" aria-label="Welcome Wave">👋🏽</span></h1>
+                <p tabIndex="0">I'm a Senior User Interface Designer at one of the leading British retailers <a href="https://www.next.co.uk/" rel="noopener noreferrer" target="_blank">Next</a>. I design experiences, interactions and implementation strategies that look to take the brilliant quantitative and qualitative research done by the business and see them through to fruition. </p>
+                <p tabIndex="0">Having arrived with the skill set of a graphic and interface designer, I have had the opportunity to expand my repertoire to adopt human-centred approaches, through studying Human Computer Interaction, and marry that with an in depth knowledge of <Link to="/project/portfolio-for-all-pid-0">inclusive design</Link>, which I learned through working with some exceptional and passionate peers.</p>
+                <p tabIndex="0">My current challenge is utilising all of that knowledge and leveraging my understanding of front-end development to help shape the future of the Next Platform Services and create a responsive, inclusive and versatile interface that will provide the foundation of the website for years to come.</p>
+                </div>
             <div className="column">
                  <LazyLoad offset={400} throttle={50}>
                     <Suspense fallback={<div></div>}>

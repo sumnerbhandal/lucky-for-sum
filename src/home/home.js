@@ -1,5 +1,4 @@
 import React, { useState, lazy, useEffect, Suspense } from "react";
-import { Bio } from './components/home--bio';
 import { About } from './components/home---about-me';
 import { Link } from "react-router-dom/index";
 import { HeroVideo } from "./components/hero--video";
@@ -112,7 +111,9 @@ const HomePage = (props) => {
             </Helmet>
             <div id="introSection" className="introSection hp-section section">
                 <HeroVideo pressEnter={pressEnter} videoButton={videoButton} videoPlaying={videoPlaying} />
-                <Bio />
+            </div>
+            <div id="about" className="introSection hp-section section">
+                <About />
             </div>
             {!homePageProjects ? (
                 <HPTemplate />
@@ -144,9 +145,6 @@ const HomePage = (props) => {
                     ))
                 )
             }
-            <div id="about" className="introSection hp-section section">
-                <About />
-            </div>
             <div style={footerStyle} className="hp-section">
                 <Footer />
             </div>

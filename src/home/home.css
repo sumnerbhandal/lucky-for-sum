@@ -65,29 +65,14 @@ img.play-button {
     .heroVideo--container {
         margin-top: 1.75rem;
     }
-    .aboutIntro {
-        margin-top: 0.75rem;
-    }
-
-    .aboutIntro h1, .aboutIntro span {
-        font-size: 2rem;
-    }
     .bioSection {
         justify-content: flex-start;
     }
     .aboutIntro  {
         width: calc(75%);
     }
-    .aboutIntro {
-        margin-top: 3rem;
-        padding-right: 4rem;
-    }
 }
 
-
-.aboutIntro p {
-    font-size: 1.125rem;
-}
 
 /* Project Previews */
 
