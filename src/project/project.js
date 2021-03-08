@@ -119,7 +119,7 @@ const Project = (props) => {
                             {content.featuredImage === undefined ? null :
                                 <div className="featured-image-container" tabIndex="0" aria-label="image" aria-describedby={content.featuredImage.alt}>
                                      <Suspense fallback={<div></div>}>
-                                        <LazyLoad offset={400} throttle={50}>
+                                        {/* <LazyLoad offset={800} throttle={50}> */}
                                             <ProgressiveImageHook
                                                 key={index}
                                                 src={require('./images/' + pdp.path + content.featuredImage.image)}
@@ -127,7 +127,7 @@ const Project = (props) => {
                                                 alt={content.featuredImage.alt}
                                                 tabIndex={0}
                                             />
-                                        </LazyLoad>
+                                        {/* </LazyLoad> */}
                                     </Suspense>
                                 </div>
                             }
@@ -169,7 +169,7 @@ const Project = (props) => {
                                     <div className="col">
                                         {subsection.subsectionImage === undefined || subsection.subsectionImage.image === ""  ? null :
                                          <Suspense fallback={<div></div>}>
-                                            <LazyLoad key={index} offset={400} throttle={50}>
+                                            {/* <LazyLoad key={index} offset={800} throttle={50}> */}
                                                 <ProgressiveImageHook
                                                     key={index}
                                                     src={require('./images/' + pdp.path + subsection.subsectionImage.image)}
@@ -177,15 +177,15 @@ const Project = (props) => {
                                                     alt={subsection.subsectionImage.alt}
                                                     tabIndex={0}
                                                 />
-                                            </LazyLoad>
+                                            {/* </LazyLoad> */}
                                         </Suspense>
                                         }
 
                                             {subsection.subsectionVideo === undefined || subsection.subsectionVideo.video === ""  ? null :
                                              <Suspense fallback={<div></div>}>
-                                                <LazyLoad key={index} offset={400} throttle={50}>
+                                                {/* <LazyLoad key={index} offset={800} throttle={50}> */}
                                                       <video autoPlay muted loop src={require('./images/' + pdp.path + subsection.subsectionVideo.video)}></video>
-                                                </LazyLoad>
+                                                {/* </LazyLoad> */}
                                             </Suspense>
                                             }
                                         

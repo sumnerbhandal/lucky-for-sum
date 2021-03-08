@@ -64,8 +64,8 @@ const ProjectPageFeed = [
                         "I needed to cherry pick a handful of projects that showcase the work I want to do more of (that I'm able to share) and from an archetectural point of view, I want to limit it to a maximum of 3 main page templates. The hompage, the project page and if I'm feeling adventurous, a contact page."
                     ],
                     "subsectionImage" : {
-                        "image": "placeholder-shallow.png",
-                        "alt": "Placeholder"
+                        "image": "Limitations.png",
+                        "alt": "Self imposed limitations"
                     }
                 },
                 {
@@ -76,8 +76,8 @@ const ProjectPageFeed = [
                         "We can start by making sure that text elements have sufficient colour contrasts and font sizes. You'll quickly realise that in making this small conscious decisions, you'll also start to make your website and apps that much more usable."
                     ],
                     "subsectionImage" : {
-                        "image": "placeholder.png",
-                        "alt": "Placeholder"
+                        "image": "A11Y-overview.png",
+                        "alt": "Accessibility overview"
                     }
                 },
                 {
@@ -86,8 +86,8 @@ const ProjectPageFeed = [
                         "Time is precious, especially to potential clients or hiring managers. So breaking down content into clearly labelled sections, using headings and maximum content widths to allow users to absorb smaller chunks of content and making your users just a little more likely to skim your content.",
                     ],
                     "subsectionImage" : {
-                        "image": "placeholder-shallow.png",
-                        "alt": "Placeholder"
+                        "image": "",
+                        "alt": ""
                     }
                 },
                 {

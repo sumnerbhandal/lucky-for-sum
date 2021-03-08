@@ -176,7 +176,7 @@ body.dark .project-preview-thumbnail.header {
 
 @media (min-width: 768px) {
     .project-content .subsection .col .LazyLoad {
-        min-height: 15rem;
+        min-height: 18rem;
     } 
 }
 

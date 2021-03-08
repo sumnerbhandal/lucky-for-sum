@@ -45,14 +45,14 @@ const NavDefault = (props) => {
                         </NavHashLink>
                     </div>
                         <div className="header-side-container right">
-                            <NavHashLink Link to='/#introSection' id="link_introSection" className="desktop-links">
+                            <NavHashLink Link to='/#introSection' className="desktop-links">
                                 Showreel
                             </NavHashLink>
-                            <NavHashLink to='/#project-container' id="link_project-container" className="desktop-links">
-                                Projects
-                            </NavHashLink>
-                            <NavHashLink to='/#about' id="link_about" className="desktop-links">
+                            <NavHashLink to='/#about' className="desktop-links">
                                 About
+                            </NavHashLink>
+                            <NavHashLink to='/#project-container' className="desktop-links">
+                                Projects
                             </NavHashLink>
                             <a className="get-in-touch-header" target="new" href="mailto:sumnerbhandal@gmail.com">Get In Touch &nbsp; <span role="img" aria-label="Welcome Wave"> 👋🏽</span></a>
                             <button id="burger-button" className={isToggled ? "open" : ""} onClick={toggleTrueFalse}>

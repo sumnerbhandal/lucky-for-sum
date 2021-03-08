@@ -184,6 +184,13 @@ img.play-button {
     display: none;
 }
 
+.image-right p.intro {
+    color: var(--happy-mustard-text);
+}
+body.dark .homepage .project-preview-container:nth-child(even) .image-right p.intro {
+    color: var(--deep-purple);
+}
+
 @media (min-width: 768px) {
     .project-preview-container {
         justify-content: space-between;
@@ -324,6 +331,11 @@ img.play-button {
     object-fit: cover;
     object-position: right top;
     height: 100%;
+    width: 100%;
+}
+
+body.dark .aboutMe p.intro {
+    color: var(--deep-purple);
 }
 
 @media (min-width: 768px) {
