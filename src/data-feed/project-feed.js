@@ -125,8 +125,8 @@ const ProjectPageFeed = [
                         "However, my favourite part of using these is that it works almost like magic. In fact, I'm writing the contents of this article straight into the API as though it is a markdown file and it is automatically updating the site. Great for those pesky spelling mistakes."
                     ],
                     "subsectionImage" : {
-                        "image": "placeholder.png",
-                        "alt": "Placeholder"
+                        "image": "Lightweight.png",
+                        "alt": "Reusable APIs"
                     }
                 },
                 {
@@ -136,8 +136,8 @@ const ProjectPageFeed = [
                         "In order for this work, it takes a few key considerations. One of the fundamentals is correctly written and structured HTML, there is a reason why there are so many HTML Tags, it's because each one serves a particular purpose and that helps to give utilities such as screen readers the ability to communicate back to the user, what the element is and its intended use.",
                         "Another favourite of mine is focus states. Too often I have seen websites actively removing the browsers focus states as they are deemed to interfere with the aesthetics of the site. I prefer to embrace and enhance then, so why not try and tab through the site and see if you can use it just with your keyboard alone!"
                     ],
-                    "subsectionImage" : {
-                        "image": "placeholder.png",
+                    "subsectionVideo" : {
+                        "video": "Keyboard-A11Y.mp4",
                         "alt": "Placeholder"
                     }
                 },
