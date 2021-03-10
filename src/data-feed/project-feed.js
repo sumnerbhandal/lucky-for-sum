@@ -120,9 +120,9 @@ const ProjectPageFeed = [
                 {
                     "h3": "Lightweight and resusable",
                     "copy": [
-                        "Having done my servitude building websites through hard coding html pages and using PHP reusable components, I am now living firmly in the world of React JS.",
-                        "One of the blessings of adapting my world into a javascript based world is moving to mapping data from API endpoints, being that static or dynamic so that you can look to reduce the amount of code you write and the weight of your site.",
-                        "However, my favourite part of using these is that it works almost like magic. In fact, I'm writing the contents of this article straight into the API as though it is a markdown file and it is automatically updating the site. Great for those pesky spelling mistakes."
+                        "Being able to create fast, templated experiences is a prerequesite for most web based companies as it allows for enhancements and changes to propogate with less technical debt or manual changes.",
+                        "Leveraging my experience defining API endpoints, I adopted a similar approach with my site by using a writeable data feed to populate my projects.",
+                        "This allows me to populate the page, and determine what is shown, by only rendering elements that I require. Keeping the web page light, resuable and all without sacrificing the frills."
                     ],
                     "subsectionImage" : {
                         "image": "Lightweight.png",

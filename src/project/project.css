@@ -16,6 +16,9 @@
     overflow: hidden;
     clip-path: polygon(100% 0, 100% 60%, 0 100%, 0 0);
 }
+body.dark .project-preview-thumbnail.header {
+    background: var(--dots-grey);
+}
 .project-page.direct-link .project-preview-thumbnail.header {
     width: 0;
     height: 25rem;

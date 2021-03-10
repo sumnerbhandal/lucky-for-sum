@@ -31,12 +31,16 @@ export const ThemeToggle = (props) => {
     const [runOnce, setRunOnce] = useState(false);
     
     function detectTheme() {
+        const projectContainer = document.getElementsByTagName("body")[0];
         if (!runOnce && window.matchMedia('(prefers-color-scheme: dark)').matches) {
             setToggled(true);
             setRunOnce(true);
+            projectContainer.classList.add("dark");
+            
         } else if (!runOnce && window.matchMedia('(prefers-color-scheme: light)').matches) {
             setToggled(false);
             setRunOnce(true);
+            projectContainer.classList.remove("dark");
         } else return;
     }
 
