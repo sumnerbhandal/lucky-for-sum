@@ -93,7 +93,6 @@ const HomePage = (props) => {
     });
 
     const [homePageProjects, setHomePageProjects] = useState(null);
-
     useEffect(() => {
       fetch("/hp-feed.json")
         .then((response) => response.json())
@@ -123,7 +122,7 @@ const HomePage = (props) => {
                             <div className={`project-preview `}>
                                 <Link to={`/project/${item.url}-pid-${item.id}`} className="project-preview-thumbnail" id={item.id} title={item.url} onClick={projectImageOpen}  tabIndex="0">
                                     <Suspense fallback={<div></div>}>
-                                         {index === 0 ? <Portfolio /> : index === 1 ? <Ligamend /> : index === 2 ? <EnrichedSearch /> : index === 3 ? <Heuristic /> : null }
+                                         {index === 0 ? <Portfolio /> : index === 1 ? <EnrichedSearch /> : index === 2 ? <Heuristic /> : index === 3 ? <Ligamend />  : null }
                                     </Suspense>
                                 </Link>
                                 <h2>

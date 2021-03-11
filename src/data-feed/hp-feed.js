@@ -28,10 +28,10 @@ const homePageProjects = [
   {
       "title": "Enriched Site Search",
       "summary": "UX/UI Design, Prototyping, Front-End Support",
-      "url": "enriched-autocomplete",
+      "url": "total-platform",
       "id": "2",
       "image": <EnrichedSearch />,
-      "feature": "Autocomplete-Feature",
+      "feature": "total-platform",
       "intro": [
           "As stock diversifies, taxonomies grow and it gets just that much more difficult to find anything.",
           "Giving the consumers an alternative means of finding products helps alleviate the pressure of mislabelling menus or categories."
