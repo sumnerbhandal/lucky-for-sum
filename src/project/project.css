@@ -14,6 +14,7 @@
     animation-fill-mode: forwards;
     background: var(--happy-mustard);
     overflow: hidden;
+    margin-top: -2rem;
     clip-path: polygon(100% 0, 100% 60%, 0 100%, 0 0);
 }
 body.dark .project-preview-thumbnail.header {

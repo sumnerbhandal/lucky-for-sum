@@ -82,6 +82,8 @@ img.play-button {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+}
+.homepage .project-preview-container {
     height: auto;
 }
 
