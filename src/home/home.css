@@ -208,11 +208,16 @@ body.dark .homepage .project-preview-container:nth-child(even) .image-right p.in
     .project-preview-container {
         justify-content: space-between;
         width: 100%;
+    }
+    .homepage .project-preview-container {
         height: 100%;
     }
     .project-preview {
         width: calc(100% / 2);
         transition: transform 0.75s ease, opacity 1s ease;
+    }
+    .homepage .project-preview {
+        height: 100%;
     }
 
     .project-preview.before {
