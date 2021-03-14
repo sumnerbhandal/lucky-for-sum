@@ -47,13 +47,6 @@ img.play-button {
     background-color: var(--off-white);
     overflow-x: hidden;
 }
-
-/* @media (pointer: fine) {
-    .homepage {
-        scroll-snap-type: unset;
-    }
-} */
-
 .hp-section {
 	height: 100%;
     scroll-snap-align: start;
@@ -70,6 +63,9 @@ img.play-button {
     .aboutIntro  {
         width: calc(75%);
     }
+}
+
+@media (min-height: 768px) {
     .homepage {
         scroll-snap-type: y mandatory;
     }
