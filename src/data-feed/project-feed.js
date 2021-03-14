@@ -156,8 +156,8 @@ const ProjectPageFeed = [
                             "These elements of UI design and implementation are really reaping benefits now, especially with googles latest search engine optimisation considerations."
                         ],
                         "subsectionImage" : {
-                            "image": "placeholder-shallow.png",
-                            "alt": "Placeholder"
+                            "image": "Optimise.png",
+                            "alt": "Refine, optimise improve"
                         }
                     },
                 ] 
@@ -172,8 +172,8 @@ const ProjectPageFeed = [
                             "It is therefore safe to assume that the individual responsible for making the leap to hire you won't be conducting their assessment primarily on a mobile device, so the scope for impressing people is equally as important for wider screen resolutions."
                         ],
                         "subsectionImage" : {
-                            "image": "placeholder.png",
-                            "alt": "Placeholder"
+                            "image": "Audience.png",
+                            "alt": "Persona example"
                         }
                     },
                     {

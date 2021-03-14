@@ -109,8 +109,10 @@ body.dark .project-preview-thumbnail.header {
 
 .project-content .responsibilities ul {
     list-style-type: circle;
-    margin-inline-start: 1.5rem;
     margin-block-start: 0.5rem;
+}
+
+.project-content ul {
     padding-inline-start: 0;
 }
 
