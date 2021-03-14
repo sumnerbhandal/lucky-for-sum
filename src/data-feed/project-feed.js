@@ -96,8 +96,8 @@ const ProjectPageFeed = [
                 }
             ],
             "featuredImage": {
-                "image": "placeholder-shallow.png",
-                "alt": "Placeholder"
+                "image": "Feature.jpg",
+                "alt": "Featured Image"
             }
         }
       ],
@@ -197,7 +197,7 @@ const ProjectPageFeed = [
                         ],
                         "subsectionVideo" : {
                             "video": "Keyboard-A11Y.mp4",
-                            "alt": "Placeholder"
+                            "alt": "Voiceover Mac example"
                         }
                     },
                 
@@ -211,9 +211,9 @@ const ProjectPageFeed = [
                         "copy": [
                             "When I've got the key core functionality and content locked down, I can start to have some fun with things and inject moments of delight across the site. You'll have probably encountered some of these on your way to this project (unless you've set a preference for not wanting things to move around)."
                         ],
-                        "subsectionImage" : {
-                            "image": "placeholder-shallow.png",
-                            "alt": "Placeholder"
+                        "subsectionVideo" : {
+                            "video": "Interactions.mp4",
+                            "alt": "Interaction example"
                         }
                     },
                     {
@@ -221,9 +221,9 @@ const ProjectPageFeed = [
                         "copy": [
                             "Most modern browsers have the ability to indetify some of your operating system preferences that indicate how you want things to behave. The most popular being whether you like browsing in light mode or dark mode, but also things such as whether you don't like things moving or animating as they cause feelings of nausea."
                         ],
-                        "subsectionImage" : {
-                            "image": "placeholder-shallow.png",
-                            "alt": "Placeholder"
+                        "subsectionVideo" : {
+                            "video": "User-preferences.mp4",
+                            "alt": "User preference inherit"
                         }
                     },
                     {
@@ -232,8 +232,8 @@ const ProjectPageFeed = [
                             "I'm a big believer in testing and iterating, so this will continue to grow and improve over time."
                         ],
                         "subsectionImage" : {
-                            "image": "placeholder-shallow.png",
-                            "alt": "Placeholder"
+                            "image": "Refinement.png",
+                            "alt": "Testing results"
                         }
                     }                     
                 ] 

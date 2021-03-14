@@ -107,7 +107,7 @@ img.play-button {
 }
 
 .homepage .project-preview {
-    height: auto;
+    height: 100vh;
     min-height: 30rem;
 }
 
