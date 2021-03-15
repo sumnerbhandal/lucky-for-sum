@@ -66,7 +66,7 @@ main {
   margin-top: 4.5rem;
 }
 .section {
-  max-width: 1280px;
+  max-width: 80rem;
   margin: 0 auto;
   padding: 0 1.25rem;
 }
@@ -84,7 +84,7 @@ main {
 }
 @media (min-width: 1600px) {
   .section {
-    max-width: 1440px;
+    max-width: 100rem;
   }
 }
 .PageContent {

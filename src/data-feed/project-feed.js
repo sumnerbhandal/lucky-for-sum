@@ -18,11 +18,13 @@ const ProjectPageFeed = [
         "id": "0",
         "background" : [
             {
-                "h2": "Background",
+                "h2": "What is Next Total Platform?",
                 "subsection": [
                     {
                         "copy": [
-                            "Placeholder copy here, case study pending.",
+                            "It is a transformation of the Next Digital estate that looks to migrate the legacy systems currently in place and elevate the technology used to stay ahead.",
+                            "Doing this allows the company to break down the site into manageable microservices that allow frequent and individual deployments.",
+                            "The project allows for a complete redesign of the website architecture, the merging of the adaptive web solution and perhaps most importantly, a big focus on accessibility."
                         ], 
                     }
                 ],
@@ -30,10 +32,11 @@ const ProjectPageFeed = [
                     {
                         "h3": "Responsibilities",
                         "skills": [
-                            "Architecture",
-                            "Accessibility",
-                            "UX/UI Design",
-                            "Front-End Development"
+                            "Redesigning a 20 year old adaptive site (design team collab)",
+                            "Defining a site wide, cross partner theming framework",
+                            "Writing interaction design acceptance criteria (BA support)",
+                            "Launching an accessible website (front-end collab)",
+                            "Front-end development",
                         ]
                     }
                 ],
@@ -45,11 +48,19 @@ const ProjectPageFeed = [
         ],
         "article" : [
             {
-                "h2": "Dummy Content",
+                "h2": "The scope of the challenge",
                 "subsection": [
                     {
                         "copy": [
-                            "Detailed stuff coming real soon!",
+                            "Overview of some of the difficulties we have to overcome as a business:"
+                        ],
+                        "bullet": [
+                            "We are in X countries",
+                            "we have X number of partners",
+                            "Continuing to innovate on the current platform",
+                            "Record sales ongoing",
+                            "Our site is X years old",
+                            "Our servers are based in X"
                         ],
                         "subsectionImage" : {
                             "image": "placeholder-shallow.png",
@@ -57,7 +68,136 @@ const ProjectPageFeed = [
                         }
                     }
                 ]
-            }
+            },
+            {
+                "h2": "Our First Lesson(s)",
+                "subsection": [
+                    {
+                        "bullet": [
+                            "A team with business knowledge with little experience of working in the cloud = bad",
+                            "An external agency with experience in migrating companies to the cloud but no business knowledge = bad",
+                            "Bringing in representation from the UX team 1/2 a year into a project where you're building the UI = bad",
+                            "A combination of the above working collaboratively in an agile environment = good"
+                        ],
+                        "subsectionImage" : {
+                            "image": "placeholder-shallow.png",
+                            "alt": "Placeholder"
+                        }
+                    }
+                ]
+            },
+            {
+                "h2": "Where UX Fits In The Delivery",
+                "subsection": [
+                    {
+                        "copy": [
+                            "Our 'official' remit was to do what the website does today, but make it responsive and AA compliant.",
+                            "It's not often that you're given the freedom and trust of the department to go out rebuild something from scratch, so I took this as an opportunity to make sure we do everything we do now, but better."
+                        ],
+                        "subsectionImage" : {
+                            "image": "",
+                            "alt": ""
+                        }
+                    },
+                    {
+                        "h3": "How we've started trying to make it better",
+                        "bullet": [
+                            "Minimum touch areas",
+                            "AA compliant colour contrasts",
+                            "Keyboard navigatable",
+                            "Supports screenreaders",
+                            "Faster",
+                            "Better error handling",
+                            "Heuristic design evaluations",
+                            "Moments of delight",
+                            "Feeding in previously disregarded research suggestions (shhh)"
+                        ],
+                        "subsectionImage" : {
+                            "image": "placeholder-shallow.png",
+                            "alt": "Placeholder"
+                        }
+                    }
+                ]
+            },
+            {
+                "h2": "But what did you actually do",
+                "subsection": [
+                    {
+                        "copy": [
+                            "It absolutely goes without saying, that this project would not have got anywhere near this far without the tremendous work and effort of some exceptional team mates. A special shout out to Colin Griffin our Business Analyst who has been nothing short of sensational.",
+                            "However, I have put my heart and soul into this project and am really proud of what we're looking to do as a company."
+                        ],
+                        "subsectionImage" : {
+                            "image": "",
+                            "alt": ""
+                        }
+                    },
+                    {
+                        "h3": "Redesigning a 20 year old adaptive site (design team collab)",
+                        "copy": [
+                            "Shout out our amazing team and the level of support we give each other"
+                        ],
+                        "subsectionImage" : {
+                            "image": "placeholder-shallow.png",
+                            "alt": "Placeholder"
+                        }
+                    },
+                    {
+                        "h3": "Defining a site wide, cross partner theming framework",
+                        "copy": [
+                            "Overview of this beauty"
+                        ],
+                        "subsectionImage" : {
+                            "image": "placeholder-shallow.png",
+                            "alt": "Placeholder"
+                        }
+                    },
+                    {
+                        "h3": "Writing interaction design acceptance criteria (BA support)",
+                        "copy": [
+                            "Give some examples of where the interation design has been crucial"
+                        ],
+                        "subsectionImage" : {
+                            "image": "placeholder-shallow.png",
+                            "alt": "Placeholder"
+                        }
+                    },
+                    {
+                        "h3": "Launching an accessible website (front-end collab)",
+                        "copy": [
+                            "Share a link to a presentation I made and how I communicated to the wider teams and stakeholders"
+                        ],
+                        "subsectionImage" : {
+                            "image": "placeholder-shallow.png",
+                            "alt": "Placeholder"
+                        }
+                    },
+                    {
+                        "h3": "Front-end development",
+                        "copy": [
+                            "Examples of features that have been built out and adopted"
+                        ],
+                        "subsectionImage" : {
+                            "image": "placeholder-shallow.png",
+                            "alt": "Placeholder"
+                        }
+                    }
+                ]
+            },
+            {
+                "h2": "Current Status Of The Project",
+                "subsection": [
+                    {
+                        "copy": [
+                            "Launched footer, header etc. with a view to releasing the browse and shop side by X and then on to the rest of the site."
+                        ],
+                        "subsectionImage" : {
+                            "image": "",
+                            "alt": ""
+                        }
+                    }
+                ]
+            },
         ]
     },
     {
@@ -267,9 +407,9 @@ const ProjectPageFeed = [
                     {
                         "h3": "Responsibilities",
                         "skills": [
-                            "Heuristic Evaluation",
-                            "Web Design",
-                            "Marketing Support"
+                            "Conducting an heuristic evaluation of the existing website",
+                            "Using that to inform a new website design",
+                            "Working with an agency to integrate new ways of supporting incoming leads through the website"
                         ]
                     }
                 ],
