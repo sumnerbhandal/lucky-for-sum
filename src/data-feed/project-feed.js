@@ -41,8 +41,8 @@ const ProjectPageFeed = [
                     }
                 ],
                 "featuredImage": {
-                    "image": "placeholder-shallow.png",
-                    "alt": "Placeholder"
+                    "image": "Feature.jpg",
+                    "alt": "Mockup of the theme test on an ipad"
                 }
           }
         ],
@@ -113,7 +113,7 @@ const ProjectPageFeed = [
                             "Feeding in previously disregarded research suggestions (shhh)"
                         ],
                         "subsectionImage" : {
-                            "image": "placeholder-shallow.png",
+                            "image": "Made-Better.png",
                             "alt": "Placeholder"
                         }
                     }
@@ -145,11 +145,21 @@ const ProjectPageFeed = [
                     {
                         "h3": "Defining a site wide, cross partner theming framework",
                         "copy": [
-                            "Overview of this beauty"
+                            "Part of Next's vision of the future is to use their Total Platform Solution as the basis for their partners.",
+                            "The architectural problem this poses is how can we give the partner the UI they want, but without duplicating the codebase?",
+                            "The proposed solution? Creating and defining partner specific theme. By building out the framework of the website, I was able to determine what the key variables that change from site to site and build a generator to export the component."
                         ],
+                        "link" : {
+                            "url": "https://next-ux-theme.netlify.app",
+                            "text": "View the theme generator"
+                        },
+                        "linkTwo" : {
+                            "url": "https://next-ux-theme.netlify.app/next-site",
+                            "text": "Example of an implemented theme"
+                        },
                         "subsectionImage" : {
-                            "image": "placeholder-shallow.png",
-                            "alt": "Placeholder"
+                            "image": "Theming.png",
+                            "alt": "Example of theme with website build"
                         }
                     },
                     {
@@ -163,13 +173,14 @@ const ProjectPageFeed = [
                         }
                     },
                     {
-                        "h3": "Launching an accessible website (front-end collab)",
+                        "h3": "Launching an accessible website",
                         "copy": [
-                            "Share a link to a presentation I made and how I communicated to the wider teams and stakeholders"
+                            "We're lucky to have some great advocates for accessibility within our team, so with their assistance I compiled and presented a document on how each team can look to play their part. This has formed the foundation of a wider education piece we are looking to share with the business.",
+                            "Taking these findings, I then worked with the front-end development team to support them with interaction design, focus guides and testing."
                         ],
                         "subsectionImage" : {
-                            "image": "placeholder-shallow.png",
-                            "alt": "Placeholder"
+                            "image": "A11Y-Presentation.png",
+                            "alt": "Accessibility presentation slides"
                         }
                     },
                     {

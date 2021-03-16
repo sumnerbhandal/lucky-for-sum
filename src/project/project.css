@@ -147,6 +147,8 @@ body.dark .project-preview-thumbnail.header {
 .project-content .col a {
     font-family: 'Palanquin Dark', sans-serif;
     font-weight: 400;
+    display: flex;
+    margin-bottom: 1rem;
 }
 
 .project-content .col p:first-of-type {

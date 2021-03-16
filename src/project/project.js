@@ -164,6 +164,9 @@ const Project = (props) => {
                                             {subsection.link === undefined || subsection.link === ""  ? null :
                                                 <a href={subsection.link.url} target="new">{subsection.link.text}</a>
                                             }
+                                            {subsection.linkTwo === undefined || subsection.linkTwo === ""  ? null :
+                                                <a href={subsection.linkTwo.url} target="new">{subsection.linkTwo.text}</a>
+                                            }
                                         </div>
                                     </div>
                                     <div className="col">
