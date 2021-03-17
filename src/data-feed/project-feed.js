@@ -69,30 +69,30 @@ const ProjectPageFeed = [
                     }
                 ]
             },
+            // {
+            //     "h2": "Our First Lesson(s)",
+            //     "subsection": [
+            //         {
+            //             "bullet": [
+            //                 "A team with business knowledge with little experience of working in the cloud = bad",
+            //                 "An external agency with experience in migrating companies to the cloud but no business knowledge = bad",
+            //                 "Bringing in representation from the UX team 1/2 a year into a project where you're building the UI = bad",
+            //                 "A combination of the above working collaboratively in an agile environment = good"
+            //             ],
+            //             "subsectionImage" : {
+            //                 "image": "placeholder-shallow.png",
+            //                 "alt": "Placeholder"
+            //             }
+            //         }
+            //     ]
+            // },
             {
-                "h2": "Our First Lesson(s)",
-                "subsection": [
-                    {
-                        "bullet": [
-                            "A team with business knowledge with little experience of working in the cloud = bad",
-                            "An external agency with experience in migrating companies to the cloud but no business knowledge = bad",
-                            "Bringing in representation from the UX team 1/2 a year into a project where you're building the UI = bad",
-                            "A combination of the above working collaboratively in an agile environment = good"
-                        ],
-                        "subsectionImage" : {
-                            "image": "placeholder-shallow.png",
-                            "alt": "Placeholder"
-                        }
-                    }
-                ]
-            },
-            {
-                "h2": "Where UX Fits In The Delivery",
+                "h2": "Why the UX team pushed to be part of the process",
                 "subsection": [
                     {
                         "copy": [
-                            "Our 'official' remit was to do what the website does today, but make it responsive and AA compliant.",
-                            "It's not often that you're given the freedom and trust of the department to go out rebuild something from scratch, so I took this as an opportunity to make sure we do everything we do now, but better."
+                            "This project started off as a tecnhology first overhaul with the remit of doing what the website does today, but impove it's acecessibility compliance.",
+                            "Sadly this meant that we weren't involved from it's infancy, but when we were brought in, it became very clear that there was a great opporunity to improve the current experience brick by brick."
                         ],
                         "subsectionImage" : {
                             "image": "",
@@ -100,27 +100,63 @@ const ProjectPageFeed = [
                         }
                     },
                     {
-                        "h3": "How we've started trying to make it better",
-                        "bullet": [
-                            "Minimum touch areas",
-                            "AA compliant colour contrasts",
-                            "Keyboard navigatable",
-                            "Supports screenreaders",
-                            "Faster",
-                            "Better error handling",
-                            "Heuristic design evaluations",
-                            "Moments of delight",
-                            "Feeding in previously disregarded research suggestions (shhh)"
+                        "h3": "Aim 1 - making it usable",
+                        "copy": [
+                            "The company has gone from strength to strength and everything has happened so fast that we have ended up with adaptive web experience, that offers such different experiences on each platform.",
+                            "A repurcussion of that means that we have struggled to provide some our most popular device types (tablet users) with an interface that is built for purpose.",
+                            "Despite this, our customers have continued to shop in their thousands on a site where they have to work hard to buy what they want. The least we can do is allow them to make a clear and informed decision on what they want, and iron out the things that make online shopping less fun."
+                        ],
+                        "subsectionImage" : {
+                            "image": "",
+                            "alt": ""
+                        }
+                    },
+                    {
+                        "h3": "Aim 2 - being more inclusive",
+                        "copy": [
+                            "Many companies are aware of the legislation that comes into affect in 2021 where it is going to become mandatory to be more compliant in accessibility.",
+                            "Thankfully, we have been championing accessibilty as a team and have had some members of the research team conduct some fantastic primary research in recent times that identified areas of difficulty.",
+                            "Working with this, we took to tearing down every component of our browse and shop experience and doing appropriate contrast checks, semantic HTML checks, focus orders and looking for ways to implement better error handing."
                         ],
                         "subsectionImage" : {
                             "image": "Made-Better.png",
                             "alt": "Placeholder"
                         }
-                    }
+                    },
+                    {
+                        "h3": "Aim 3 - building better processes",
+                        "copy": [
+                            "Every team aims to do their jobs to the best of their ability, but there will always be a moment where two wider teams need collaborate and this is where small details become bit issues.",
+                            "Keen to break the cycle, both myself and a colleague inducted ourselves into the development processes, attended every standup, refinement, cermony, ATDD session, demo, you name it and made ourselves 'available' whenever required. This shift in working relationship meant that we enabled the developers to push back, query, suggest and even enhance our vision for the site and most importantly build that trust that we're here to deliver this solution together.",
+                            "The result meant that we were in the loop and able to understand every technical decision, and the technical team were able to understand and learn more about the user centred approaches we hoped to build."
+                        ],
+                        "subsectionImage" : {
+                            "image": "",
+                            "alt": ""
+                        }
+                    },
+                    // {
+                    //     "h3": "How we've started trying to make it better",
+                    //     "bullet": [
+                    //         "Minimum touch areas",
+                    //         "AA compliant colour contrasts",
+                    //         "Keyboard navigatable",
+                    //         "Supports screenreaders",
+                    //         "Faster",
+                    //         "Better error handling",
+                    //         "Heuristic design evaluations",
+                    //         "Moments of delight",
+                    //         "Feeding in previously disregarded research suggestions (shhh)"
+                    //     ],
+                    //     "subsectionImage" : {
+                    //         "image": "Made-Better.png",
+                    //         "alt": "Placeholder"
+                    //     }
+                    // }
                 ]
             },
             {
-                "h2": "But what did you actually do",
+                "h2": "But what did I actually do",
                 "subsection": [
                     {
                         "copy": [
@@ -196,11 +232,41 @@ const ProjectPageFeed = [
                 ]
             },
             {
-                "h2": "Current Status Of The Project",
+                "h2": "Was It A Success?",
                 "subsection": [
                     {
                         "copy": [
                             "Launched footer, header etc. with a view to releasing the browse and shop side by X and then on to the rest of the site."
+                        ],
+                        "subsectionImage" : {
+                            "image": "",
+                            "alt": ""
+                        }
+                    },
+                    {
+                        "h3": "What went well",
+                        "copy": [
+                            "Examples of features that have been built out and adopted"
+                        ],
+                        "subsectionImage" : {
+                            "image": "",
+                            "alt": ""
+                        }
+                    },
+                    {
+                        "h3": "What didn't go well",
+                        "copy": [
+                            "Examples of features that have been built out and adopted"
+                        ],
+                        "subsectionImage" : {
+                            "image": "",
+                            "alt": ""
+                        }
+                    },
+                    {
+                        "h3": "What we're going to do better",
+                        "copy": [
+                            "Examples of features that have been built out and adopted"
                         ],
                         "subsectionImage" : {
                             "image": "",
