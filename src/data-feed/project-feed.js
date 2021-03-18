@@ -55,12 +55,11 @@ const ProjectPageFeed = [
                             "Overview of some of the difficulties we have to overcome as a business:"
                         ],
                         "bullet": [
-                            "We are in X countries",
-                            "we have X number of partners",
-                            "Continuing to innovate on the current platform",
-                            "Record sales ongoing",
-                            "Our site is X years old",
-                            "Our servers are based in X"
+                            "Next have a digital presence in 140 countries",
+                            "Have 6 partners dependent on their Total Platform Service",
+                            "Delivering the project alongside the existing roadmap",
+                            "20+ years of legacy infrastructure and lack of documentation",
+                            "Migrating from local physical servers"
                         ],
                         "subsectionImage" : {
                             "image": "placeholder-shallow.png",
@@ -69,30 +68,13 @@ const ProjectPageFeed = [
                     }
                 ]
             },
-            // {
-            //     "h2": "Our First Lesson(s)",
-            //     "subsection": [
-            //         {
-            //             "bullet": [
-            //                 "A team with business knowledge with little experience of working in the cloud = bad",
-            //                 "An external agency with experience in migrating companies to the cloud but no business knowledge = bad",
-            //                 "Bringing in representation from the UX team 1/2 a year into a project where you're building the UI = bad",
-            //                 "A combination of the above working collaboratively in an agile environment = good"
-            //             ],
-            //             "subsectionImage" : {
-            //                 "image": "placeholder-shallow.png",
-            //                 "alt": "Placeholder"
-            //             }
-            //         }
-            //     ]
-            // },
             {
                 "h2": "Why the UX team pushed to be part of the process",
                 "subsection": [
                     {
                         "copy": [
-                            "This project started off as a tecnhology first overhaul with the remit of doing what the website does today, but impove it's acecessibility compliance.",
-                            "Sadly this meant that we weren't involved from it's infancy, but when we were brought in, it became very clear that there was a great opporunity to improve the current experience brick by brick."
+                            "This project started off as a technology first overhaul with the remit of doing what the website does today with improvements to the accessibility criteria.",
+                            "Sadly, this meant that we weren't involved from its infancy, but when we were brought in, it became very clear that there was a great opportunity to improve the current experience brick by brick."
                         ],
                         "subsectionImage" : {
                             "image": "",
@@ -103,7 +85,7 @@ const ProjectPageFeed = [
                         "h3": "Aim 1 - making it usable",
                         "copy": [
                             "The company has gone from strength to strength and everything has happened so fast that we have ended up with adaptive web experience, that offers such different experiences on each platform.",
-                            "A repurcussion of that means that we have struggled to provide some our most popular device types (tablet users) with an interface that is built for purpose.",
+                            "A repercussion of that means that we have struggled to provide some our most popular device types (tablet users) with an interface that is built for purpose.",
                             "Despite this, our customers have continued to shop in their thousands on a site where they have to work hard to buy what they want. The least we can do is allow them to make a clear and informed decision on what they want, and iron out the things that make online shopping less fun."
                         ],
                         "subsectionImage" : {
@@ -114,9 +96,9 @@ const ProjectPageFeed = [
                     {
                         "h3": "Aim 2 - being more inclusive",
                         "copy": [
-                            "Many companies are aware of the legislation that comes into affect in 2021 where it is going to become mandatory to be more compliant in accessibility.",
-                            "Thankfully, we have been championing accessibilty as a team and have had some members of the research team conduct some fantastic primary research in recent times that identified areas of difficulty.",
-                            "Working with this, we took to tearing down every component of our browse and shop experience and doing appropriate contrast checks, semantic HTML checks, focus orders and looking for ways to implement better error handing."
+                            "Many companies are aware of the legislation that comes into effect in 2021 where it is going to become mandatory to be more compliant in accessibility.",
+                            "Thankfully, we have been championing accessibility as a team and have had some members of the research team conduct some fantastic primary research in recent times that identified areas of difficulty.",
+                            "Working with this, we took to tearing down every component of our browse and shop experience and doing appropriate contrast checks, semantic HTML checks, focus orders and looking for ways to implement better error handling."
                         ],
                         "subsectionImage" : {
                             "image": "Made-Better.png",
@@ -126,8 +108,8 @@ const ProjectPageFeed = [
                     {
                         "h3": "Aim 3 - building better processes",
                         "copy": [
-                            "Every team aims to do their jobs to the best of their ability, but there will always be a moment where two wider teams need collaborate and this is where small details become bit issues.",
-                            "Keen to break the cycle, both myself and a colleague inducted ourselves into the development processes, attended every standup, refinement, cermony, ATDD session, demo, you name it and made ourselves 'available' whenever required. This shift in working relationship meant that we enabled the developers to push back, query, suggest and even enhance our vision for the site and most importantly build that trust that we're here to deliver this solution together.",
+                            "Every team aims to do their jobs to the best of their ability, but there will always be a moment where two wider teams need to collaborate and this is where small details become bit issues.",
+                            "Keen to break the cycle, both myself and a colleague inducted ourselves into the development processes, attended every standup, refinement, ceremony, ATDD session, demo, you name it and made ourselves 'available' whenever required. This shift in working relationship meant that we enabled the developers to push back, query, suggest and even enhance our vision for the site and most importantly build that trust that we're here to deliver this solution together.",
                             "The result meant that we were in the loop and able to understand every technical decision, and the technical team were able to understand and learn more about the user centred approaches we hoped to build."
                         ],
                         "subsectionImage" : {
@@ -182,7 +164,7 @@ const ProjectPageFeed = [
                         "h3": "Defining a site wide, cross partner theming framework",
                         "copy": [
                             "Part of Next's vision of the future is to use their Total Platform Solution as the basis for their partners.",
-                            "The architectural problem this poses is how can we give the partner the UI they want, but without duplicating the codebase?",
+                            "The architectural problem this poses is how can we give the partner the UI they want, but without duplicating the code base?",
                             "The proposed solution? Creating and defining partner specific theme. By building out the framework of the website, I was able to determine what the key variables that change from site to site and build a generator to export the component."
                         ],
                         "link" : {
@@ -246,7 +228,7 @@ const ProjectPageFeed = [
                     {
                         "h3": "What went well",
                         "copy": [
-                            "Examples of features that have been built out and adopted"
+                            "Examples"
                         ],
                         "subsectionImage" : {
                             "image": "",
@@ -256,7 +238,7 @@ const ProjectPageFeed = [
                     {
                         "h3": "What didn't go well",
                         "copy": [
-                            "Examples of features that have been built out and adopted"
+                            "Examples"
                         ],
                         "subsectionImage" : {
                             "image": "",
@@ -266,7 +248,7 @@ const ProjectPageFeed = [
                     {
                         "h3": "What we're going to do better",
                         "copy": [
-                            "Examples of features that have been built out and adopted"
+                            "Examples"
                         ],
                         "subsectionImage" : {
                             "image": "",
