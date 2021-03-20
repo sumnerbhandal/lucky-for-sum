@@ -18,7 +18,7 @@ const ProjectPageFeed = [
         "id": "0",
         "background" : [
             {
-                "h2": "What is Next Total Platform?",
+                "h2": "What Is Next Total Platform?",
                 "subsection": [
                     {
                         "copy": [
@@ -48,7 +48,7 @@ const ProjectPageFeed = [
         ],
         "article" : [
             {
-                "h2": "The scope of the challenge",
+                "h2": "The Scope Of The Challenge",
                 "subsection": [
                     {
                         "copy": [
@@ -69,7 +69,7 @@ const ProjectPageFeed = [
                 ]
             },
             {
-                "h2": "Why the UX team pushed to be part of the process",
+                "h2": "Why The UX Team Pushed To Be Part Of The Process",
                 "subsection": [
                     {
                         "copy": [
@@ -84,9 +84,9 @@ const ProjectPageFeed = [
                     {
                         "h3": "Aim 1 - making it usable",
                         "copy": [
-                            "The company has gone from strength to strength and everything has happened so fast that we have ended up with adaptive web experience, that offers such different experiences on each platform.",
+                            "The company has gone from strength to strength and everything has happened so fast that we have ended up with adaptive web experience that offers different experiences on each platform.",
                             "A repercussion of that means that we have struggled to provide some our most popular device types (tablet users) with an interface that is built for purpose.",
-                            "Despite this, our customers have continued to shop in their thousands on a site where they have to work hard to buy what they want. The least we can do is allow them to make a clear and informed decision on what they want, and iron out the things that make online shopping less fun."
+                            "Despite this, our customers have continued to shop on a site where they have to work extra hard to buy what they want. The least we can do is allow them to make a clear and informed decision on what they want, and iron out the things that make online shopping less pleasant."
                         ],
                         "subsectionImage" : {
                             "image": "Making-it-usable.png",
@@ -96,8 +96,8 @@ const ProjectPageFeed = [
                     {
                         "h3": "Aim 2 - being more inclusive",
                         "copy": [
-                            "Many companies are aware of the legislation that comes into effect in 2021 where it is going to become mandatory to be more compliant in accessibility.",
-                            "Thankfully, we have been championing accessibility as a team and have had some members of the research team conduct some fantastic primary research in recent times that identified areas of difficulty.",
+                            "There has been a big push on making sure that public sector websites and mobile apps meet WCAG AA standards; a legislation that is also due to affect online retailers too.",
+                            "Thankfully, we have been championing accessibility as a team and have had some members of the research team conduct some fantastic primary research in recent times that have identified areas of difficulty.",
                             "Working with this, we took to tearing down every component of our browse and shop experience and doing appropriate contrast checks, semantic HTML checks, focus orders and looking for ways to implement better error handling."
                         ],
                         "subsectionImage" : {
@@ -108,7 +108,7 @@ const ProjectPageFeed = [
                     {
                         "h3": "Aim 3 - building better processes",
                         "copy": [
-                            "Every team aims to do their jobs to the best of their ability, but there will always be a moment where two wider teams need to collaborate and this is where small details become bit issues.",
+                            "Every team aims to do their job to the best of their ability, but there will always be a moment where two wider teams need to collaborate and this is where small details become bit issues.",
                             "Keen to break the cycle, both myself and a colleague inducted ourselves into the development processes, attended every standup, refinement, ceremony, ATDD session, demo, you name it and made ourselves 'available' whenever required. This shift in working relationship meant that we enabled the developers to push back, query, suggest and even enhance our vision for the site and most importantly build that trust that we're here to deliver this solution together.",
                             "The result meant that we were in the loop and able to understand every technical decision, and the technical team were able to understand and learn more about the user centred approaches we hoped to build."
                         ],
@@ -120,12 +120,12 @@ const ProjectPageFeed = [
                 ]
             },
             {
-                "h2": "But what did I actually do",
+                "h2": "How I Played My Part",
                 "subsection": [
                     {
                         "copy": [
                             "It absolutely goes without saying, that this project would not have got anywhere near this far without the tremendous work and effort of some exceptional team mates. A special shout out to Colin Griffin our Business Analyst who has been nothing short of sensational.",
-                            "However, I have put my heart and soul into this project and am really proud of what we're looking to do as a company."
+                            "Personally, I feel that I have put my heart and soul into this project and am really proud of what we're looking to do as a company. Here are some examples of where I spent my time during it."
                         ],
                         "subsectionImage" : {
                             "image": "",
@@ -135,7 +135,7 @@ const ProjectPageFeed = [
                     {
                         "h3": "Redesigning a 20 year old adaptive site",
                         "copy": [
-                            "Over the last few years, we've pulled together a brilliant design system that houses the design atoms of the site, from browsing through to checkout. During the process it quite quickly became aparrant that is is a huge disparity for what we've been implmenting on the desktop site vs the mobile site. Rectifying this adaptive approach was our number one priority.",
+                            "Over the last few years, we've pulled together a design system that houses the atoms of the site, from browsing through to checkout. During the process it became apparant that is is a huge disparity between the desktop site and the mobile site. Rectifying this adaptive approach became our priority.",
                             "With the help of the data science team, we were able to make educated decisions on what elements should be shown at which breakpoint and what could look to be removed. By decluttering and unifying the experience across all resolutions, we have started to take steps towards ensuring that the our customers have a consistently satisyfying experience regardless of the device they use."
                         ],
                         "subsectionImage" : {
@@ -146,9 +146,9 @@ const ProjectPageFeed = [
                     {
                         "h3": "Defining a site wide, cross partner theming framework",
                         "copy": [
-                            "Part of Next's vision of the future is to use their Total Platform Solution as the basis for their partners.",
+                            "Part of Next's vision of the future is to use the new Total Platform Solution as the basis for their partners.",
                             "The architectural problem this poses is how can we give the partner the UI they want, but without duplicating the code base?",
-                            "The proposed solution? Creating and defining partner specific theme. By building out the framework of the website, I was able to determine what the key variables that change from site to site and build a generator to export the component."
+                            "The proposed solution? Creating and defining partner specific themes. By building out the framework of the website, I was able to determine the key variables that change from site to site and build a generator to document, test and export these themes."
                         ],
                         "link" : {
                             "url": "https://next-ux-theme.netlify.app",
@@ -175,7 +175,7 @@ const ProjectPageFeed = [
                         }
                     },
                     {
-                        "h3": "Launching an accessible website",
+                        "h3": "Championing accessibility",
                         "copy": [
                             "We're lucky to have some great advocates for accessibility within our team, so with their assistance I compiled and presented a document on how each team can look to play their part. This has formed the foundation of a wider education piece we are looking to share with the business.",
                             "Taking these findings, I then worked with the front-end development team to support them with interaction design, focus guides and testing."
@@ -189,7 +189,7 @@ const ProjectPageFeed = [
                         "h3": "Front-end development",
                         "copy": [
                             "The only thing I love as much as designing experiences is attempting to build them.",
-                            "A few years ago, in an attempt to help me better understand the difficulties that developers went through when interpreting designs, I started to build out the designs prior to handover. This generally stood me in good stead with the developers, allowed me to reduce load on the QA teams, and design with the end interface in mind as well as the user.",
+                            "A few years ago, in an attempt to help me better understand the difficulties that developers go through when interpreting designs, I started to build out the designs prior to handover. This generally stood me in good stead with the developers, allowed me to reduce load on the QA teams, and design with the end interface in mind as well as the user.",
                             "The teams I worked with on this project were just as receptive and I would often create POCs to make sure we build the right thing and then they would make sure it's built correctly."
                         ],
                         "link" : {
@@ -242,7 +242,7 @@ const ProjectPageFeed = [
                         "h3": "What we're going to do better",
                         "bullet": [
                             "Write small and regular success stories",
-                            "Giving regular updates in a way that everyone can understand",
+                            "Give regular updates in a way that everyone can understand",
                             "Celebrate the small victories"
                         ],
                         "subsectionImage" : {
@@ -263,7 +263,7 @@ const ProjectPageFeed = [
       "headerImage":  <EnrichedSearch />,
       "headerAlt": "Portfolio for all header image", 
       "intro": [
-          "The consequence of being a designer is that you're only ever as good as your latest portfolio.",
+          "The consequence of being a designer is that you're only ever as good as your last portfolio.",
           "Documenting the journey to creating an inclusive design experience."
       ],
       "url": "portfolio-for-all",
@@ -314,7 +314,7 @@ const ProjectPageFeed = [
                         "h3": "Self imposed limitations",
                         "copy": [
                             "Designers are their own worst client. We want everything and we want to show you how we did everything, but curation and restraint is crucial.",
-                            "I needed to cherry pick a handful of projects that showcase the work I want to do more of (that I'm able to share) and from an archetectural point of view, I want to limit it to a maximum of 3 main page templates. The hompage, the project page and if I'm feeling adventurous, a contact page."
+                            "I needed to cherry pick a handful of projects that showcase the work I want to do more of (that I'm able to share) and from an archetectural point of view I want to limit it to a maximum of 3 main page templates. The hompage, the project page and if I'm feeling adventurous, a contact page."
                         ],
                         "subsectionImage" : {
                             "image": "Limitations.png",
@@ -344,9 +344,9 @@ const ProjectPageFeed = [
                         }
                     },
                     {
-                        "h3": "Refine, optimise improve",
+                        "h3": "Refine, optimise and improve",
                         "copy": [
-                            "My time working in the e-commerce industry has taught me the importance of speed and forever optimising. By leveraging features that I helped implement there, such as progressive lazy loading of images, loading perception speed and reducing cumulative layout shifts it helps the user prepare and adjust for an experience not limited by their internet connection.",
+                            "My time working in the e-commerce industry has taught me the importance of speed and forever optimising. By leveraging features that I helped implement there, such as progressive lazy loading of images, loading perception speed and reducing cumulative layout shifts it helps the user prepare for and enjoy an experience regardless of their internet connection.",
                             "These elements of UI design and implementation are really reaping benefits now, especially with googles latest search engine optimisation considerations."
                         ],
                         "subsectionImage" : {
@@ -362,7 +362,7 @@ const ProjectPageFeed = [
                     {
                         "h3": "Who is this for?",
                         "copy": [
-                            "The default stance in the design community is mobile first, which is great as it encourages you to evaluate the hierarchy of your site based offf the smallest viewport. However, when it comes to things like portfolios, the audience is often a hiring manager, who is probably looking at this as part of their workplace tasks.",
+                            "The default stance in the design community is mobile first, which is great as it encourages you to evaluate the hierarchy of your site based off the smallest viewport. However, when it comes to things like portfolios, the audience is often a hiring manager, who is probably looking at this as part of their workplace tasks.",
                             "It is therefore safe to assume that the individual responsible for making the leap to hire you won't be conducting their assessment primarily on a mobile device, so the scope for impressing people is equally as important for wider screen resolutions."
                         ],
                         "subsectionImage" : {
@@ -371,11 +371,11 @@ const ProjectPageFeed = [
                         }
                     },
                     {
-                        "h3": "Lightweight and resusable",
+                        "h3": "Lightweight and reusable",
                         "copy": [
-                            "Being able to create fast, templated experiences is a prerequesite for most web based companies as it allows for enhancements and changes to propogate with less technical debt or manual changes.",
+                            "Being able to create fast, templated experiences is a prerequisite for most web based companies as it allows for enhancements and changes to propogate with less technical debt or manual changes.",
                             "Leveraging my experience defining API endpoints, I adopted a similar approach with my site by using a writeable data feed to populate my projects.",
-                            "This allows me to populate the page, and determine what is shown, by only rendering elements that I require. Keeping the web page light, resuable and all without sacrificing the frills."
+                            "This allows me to populate the page and determine the UI while keeping the web page light, reusable and all without sacrificing the frills."
                         ],
                         "subsectionImage" : {
                             "image": "Lightweight.png",
@@ -385,8 +385,8 @@ const ProjectPageFeed = [
                     {
                         "h3": "Making it keyboard navigatable",
                         "copy": [
-                            "When it comes to users who have difficuly navigating through websites using the more traditional methods such as a mouse or cursor, there is the option of falling back to using a keyboard or screen reader.",
-                            "In order for this work, it takes a few key considerations. One of the fundamentals is correctly written and structured HTML, there is a reason why there are so many HTML Tags, it's because each one serves a particular purpose and that helps to give utilities such as screen readers the ability to communicate back to the user, what the element is and its intended use.",
+                            "When it comes to users who have difficuly navigating through websites using the more traditional methods such as a mouse or touch, there is the option of falling back to using a keyboard or screen reader.",
+                            "In order for this work, it takes a few key considerations. One of the fundamentals is correctly written and structured HTML, there is a reason why there are so many HTML Tags, it's because each one serves a particular purpose and that helps to give utilities such as screen readers the ability to communicate back to the user what the element is and its intended use.",
                             "Another favourite of mine is focus states. Too often I have seen websites actively removing the browsers focus states as they are deemed to interfere with the aesthetics of the site. I prefer to embrace and enhance then, so why not try and tab through the site and see if you can use it just with your keyboard alone!"
                         ],
                         "subsectionVideo" : {
@@ -413,7 +413,7 @@ const ProjectPageFeed = [
                     {
                         "h3": "Inheriting users preferences",
                         "copy": [
-                            "Most modern browsers have the ability to indetify some of your operating system preferences that indicate how you want things to behave. The most popular being whether you like browsing in light mode or dark mode, but also things such as whether you don't like things moving or animating as they cause feelings of nausea."
+                            "Most modern browsers have the ability to indentify some of your operating system preferences that indicate how you want things to behave/appear. The most popular being whether you like browsing in light mode or dark mode, but also things such as whether you don't like things moving or animating as they cause feelings of nausea."
                         ],
                         "subsectionVideo" : {
                             "video": "User-preferences.mp4",

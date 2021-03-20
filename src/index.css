@@ -26,7 +26,10 @@
 }
 @media (prefers-reduced-motion) {
   * {
-    transition: 0s !important;
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+    -o-transition: none !important;
+    transition: none !important;
   }
 }
 @media screen and (min-width: 960px) {
