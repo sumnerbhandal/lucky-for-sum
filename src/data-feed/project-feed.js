@@ -102,7 +102,7 @@ const ProjectPageFeed = [
                         ],
                         "subsectionImage" : {
                             "image": "Made-Better.png",
-                            "alt": "Placeholder"
+                            "alt": "Diagram of ways we're looking to make things better"
                         }
                     },
                     {
