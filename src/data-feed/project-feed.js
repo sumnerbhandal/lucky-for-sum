@@ -245,6 +245,10 @@ const ProjectPageFeed = [
                             "Give regular updates in a way that everyone can understand",
                             "Celebrate the small victories"
                         ],
+                        "link" : {
+                            "url": "https://www.drawkit.io/",
+                            "text": "Illustrations by DrawKit"
+                        },
                         "subsectionImage" : {
                             "image": "Small-wins.png",
                             "alt": "Celebration image"
