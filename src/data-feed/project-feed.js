@@ -52,18 +52,18 @@ const ProjectPageFeed = [
                 "subsection": [
                     {
                         "copy": [
-                            "Overview of some of the difficulties we have to overcome as a business:"
+                            "Overview of some of the difficulties we have had to contend with as a business:"
                         ],
                         "bullet": [
                             "Next have a digital presence in 140 countries",
-                            "Have 6 partners dependent on their Total Platform Service",
+                            "Next have 6 partners dependent on the existing Total Platform Service",
                             "Delivering the project alongside the existing roadmap",
                             "20+ years of legacy infrastructure and lack of documentation",
-                            "Migrating from local physical servers"
+                            "Migrating from local physical servers to a cloud based solution"
                         ],
                         "subsectionImage" : {
-                            "image": "placeholder-shallow.png",
-                            "alt": "Placeholder"
+                            "image": "Scope.png",
+                            "alt": "Team scoping the challenge"
                         }
                     }
                 ]
@@ -89,8 +89,8 @@ const ProjectPageFeed = [
                             "Despite this, our customers have continued to shop in their thousands on a site where they have to work hard to buy what they want. The least we can do is allow them to make a clear and informed decision on what they want, and iron out the things that make online shopping less fun."
                         ],
                         "subsectionImage" : {
-                            "image": "",
-                            "alt": ""
+                            "image": "Making-it-usable.png",
+                            "alt": "Example of existing poor usability"
                         }
                     },
                     {
@@ -113,28 +113,10 @@ const ProjectPageFeed = [
                             "The result meant that we were in the loop and able to understand every technical decision, and the technical team were able to understand and learn more about the user centred approaches we hoped to build."
                         ],
                         "subsectionImage" : {
-                            "image": "",
-                            "alt": ""
+                            "image": "Building-better-processes.png",
+                            "alt": "Illustration of teams working remotely"
                         }
-                    },
-                    // {
-                    //     "h3": "How we've started trying to make it better",
-                    //     "bullet": [
-                    //         "Minimum touch areas",
-                    //         "AA compliant colour contrasts",
-                    //         "Keyboard navigatable",
-                    //         "Supports screenreaders",
-                    //         "Faster",
-                    //         "Better error handling",
-                    //         "Heuristic design evaluations",
-                    //         "Moments of delight",
-                    //         "Feeding in previously disregarded research suggestions (shhh)"
-                    //     ],
-                    //     "subsectionImage" : {
-                    //         "image": "Made-Better.png",
-                    //         "alt": "Placeholder"
-                    //     }
-                    // }
+                    }
                 ]
             },
             {
@@ -151,13 +133,14 @@ const ProjectPageFeed = [
                         }
                     },
                     {
-                        "h3": "Redesigning a 20 year old adaptive site (design team collab)",
+                        "h3": "Redesigning a 20 year old adaptive site",
                         "copy": [
-                            "Shout out our amazing team and the level of support we give each other"
+                            "Over the last few years, we've pulled together a brilliant design system that houses the design atoms of the site, from browsing through to checkout. During the process it quite quickly became aparrant that is is a huge disparity for what we've been implmenting on the desktop site vs the mobile site. Rectifying this adaptive approach was our number one priority.",
+                            "With the help of the data science team, we were able to make educated decisions on what elements should be shown at which breakpoint and what could look to be removed. By decluttering and unifying the experience across all resolutions, we have started to take steps towards ensuring that the our customers have a consistently satisyfying experience regardless of the device they use."
                         ],
                         "subsectionImage" : {
-                            "image": "placeholder-shallow.png",
-                            "alt": "Placeholder"
+                            "image": "Redesign.png",
+                            "alt": "Contentless design example"
                         }
                     },
                     {
@@ -181,13 +164,14 @@ const ProjectPageFeed = [
                         }
                     },
                     {
-                        "h3": "Writing interaction design acceptance criteria (BA support)",
+                        "h3": "Writing interaction design acceptance criteria",
                         "copy": [
-                            "Give some examples of where the interation design has been crucial"
+                            "Being given the autonomy I was afforded with this project meant that I was able to be a bit more hands on with some of the more interaction intensive user stories.",
+                            "The Business Analysts asigned to the project were largely responsive for populating the acceptance criteria, but would often work alongside a designer (namely myself) to write these in accordance with the interaction designs and prototypes that we had built."
                         ],
                         "subsectionImage" : {
-                            "image": "placeholder-shallow.png",
-                            "alt": "Placeholder"
+                            "image": "Acceptance-criteria.png",
+                            "alt": "Team mates writing the acceptance criteria"
                         }
                     },
                     {
@@ -204,11 +188,17 @@ const ProjectPageFeed = [
                     {
                         "h3": "Front-end development",
                         "copy": [
-                            "Examples of features that have been built out and adopted"
+                            "The only thing I love as much as designing experiences is attempting to build them.",
+                            "A few years ago, in an attempt to help me better understand the difficulties that developers went through when interpreting designs, I started to build out the designs prior to handover. This generally stood me in good stead with the developers, allowed me to reduce load on the QA teams, and design with the end interface in mind as well as the user.",
+                            "The teams I worked with on this project were just as receptive and I would often create POCs to make sure we build the right thing and then they would make sure it's built correctly."
                         ],
+                        "link" : {
+                            "url": "https://next-ux-theme.netlify.app/next-site",
+                            "text": "Example of a POC"
+                        },
                         "subsectionImage" : {
-                            "image": "placeholder-shallow.png",
-                            "alt": "Placeholder"
+                            "image": "Front-end.png",
+                            "alt": "Example of a small POC"
                         }
                     }
                 ]
@@ -218,7 +208,7 @@ const ProjectPageFeed = [
                 "subsection": [
                     {
                         "copy": [
-                            "Launched footer, header etc. with a view to releasing the browse and shop side by X and then on to the rest of the site."
+                            "This section has a slightly misleading title as it's still very much an ongoing process and will continue to be. We are launching the new components iteratively and staggered across the next year as not to interfere with the day to day running of the website and to have full confidence before moving to the next release."
                         ],
                         "subsectionImage" : {
                             "image": "",
@@ -227,8 +217,10 @@ const ProjectPageFeed = [
                     },
                     {
                         "h3": "What went well",
-                        "copy": [
-                            "Examples"
+                        "bullet": [
+                            "Having experts in their area being allowed to take accountability and ownership",
+                            "Working with teams remotely",
+                            "Testing, shipping then iterating"
                         ],
                         "subsectionImage" : {
                             "image": "",
@@ -237,8 +229,9 @@ const ProjectPageFeed = [
                     },
                     {
                         "h3": "What didn't go well",
-                        "copy": [
-                            "Examples"
+                        "bullet": [
+                            "Testing processes, result of partial cloud and partial local environmental factors",
+                            "Cross business communication at times (Covid 19 partially at fault here)"
                         ],
                         "subsectionImage" : {
                             "image": "",
@@ -247,12 +240,14 @@ const ProjectPageFeed = [
                     },
                     {
                         "h3": "What we're going to do better",
-                        "copy": [
-                            "Examples"
+                        "bullet": [
+                            "Write small and regular success stories",
+                            "Giving regular updates in a way that everyone can understand",
+                            "Celebrate the small victories"
                         ],
                         "subsectionImage" : {
-                            "image": "",
-                            "alt": ""
+                            "image": "Small-wins.png",
+                            "alt": "Celebration image"
                         }
                     }
                 ]
@@ -869,8 +864,7 @@ const ProjectPageFeed = [
                     {
                         "h3": "A platform to offer advice",
                         "copy": [
-                            "We live in an era where information is more accessible than ever, and as such the best way to get information to the audience is to publish it online. An ACL injury can often make any movement difficult, so the idea of booking an appointment to travel to see a doctor isn't beneficial in the immediacy. From a personal perspective, the first doctor I visited said that he was unable to diagnose the extent of my injury due to excessive swelling, so I was advised to rest and apply ice. Now, if there was a place that had answers specific to my problem, I would have saved both the doctors time, and my own. Something to consider...",
-                            "Requires responsive web design examples."
+                            "We live in an era where information is more accessible than ever, and as such the best way to get information to the audience is to publish it online. An ACL injury can often make any movement difficult, so the idea of booking an appointment to travel to see a doctor isn't beneficial in the immediacy. From a personal perspective, the first doctor I visited said that he was unable to diagnose the extent of my injury due to excessive swelling, so I was advised to rest and apply ice. Now, if there was a place that had answers specific to my problem, I would have saved both the doctors time, and my own. Something to consider..."
                         ],
                         "subsectionImage" : {
                             "image": "web-presence.jpg",
@@ -880,7 +874,7 @@ const ProjectPageFeed = [
                     {
                         "h3": "Sharing experiences",
                         "copy": [
-                            "Blog post example, encouraging others to improve. Show interactive UI with posts and people following / liking the responses"
+                            "// Blog post example, encouraging others to improve. Show interactive UI with posts and people following / liking the responses. COMING SOON"
                         ],
                         "subsectionImage" : {
                             "image": "placeholder.png",
