@@ -186,7 +186,7 @@ const Project = (props) => {
                                             {subsection.subsectionVideo === undefined || subsection.subsectionVideo.video === ""  ? null :
                                              <Suspense fallback={<div></div>}>
                                                 <LazyLoad key={index} offset={800} throttle={0}>
-                                                      <video autoPlay muted loop src={require('./images/' + pdp.path + subsection.subsectionVideo.video)}></video>
+                                                      <video autoPlay muted loop playsinline src={require('./images/' + pdp.path + subsection.subsectionVideo.video)}></video>
                                                 </LazyLoad>
                                             </Suspense>
                                             }
