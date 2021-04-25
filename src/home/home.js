@@ -4,6 +4,7 @@ import { Link } from "react-router-dom/index";
 import { HeroVideo } from "./components/hero--video";
 import { Footer } from "../footer/footer";
 import { Helmet } from "react-helmet";
+import ReactGA from 'react-ga';
 import "./home.css";
 const Portfolio = lazy(() => import('./components/portfolio-illustration'));
 const EnrichedSearch = lazy(() => import('./components/search-illustration'));
@@ -69,9 +70,17 @@ const HomePage = (props) => {
         if (videoPlaying) {
             setVideoPlaying(false);
             video.pause();
+            ReactGA('send', 'event', {
+                eventCategory: 'Showreel Video Paused',
+                eventAction: 'click',
+            });
         } else {
             setVideoPlaying(true);
             video.play(); 
+            ReactGA('send', 'event', {
+                eventCategory: 'Showreel Video Playing',
+                eventAction: 'click',
+            });
         }
         video.onended = function() {
             setVideoPlaying(false);
