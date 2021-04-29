@@ -82,7 +82,7 @@ const ProjectPageFeed = [
                         }
                     },
                     {
-                        "h3": "Aim 1 - making it usable",
+                        "h3": "To make it usable",
                         "copy": [
                             "The company has gone from strength to strength and everything has happened so fast that we have ended up with adaptive web experience that offers different experiences on each platform.",
                             "A repercussion of that means that we have struggled to provide some our most popular device types (tablet users) with an interface that is built for purpose.",
@@ -94,11 +94,12 @@ const ProjectPageFeed = [
                         }
                     },
                     {
-                        "h3": "Aim 2 - being more inclusive",
+                        "h3": "To be more inclusive",
+                        "blockQuote": "There is a link for ‘Victoria’s Secret’ on the home page which I cannot reach using the tab key, I would require help to use the mouse to select the link.",
                         "copy": [
                             "There has been a big push on making sure that public sector websites and mobile apps meet WCAG AA standards; a legislation that is also due to affect online retailers too.",
-                            "Thankfully, we have been championing accessibility as a team and have had some members of the research team conduct some fantastic primary research in recent times that have identified areas of difficulty.",
-                            "Working with this, we took to tearing down every component of our browse and shop experience and doing appropriate contrast checks, semantic HTML checks, focus orders and looking for ways to implement better error handling."
+                            "So as a result, we commissioned a site wide report to evaluate areas of difficulty for users with mixed abilities. 45% of the checkpoints failed double compliance.",
+                            "Working with this, we took to tearing down every component of our browse and shop experience and doing appropriate contrast checks, semantic HTML checks, focus orders, keyboard navigation and looking for ways to implement better error handling."
                         ],
                         "subsectionImage" : {
                             "image": "Made-Better.png",
@@ -106,7 +107,7 @@ const ProjectPageFeed = [
                         }
                     },
                     {
-                        "h3": "Aim 3 - building better processes",
+                        "h3": "To build better processes",
                         "copy": [
                             "Every team aims to do their job to the best of their ability, but there will always be a moment where two wider teams need to collaborate and this is where small details become bit issues.",
                             "Keen to break the cycle, both myself and a colleague inducted ourselves into the development processes, attended every standup, refinement, ceremony, ATDD session, demo, you name it and made ourselves 'available' whenever required. This shift in working relationship meant that we enabled the developers to push back, query, suggest and even enhance our vision for the site and most importantly build that trust that we're here to deliver this solution together.",
@@ -122,16 +123,16 @@ const ProjectPageFeed = [
             {
                 "h2": "How I Played My Part",
                 "subsection": [
-                    {
-                        "copy": [
-                            "It absolutely goes without saying, that this project would not have got anywhere near this far without the tremendous work and effort of some exceptional team mates. A special shout out to Colin Griffin our Business Analyst who has been nothing short of sensational.",
-                            "Personally, I feel that I have put my heart and soul into this project and am really proud of what we're looking to do as a company. Here are some examples of where I spent my time during it."
-                        ],
-                        "subsectionImage" : {
-                            "image": "",
-                            "alt": ""
-                        }
-                    },
+                    // {
+                    //     "copy": [
+                    //         "It absolutely goes without saying, that this project would not have got anywhere near this far without the tremendous work and effort of some exceptional team mates. A special shout out to Colin Griffin our Business Analyst who has been nothing short of sensational.",
+                    //         "Personally, I feel that I have put my heart and soul into this project and am really proud of what we're looking to do as a company. Here are some examples of where I spent my time during it."
+                    //     ],
+                    //     "subsectionImage" : {
+                    //         "image": "",
+                    //         "alt": ""
+                    //     }
+                    // },
                     {
                         "h3": "Redesigning a 20 year old adaptive site",
                         "copy": [
@@ -141,6 +142,17 @@ const ProjectPageFeed = [
                         "subsectionImage" : {
                             "image": "Redesign.png",
                             "alt": "Contentless design example"
+                        }
+                    },
+                    {
+                        "h3": "Regular communication with stakeholders",
+                        "copy": [
+                            "Pages with the highest conversion are often the most contentious when it comes to updating, so keeping stakeholders up to date throughout the development process is very important.",
+                            "By bringing the designs up to date with accessibility standards and not compromising the screen real estate, we are able to prove that being inclusive doesn't come at a cost."
+                        ],
+                        "subsectionImage" : {
+                            "image": "Stakeholder-communication.png",
+                            "alt": "Previous page compared to new page"
                         }
                     },
                     {

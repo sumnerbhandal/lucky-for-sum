@@ -149,6 +149,9 @@ const Project = (props) => {
                                                 {subsection.h3}
                                             </h3>
                                             }
+                                            {subsection.blockQuote === undefined || subsection.blockQuote === ""  ? null :
+                                                <blockquote><em>'{subsection.blockQuote}'</em></blockquote>
+                                            }
                                             {subsection.copy === undefined || subsection.copy === ""  ? null :
                                                 subsection.copy.map((copy, index) => (
                                                     <p key={index} tabIndex="0">{copy}</p>

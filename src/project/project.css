@@ -115,6 +115,15 @@ body.dark .project-preview-thumbnail.header {
 .project-content ul {
     padding-inline-start: 0;
 }
+.project-content blockquote {
+    margin: 1rem 0 2rem 0;
+}
+
+.project-content blockquote em {
+    font-size: 1.5rem;
+    color: var(--subtext);
+    line-height: 1.5;
+}
 
 .project-content .responsibilities ul li {
     font-size: 1rem;
