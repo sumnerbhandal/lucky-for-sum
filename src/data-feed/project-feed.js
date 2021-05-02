@@ -71,20 +71,33 @@ const ProjectPageFeed = [
             {
                 "h2": "Why The UX Team Pushed To Be Part Of The Process",
                 "subsection": [
+                    // {
+                    //     "copy": [
+                    //         "This project started off as a technology first overhaul with the remit of doing what the website does today with improvements to the accessibility criteria.",
+                    //         "Sadly, this meant that we weren't involved from its infancy, but when we were brought in, it became very clear that there was a great opportunity to improve the current experience brick by brick."
+                    //     ],
+                    //     "subsectionImage" : {
+                    //         "image": "",
+                    //         "alt": ""
+                    //     }
+                    // },
                     {
+                        "h3": "To understand areas of difficulty",
+                        "blockQuote": "There is a link for ‘Victoria’s Secret’ on the home page which I cannot reach using the tab key, I would require help to use the mouse to select the link.",
                         "copy": [
-                            "This project started off as a technology first overhaul with the remit of doing what the website does today with improvements to the accessibility criteria.",
-                            "Sadly, this meant that we weren't involved from its infancy, but when we were brought in, it became very clear that there was a great opportunity to improve the current experience brick by brick."
+                            "While rebuilding the infrastructure, we were also afforded the opportunity to revisit the overall experience of the website.",
+                            "As such, we commissioned a site wide report to evaluate areas of difficulty for users with mixed abilities and determined that 45% of the checkpoints failed AA compliance.",
+                            "This formed our basis for quantitative usability improvements with the aim to steadily reduce that count."
                         ],
                         "subsectionImage" : {
-                            "image": "",
-                            "alt": ""
+                            "image": "Understanding.png",
+                            "alt": "Example of keyboard navigation"
                         }
                     },
                     {
                         "h3": "To make it usable",
                         "copy": [
-                            "The company has gone from strength to strength and everything has happened so fast that we have ended up with adaptive web experience that offers different experiences on each platform.",
+                            "The online arm of the business has grown at such a rate that we have ended up with adaptive web experience that offers different experiences on each platform.",
                             "A repercussion of that means that we have struggled to provide some our most popular device types (tablet users) with an interface that is built for purpose.",
                             "Despite this, our customers have continued to shop on a site where they have to work extra hard to buy what they want. The least we can do is allow them to make a clear and informed decision on what they want, and iron out the things that make online shopping less pleasant."
                         ],
@@ -95,10 +108,8 @@ const ProjectPageFeed = [
                     },
                     {
                         "h3": "To be more inclusive",
-                        "blockQuote": "There is a link for ‘Victoria’s Secret’ on the home page which I cannot reach using the tab key, I would require help to use the mouse to select the link.",
                         "copy": [
                             "There has been a big push on making sure that public sector websites and mobile apps meet WCAG AA standards; a legislation that is also due to affect online retailers too.",
-                            "So as a result, we commissioned a site wide report to evaluate areas of difficulty for users with mixed abilities. 45% of the checkpoints failed double compliance.",
                             "Working with this, we took to tearing down every component of our browse and shop experience and doing appropriate contrast checks, semantic HTML checks, focus orders, keyboard navigation and looking for ways to implement better error handling."
                         ],
                         "subsectionImage" : {
