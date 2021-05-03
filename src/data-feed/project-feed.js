@@ -243,7 +243,8 @@ const ProjectPageFeed = [
                         "bullet": [
                             "Having experts in their area being allowed to take accountability and ownership",
                             "Working with teams remotely",
-                            "Testing, shipping then iterating"
+                            "Deployment time down from 2 weeks to daily for microservice elements, a reduction of 93%",
+                            "3 out of the 6 partners dependent on the existing Total Platform Service now using a modernised service"
                         ],
                         "subsectionImage" : {
                             "image": "",
