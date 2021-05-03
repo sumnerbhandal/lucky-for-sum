@@ -5,11 +5,14 @@ import { HeroVideo } from "./components/hero--video";
 import { Footer } from "../footer/footer";
 import { Helmet } from "react-helmet";
 import "./home.css";
+
 const Portfolio = lazy(() => import('./components/portfolio-illustration'));
 const EnrichedSearch = lazy(() => import('./components/search-illustration'));
 const Ligamend = lazy(() => import('./components/ligamend-illustration'));
 const Heuristic = lazy(() => import('./components/heuristic-illustration'));
+const Reality = lazy(() => import('./components/reality-illustration'));
 const Project = lazy(() => import('../project/project'));
+
 
 const footerStyle = {
     height: "auto"
@@ -122,7 +125,7 @@ const HomePage = (props) => {
                             <div className={`project-preview `}>
                                 <Link to={`/project/${item.url}-pid-${item.id}`} className="project-preview-thumbnail" id={item.id} title={item.url} onClick={projectImageOpen}  tabIndex="0">
                                     <Suspense fallback={<div></div>}>
-                                         {index === 0 ? <Portfolio /> : index === 1 ? <EnrichedSearch /> : index === 2 ? <Heuristic /> : index === 3 ? <Ligamend />  : null }
+                                         {index === 0 ? <Portfolio /> : index === 1 ? <Reality/> : index === 2 ? <EnrichedSearch /> : index === 3 ? <Heuristic /> : <Ligamend /> }
                                     </Suspense>
                                 </Link>
                                 <h2>

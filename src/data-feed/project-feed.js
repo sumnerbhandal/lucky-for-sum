@@ -1,4 +1,4 @@
-import { Ligamend, Portfolio, EnrichedSearch, Heuristic } from "../home/components/svg-illustrations";
+import { Ligamend, Portfolio, EnrichedSearch, Heuristic, Reality } from "../home/components/svg-illustrations";
 import React from 'react';
 
 const ProjectPageFeed = [
@@ -346,7 +346,7 @@ const ProjectPageFeed = [
                         ],
                         "subsectionImage" : {
                             "image": "Limitations.png",
-                            "alt": "Self imposed limitations"
+                            "alt": "Example of basic wireframe journey"
                         }
                     },
                     {
@@ -358,7 +358,7 @@ const ProjectPageFeed = [
                         ],
                         "subsectionImage" : {
                             "image": "A11Y-overview.png",
-                            "alt": "Accessibility overview"
+                            "alt": "Annotated diagram of accessibility considerations"
                         }
                     },
                     {
@@ -379,7 +379,7 @@ const ProjectPageFeed = [
                         ],
                         "subsectionImage" : {
                             "image": "Optimise.png",
-                            "alt": "Refine, optimise improve"
+                            "alt": "Image showing how the interface has evolved, project overview and addition of project button"
                         }
                     },
                 ] 
@@ -395,7 +395,7 @@ const ProjectPageFeed = [
                         ],
                         "subsectionImage" : {
                             "image": "Audience.png",
-                            "alt": "Persona example"
+                            "alt": "Persona example, Lauren. Works as a UX Manager for a large sized company. Started off at a smaller agency but looked for a better work life balance. Is 38 years old and has previously worked as a product designer before stepping up to management. Has a degree in interaction design. Has previously done a lot of work for the government sector is extra critical of inaccessible/uncompliant websites. Tends to have an unconscious bias to things that are laid out nicely. Is recruiting for a position due to unmanageable workloads so doesn’t have a lot of time spend reading long case studies. Has had great success in getting products/websites launched."
                         }
                     },
                     {
@@ -407,7 +407,7 @@ const ProjectPageFeed = [
                         ],
                         "subsectionImage" : {
                             "image": "Lightweight.png",
-                            "alt": "Reusable APIs"
+                            "alt": "Reusable API screenshot"
                         }
                     },
                     {
@@ -455,7 +455,7 @@ const ProjectPageFeed = [
                         ],
                         "subsectionImage" : {
                             "image": "Refinement.png",
-                            "alt": "Testing results"
+                            "alt": "Google lighthouse results. Performance 95/100. Accessibility 100/100. Best practices 100/100. SEO 100/100."
                         }
                     }                     
                 ] 
@@ -759,7 +759,7 @@ const ProjectPageFeed = [
             "Building a support community set up to aid the rehabilitation of people who have suffered an anterior cruciate ligament (ACL) injury."
         ],
         "url": "ligamend",
-        "id": "1",
+        "id": "3",
         "background" : [
             {
                 "h2": "Background",
@@ -946,6 +946,72 @@ const ProjectPageFeed = [
                         }
                     }
                 ] 
+            }
+        ]
+    },
+    {
+        "title": "Using a mixed reality game to map customer experiences",
+        "SEOTitle": "Using a mixed reality game to map customer experiences",
+        "SEODescription": "How I designed a product through utilising key teacher values in relation to education technology, and how used a mixed reality game to map their experiences.",
+        "keywords": "",
+        "path": "mixed-reality/",
+        "headerImage":  <Reality />,
+        "headerAlt": "Using a mixed reality game to map customer experiences header image",
+        "intro": [
+            "How I designed a product through utilising key teacher values in relation to education technology, and how used a mixed reality game to map their experiences."
+        ],
+        "url": "mixed-reality-game-to-map-customer-experiences",
+        "id": "4",
+        "background" : [
+            {
+                "h2": "Background",
+                "subsection": [
+                    {
+                        "copy": [
+                            "Pending case study upload",
+                        ], 
+                    }
+                ],
+                "responsibilities": [
+                    {
+                        "h3": "Responsibilities",
+                        "skills": [
+                            "User research & testing",
+                            "Experience design",
+                            "Interface design"
+                        ]
+                    }
+                ],
+                "featuredImage": {
+                    "image": "placeholder-shallow.png",
+                    "alt": "Header image"
+                }
+          }
+        ],
+        "article" : [
+              {
+                "h2": "Title",
+                "subsection": [
+                    {
+                        "copy": [
+                            "Content",
+                        ],
+                        "subsectionImage" : {
+                            "image": "placeholder-shallow.png",
+                            "alt": "placeholder"
+                        }
+                    },
+                    {
+                        "h3": "Placeholder",
+                        "bullet": [
+                            "Bullet placeholder"
+                        ],
+                        "subsectionImage" : {
+                            "image": "",
+                            "alt": ""
+                        }
+                    },
+                ]
             }
         ]
     }
