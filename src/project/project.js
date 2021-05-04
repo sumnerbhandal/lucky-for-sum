@@ -186,13 +186,17 @@ const Project = (props) => {
                                             </LazyLoad>
                                         </Suspense>
                                         }
-                                            {subsection.subsectionVideo === undefined || subsection.subsectionVideo.video === ""  ? null :
-                                             <Suspense fallback={<div></div>}>
-                                                <LazyLoad key={index} offset={800} throttle={0}>
-                                                      <video autoPlay muted loop playsInline src={require('./images/' + pdp.path + subsection.subsectionVideo.video)}></video>
-                                                </LazyLoad>
-                                            </Suspense>
+                                        {subsection.subsectionVideo === undefined || subsection.subsectionVideo.video === ""  ? null :
+                                            <Suspense fallback={<div></div>}>
+                                            <LazyLoad key={index} offset={800} throttle={0}>
+                                                    <video autoPlay muted loop playsInline src={require('./images/' + pdp.path + subsection.subsectionVideo.video)}></video>
+                                            </LazyLoad>
+                                        </Suspense>
+                                        }
+                                        {subsection.blockQuoteFeature === undefined || subsection.blockQuoteFeature === ""  ? null :
+                                                <blockquote className="feature"><em>'{subsection.blockQuoteFeature}'</em></blockquote>
                                             }
+        
                                         
                                     </div>
                                 </div>

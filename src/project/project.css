@@ -124,6 +124,14 @@ body.dark .project-preview-thumbnail.header {
     color: var(--subtext);
     line-height: 1.5;
 }
+.project-content blockquote.feature {
+    margin-top: 2rem;
+}
+
+.project-content blockquote.feature em {
+    font-size: 2rem;
+
+}
 
 .project-content .responsibilities ul li {
     font-size: 1rem;
