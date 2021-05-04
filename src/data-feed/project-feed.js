@@ -986,7 +986,7 @@ const ProjectPageFeed = [
                 ],
                 "featuredImage": {
                     "image": "header.png",
-                    "alt": "Header image"
+                    "alt": "Photo of cards used within this exercise"
                 }
           }
         ],
@@ -1019,7 +1019,7 @@ const ProjectPageFeed = [
                         ],
                         "subsectionImage" : {
                             "image": "how-to-start.png",
-                            "alt": ""
+                            "alt": "Image of delocalise persona with three opportunity cards"
                         }
                     },
                     {
@@ -1051,7 +1051,7 @@ const ProjectPageFeed = [
                         ],
                         "subsectionImage" : {
                             "image": "enhancing-the-experience.jpg",
-                            "alt": ""
+                            "alt": "Photo of fanned out opportunity cards"
                         }
                     },
                     {
@@ -1068,7 +1068,7 @@ const ProjectPageFeed = [
                         ],
                         "subsectionImage" : {
                             "image": "how-it-affects-the-lesson.jpg",
-                            "alt": ""
+                            "alt": "Photo of 6 opportunity cards that were listed previously"
                         }
                     }
                 ]
@@ -1088,7 +1088,7 @@ const ProjectPageFeed = [
                         ],
                         "subsectionImage" : {
                             "image": "contextualising.jpg",
-                            "alt": ""
+                            "alt": "Photo of 8 contextualisation cards that are outlined in the following points"
                         }
                     },
                     {

@@ -125,7 +125,7 @@ const HomePage = (props) => {
                             <div className={`project-preview `}>
                                 <Link to={`/project/${item.url}-pid-${item.id}`} className="project-preview-thumbnail" id={item.id} title={item.url} onClick={projectImageOpen}  tabIndex="0">
                                     <Suspense fallback={<div></div>}>
-                                         {index === 0 ? <Portfolio /> : index === 1 ? <Reality/> : index === 2 ? <EnrichedSearch /> : index === 3 ? <Heuristic /> : <Ligamend /> }
+                                         {index === 0 ? <Portfolio /> : index === 1 ? <EnrichedSearch />: index === 2 ? <Reality/> : index === 3 ? <Heuristic /> : <Ligamend /> }
                                     </Suspense>
                                 </Link>
                                 <h2>

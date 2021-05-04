@@ -13,17 +13,6 @@
             ]
         },
         {
-            "title": "Using A Mixed Reality Game To Map Customer Experiences",
-            "summary": "User Research, Persona Development, Experience Design",
-            "url": "mixed-reality-game-to-map-customer-experiences",
-            "id": "4",
-            "image": "Heuristic",
-            "feature": "mixed-reality-game-to-map-customer-experiences",
-            "intro": [
-                "How I designed a product through utilising key teacher values in relation to education technology, and how used a mixed reality game to map their experiences. "
-            ]
-        },
-        {
             "title": "A Designer Portfolio For All",
             "summary": "UX/UI Design, Inclusive Design, Front-End Development",
             "url": "portfolio-for-all",
@@ -33,6 +22,17 @@
             "intro": [
                 "The consequence of being a designer is that you're only ever as good as your last portfolio.",
                 "Documenting the journey to creating an inclusive design experience."
+            ]
+        },
+        {
+            "title": "Using A Mixed Reality Game To Map Customer Experiences",
+            "summary": "User Research, Persona Development, Experience Design",
+            "url": "mixed-reality-game-to-map-customer-experiences",
+            "id": "4",
+            "image": "Heuristic",
+            "feature": "mixed-reality-game-to-map-customer-experiences",
+            "intro": [
+                "How I designed a product through utilising key teacher values in relation to education technology, and how used a mixed reality game to map their experiences. "
             ]
         },
         {
