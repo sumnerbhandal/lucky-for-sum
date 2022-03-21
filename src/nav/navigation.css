@@ -92,9 +92,9 @@ nav {
   background: var(--happy-mustard);
   color: var(--happy-mustard-text);
 }
-/* .masthead a:hover, ul li a:hover {
+.masthead a:hover, ul li a:hover {
   text-decoration: underline;
-} */
+}
 
 /* Burger Menu */
 #burger-button {

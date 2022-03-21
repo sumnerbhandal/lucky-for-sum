@@ -333,6 +333,10 @@ body.dark .homepage .project-preview-container:nth-child(even) .image-right p.in
 
 .aboutMe .column {
     width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
 }
 
 .aboutMe h3 {
