@@ -28,33 +28,11 @@
             "title": "Using A Mixed Reality Game To Map Customer Experiences",
             "summary": "User Research, Persona Development, Experience Design",
             "url": "mixed-reality-game-to-map-customer-experiences",
-            "id": "4",
+            "id": "2",
             "image": "Heuristic",
             "feature": "mixed-reality-game-to-map-customer-experiences",
             "intro": [
                 "How I designed a product through utilising key teacher values in relation to education technology, and how used a mixed reality game to map their experiences. "
-            ]
-        },
-        {
-            "title": "Website Redesign Using Heuristics",
-            "summary": "Heuristic Evaluation, Web Design, Marketing Support",
-            "url": "web-redesign-heuristics",
-            "id": "2",
-            "image": "Heuristic",
-            "feature": "web-redesign-heuristics",
-            "intro": [
-                "Improving user experience, raising product awareness, and increasing website incoming leads."
-            ]
-        },
-        {
-            "title": "Ligamend - ACL Injury Support Community",
-            "summary": "Branding, Illustration, UI Design",
-            "url": "ligamend",
-            "id": "3",
-            "image":"Ligamend",
-            "feature": "Ligamend-Feature",
-            "intro": [
-                "Building a support community set up to aid the rehabilitation of people who have suffered an anterior cruciate ligament (ACL) injury."
             ]
         }
     ]
