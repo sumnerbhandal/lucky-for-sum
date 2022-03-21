@@ -39,6 +39,9 @@ nav {
 .masthead.hovered a.logo-image {
   transform: scale(1.2);
 }
+.masthead.hovered a {
+  color: var(--white)
+}
 .masthead a.logo-image img {
   height: 110%;
   width: 110%;
@@ -89,9 +92,9 @@ nav {
   background: var(--happy-mustard);
   color: var(--happy-mustard-text);
 }
-.masthead a:hover, ul li a:hover {
+/* .masthead a:hover, ul li a:hover {
   text-decoration: underline;
-}
+} */
 
 /* Burger Menu */
 #burger-button {
@@ -108,6 +111,17 @@ nav {
   align-items: center;
   justify-content: flex-start;
 }
+
+.masthead.hovered #burger-button {
+  border: 0.125rem solid var(--white);
+}
+.masthead.hovered #burger-button span {
+  background: var(--white);
+}
+.masthead.hovered #burger-button p {
+  color: var(--white);
+}
+
 #burger-button:hover {
   background: var(--happy-mustard);
 }
@@ -191,10 +205,10 @@ nav {
   content: "";
   position: absolute;
   left: -0.5rem;
-  top: -0.25rem;
+  top: 2rem;
   background: var(--happy-mustard);
   width: calc(100% + 1rem);
-  height: 2.5rem;
+  height: 0.125rem;
   z-index: -1;
   opacity: 1;
 }

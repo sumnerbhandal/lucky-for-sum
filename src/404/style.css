@@ -1,0 +1,52 @@
+
+
+.error-messaging {
+    max-width: 40rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 1rem auto;
+}
+
+.error-messaging .text-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 0.5rem;
+}
+
+.error-messaging .text-container p {
+    text-align: center;
+}
+
+.image-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.image-container img {
+    width: 16rem;
+    height: 16rem;
+    transform: rotate(-90deg) translateX(-1rem);
+    animation-name: wobble;
+    animation-duration: 0.75s;
+    animation-iteration-count: 1;
+    animation-direction: alternate; 
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+
+@keyframes wobble {
+    0%   { 
+        transform: rotate(-60deg) translateX(-1rem);
+    }
+    50% { 
+  
+        transform: rotate(-110deg) translateX(-1rem);
+    }
+    100% { 
+  
+        transform: rotate(-90deg) translateX(-1rem);
+    }
+}

@@ -9,6 +9,7 @@ const ThemeToggle = lazy(() => import('./dark-light-toggle'));
 const Project = lazy(() => import('./project/project'));
 const HomePage = lazy(() => import('./home/home'));
 const ReadingProgress = lazy(() => import('./read-progress'));
+const Error = lazy(() => import('./404/index'));
 
 const App = () => {
 
@@ -67,20 +68,15 @@ const App = () => {
 
               </div>
             }/>
-          <Route path="*" element={<NotFound />} />
+             <Suspense fallback={<div></div>}>
+                <Route path="*" element={<Error />} />
+            </Suspense>
         </Routes>
       </main>
   </Router>
   );
 }
 
-const NotFound = () => {
-  return (
-    <div className="section">
-      <h1>Error 404 - Page Not Found</h1>
-    </div>
-  )
-}
 
 
 export default App;

@@ -372,10 +372,9 @@ body.dark .project-preview-thumbnail.header {
         transform: translateY(0);
         opacity: 1; 
     }
-  }
+}
 
-
-  @keyframes imageTransition {
+@keyframes imageTransition {
     0% {
     transform: rotate(0deg);
     }
