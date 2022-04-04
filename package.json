@@ -9,6 +9,7 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
+    "ansi-regex": "^6.0.1",
     "axios": "^0.21.4",
     "emailjs-com": "^2.6.3",
     "history": "^5.0.0",
@@ -21,15 +22,13 @@
     "react-lazy-load": "^3.1.13",
     "react-router-dom": "^6.0.0-beta.0",
     "react-router-hash-link": "^2.4.0",
-    "react-scripts": "^3.4.3",
-    "react-snap": "^1.23.0"
+    "react-scripts": "^3.4.3"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "postbuild": "react-snap"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": "react-app"
