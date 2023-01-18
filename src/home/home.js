@@ -19,7 +19,7 @@ const footerStyle = {
 }
 
 const numberOfProjects = [
-    "1", "2", "3"
+    "1", "2", "3", "4"
 ]
 const HPTemplate = () => {
     return (
@@ -111,9 +111,6 @@ const HomePage = (props) => {
                 <meta name="description" content="The digital portfolio of Sumner Bhandal. Senior User Interface Designer with a fondness for front-end development and inclusive design." />  
                 <meta name="keywords" content="portfolio,UX,user experience,UI,user interface,product design, designer, digital design,online,digital, support, community, injury, snippets, acl, support community, acl injury, design snippets"/>
             </Helmet>
-            <div id="introSection" className="introSection hp-section section">
-                <HeroVideo pressEnter={pressEnter} videoButton={videoButton} videoPlaying={videoPlaying} />
-            </div>
             <div id="about" className="introSection hp-section section">
                 <About />
             </div>
@@ -125,7 +122,7 @@ const HomePage = (props) => {
                             <div className={`project-preview `}>
                                 <Link to={`/project/${item.url}-pid-${item.id}`} className="project-preview-thumbnail" id={item.id} title={item.url} onClick={projectImageOpen}  tabIndex="0">
                                     <Suspense fallback={<div></div>}>
-                                         {index === 0 ? <Portfolio /> : index === 1 ? <EnrichedSearch />: index === 2 ? <Reality/> : index === 3 ? <Heuristic /> : <Ligamend /> }
+                                         {index === 0 ? <Heuristic /> : index === 1 ? <Portfolio />: index === 2 ?  <EnrichedSearch />: index === 3 ? <Reality/> : <Ligamend /> }
                                     </Suspense>
                                 </Link>
                                 <h2>
@@ -147,6 +144,9 @@ const HomePage = (props) => {
                     ))
                 )
             }
+              <div id="introSection" className="introSection hp-section section">
+                <HeroVideo pressEnter={pressEnter} videoButton={videoButton} videoPlaying={videoPlaying} />
+            </div>
             <div style={footerStyle} className="hp-section">
                 <Footer />
             </div>

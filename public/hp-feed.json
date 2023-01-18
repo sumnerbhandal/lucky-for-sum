@@ -1,10 +1,22 @@
 { "homePageProjects": 
     [
         {
+            "title": "Making Contracts Simple with Robin AI",
+            "summary": "User Research, End-To-End Product Design, Design Leadership",
+            "url": "robin-ai",
+            "id": "0",
+            "image": "Heuristic",
+            "feature": "Autocomplete-Feature",
+            "intro": [
+                "Legal services are expensive, and legal administration is a cumbersome and time-consuming process.",
+                "Robin AI are looking to reinvent how we look at those problems and disrupt a multi-billion dollar industry."
+            ]
+        },
+        {
             "title": "Replatforming A Leading British Retailer",
             "summary": "Architecture, Accessibility, UX/UI Design, Front-End Development",
             "url": "total-platform",
-            "id": "0",
+            "id": "1",
             "image": "EnrichedSearch",
             "feature": "Autocomplete-Feature",
             "intro": [
@@ -16,7 +28,7 @@
             "title": "A Designer Portfolio For All",
             "summary": "UX/UI Design, Inclusive Design, Front-End Development",
             "url": "portfolio-for-all",
-            "id": "1",
+            "id": "2",
             "image": "Portfolio",
             "feature": "Portfolio-Feature",
             "intro": [
@@ -25,14 +37,15 @@
             ]
         },
         {
-            "title": "Using A Mixed Reality Game To Map Customer Experiences",
-            "summary": "User Research, Persona Development, Experience Design",
-            "url": "mixed-reality-game-to-map-customer-experiences",
-            "id": "2",
+            "title": "Keeping Children Safe Online",
+            "summary": "User Research, Persona Development, Experience Design, Marketing",
+            "url": "online-safety",
+            "id": "3",
             "image": "Heuristic",
-            "feature": "mixed-reality-game-to-map-customer-experiences",
+            "feature": "Keeping Children Safe Online",
             "intro": [
-                "How I designed a product through utilising key teacher values in relation to education technology, and how used a mixed reality game to map their experiences. "
+                "Children should never be safer than when they are in school.",
+                "Here’s how I was able to play my part in helping achieve that."
             ]
         }
     ]

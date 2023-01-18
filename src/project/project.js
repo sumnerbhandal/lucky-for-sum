@@ -55,6 +55,8 @@ const Project = (props) => {
     const SEODescription = projectsShown[0].SEODescription;
     const SEOKeywords = projectsShown[0].keywords
 
+    // project data pulls from project-feed.js
+
     return (
         <div ref={props.target}>
             <Helmet>

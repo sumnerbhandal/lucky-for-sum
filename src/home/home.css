@@ -83,14 +83,14 @@ img.play-button {
     height: auto;
 }
 
-.homepage .project-preview-container:nth-child(odd) {
+.homepage .project-preview-container:nth-child(even) {
     background: var(--white);
 }
 
-.homepage .project-preview-container:nth-child(even) .project-preview-thumbnail {
+.homepage .project-preview-container:nth-child(odd) .project-preview-thumbnail {
     background: var(--white);
 }
-.homepage .project-preview-container:nth-child(even) {
+.homepage .project-preview-container:nth-child(odd) {
     background: var(--off-white);
 }
 
@@ -196,7 +196,7 @@ img.play-button {
 .image-right p.intro {
     color: var(--happy-mustard-text);
 }
-body.dark .homepage .project-preview-container:nth-child(even) .image-right p.intro {
+body.dark .homepage .project-preview-container:nth-child(odd) .image-right p.intro {
     color: var(--deep-purple);
 }
 
@@ -240,20 +240,20 @@ body.dark .homepage .project-preview-container:nth-child(even) .image-right p.in
         transition: transform 1.5s ease, box-shadow 1s ease;
     }
 
-    .project-preview-container:nth-child(odd) .image-right {
+    .project-preview-container:nth-child(even) .image-right {
         background: var(--happy-mustard);
         box-shadow: 0 0px 0px 0px var(--happy-mustard);
     }
 
-    .project-preview-container:nth-child(even) .image-right p {
+    .project-preview-container:nth-child(odd) .image-right p {
         color: var(--happy-mustard-text);
     }
 
-    .project-preview-container:nth-child(even) .image-right.before {
+    .project-preview-container:nth-child(odd) .image-right.before {
         box-shadow: -12rem 0px 0px 0px var(--happy-mustard);
     }
 
-    .project-preview-container:nth-child(odd) .image-right.before {
+    .project-preview-container:nth-child(even) .image-right.before {
         box-shadow: -12rem 0px 0px 0px var(--white);
     }
 
@@ -282,10 +282,10 @@ body.dark .homepage .project-preview-container:nth-child(even) .image-right p.in
     }
     
 
-    body.dark .project-preview-container:nth-child(odd) .project-preview:hover .project-preview-thumbnail {
+    body.dark .project-preview-container:nth-child(even) .project-preview:hover .project-preview-thumbnail {
         background: var(--white);
     }
-    body.dark .project-preview-container:nth-child(even) .project-preview:hover .project-preview-thumbnail {
+    body.dark .project-preview-container:nth-child(odd) .project-preview:hover .project-preview-thumbnail {
         background: var(--off-white);
     }
 }

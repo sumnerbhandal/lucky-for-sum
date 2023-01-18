@@ -3,6 +3,229 @@ import React from 'react';
 
 const ProjectPageFeed = [
     {
+        "title": "Making Contracts Simple with Robin AI",
+        "SEOTitle": "Making Contracts Simple with Robin AI",
+        "SEODescription": "Legal services are expensive, and legal administration is a cumbersome and time-consuming process. Robin AI are looking to reinvent how we look at those problems and disrupt a mutlibillion dollar industry.",
+        "keywords": "",
+        "path": "robin-ai/",
+        "headerImage":  <Heuristic />,
+        "headerAlt": "Making Contracts Simple",
+        "intro": [
+            "Legal services are expensive, and legal administration is a cumbersome and time-consuming process.",
+            "Robin AI are looking to reinvent how we look at those problems and disrupt a multi-billion dollar industry."
+        ],
+        "url": "total-platform",
+        "id": "0",
+        "background" : [
+            {
+                "h2": "Who Are Robin AI?",
+                "subsection": [
+                    {
+                        "copy": [
+                            "Robin AI are a legal tech company that helps companies, scale-ups and funds manage their most painful contracts with their unique contract management service, which combines software, machine learning and world-class legal professionals.",
+                            "They have identified that a huge amount of money and far too much time are spent drafting, editing and reviewing contracts and are on a mission to 'make contracts simple'."
+                        ], 
+                    }
+                ],
+                "responsibilities": [
+                    {
+                        "h3": "Responsibilities",
+                        "skills": [
+                            "Creating deliverable-driven design methodologies",
+                            "Coaching and leading the Product Design team",
+                            "Designing and maintaining a holistic vision and strategy across several products",
+                            "Championing data-driven decision making, grounded in experimentation, evidence and user interaction"
+                        ]
+                    }
+                ]
+                // "featuredImage": {
+                //     "image": "placeholder-shallow.png",
+                //     "alt": "Placeholder"
+                // }
+          }
+        ],
+        "article" : [
+            {
+                "h2": "The Scope Of The Challenge",
+                "subsection": [
+                    {
+                        "copy": [
+                            "As one of the first hires at the company and the sole designer, it was my responsibility to:"
+                        ],
+                        "bullet": [
+                            "Work with the founders to translate hypotheses into product and research goals",
+                            "Identify areas of disruption through user interviews and workshops",
+                            "Design, test and execute products that would look to solve user needs",
+                            "Clearly and effectively communicate those insights and visions to internal and external stakeholders",
+                            "Position Robin AI as product leaders in their sector"
+                        ],
+                        // "subsectionImage" : {
+                        //     "image": "placeholder.png",
+                        //     "alt": "Placeholder"
+                        // }
+                    }
+                ]
+            },
+            {
+                "h2": "Laying The Foundations",
+                "subsection": [
+                    {
+                        "h3": "Leaning on the experts",
+                        "copy": [
+                            "It’s easy to fall into the trap of personal bias when designing products, but one way to mitigate that risk is by entering an industry in which you have very little knowledge. This made research and understanding the forefront of the design process and allowed us to firmly focus on the user in user-centred design.",
+                            "Robin AI comprises SaaS and a Contract Review Service by legally trained individuals. This in-house expertise provided a solid basis for workshops and gaining an understanding of the problems faced by legal professionals.",
+                            "Due to the complex nature of contract reviewing, we determined that we needed to create a database of interview candidates with their responsibilities and experience noted. By continually iterating on this process we were able to start cherry-picking the right candidates to interview and subsequently add more value to our research results."
+                        ],
+                        "subsectionImage" : {
+                            "image": "experts.png",
+                            "alt": "Placeholder"
+                        }
+                    },
+                    {
+                        "h3": "Working with Engineering",
+                        "copy": [
+                            "Before my arrival, an internal tool was created using a freelance designer. I spent time with the engineering team to understand what they enjoyed about the process, what they wish had gone better and together proposed a new way of working that would work more effectively for both teams.",
+                            "This process allowed us to have complete transparency over what stages projects were at and when we were blocking each other. It also allowed us to loop them in earlier in the design process by giving them access to research, demos and presentations that were being proposed to the rest of the business."
+                        ],
+                        "subsectionImage" : {
+                            "image": "shortcut.png",
+                            "alt": "Example of shortcut and presentation"
+                        }
+                    },
+                    {
+                        "h3": "Design systems",
+                        "copy": [
+                            "Creating a new product from scratch meant that we had a blank canvas to do everything to meet best practices. What that meant for me was to effectively communicate to the business the value of scalable design libraries and systems.",
+                            "The pitch focused on where we wanted to be in a year from now, and the importance of setting standards that are competing with giants of their industry. We had one advantage, we would move fast. This teamed with the promise that we could build the next products off the back of the UI from the first and that we could generate high-fidelity prototypes at rapid speeds was enough to win them over.",
+                            "With that in mind, I redesigned the MVP of the product using atomic components and worked alongside a front-end contractor. The design section was built using Figma’s library functionality and we landed on building the front-end using Storybook as our approval platform."
+                        ],
+                        "subsectionImage" : {
+                            "image": "library-structure.png",
+                            "alt": "Library creation segments"
+                        }
+                    }
+                ]
+            },
+            {
+                "h2": "Tackling Difficult Problems",
+                "subsection": [
+                    {
+                        "h3": "Facilitating discussion",
+                        "copy": [
+                            "It didn’t take me long to realise that Lawyers enjoy a healthy ‘discussion’. Knowing that, I set about creating a workshop to better understand where the default tool of choice was excelling and where it was lacking.",
+                            "It was set up in the format of a debate whereby two teams would be advocates of Microsoft Word and how they couldn’t live without it and the other team provided criticism of its failings.",                             
+                            "Once the feedback was collated from that discussion and there was fair discourse about what their needs were, it paved the way to get each person to write down the things that would make their lives easier in their current workflow.",
+                            "The results were subsequently consolidated and discussed. Between the two data collection tasks, we had what they can’t live without, what they want improving and things that they would like help with in the future."
+                        ],
+                        "subsectionImage" : {
+                            "image": "discussion.png",
+                            "alt": "A table with people having a discussion"
+                        }
+                    },
+                    {
+                        "h3": "Problems not features",
+                        "copy": [
+                            "We all have things we want in life, but rarely does that align with what we need. It is my job to reframe what might be perceived as a want and understand where the problem sits in the wider context of things.",
+                            "To better understand those situations, I would organise time on a 1-1 basis with lawyers and talk through what their process is to build up a user journey map. This allowed us to learn insights along that journey, identify pain points and ultimately uncover opportunities that we hadn’t thought of up until that point.",
+                             "These tasks would then be repeated across a targeted selection of Lawyers and eventually, patterns would begin to unfold. By investing time this early in the process, it creates a solid foundation for the rest of the design process."
+                        ],
+                        "subsectionImage" : {
+                            "image": "user-journey-map.png",
+                            "alt": "An image for a user journey map"
+                        }
+                    }
+                ]
+            },
+            {
+                "h2": "Creating Processes",
+                "subsection": [
+                    {
+                        "h3": "How to replicate the success",
+                        "copy": [
+                            "Creating a successful model when you have a small, well-organised team is within your own control, but when you want to grow the team and maintain those standards, you have to start documenting the things that come naturally to you.",
+                            "This is what inspired the birth of the ‘Design Methodology’. Our design methodology is an ever-evolving approach to design problems that we face as a company."
+                        ],
+                        "bullet": [
+                            "We begin by gaining a thorough understanding of what the problem is so that we can appropriately qualify the urgency and necessity of a task.",
+                            "We then look to define and focus our effort through evaluating the previously conducted research. This is done by defining specific contexts and desired outcomes of potential solutions.",
+                            "The third phase is about generating a broad range of ideas quickly while meeting the aforementioned happy path.",
+                            "The next steps are to turn those initial ideas into something that reflects the look and feel of the product so that we can use it as a platform to prototype and test.",
+                            "Prototypes are a great way of thinking about the individual steps of user interaction. This also provides the foundation for the usability testing to follow.",
+                            "Before handing across designs to the engineering team, it’s important to validate the concepts with the people who will be using the product and we can do that through usability testing.",
+                            "Once we have poured through the results of the testing we can make any appropriate changes, test again if necessary, and then complete a checklist to ensure that the engineering team have everything they need to get started."
+                        ],
+                        "subsectionImage" : {
+                            "image": "methodology-2.png",
+                            "alt": "Screenshots from the methodology"
+                        }
+                    },
+                    {
+                        "h3": "Sharing insights",
+                        "copy": [
+                            "Part of the methodology includes regularly sharing insights and knowledge with the rest of the team. Operating transparently gives the organisation the opportunity to be informed and also have the chance to critique decisions. Some of our best features have come from being challenged and rising to that challenge.",
+                            "Equally as important is how we work with Engineering and the rest of Product. We have created templates in our Notion workspace that ensure that each phase of the methodology is written out in a way that is easy for the company to read and is linked to the rest of the resources used in the designs."
+                        ],
+                        "subsectionImage" : {
+                            "image": "sharing-insights.png",
+                            "alt": "Examples of different insights"
+                        }
+                    },
+                    {
+                        "h3": "Communicating designs",
+                        "copy": [
+                            "We then look to take things one step further and have created processes within our Figma designs that contain ‘narration cards’. Narration cards are explainers of what is happening along the journey. It is broken down into general notes, notes for Product Managers, notes for Engineers and also things that we want to track. This has been particularly helpful for the front-end team as they work through the design journeys to understand what is happening and the expected interactions and feedback.",
+                           "One of the most recent initiatives is a big push on documentation. Designers haven’t traditionally been known for their documentation, but that might be down to how we determine what documentation is. Design documentation at Robin is a form of sense-checking the components that are being used, testing accessibility, creating cheat sheet copy and paste components and even explaining how to use the components themselves."
+                        ],
+                        "subsectionImage" : {
+                            "image": "documentation.png",
+                            "alt": "Examples of documentation"
+                        }
+                    }
+                ]
+            },
+            {
+                "h2": "Scaling the team",
+                "subsection": [
+                    {
+                        "h3": "Growing responsibilities",
+                        "copy": [
+                            "As the number of products scales, so does the amount of work. We made the decision to put together a short-term recruitment plan to increase the headcount of the team to support another product with the view to scaling drastically post-fundraising.",
+                            "The introduction of the new designer allowed me my first formal managerial role, but also allowed us to test the scalability of our design methodology. Throughout my time managing the team and the discipline I was able to:"
+                        ],
+                        "bullet": [
+                            "Create a Product Design Skills ladder",
+                            "Formalise 1-1s",
+                            "Represent design to the other stakeholders in the business",
+                            "Ensure that product, design and engineering are working together effectively",
+                            "Create frameworks for members of the legal team to conduct and assist with research tasks"
+                        ],
+                        "subsectionImage" : {
+                            "image": "growing-team.png",
+                            "alt": "Illustration of a person planning"
+                        }
+                    }
+                ]
+            },
+            {
+                "h2": "Ambitions",
+                "subsection": [
+
+                    {
+                        // "h3": "Growth",
+                        "copy": [
+                            "Robin AI wants to be the leading legal tech company. To make that happen we are embarking on a period of sustained growth to support and improve the suite of products, while finding new and interesting ways to ‘make contracts simple’.",
+                            "My aim is to support those ambitions through continuing to push the importance of research and design in business, while attempting to make Robin a design destination."
+                        ]
+                        // "subsectionImage" : {
+                        //     "image": "placeholder.png",
+                        //     "alt": "Placeholder"
+                        // }
+                    }
+                ]
+            }
+        ]
+    },
+    {
         "title": "Replatforming A Leading British Retailer",
         "SEOTitle": "Replatforming A Leading British Retailer",
         "SEODescription": "How Next designed and built their Total Platform Service",
@@ -15,7 +238,7 @@ const ProjectPageFeed = [
             "Here's how Next look to revolutionise their online service through creating a progressive platform for themselves and their partners to thrive."
         ],
         "url": "total-platform",
-        "id": "0",
+        "id": "1",
         "background" : [
             {
                 "h2": "What Is Next Total Platform?",
@@ -71,16 +294,6 @@ const ProjectPageFeed = [
             {
                 "h2": "Why The UX Team Pushed To Be Part Of The Process",
                 "subsection": [
-                    // {
-                    //     "copy": [
-                    //         "This project started off as a technology first overhaul with the remit of doing what the website does today with improvements to the accessibility criteria.",
-                    //         "Sadly, this meant that we weren't involved from its infancy, but when we were brought in, it became very clear that there was a great opportunity to improve the current experience brick by brick."
-                    //     ],
-                    //     "subsectionImage" : {
-                    //         "image": "",
-                    //         "alt": ""
-                    //     }
-                    // },
                     {
                         "h3": "To understand areas of difficulty",
                         "blockQuote": "There is a link for ‘Victoria’s Secret’ on the home page which I cannot reach using the tab key, I would require help to use the mouse to select the link.",
@@ -134,16 +347,6 @@ const ProjectPageFeed = [
             {
                 "h2": "How I Played My Part",
                 "subsection": [
-                    // {
-                    //     "copy": [
-                    //         "It absolutely goes without saying, that this project would not have got anywhere near this far without the tremendous work and effort of some exceptional team mates. A special shout out to Colin Griffin our Business Analyst who has been nothing short of sensational.",
-                    //         "Personally, I feel that I have put my heart and soul into this project and am really proud of what we're looking to do as a company. Here are some examples of where I spent my time during it."
-                    //     ],
-                    //     "subsectionImage" : {
-                    //         "image": "",
-                    //         "alt": ""
-                    //     }
-                    // },
                     {
                         "h3": "Redesigning a 20 year old adaptive site",
                         "copy": [
@@ -295,7 +498,7 @@ const ProjectPageFeed = [
           "Documenting the journey to creating an inclusive design experience."
       ],
       "url": "portfolio-for-all",
-      "id": "1",
+      "id": "2",
       "background" : [
           {
             "h2": "Background",
@@ -462,515 +665,28 @@ const ProjectPageFeed = [
             },
         ]
     },
-    // {
-    //     "title": "Website Redesign Using Heuristics",
-    //     "SEOTitle": "How To Improve User Experience Using Heuristics",
-    //     "SEODescription": "Improving user experience, raising product awareness, and increasing website incoming leads.",
-    //     "keywords": "user experience, heuristics, KPIs, complete an evaluation, varying illustration styles, aesthetic, recognition, flexibility, user control, scoping, journey mapping, building an interactive prototype, webflow, tone and terminology",
-    //     "path": "heuristics/",
-    //     "headerImage":  <Heuristic />,
-    //     "headerAlt": "Portfolio for all header image",
-    //     "intro": [
-    //         "Improving user experience, raising product awareness, and increasing website incoming leads."
-    //     ],
-    //     "url": "web-redesign-heuristics",
-    //     "id": "2",
-    //     "background" : [
-    //         {
-    //             "h2": "Background",
-    //             "subsection": [
-    //                 {
-    //                     "copy": [
-    //                         "As business requirements and KPIs change, it means a shift in the way that services are marketed. A key factor in educating customers is through the website, so as part of this refocus, I took the opportunity to redesign it based off a review using a heuristic approach.",
-    //                     ], 
-    //                 }
-    //             ],
-    //             "responsibilities": [
-    //                 {
-    //                     "h3": "Responsibilities",
-    //                     "skills": [
-    //                         "Conducting an heuristic evaluation of the existing website",
-    //                         "Using that to inform a new website design",
-    //                         "Working with an agency to integrate new ways of supporting incoming leads through the website"
-    //                     ]
-    //                 }
-    //             ],
-    //             "featuredImage": {
-    //                 "image": "header.jpg",
-    //                 "alt": "Header image"
-    //             }
-    //       }
-    //     ],
-    //     "article" : [
-    //         {
-    //             "h2": "Evaluation of Existing Website",
-    //             "subsection": [
-    //                 {
-    //                     "copy": [
-    //                         "What I set about doing first was to complete an evaluation of the old website. This consisted of selecting five relevant heuristic techniques from Nielsen and Molich’s user interface design guidelines.",
-    //                     ],
-    //                     "subsectionImage" : {
-    //                         "image": "",
-    //                         "alt": ""
-    //                     }
-    //                 },
-    //                 {
-    //                     "h3": "Consistency and standards",
-    //                     "bullet": [
-    //                         "Two different colour call to actions, confusing as to what action will be completed",
-    //                         "High reliance on stock imagery, not consistent",
-    //                         "Varying illustration styles",
-    //                         "Some references made in copy are inconsistent with new terminology",
-    //                         "Partner logos used in white, not necessarily in line with their brand guidelines"
-    //                     ],
-    //                     "subsectionImage" : {
-    //                         "image": "consistency-old.png",
-    //                         "alt": "Consistency and standards example"
-    //                     }
-    //                 },
-    //                 {
-    //                     "h3": "Recognition rather than recall",
-    //                     "bullet": [
-    //                         "Very copy heavy, can be perceived as intimidating to users",
-    //                         "While reading the page, there are several links away from the page that are more visually appealing, but actually have little to do with the task at hand - it makes it difficult to stay on task",
-    //                         "Natural process is to progress down the page, and at that point, you lose sight of the call to action buttons and can forget what the options are"
-    //                     ],
-    //                     "subsectionImage" : {
-    //                         "image": "recognition-old.png",
-    //                         "alt": "Recognition rather than recall example"
-    //                     }
-    //                 },
-    //                 {
-    //                     "h3": "Aesthetic and minimalist design",
-    //                     "bullet": [
-    //                         "Very feature heavy page within a limited space",
-    //                         "Layout of copy is very intimidating",
-    //                         "Despite having light colour tones throughout, it is primarily a grey design, which dominates attention and leads away from the information on the page"
-    //                     ],
-    //                     "subsectionImage" : {
-    //                         "image": "aesthetic-old.png",
-    //                         "alt": "Aesthetic and minimalist design example"
-    //                     }
-    //                 },
-    //                 {
-    //                     "h3": "Flexibility and efficiency of use",
-    //                     "bullet": [
-    //                         "Difficult to quickly access the featured product page",
-    //                         "Once on one form page, it is difficult to navigate away from or choose another product",
-    //                         "Call to action is prominent, useful for linear approach"
-    //                     ],
-    //                     "subsectionImage" : {
-    //                         "image": "flexibility-old.png",
-    //                         "alt": "Flexibility and efficiency of use example"
-    //                     }
-    //                 },
-    //                 {
-    //                     "h3": "User control and freedom",
-    //                     "bullet": [
-    //                         "Linear approach, good for getting to forms, but not adaptable for multiple products",
-    //                         "Self generated exploration isn't encouraged"
-    //                     ],
-    //                     "subsectionImage" : {
-    //                         "image": "user-control-old.png",
-    //                         "alt": "User control example"
-    //                     }
-    //                 },
-    //             ]
-    //         },
-    //         {
-    //             "h2": "Scoping",
-    //             "subsection": [
-    //                 {
-    //                     "copy": [
-    //                         "Having identified the necessary elements to focus on in the improvement of the end user, it was also necessary to work out what was needed to make the process easier to maintain from a marketing and content perspective. It was agreed that we would have a multiple site website and have the functionality to create a country should the need arise.",
-    //                     ],
-    //                     "subsectionImage" : {
-    //                         "image": "scoping.png",
-    //                         "alt": "Scoping preview"
-    //                     }
-    //                 },
-    //                 {
-    //                     "h3": "Required business objectives",
-    //                     "bullet": [
-    //                         "Ability to create new country specific websites",
-    //                         "Full form customisability with certain ones pushing information into the CRM",
-    //                         "Visual overhaul of website",
-    //                         "Improved user experience",
-    //                         "Be built with expansion in mind"
-    //                     ],
-    //                     "subsectionImage" : {
-    //                         "image": "",
-    //                         "alt": ""
-    //                     }
-    //                 },
-    //             ]
-    //         },
-    //         {
-    //             "h2": "Journey Mapping",
-    //             "subsection": [
-    //                 {
-    //                     "copy": [
-    //                         "With the scoping documents agreed and necessities outlined, I set about working out how to visually represent each page in a way that would allow the user to be best informed and support their goals. This included several internal meetings and visits to the web development agency to determine what is possible and suggested best practices that serve our purpose best. In order to ensure that I addressed all the problematic areas that I discovered when conducting my initial heuristic evaluation, I conducted another when I reached the high fidelity mockup phase."
-    //                     ],
-    //                     "subsectionImage" : {
-    //                         "image": "journey-mapping.jpg",
-    //                         "alt": "Journey mapping"
-    //                     }
-    //                 }
-    //             ]
-    //         },
-    //         {
-    //             "h2": "Design and Re-evaluation",
-    //             "subsection": [
-    //                 {
-    //                     "h3": "Consistency and standards",
-    //                     "copy": [
-    //                         "My main aim from a visual standpoint was to create a consistent method of implementing visuals throughout the website. This included an overhaul to our call to actions, which are now located on almost every page to drive users towards their goals and an image audit to ensure that software features are represented consistently. Likewise, the marketing manager went through an audit of the content to ensure that the tone and terminology was consistent too."
-    //                     ],
-    //                     "subsectionImage" : {
-    //                         "image": "consistency-new.png",
-    //                         "alt": "Consistency and standards example"
-    //                     }
-    //                 },
-    //                 {
-    //                     "h3": "Recognition rather than recall",
-    //                     "copy": [
-    //                         "This is to do with minimising the cognitive load. Human attention is limited, and we are only capable of maintaining around five items in our short-term memory at one time. By employing visual representations of product features, it allows the users to recognise features without having to read through the descriptions and recall what they are. This is mirrored again in our literature."
-    //                     ],
-    //                     "subsectionImage" : {
-    //                         "image": "recognition-new.png",
-    //                         "alt": "Recognition rather than recall example"
-    //                     }
-    //                 },
-    //                 {
-    //                     "h3": "Aesthetic and minimalist design",
-    //                     "copy": [
-    //                         "The website needed an aesthetic refresh, so I prioritised switching the heavy blocks of content for a lighter, cleaner design with substantial white space allowing the users to focus on the elements that matter without losing content."
-    //                     ],
-    //                     "subsectionImage" : {
-    //                         "image": "aesthetic-new.png",
-    //                         "alt": "Aesthetic and minimalist design example"
-    //                     }
-    //                 },
-    //                 {
-    //                     "h3": "Flexibility and efficiency of use",
-    //                     "copy": [
-    //                         "The primary business aim of the website is to educate and on-board new customers. A secondary aim is to encourage existing customers to invest in new products. Users who are unfamiliar with the product and company are presented with an overview of what the company does and can explore this through the home page.",
-    //                         "Users who visit the website and are already familiar with what we do are able to accomplish the actions they want by immediately booking a trial by clicking on the main call to action button."
-    //                     ],
-    //                     "subsectionImage" : {
-    //                         "image": "flexibility-new.png",
-    //                         "alt": "Flexibility and efficiency of use example"
-    //                     }
-    //                 },
-    //                 {
-    //                     "h3": "User control and freedom",
-    //                     "copy": [
-    //                         "It is the nature of websites that employ multi-page design that you can navigate back and forth, however it doesn’t always allow you contextual clues as to where you are. A big focus I made was to include a header, so that you know what section of the website you are on, as well as having a clearly identifiable breadcrumb trail so you can see where the feature you are on fits into the product you want as well as working your way backwards."
-    //                     ],
-    //                     "subsectionImage" : {
-    //                         "image": "hi-fidelity.png",
-    //                         "alt": "New website"
-    //                     }
-    //                 }
-    //             ]
-    //         },
-    //         {
-    //             "h2": "Building An Interactive Prototype",
-    //             "subsection": [
-    //                 {
-    //                     "copy": [
-    //                         "While wireframing and getting an idea of how the website should look, it is often easy to overlook features and functionality that could cause problems. So I decided to take it upon myself to build a working interactive prototype of my website design in order to give it some context and to bring it to life.",
-    //                         "Using the website building software Webflow, I was able to replicate my developed wireframes and also explore additional functionality that I hadn't even considered introducing."
-    //                     ],
-    //                     "subsectionImage" : {
-    //                         "image": "webflow.jpg",
-    //                         "alt": "Webflow interactive build"
-    //                     }
-    //                 }
-    //             ]
-    //         },
-    //         {
-    //             "h2": "Final Website Designs",
-    //             "subsection": [
-    //                 {
-    //                     "h3": "Homepage",
-    //                     "copy": [
-    //                         "Having identified the necessary elements to focus on in the improvement of the end user, it was also necessary to work out what was needed to make the process easier to maintain from a marketing perspective. It was agreed that we would have a multiple site website and have the functionality to create a country should the need arise."
-    //                     ],
-    //                     "subsectionImage" : {
-    //                         "image": "homepage.jpg",
-    //                         "alt": "New homepage designs"
-    //                     }
-    //                 }
-    //             ]
-    //         },
-    //         {
-    //             "h2": "Roll Out of Website",
-    //             "subsection": [
-    //                 {
-    //                     "copy": [
-    //                         "With the website designs approved and with the templates built it came to the task of populating the sites. It has been decided that we would launch with 8 region and content specific websites, a task which fell to me and the marketing manager to complete. As each site has content relevant to it alone, it meant that bulk creation wasn't as simple as planned, we could implement imagery and general pages and broadcast them across the sites, but each page required proofing and tailoring as required.",
-    //                         "As a way of making all imagery consistent, I designed and implemented over 300 new images, most of which are in SVG form for maximum scalability as well as going back through the predated pages and posts and refreshing their visual style."
-    //                     ],
-    //                     "subsectionImage" : {
-    //                         "image": "rollout.png",
-    //                         "alt": "Site illustrations"
-    //                     }
-    //                 }
-    //             ]
-    //         },
-    //         {
-    //             "h2": "Improving Incoming Enquiries",
-    //             "subsection": [
-    //                 {
-    //                     "h3": "Versatile forms",
-    //                     "copy": [
-    //                         "Like many B2B companies, Impero uses it's website in order to generate leads. This is the culmination of marketing strategies and brand exposure. In order to capitalise on the ease of use with the new website, several new methods of obtaining such leads were implemented. These included the installation of gravity forms, an easy to manipulate form system that allows for forms to be created ad-hoc and to be added to pages when needed."
-    //                     ],
-    //                     "subsectionImage" : {
-    //                         "image": "forms.png",
-    //                         "alt": "Website forms"
-    //                     }
-    //                 },
-    //                 {
-    //                     "h3": "HTML newsletters",
-    //                     "copy": [
-    //                         "In line with the release of the new website, I worked to create variety of refreshed e-shot templates that would are used for all digital marketing. These templates adopted several kinetic techniques including inline CSS animation and a short animated header to make the newsletters more memorable. All of which were designed with fallbacks in place in case of the email client stripping out the kinetic elements. The template was built with expansion in mind, much like website in that as much content as necessary could be added."
-    //                     ],
-    //                     "subsectionImage" : {
-    //                         "image": "E-Newsletter.png",
-    //                         "alt": "HTML newsletter example"
-    //                     }
-    //                 }
-    //             ]
-    //         },
-    //     ]
-    // },
-    // {
-    //     "title": "Ligamend - ACL Injury Support Community",
-    //     "SEOTitle": "Ligamend - ACL Knee Injury Support Community",
-    //     "SEODescription": "Building a platform and community for those who have sufferered from an Anterior Cruciate Ligament injury.",
-    //     "keywords": "Ligamend, ACL, acl, Anterior Cruciate Ligament, sprain, knee ligaments, injury support group, support group, physio, physical therapy, recovery, knee rehabilitation, post-injury support",
-    //     "path": "ligamend/",
-    //     "headerImage": <Ligamend />,
-    //     "headerAlt": "Portfolio for all header image",
-    //     "intro": [
-    //         "Building a support community set up to aid the rehabilitation of people who have suffered an anterior cruciate ligament (ACL) injury."
-    //     ],
-    //     "url": "ligamend",
-    //     "id": "3",
-    //     "background" : [
-    //         {
-    //             "h2": "Background",
-    //             "subsection": [
-    //                 {
-    //                     "h3": "The Anterior Cruciate Ligament (ACL)",
-    //                     "copy": [
-    //                         "Like most active people, I enjoy keeping fit through playing sport, and I know sprains and strains are part of the package. However, sometimes it's more than a sprain, and it's at those serious moments that you need somewhere to turn for support, but more importantly hope.",
-    //                         "The ACL is one of four major ligaments in the knee, it serves to act as a stabiliser that prevents your knee from bending too far in any direction. The injury itself is commonly associated with sports that involve sudden stops and changes in direction, this can result in the ligament stretching or even tearing.",
-    //                         "The main course of action, for those who opt for it, is surgery followed by several months of physical therapy. It's safe to say that the whole process is draining both mentally and physically, and the long road to recovery can be very isolating."
-    //                     ]
-    //                 }
-    //             ],
-    //             "responsibilities": [
-    //                 {
-    //                     "h3": "Responsibilities",
-    //                     "skills": [
-    //                         "Branding",
-    //                         "Illustration",
-    //                         "UI Design"
-    //                     ]
-    //                 }
-    //             ],
-    //             "featuredImage": {
-    //                 "image": "header.jpg",
-    //                 "alt": "Header divider"
-    //             }
-    //       }
-    //     ],
-    //     "article" : [
-    //         {
-    //             "h2": "The Challenge",
-    //             "subsection": [
-    //                 {
-    //                     "h3": "Aims",
-    //                     "copy": [
-    //                         "My ambition with this project is to create a positive, supportive community that can offer informative resources and a support network for people who have suffered from an anterior cruciate ligament injury."
-    //                     ],
-    //                     "subsectionImage" : {
-    //                         "image": "knee-injury.jpg",
-    //                         "alt": "Knee injury recovery"
-    //                     }
-    //                 },
-    //                 {
-    //                     "h3": "Outcomes",
-    //                     "copy": [
-    //                         "The main outcome I hope to achieve is to inspire and empower those who have suffered from this injury and I believe the best medium to do so is by creating a brand that encourages people on their road to recovery."
-    //                     ],
-    //                     "subsectionImage" : {
-    //                         "image": "statement-of-intent.png",
-    //                         "alt": "Statement of intent"
-    //                     }
-    //                 }
-    //             ] 
-    //         },
-    //         {
-    //             "h2": "Inspiration",
-    //             "subsection": [
-    //                 {
-    //                     "h3": "Building a support community",
-    //                     "copy": [
-    //                         "One of the first things that I did was to see the ways in which support was offered to those who suffered from physical ailments. After extensive UK specific research, the charitable organisation that struck the perfect tone with exemplary support offerings was Macmillan Cancer Support. Their human centric brand has provided people with the support they have needed since its foundation."
-    //                     ],
-    //                     "subsectionImage" : {
-    //                         "image": "inspiration.png",
-    //                         "alt": "Inspiration"
-    //                     }
-    //                 },
-    //                 {
-    //                     "h3": "Building a brand",
-    //                     "copy": [
-    //                         "By building the Macmillan brand, the organisation has allowed itself to become a powerful tool in their mission to reach those who are in need and inspire people to support their cause. By producing such a recognisable brand, it instills trust and facilitates their cause."
-    //                     ],
-    //                     "subsectionImage" : {
-    //                         "image": "",
-    //                         "alt": ""
-    //                     }
-    //                 }
-    //             ] 
-    //         },
-    //         {
-    //             "h2": "Visual Branding",
-    //             "subsection": [
-    //                 {
-    //                     "h3": "Visual",
-    //                     "copy": [
-    //                         "I went through a series of back and forths choosing an appropriate shape form and colourway that I felt could represent the organisation in the most sympathetic manner. The concept behind the logo I created is that it replicates the shape of the ligament within the knee itself, with the two ligaments wrapping around one another to create an ‘x’ like shape.",
-    //                         "It is composed of triangles due to characteristics of the shape. It stands alone, strong but alienated, however it has the capability to be much more. When together with other triangles, they create beautiful forms, fitting alongside one another, reflecting the strong supportive community it hopes to embody.",
-    //                         "The colourway is, in my opinion, one of the most important features of a brand. I led with the idea of transition, reflecting the idea of injury through to recovery; a concept applied to the mark through the gradient of colour present in the triangles."
-    //                     ],
-    //                     "subsectionImage" : {
-    //                         "image": "visual-branding.jpg",
-    //                         "alt": "Visual branding"
-    //                     }
-    //                 }
-    //             ] 
-    //         },
-    //         {
-    //             "h2": "Tonal Branding",
-    //             "subsection": [
-    //                 {
-    //                     "copy": [
-    //                         "The tone of the brand had to be sympathetic, understanding what people are suffering from and the best way to support that. Having spoken to others during both my time in the hospital and then also during rehabilitation classes, it soon became apparent that they were all keen to get back to being active again and to come back just as strong as before. This pairing of recovery and progression formed the basis for a lot of the content as it focuses not only on the present but the next step."
-    //                     ],
-    //                     "subsectionImage" : {
-    //                         "image": "tonal-branding.png",
-    //                         "alt": "Tonal branding"
-    //                     }
-    //                 }
-    //             ] 
-    //         },
-    //         {
-    //             "h2": "Emotional Branding",
-    //             "subsection": [
-    //                 {
-    //                     "copy": [
-    //                         "When you're physically restricted, accessibility to content is more important that ever. By engaging with Instagram, it provided a platform for people to share their experiences, promote their journeys and interact with others in order to see what they're going through and where they're heading.",
-    //                         "By showcasing public and non-public figures and their journeys, it helped to humanise the experience and to demonstrate that while it is a struggle, it is possible to get yourself back to where you were."
-    //                     ],
-    //                     "subsectionImage" : {
-    //                         "image": "emotional-branding.jpg",
-    //                         "alt": "Emotional branding"
-    //                     }
-    //                 }
-    //             ] 
-    //         },
-    //         {
-    //             "h2": "Reaching The Audience",
-    //             "subsection": [
-    //                 {
-    //                     "h3": "A platform to offer advice",
-    //                     "copy": [
-    //                         "We live in an era where information is more accessible than ever, and as such the best way to get information to the audience is to publish it online. An ACL injury can often make any movement difficult, so the idea of booking an appointment to travel to see a doctor isn't beneficial in the immediacy. From a personal perspective, the first doctor I visited said that he was unable to diagnose the extent of my injury due to excessive swelling, so I was advised to rest and apply ice. Now, if there was a place that had answers specific to my problem, I would have saved both the doctors time, and my own. Something to consider..."
-    //                     ],
-    //                     "subsectionImage" : {
-    //                         "image": "web-presence.jpg",
-    //                         "alt": "Reaching the audience web mockup"
-    //                     }
-    //                 },
-    //                 {
-    //                     "h3": "Sharing experiences",
-    //                     "copy": [
-    //                         "// Blog post example, encouraging others to improve. Show interactive UI with posts and people following / liking the responses. COMING SOON"
-    //                     ],
-    //                     "subsectionImage" : {
-    //                         "image": "placeholder.png",
-    //                         "alt": "Placeholder"
-    //                     }
-    //                 },
-    //                 {
-    //                     "h3": "Getting the answers you need",
-    //                     "copy": [
-    //                         "A feeling that is common among recovering patients is loneliness, it is a time where you can feel isolated, so getting instant answers from people who have been going through something similar can offer a little lift. The idea of having a chat functionality is something that would be very useful, as demonstrated in the interactive chat below."
-    //                     ],
-    //                     "subsectionVideo" : {
-    //                         "video": "reaching-out.mp4",
-    //                         "alt": ""
-    //                     }
-    //                 }
-    //             ] 
-    //         },
-    //         {
-    //             "h2": "Proactive Steps",
-    //             "subsection": [
-    //                 {
-    //                     "h3": "Rolling out support kits",
-    //                     "copy": [
-    //                         "Of course talking about post-injury communication is important, but even more important is preventative measures. Something that I wanted to do was design a kit to send out to sports teams, something to help educate them on how to deal with small niggles before they turn into something more serious.",
-    //                         "It's not uncommon to pick up knocks and sprains playing sports, so suggestions for recovery ideas and exercises that could be implemented as part of training or warm ups could go a long way towards injury prevention."
-    //                     ],
-    //                     "subsectionImage" : {
-    //                         "image": "support-kit.jpg",
-    //                         "alt": "Support kit mockup"
-    //                     }
-    //                 },
-    //                 {
-    //                     "h3": "Exercise examples",
-    //                     "copy": [
-    //                         "Show animated example of the image illustrations version"
-    //                     ],
-    //                     "subsectionImage" : {
-    //                         "image": "step-ups.png",
-    //                         "alt": "Step up exercise illustration"
-    //                     }
-    //                 }
-    //             ] 
-    //         }
-    //     ]
-    // },
     {
-        "title": "Using A Mixed Reality Game To Map Customer Experiences",
-        "SEOTitle": "Using a mixed reality game to map customer experiences",
-        "SEODescription": "How I designed a product through utilising key teacher values in relation to education technology, and how used a mixed reality game to map their experiences.",
+        "title": "Keeping Children Safe Online",
+        "SEOTitle": "Keeping Children Safe Online",
+        "SEODescription": "Children should never be safer than when they are in school. Here’s how I was able to play my part in helping achieve that.",
         "keywords": "",
-        "path": "mixed-reality/",
+        "path": "online-safety/",
         "headerImage":  <Reality />,
-        "headerAlt": "Using a mixed reality game to map customer experiences header image",
+        "headerAlt": "Keeping Children Safe Online",
         "intro": [
-            "How I designed a product through utilising key teacher values in relation to education technology, and how used a mixed reality game to map their experiences."
+            "Children should never be more safe than when they are in a school.",
+            "Here’s how I was able to play my part in helping achieve that."
         ],
-        "url": "mixed-reality-game-to-map-customer-experiences",
-        "id": "4",
+        "url": "online-safety",
+        "id": "3",
         "background" : [
             {
-                "h2": "Background",
+                "h2": "Who are Impero?",
                 "subsection": [
                     {
                         "copy": [
-                            "Impero Software is an education based software house that creates products to manage classes and devices as well as protecting students safety.",
-                            "They were looking to create a new cloud based flagship product that takes the brilliant work that they have done for years in schools through their Education Pro software.",
-                            "*Project copy under review*"
+                            "Impero Software is an education-based software house that creates products to manage classes and devices as well as protect students’ safety.",
+                            "Student wellbeing is fundamental to student achievement. That's why safeguarding students is at the heart of the Impero suite."
                         ], 
                     }
                 ],
@@ -978,41 +694,159 @@ const ProjectPageFeed = [
                     {
                         "h3": "Responsibilities",
                         "skills": [
-                            "User research",
-                            "Persona development",
-                            "Experience design",
+                            "Website evaluation, scoping, wireframing, interactive prototyping and design",
+                            "User experience framework writing, persona creation, user interface design",
+                            "Visual brand maintenance",
+                            "Design and production of all marketing collateral, imagery and communications",
+                            "Working with stand builders to design exhibitions at global trade shows"
                         ]
                     }
                 ],
                 "featuredImage": {
-                    "image": "header.png",
-                    "alt": "Photo of cards used within this exercise"
+                    "image": "header.jpeg",
+                    "alt": "Placeholder"
                 }
           }
         ],
         "article" : [
               {
-                "h2": "#HackTheClassroom",
+                "h2": "Project Sample",
+                "subsection": [
+                    {
+                        "bullet": [
+                            "Improve lead generation through redesigning the website",
+                            "Determine the experience of a cloud-based solution",
+                            "Review and evolve the visual brand",
+                            "Support all marketing initiatives, physical and digital"
+                        ]
+                    }
+                ]
+            },
+            {
+                "h2": "Improving the Website Using Heuristics",
                 "subsection": [
                     {
                         "copy": [
-                            "The teachers that are most likely to engage with our product and get on board are those who are willing to come up with clever solutions to everyday problems.",
-                            "Innovative educators are natural hackers constantly coming up with, and even sharing, ideas to improve teaching and learning.",
-                            "Microsoft have outlined five teacher personas and the three most relevant characteristics associated with them.",
-                            "Using these values as a base, we are going to gain an idea of what the teacher wants to accomplish and how we can help them achieve through the Education Pro software."
+                            "There’s not much more to say about the marketing team at Impero other than they are the heartbeat of the organisation. At the centre of that is the website itself, created to support lead generation, inform future customers and educate the public on the latest online safeguarding tips.",
+                            "In order to scale the effectiveness of it, I was tasked with revisiting the experience of the website and redesigning it to meet the new wave of demands."
+
+                        ]
+                    },
+                    {
+                        "h3": "Evaluation of existing website",
+                        "copy": [
+                            "What I set about doing first was to complete an evaluation of the old website. This consisted of selecting five relevant heuristic techniques from Nielsen and Molich’s user interface design guidelines:"
+
+                        ],
+                        "bullet": [
+                            "Consistency and standards",
+                            "Recognition rather than recall",
+                            "Aesthetic and minimalist design",
+                            "Flexibility and efficiency of use",
+                            "User control and freedom"
                         ],
                         "subsectionImage" : {
-                            "image": "microsoft-personas.png",
-                            "alt": "Examples of the 5 personas generated by microsoft"
+                            "image": "old-website.png",
+                            "alt": "Previous website example"
+                        }
+                    },
+                    {
+                        "h3": "Scoping",
+                        "copy": [
+                            "Having identified the necessary elements to focus on in the improvement of the end user, it was also necessary to work out what was needed to make the process easier to maintain from a marketing and content perspective. It was agreed that we would have:"
+                        ],
+                        "bullet": [
+                            "The ability to create new country-specific websites",
+                            "Full form customisability with certain ones pushing information into the CRM",
+                            "Visual overhaul of the website",
+                            "Improved user experience",
+                            "Be built with expansion in mind"
+                        ],
+                            "subsectionImage" : {
+                            "image": "scoping.png",
+                            "alt": "Scoping preview"
+                        }
+                    },
+                    {
+                        "h3": "Consistency and standards",
+                        "copy": [
+                            "The primary aim from a UI standpoint was to create a consistent method of implementing visuals throughout the website. This included an overhaul to our call to actions, which are now located on almost every page and an image audit to ensure that software features are represented consistently. To bring the content in line with our new baseline, the marketing manager audited the copy to ensure that the tone and terminology was consistent too."
+                        ],
+                        "subsectionImage" : {
+                            "image": "consistency-new.png",
+                            "alt": "Consistency and standards example"
+                        }
+                    },
+                    {
+                        "h3": "Recognition rather than recall",
+                        "copy": [
+                            "The previous website was very block copy heavy and we wanted to reduce the noise and minimise cognitive load. We use iconography across our product and marketing collateral, so we aimed to pair copy with similar visual representations to prevent user’s attention from waning."
+                        ],
+                        "subsectionImage" : {
+                            "image": "recognition-new.png",
+                            "alt": "Recognition rather than recall example"
+                        }
+                    },
+                    {
+                        "h3": "Aesthetic and minimalist design",
+                        "copy": [
+                           "Impero has a fairly colourful palette but you would be forgiven in thinking that was the case by visiting the website. We aimed to introduce this injection of personality as switching the heavy blocks of content for a lighter, cleaner design with substantial white space allowing the users to focus on the elements that matter without losing content."
+                        ],
+                        "subsectionImage" : {
+                            "image": "webflow.jpg",
+                            "alt": "Aesthetic and minimalist design example"
+                        }
+                    },
+                    {
+                        "h3": "Flexibility and efficiency of use",
+                        "copy": [
+                            "The primary business aim of the website is to educate and on-board new customers. A secondary aim is to encourage existing customers to invest in new products. Users who are unfamiliar with the product and company are presented with an overview of what the company does and can explore this through the home page.",
+                            "Users who visit the website and are already familiar with what we do are able to accomplish the actions they want by immediately booking a trial by clicking on the main call to action button."
+                        ],
+                        "subsectionImage" : {
+                            "image": "forms.png",
+                            "alt": "Flexibility and efficiency of use example"
+                        }
+                    },
+                    {
+                        "h3": "User control and freedom",
+                        "copy": [
+                            "The website itself is a treasure trove of resources, so rather than preventing users from exploring we decided to embrace the content while providing contextual clues as to where you are.",
+                            "Each page has a hero banner header that pulls out the page’s h1 tag so there isn’t any doubt of the context. There is also a clearly identifiable breadcrumb trail so you can explore each products features in more detail while being able to work your way backwards."
+                        ],
+                        "subsectionImage" : {
+   
+                            "image": "aesthetic-new.png",
+                            "alt": "New website"
                         }
                     }
                 ]
             },
             {
-                "h2": "Idea Generation",
+                "h2": "Creating a Tailored Product Experience",
                 "subsection": [
                     {
-                        "h3": "How to start",
+                        "copy": [
+                            "While at, Impero I was presented with the unique opportunity of re-envisaging the flagship product to meet the emerging cloud-based laptop demand. The product had roots in native applications, which while exceptional, did suffer from feature overload to the point where usability was compromised.",
+                            "We also wanted the product to be accessible to everyone regardless of their technical proficiency, which led me to the idea of using situational-based prompts to generate personas."
+
+                        ]
+                    },
+                    {
+                        "h3": "Using a mixed reality game to map customer experiences",
+                        "copy": [
+                            "The teachers that are most likely to engage with our product and get on board are those who are willing to come up with clever solutions to everyday problems.",
+                            "Innovative educators are natural hackers constantly coming up with, and even sharing, ideas to improve teaching and learning.",
+                            "Microsoft has outlined five teacher personas and the three most relevant characteristics associated with them.",
+                            "Using these values as a base, we are going to gain an idea of what the teacher wants to accomplish and how we can help them achieve it through the Education Pro software."
+                        ],
+                        "subsectionImage" : {
+                            "image": "microsoft-personas.png",
+                            "alt": "Examples of the 5 personas generated by microsoft"
+                        }
+                    },
+                    {
+                        "h3": "[Idea generation] - How to start",
                         "bullet": [
                             "You are given one set of stakeholder values and three random Opportunity Cards",
                             "You have three minutes to combine these cards and your value into a lesson activity/activities"
@@ -1023,30 +857,26 @@ const ProjectPageFeed = [
                         }
                     },
                     {
-                        "h3": "Combination examples",
-                        "bullet": [
-                            "Broadcasting screens to the large screen in lesson to praise individuals or demonstrate difficult tasks",
-                            "Working collaboratively with the class on large format screen to solve problems",
-                            "Engages classroom in the physical world as well as the digital"
-                        ],
+                        "h3": "[Idea generation] - Combination examples",
                         "copy": [
                             "Once the ideas have been formed, they can then be used to create a more comprehensive value as demonstrated by the statement to the right."
                         ],
+                        "bullet": [
+                            "Broadcasting screens to the large screen in the lesson to praise individuals or demonstrate difficult tasks",
+                            "Working collaboratively with the class on a large format screen to solve problems",
+                            "Engages classroom in the physical world as well as the digital"
+                        ],
+
                         "blockQuoteFeature": "I am a teacher that teaches students they matter through encouragement and empowerment. I do so by supporting collaborative learning in lessons to improve digital and physical world communication.",
-                    }
-                ]
-            },
-            {
-                "h2": "Idea Development",
-                "subsection": [
+                    },
                     {
-                        "h3": "Enhancing the experience",
+                        "h3": "[Idea development] - Enhancing the experience",
                         "copy": [
                             "This stage is about pushing the idea further."
                         ],
                         "bullet": [
                             "Give each person 3 Opportunity Cards to hold in their hands",
-                            "Anybody who thinks that they have a card that they think could enhance the current design can play it onto the table and explain how it can improve the teachers experience",
+                            "Anybody who thinks that they have a card that they think could enhance the current design can play it on the table and explain how it can improve the teacher's experience",
                             "Feel free to also remove cards from the centre of the table if they don’t fit anymore"
                         ],
                         "subsectionImage" : {
@@ -1055,169 +885,177 @@ const ProjectPageFeed = [
                         }
                     },
                     {
-                        "h3": "How it affects the lesson",
-                        "bullet": [
-                            "Public display - If a student is struggling with a task it can be put onto the screen and the class can contribute ways in which this can be improved, encouraging interaction and peer learning",
-                            "Peer to peer - Being able to message the teacher directly in order to say if they are struggling, this can be discrete feedback",
-                            "Collaboration - Students working together on difficult tasks",
-                            "Social contract – Understanding of social etiquette and communication skills, also enforcable AUP",
-                            "Wizard of Oz – Remotely view assist students"
-                        ],
+                        "h3": "[Idea development] - How it affects the lesson",
                         "copy": [
                             "Once the ideas have been formed, they can then be used to create a more comprehensive value as demonstrated by the statement to the right."
                         ],
+                        "bullet": [
+                            "Public display - If a student is struggling with a task it can be put onto the screen and the class can contribute ways in which this can be improved, encouraging interaction and peer learning",
+                            "Peer-to-peer - Being able to message the teacher directly in order to say if they are struggling, this can be discrete feedback",
+                            "Collaboration - Students working together on difficult tasks",
+                            "Social contract – Understanding of social etiquette and communication skills, also enforceable AUP",
+                            "Wizard of Oz – Remotely view assist students"
+                        ],
+
                         "subsectionImage" : {
                             "image": "how-it-affects-the-lesson.jpg",
                             "alt": "Photo of 6 opportunity cards that were listed previously"
                         }
-                    }
+                    },
+                
+                        {
+                            "h3": "[Idea reflection] - Contextualising",
+                            "copy": [
+                                "This stage is about pushing the idea further."
+                            ],
+                            "bullet": [
+                                "In this phase, you should go through all of the Question Cards",
+                                "Divide them equally between participants then discuss them in whatever order you like",
+                                "Apply each question to the activity and make a note of how this plays a part"
+                            ],
+                            "subsectionImage" : {
+                                "image": "contextualising.jpg",
+                                "alt": "Photo of 8 contextualisation cards that are outlined in the following points"
+                            }
+                        },
+                        
+                        {
+                            "h3": "[Idea refinement] - Challenge cards",
+                            "bullet": [
+                                "This phase is similar to the previous one, but uses the Challenge Cards",
+                                "Each challenge should be marked against the spreadsheet created for said purpose"
+                            ],
+                            "subsectionImage" : {
+                                "image": "challenge-breakdown.png",
+                                "alt": ""
+                            }
+                        },
+                        {
+                            "h3": "[Idea finalisation] - Persona mapping",
+                            "copy": [
+                                "This final stage is about using the touched-upon ideas and points to formulate a persona profile that can then be replicated in test environments and used for customer experience mapping."
+                            ]
+                        },
+                        {
+                            "copy": [
+                                "A teacher who:"
+                            ],
+                            "bullet": [
+                                "Builds collaborative learning environments in and out of the classroom",
+                                "Focuses on global themes that are found in the local community",
+                                "Teaches students they matter through encouragement and empowerment"
+                            ]
+                        },
+                        {
+                            "copy": [
+                                "Aims:"
+                            ],
+                            "bullet": [
+                                "Bridge the gap between the digital and physical world",
+                                "Be able to assign tasks for students and if they struggle have them be able to communicate this to me directly and without worry",
+                                "See in real-time if there is a task that a few students are struggling with and be able to work through it collaboratively with the class to aid learning and encourage progress",
+                                "Increase lesson interactivity to encourage verbal communication and build interpersonal skills"
+                            ]
+                        },
+                        {
+                            "copy": [
+                                "Functionality that helps to support this:"
+                            ],
+                            "bullet": [
+                                "Screen broadcasting",
+                                "Assessment tools",
+                                "Remote control and support",
+                                "Real-time monitoring",
+                                "Messaging and live chat"
+                            ]
+                        }
                 ]
             },
             {
-                "h2": "Idea Reflection",
+                "h2": "Brand Design and Marketing",
                 "subsection": [
                     {
-                        "h3": "Contextualising",
                         "copy": [
-                            "This stage is about pushing the idea further."
-                        ],
-                        "bullet": [
-                            "In this phase, you should go through all of the Question Cards",
-                            "Divide them equally between participants then discuss them in whatever order you like",
-                            "Apply each question to the activity and make a note of how this plays a part"
+                            "Having originally joined in a graphic design capacity, I was lucky enough to work on a spectrum of marketing initiatives.",
+                            "This ranges from designing brochures and collateral to designing entire trade show stands. Here is a sample of some of those responsibilities."
+                        ]
+
+                    },
+                    {
+                        "h3": "Owning the Brand Guidelines",
+                        "copy": [
+                            "Being in charge of the brand guidelines meant that it was my responsibility to ensure that our campaigns, partner and ourselves kept to the guides that we had set especially when it came to tonality.",
+                            "Fortunately, the visual aspect of the brand was less rigid and allowed me to push the boundaries of the creative to meet some of our more ambitious campaigns.",
+                            "This idea of a brand expanding beyond the page was mimicked by the creativity of our marketing team. We would try countless different directions to get our messages across to our target audience, from time machine mailers to American diner-themed trade show stands."
+
                         ],
                         "subsectionImage" : {
-                            "image": "contextualising.jpg",
-                            "alt": "Photo of 8 contextualisation cards that are outlined in the following points"
+                            "image": "Illustrations.png",
+                            "alt": "Illustrations of different projects done at Impero"
                         }
                     },
                     {
-                        "copy" : [
-                            "What are the typical users like, how is the activity made for them?"
+                        "h3": "Creating Microsites and Campaigns",
+                        "copy": [
+                           "One of the long-standing initiatives that we introduced was a feature called ‘Industry Insights’. It was a cross-section of the latest education-based news in the UK and the US.",
+                           "This allowed Impero to summarise otherwise lengthy articles into small digestible chunks and share them through social media. These were frequently shared and provided another great way of increasing brand presence and positioning themselves as experts in their field."
                         ],
-                        "bullet": [
-                            "Teachers are busy but enjoy teaching, this activity bridges the physical and digital world"
-                        ]
-                    },
-                    {
-                        "copy" : [
-                            "How do teachers journey through the activity?"
-                        ],
-                        "bullet": [
-                            "Push out task > View screens > wait for/ communicate feedback > broadcast screens > solve problem > encourage learning"
-                        ]
-                    },
-                    {
-                        "copy" : [
-                            "What role are locations playing? How important are they?"
-                        ],
-                        "bullet": [
-                            "IT Suite - technology already present, very important"
-                        ]
-                    },
-                    {
-                        "copy" : [
-                            "Is it important to know what the players are doing while playing?"
-                        ],
-                        "bullet": [
-                            "Yes, to see how they’re getting on"
-                        ]
-                    },
-                    {
-                        "copy" : [
-                            "What are the most important activity mechanics?"
-                        ],
-                        "bullet": [
-                            "Broadcasting screens, communication, monitoring"
-                        ]
-                    },
-                    {
-                        "copy" : [
-                            "Why is the activity fun? What is engaging about it?"
-                        ],
-                        "bullet": [
-                            "Interactive"
-                        ]
-                    },
-                    {
-                        "copy" : [
-                            "Does the physical world play a meaningful role in the game?"
-                        ],
-                        "bullet": [
-                            "Yes, encouraged verbal interaction, build inter personal skills"
-                        ]
-                    },
-                    {
-                        "copy" : [
-                            "How can the activity be described in one or two sentences"
-                        ],
-                        "bullet": [
-                            "Being able to assign tasks for students and if they struggle have them be able to communicate this to me directly and without worry. Then if it is a task that a few students are struggling with, be able to work through it collaboratively with the class to aid learning and encourage progress"
-                        ]
-                    }
-                ]
-            },
-            {
-                "h2": "Idea Refinement",
-                "subsection": [
-                    {
-                        "h3": "Challenge cards",
-                        "bullet": [
-                            "This phase is similar to the previous one, but using the Challenge Cards",
-                            "Each challenge should be marked against the spreadsheet created for said purpose"
-                        ],
-                        "subsectionImage" : {
-                            "image": "challenge-breakdown.png",
-                            "alt": ""
+                        "subsectionVideo" : {
+                            "video": "industry-insights.mp4",
+                            "alt": "Industry insights animation"
                         }
                     }
                 ]
             },
-            {
-                "h2": "Idea Finalisation",
-                "subsection": [
-                    {
-                        "h3": "Persona mapping",
-                        "copy": [
-                            "In this final stage, it is about using the touched upon ideas and points to formulate a persona profile that can then be replicated in test environments and used for customer experience mapping."
-                        ]
-                    },
-                    {
-                        "h3": "Persona outline",
-                        "copy": [
-                            "A teacher who:"
-                        ],
-                        "bullet": [
-                            "Builds collaborative learning environments in and out of the classroom",
-                            "Focuses on global themes that are found in the local community",
-                            "Teaches students they matter through encouragement and empowerment"
-                        ]
-                    },
-                    {
-                        "copy": [
-                            "Aims:"
-                        ],
-                        "bullet": [
-                            "Bridge the gap between the digital and physical world",
-                            "Be able to assign tasks for students and if they struggle have them be able to communicate this to me directly and without worry",
-                            "See in real time if there is a task that a few students are struggling with and be able to work through it collaboratively with the class to aid learning and encourage progress",
-                            "Increase lesson interactivity to encourage verbal communication and build inter personal skills"
-                        ]
-                    },
-                    {
-                        "copy": [
-                            "Functionality that helps to support this:"
-                        ],
-                        "bullet": [
-                            "Screen broadcasting",
-                            "Assessment tools",
-                            "Remote control and support",
-                            "Real-time monitoring",
-                            "Messaging and live chat"
-                        ]
-                    }
-                ]
-            }
+            // {
+            //     "h2": "Marketing initiatives",
+            //     "subsection": [
+            //         {
+            //             "h3": "Trade shows",
+            //             "copy": [
+            //                 "Placeholder"
+
+            //             ],
+            //             "subsectionImage" : {
+            //                 "image": "placeholder.png",
+            //                 "alt": "Placeholder"
+            //             }
+            //         },
+            //         {
+            //             "h3": "Brochures",
+            //             "copy": [
+            //                 "Placeholder"
+
+            //             ],
+            //             "subsectionImage" : {
+            //                 "image": "placeholder.png",
+            //                 "alt": "Placeholder"
+            //             }
+            //         },
+            //         {
+            //             "h3": "Flyers",
+            //             "copy": [
+            //                 "Placeholder"
+
+            //             ],
+            //             "subsectionImage" : {
+            //                 "image": "placeholder.png",
+            //                 "alt": "Placeholder"
+            //             }
+            //         },
+            //         {
+            //             "h3": "Mailers",
+            //             "copy": [
+            //                 "Placeholder"
+
+            //             ],
+            //             "subsectionImage" : {
+            //                 "image": "placeholder.png",
+            //                 "alt": "Placeholder"
+            //             }
+            //         }
+            //     ]
+            // }
         ]
     }
 ] 
