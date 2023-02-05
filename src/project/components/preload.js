@@ -1,10 +1,10 @@
     
 const hpPreload = [
     {
-        "title": "Lucky For Sum | UX/UI Design Portfolio | Sumner Bhandal",
-        "SEOTitle": "Lucky For Sum | UX/UI Design Portfolio | Sumner Bhandal",
-        "SEODescription": "The digital portfolio of Sumner Bhandal. Senior User Interface Designer with a fondness for front-end development and inclusive design.",
-        "keywords": "portfolio,UX,user experience,UI,user interface,product design, designer, digital design,online,digital, support, community, injury, snippets, acl, support community, acl injury, design snippets",
+        "title": "Lucky For Sum | Product Design Portfolio | Sumner Bhandal",
+        "SEOTitle": "Lucky For Sum | Product Design Portfolio | Sumner Bhandal",
+        "SEODescription": "The digital portfolio of Sumner Bhandal. Product Designer looking to solve the everyday problems that we have learned to work around.",
+        "keywords": "portfolio,UX,user experience,UI,user interface,product design, designer, digital design,online,digital, startup, start up, design strategy",
         "path": "total-platform/",
         "headerImage":  "",
         "headerAlt": "Portfolio for all header image",
