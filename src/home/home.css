@@ -90,6 +90,10 @@ img.play-button {
     height: auto;
 }
 
+#project-container0 {
+    box-shadow: 0 0 6.25rem rgba(0,0,0, 0.1);
+}
+
 .homepage .project-preview-container:nth-child(odd) {
     background: var(--white);
 }

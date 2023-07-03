@@ -24,7 +24,7 @@ const numberOfProjects = [
 const HPTemplate = () => {
     return (
         numberOfProjects.map((item, index) => (
-            <div className="project-preview-container hp-section" id="project-container" key={index}>
+            <div className="project-preview-container hp-section" id={"project-container" + index} key={index}>
                 <div className="project-preview">
                     <Link to="#" className="project-preview-thumbnail" tabIndex="0">
                         
@@ -119,7 +119,7 @@ const HomePage = (props) => {
                 <HPTemplate />
             ) : (
                     homePageProjects.homePageProjects.map((item, index) => (
-                        <div className="project-preview-container hp-section" id="project-container" key={index}>
+                        <div className="project-preview-container hp-section" id={"project-container" + index} key={index}>
                             <div className={`project-preview `}>
                                 <Link to={`/project/${item.url}-pid-${item.id}`} className="project-preview-thumbnail" id={item.id} title={item.url} onClick={projectImageOpen}  tabIndex="0">
                                     <Suspense fallback={<div></div>}>
