@@ -335,6 +335,8 @@ body.dark .homepage .project-preview-container:nth-child(even) .image-right p.in
 
 .aboutMe h1 {
     margin-top: 0;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
 }
 
 .aboutMe .column {

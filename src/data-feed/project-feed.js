@@ -197,7 +197,8 @@ const ProjectPageFeed = [
                             "Formalise 1-1s",
                             "Represent design to the other stakeholders in the business",
                             "Ensure that product, design and engineering are working together effectively",
-                            "Create frameworks for members of the legal team to conduct and assist with research tasks"
+                            "Create frameworks for members of the legal team to conduct and assist with research tasks",
+                            "Creating a measurable link between the work the product team does and the company's objectives"
                         ],
                         "subsectionImage" : {
                             "image": "growing-team.png",

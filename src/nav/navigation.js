@@ -37,22 +37,23 @@ const NavDefault = (props) => {
                         id="link_homepage"
                         // onClick={scrollSectionIntoView}
                         className="logo-image"
-                        to="/#introSection">
+                        to="/#about">
                             <img src={require('./icons/lucky-for-sum-logo.svg')} alt="Home"/>
                         </NavHashLink>
-                        <NavHashLink className="brand-name" to="/#introSection">
+                        <NavHashLink className="brand-name" to="/#about">
                             <img src={require('./icons/lfs-logo-dark.svg')} alt="Home"/>
                         </NavHashLink>
                     </div>
                         <div className="header-side-container right">
-                            <NavHashLink Link to='/#introSection' className="desktop-links">
-                                Showreel
-                            </NavHashLink>
+                         
                             <NavHashLink to='/#about' className="desktop-links">
                                 About
                             </NavHashLink>
                             <NavHashLink to='/#project-container' className="desktop-links">
                                 Projects
+                            </NavHashLink>
+                            <NavHashLink Link to='/#introSection' className="desktop-links">
+                                Showreel
                             </NavHashLink>
 
                             <a className="get-in-touch-header" target="new" href="mailto:sumnerbhandal@gmail.com">Get In Touch &nbsp; <span role="img" aria-label="Welcome Wave"> 👋🏽</span></a>
