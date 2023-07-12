@@ -82,7 +82,7 @@ const ProjectPageFeed = [
                         }
                     },
                     {
-                        "h3": "Working with Engineering",
+                        "h3": "Understanding existing systems",
                         "copy": [
                             "Before my arrival, an internal tool was created using a freelance designer. I spent time with the engineering team to understand what they enjoyed about the process, what they wish had gone better and together proposed a new way of working that would work more effectively for both teams.",
                             "This process allowed us to have complete transparency over what stages projects were at and when we were blocking each other. It also allowed us to loop them in earlier in the design process by giving them access to research, demos and presentations that were being proposed to the rest of the business."
@@ -93,7 +93,7 @@ const ProjectPageFeed = [
                         }
                     },
                     {
-                        "h3": "Design systems",
+                        "h3": "Creating design systems",
                         "copy": [
                             "Creating a new product from scratch meant that we had a blank canvas to do everything to meet best practices. What that meant for me was to effectively communicate to the business the value of scalable design libraries and systems.",
                             "The pitch focused on where we wanted to be in a year from now, and the importance of setting standards that are competing with giants of their industry. We had one advantage, we would move fast. This teamed with the promise that we could build the next products off the back of the UI from the first and that we could generate high-fidelity prototypes at rapid speeds was enough to win them over.",
@@ -184,7 +184,128 @@ const ProjectPageFeed = [
                 ]
             },
             {
-                "h2": "Scaling the team",
+                "h2": "Cross Team Collaboration",
+                "subsection": [
+                    {
+                        "h3": "Working within Product",
+                        "copy": [
+                            "The product team consists of product managers, designers, and researchers. Each stakeholder has the opportunity to play their part in the product process.",
+                            "The project is usually initiated by a problem or piece of insight that is gathered through sales, customer success, or user interviews. These insights are then weighted and rolled up in order to help us prioritise what to work on to help us maintain product market fit.",
+                            "To help maintain alignment and transparency, we have established a centralised project roadmap database that contains the following:"
+                        ],
+                        "bullet": [
+                            "Research project database",
+                            "Conducted interviews database",
+                            "Interview candidate database",
+                            "Personas database",
+                            "Synthesis templates",
+                            "Discussion guide templates",
+                            "Processes documentation"
+                        ],
+                        "subsectionImage" : {
+                            "image": "working-with-product.png",
+                            "alt": "Figjam Board"
+                        }
+                    },
+                    {
+                        "h3": "Working with Engineering",
+                        "copy": [
+                            "The design contingent of the team will work with the engineering team throughout the lifetime of the project, from demoing concepts to ensuring the quality of the final builds.",
+                            "However, bringing in the teams who are ultimately going to build the solution earlier in the process allows us the following opportunities:"
+                        ],
+                        "bullet": [
+                            "To understand the technical constraints of the task",
+                            "To encourage us to push the limits of what's possible",
+                            "To allow the team to plan engineering capacity in advance",
+                            "To provide context in advance of starting the work"
+                        ],
+                        "subsectionImage" : {
+                            "image": "working-with-engineering.png",
+                            "alt": "Illustration of a person looking at task boards"
+                        }
+                    },
+                    {
+                        "h3": "Alignment with Marketing",
+                        "copy": [
+                            "Creating a product that people love to use and getting it into their hands are two very different things.",
+                            "By working in tandem with the product marketing team, we enable a level of synergy that allows us to:"
+                        ],
+                        "bullet": [
+                            "Align on release dates for the team to work backwards from",
+                            "Collaborate on the go-to-market strategy",
+                            "Gain an understanding of our targeted marketing channels",
+                            "Plan for in-product promotions that we need to accommodate"
+
+                        ],
+                        "subsectionImage" : {
+                            "image": "working-with-marketing.png",
+                            "alt": "Illustration of a person balancing goals with graphs"
+                        }
+                    },
+                    {
+                        "h3": "Stakeholder Buy-in",
+                        "copy": [
+                            "Due to the hybrid nature of the company, stakeholders could be based anywhere in the world at any given time, so we've worked hard on creating an asynchronous feedback loop.",
+                            "This is largely dependent on us designing for the stakeholders in the same way that we do for our customers. We take a lot of the heavy lifting and thinking out of it and we provide them with what they need to know in digestible bites. We do this via:"
+                        ],
+                        "bullet": [
+                            "One pagers",
+                            "Pre-recorded demos or prototype videos",
+                            "Design sign-off meetings for work prepped for release",
+                            "Go to market strategy summaries"
+                        ],
+                        "subsectionImage" : {
+                            "image": "stakeholder-buy-in.png",
+                            "alt": "Illustration of a calm person"
+                        }
+                    }
+                ]
+            },
+            {
+                "h2": "Go-to-Market Stategy",
+                "subsection": [
+                    {
+                        "h3": "New user experience",
+                        "copy": [
+                            "It's very easy to hide a product behind the safe onboarding process of a sales-driven organisation, but if you want to be product and data-driven, you have to have people using it.",
+                            "To start gathering more authentic user data and take the steps towards a true SaaS tool, we made a free tier of our product available for anyone to sign up for and use.",
+                            "As uncomfortable as that was, it allowed us to really dial in on what that new user experience was like and resulted in:"
+                        ],
+                        "bullet": [
+                            "A self-serve sign-up flow",
+                            "The integration of an onboarding tool that was designed and curated to show off the value of the product",
+                            "A review of the way that we track and capture data",
+                            "A more robust cookie policy.",
+                            "Being the first contract review tool that people could sign up for and start using",
+                            "An influx of new sales leads"
+                        ],
+                        "subsectionImage" : {
+                            "image": "new-user.png",
+                            "alt": "Screens showing a designs for onboarding"
+                        }
+                    },
+                    {
+                        "h3": "Existing user experience",
+                        "copy": [
+                            "The beauty of a web-based product is that changes can be made without the user having to update their software.",
+                            "This, however, presents an interesting opportunity for how we communicate those changes in a way that enhances and doesn't disrupt the existing user experience.",
+                            "Here's how we did it:"
+                        ],
+                        "bullet": [
+                            "We created new in-app alerts that encouraged users to interact with the new functionality",
+                            "We promoted video tutorials of the functionality in use through social channels",
+                            "We worked with existing users to help them adopt these newly requested features",
+                            "We documented a series of help articles aimed at offering support when users reached an impasse"
+                        ],
+                        "subsectionVideo" : {
+                            "video": "new-draft-user.mp4",
+                            "alt": "Recording of new onboarding experience"
+                        }
+                    }
+                ]
+            },
+            {
+                "h2": "Management",
                 "subsection": [
                     {
                         "h3": "Growing responsibilities",
