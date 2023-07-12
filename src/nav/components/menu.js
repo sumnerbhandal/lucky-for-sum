@@ -39,16 +39,16 @@ const Menu = (props) => {
     return (
         <div ref={props.wrapperRef} className={`main-menu ${props.isToggled ? "open" : ""}`}>
             <ul className="touch-links">
-             
+            <li>
+                  <NavHashLink to='/#introSection'  onClick={props.toggleTrueFalse}   tabIndex={props.isToggled ? "0" : "-1"}>Showreel</NavHashLink>
+              </li>
               <li>
                   <NavHashLink to='/#about'  onClick={props.toggleTrueFalse}   tabIndex={props.isToggled ? "0" : "-1"}>About</NavHashLink>
               </li>
               <li>
                   <NavHashLink to='/#project-container' onClick={props.toggleTrueFalse}  tabIndex={props.isToggled ? "0" : "-1"}>Projects</NavHashLink>
               </li>
-              <li>
-                  <NavHashLink to='/#introSection'  onClick={props.toggleTrueFalse}   tabIndex={props.isToggled ? "0" : "-1"}>Showreel</NavHashLink>
-              </li>
+
               <li>
               <a className="get-in-touch" target="new" href="mailto:sumnerbhandal@gmail.com" tabIndex={props.isToggled ? "0" : "-1"}>Get In Touch &nbsp; <span role="img" aria-label="Welcome Wave"> 👋🏽</span></a>
               </li>

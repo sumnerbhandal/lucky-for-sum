@@ -111,7 +111,9 @@ const HomePage = (props) => {
                 <meta name="description" content="The digital portfolio of Sumner Bhandal. Senior User Interface Designer with a fondness for front-end development and inclusive design." />  
                 <meta name="keywords" content="portfolio,UX,user experience,UI,user interface,product design, designer, digital design,online,digital, support, community, injury, snippets, acl, support community, acl injury, design snippets"/>
             </Helmet>
-            
+            <div id="introSection" className="introSection hp-section section">
+                <HeroVideo pressEnter={pressEnter} videoButton={videoButton} videoPlaying={videoPlaying} />
+            </div>
             <div id="about" className="introSection hp-section section">
                 <About />
             </div>
@@ -119,7 +121,7 @@ const HomePage = (props) => {
                 <HPTemplate />
             ) : (
                     homePageProjects.homePageProjects.map((item, index) => (
-                        <div className="project-preview-container hp-section" id={"project-container" + index} key={index}>
+                        <div className="project-preview-container hp-section" id="project-container" key={index}>
                             <div className={`project-preview `}>
                                 <Link to={`/project/${item.url}-pid-${item.id}`} className="project-preview-thumbnail" id={item.id} title={item.url} onClick={projectImageOpen}  tabIndex="0">
                                     <Suspense fallback={<div></div>}>
@@ -145,9 +147,7 @@ const HomePage = (props) => {
                     ))
                 )
             }
-            <div id="introSection" className="introSection hp-section section">
-                <HeroVideo pressEnter={pressEnter} videoButton={videoButton} videoPlaying={videoPlaying} />
-            </div>
+
 
             <div style={footerStyle} className="hp-section">
                 <Footer />
