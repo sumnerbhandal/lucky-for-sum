@@ -40,11 +40,11 @@ const Menu = (props) => {
         <div ref={props.wrapperRef} className={`main-menu ${props.isToggled ? "open" : ""}`}>
             <ul className="touch-links">
             <li>
-                  <NavHashLink to='/#introSection'  onClick={props.toggleTrueFalse}   tabIndex={props.isToggled ? "0" : "-1"}>Showreel</NavHashLink>
+                  <NavHashLink to='/#introSection'  onClick={props.toggleTrueFalse}   tabIndex={props.isToggled ? "0" : "-1"}>Introduction</NavHashLink>
               </li>
-              <li>
+              {/* <li>
                   <NavHashLink to='/#about'  onClick={props.toggleTrueFalse}   tabIndex={props.isToggled ? "0" : "-1"}>About</NavHashLink>
-              </li>
+              </li> */}
               <li>
                   <NavHashLink to='/#project-container' onClick={props.toggleTrueFalse}  tabIndex={props.isToggled ? "0" : "-1"}>Projects</NavHashLink>
               </li>

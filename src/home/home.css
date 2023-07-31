@@ -1,7 +1,7 @@
 .introSection.hp-section {
     display: flex;
     flex-wrap: wrap;
-    padding-bottom: 2rem;
+    padding-bottom: 3rem;
     padding-top: 2rem;
     height: auto;
     width: 100%;
@@ -10,10 +10,31 @@
     width: 100%;
     height: 0;
     padding-top: 56.25%;
+    /* padding-top: 28%; */
     position: relative;
     background: var(--happy-mustard);
-    margin-top: 1.25rem;
-    flex-shrink: 0;
+    /* margin-top: 1.25rem;
+    flex-shrink: 0; */
+}
+.aboutMeTwo {
+    width: 100%;
+}
+
+@media (min-width: 1024px) {
+    .heroVideo--container {
+        /* margin-top: 1.75rem; */
+        width: 45%;
+        padding-top: 25%;
+    }
+    .introSection.hp-section {
+        width: 50%;
+        align-items: center;
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+    .aboutMeTwo {
+        width: 55%;
+    }
 }
 
 img.play-button {
@@ -56,7 +77,7 @@ img.play-button {
 
 @media (min-width: 768px) {
     .heroVideo--container {
-        margin-top: 1.75rem;
+        /* margin-top: 1.75rem; */
     }
     .bioSection {
         justify-content: flex-start;
@@ -90,7 +111,7 @@ img.play-button {
     height: auto;
 }
 
-#project-container0 {
+#project-container {
     box-shadow: 0 0 6.25rem rgba(0,0,0, 0.1);
 }
 
@@ -330,7 +351,7 @@ body.dark .homepage .project-preview-container:nth-child(even) .image-right p.in
 }
 
 .aboutMe {
-    background: var(--white);
+    /* background: var(--white); */
     padding: 1.25rem;
     display: flex;
     flex-wrap: wrap;
@@ -340,8 +361,9 @@ body.dark .homepage .project-preview-container:nth-child(even) .image-right p.in
 
 .aboutMe h1 {
     margin-top: 0;
-    font-size: 2rem;
+    font-size: 2.75rem;
     margin-bottom: 0.5rem;
+    font-family: 'DM Serif Display', serif;
 }
 
 .aboutMe .column {
@@ -377,7 +399,7 @@ body.dark .aboutMe p.intro {
 @media (min-width: 768px) {
     .aboutMe {
         margin: 2rem 0;
-        padding: 1.5rem 1.5rem 1.5rem 2rem;
+        padding: 0 4rem 0 0rem;
     }
     .aboutMe .column {
         width: calc(50% - 2rem);
@@ -386,11 +408,11 @@ body.dark .aboutMe p.intro {
 
 @media (min-width: 1600px) {
     .aboutMe {
-        padding: 1.5rem 1.5rem 1.5rem 3rem;
+        padding: 1.5rem 9rem 1.5rem 4rem
     }
     .aboutMe h1, .aboutMe span {
-        font-size: 2rem;
-        margin-bottom: 0.875rem;
+        font-size: 3.25rem;
+        /* margin-bottom: 0.875rem; */
     }    
     .aboutMe p, .aboutMe a {
         font-size: 1.125rem;

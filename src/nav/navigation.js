@@ -46,11 +46,11 @@ const NavDefault = (props) => {
                     </div>
                         <div className="header-side-container right">
                         <NavHashLink Link to='/#introSection' className="desktop-links">
-                                Showreel
+                                Introduction
                             </NavHashLink>
-                            <NavHashLink to='/#about' className="desktop-links">
-                                About
-                            </NavHashLink>
+                            {/* <NavHashLink to='/#about' className="desktop-links">
+                                About Me
+                            </NavHashLink> */}
                             <NavHashLink to='/#project-container' className="desktop-links">
                                 Projects
                             </NavHashLink>
