@@ -352,7 +352,7 @@ body.dark .homepage .project-preview-container:nth-child(even) .image-right p.in
 
 .aboutMe {
     /* background: var(--white); */
-    padding: 1.25rem;
+    padding: 2.5rem 0.5rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -364,6 +364,7 @@ body.dark .homepage .project-preview-container:nth-child(even) .image-right p.in
     font-size: 2.75rem;
     margin-bottom: 0.5rem;
     font-family: 'DM Serif Display', serif;
+    line-height: 1.15;
 }
 
 .aboutMe .column {
@@ -400,6 +401,7 @@ body.dark .aboutMe p.intro {
     .aboutMe {
         margin: 2rem 0;
         padding: 0 4rem 0 0rem;
+        max-width: 800px;
     }
     .aboutMe .column {
         width: calc(50% - 2rem);
