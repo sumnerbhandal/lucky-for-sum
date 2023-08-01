@@ -24,7 +24,7 @@ const ProjectPageFeed = [
                         "copy": [
                             "Robin AI are a legal tech company that helps companies, scale-ups and funds manage their most painful contracts with their unique contract management service, which combines software, machine learning and world-class legal professionals.",
                             "They have identified that a huge amount of money and far too much time are spent drafting, editing and reviewing contracts and are on a mission to 'make contracts simple'."
-                        ], 
+                        ]
                     }
                 ],
                 "responsibilities": [
@@ -59,6 +59,14 @@ const ProjectPageFeed = [
                             "Clearly and effectively communicate those insights and visions to internal and external stakeholders",
                             "Position Robin AI as product leaders in their sector"
                         ],
+                        // "link" : {
+                        //     "url": "https://app.robinai.co.uk/signup",
+                        //     "text": "Sign up to experience the product for free"
+                        // },
+                        // "link" : {
+                        //     "url": "https://app.robinai.co.uk/signup",
+                        //     "text": "TLDR Sign up for free and try it yourself."
+                        // },
                         // "subsectionImage" : {
                         //     "image": "placeholder.png",
                         //     "alt": "Placeholder"
@@ -300,7 +308,11 @@ const ProjectPageFeed = [
                         "subsectionVideo" : {
                             "video": "new-draft-user.mp4",
                             "alt": "Recording of new onboarding experience"
-                        }
+                        },
+                        "link" : {
+                            "url": "https://app.robinai.co.uk/signup",
+                            "text": "Want to see what we built? You can sign up and use the product for free!"
+                        },
                     }
                 ]
             },
