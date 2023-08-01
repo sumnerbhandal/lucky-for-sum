@@ -31,10 +31,11 @@ const ProjectPageFeed = [
                     {
                         "h3": "Responsibilities",
                         "skills": [
-                            "Creating deliverable-driven design methodologies",
-                            "Coaching, leading and managing the Product Design team",
-                            "Designing and maintaining a holistic vision and strategy across several products",
-                            "Championing data-driven decision making, grounded in experimentation, evidence and user interaction"
+                            "Designing as an IC while maintaining a holistic vision and strategy across several products",
+                            "Hiring, coaching, and managing the Design and Research team members",
+                            "Creating deliverable-driven design methodologies that enable consistency and efficiency",
+                            "Championing data-driven decision making grounded in experimentation, evidence and user interaction",
+                            "Representing design and research within and outside of the organisation"
                         ]
                     }
                 ]
