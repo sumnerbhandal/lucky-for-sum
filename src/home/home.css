@@ -118,8 +118,8 @@ img.play-button {
     background: var(--off-white);
 }
 
-.homepage .project-preview-container:nth-child(even) .project-preview-thumbnail {
-    background: var(--off-white);
+.homepage .project-preview-container:nth-child(odd) .project-preview-thumbnail {
+    background: var(--white);
 }
 .homepage .project-preview-container:nth-child(even) {
     background: var(--white);
