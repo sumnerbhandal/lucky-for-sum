@@ -9,14 +9,14 @@
   background: var(--white);
   z-index: -1;
   height: calc(100vh - 4.5625rem);
-  top: 4.5625rem;
+  top: 4.625rem;
   transform: translateX(100%);
   transition: 0.3s ease-in;
-  border-left: 0.0625rem solid var(--deep-purple);
+  border-left: 0.125rem solid var(--deep-purple);
 }
 .main-menu.open {
     transform: translateX(0);
-    box-shadow:         -1rem 0px 1rem 0px rgba(0,0,0,0.2);
+    /* box-shadow:         -1rem 0px 1rem 0px rgba(0,0,0,0.2); */
 }
 
 

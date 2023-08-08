@@ -1,4 +1,4 @@
-import React, {useState, createRef, lazy, Suspense } from "react";
+import React, {useState, createRef, lazy, Suspense, useEffect } from "react";
 import NavDefault from './nav/navigation';
 import { Footer } from './footer/footer';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom/index";
@@ -8,10 +8,17 @@ import "./reset.css";
 const ThemeToggle = lazy(() => import('./dark-light-toggle'));
 const Project = lazy(() => import('./project/project'));
 const HomePage = lazy(() => import('./home/home'));
+const AboutPage = lazy(() => import('./about/about'));
 const ReadingProgress = lazy(() => import('./read-progress'));
 const Error = lazy(() => import('./404/index'));
 
 const App = () => {
+
+  const [loading, setLoading] = useState(true)
+
+  useEffect(() => {
+    setTimeout(() => setLoading(false), 6000)
+  }, [])
 
   const target = createRef();
   const [projectPreviewPosition, setProjectPreviewPosition] = useState(null);
@@ -34,7 +41,12 @@ const App = () => {
 
   return (
    <Router>
+      {/* {loading === false ? ( */}
       <main>
+        <div aria-hidden="true" className="loader-wipe"></div>
+        <div aria-hidden="true" className="loader-wipe-black"></div>
+        <div aria-hidden="true" className="loader-wipe-fixed"><img className="loader-image" src={require('./nav/icons/lucky-for-sum-logo.svg')} alt="Home"/></div>
+
         <NavDefault />
         <Suspense fallback={<div className="header-side-container"></div>}>
           <ThemeToggle />
@@ -68,11 +80,28 @@ const App = () => {
 
               </div>
             }/>
+            {/* <Route path="/about" element={ 
+              <div>
+                <Suspense fallback={<div></div>}>
+                  <AboutPage position={projectPreviewPosition}  target={target} />
+                </Suspense>
+              </div>
+            }/>
+            <Route path="/blog" element={ 
+              <div>
+                <Suspense fallback={<div></div>}>
+                <div className="about">About</div>
+                </Suspense>
+              </div>
+            }/> */}
              <Suspense fallback={<div></div>}>
                 <Route path="*" element={<Error />} />
             </Suspense>
         </Routes>
       </main>
+      {/* ) : (
+        <div className="loader-wipe"></div>
+      )} */}
   </Router>
   );
 }

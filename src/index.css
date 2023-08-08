@@ -3,8 +3,30 @@
   -webkit-tap-highlight-color: transparent;
   transition: 0.3s ease;
 }
+
+.animate-gradient {
+  animation: gradient 9s ease infinite;
+}
+
+@keyframes gradient{
+
+  0%{
+    background-position: 0% 4%;
+  }
+
+  50%{
+     background-position: 100% 97%;
+  }
+
+  100%{
+    background-position: 0% 4%;
+  }
+}
+
 :root {
   --happy-mustard: #FEC155;
+  --happy-mustard-dark: #F4B442;
+  --happy-mustard-gradient: linear-gradient(315deg, var(happy-mustard), var(happy-mustard-dark));
   --deep-purple: #1F1E20;
   --off-white: #F0EEE9;
   --white: #fff;
@@ -151,6 +173,7 @@ nav {
 .masthead.hovered {
   background: var(--happy-mustard);
 }
+
 .masthead > .section {
   display: flex;
   width: 100%;
@@ -405,4 +428,121 @@ nav {
   border-bottom-right-radius: 0.75rem;
   background: var(--white);
   border: 0;
+}
+
+.loader-wipe {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background: var(--happy-mustard);
+  z-index: 6;
+  /* animation: wipedown 1s forwards ease-out; */
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 3s;
+  animation-iteration-count: 1;
+  animation-direction: forwards;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+  animation-name: wipedown;
+  transition: 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loader-wipe-fixed {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 6;
+  animation-duration: 0.2s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 3.15s;
+  animation-iteration-count: 1;
+  animation-direction: forwards;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+  animation-name: fadeOut;
+  transition: 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader-wipe-black {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: var(--deep-purple);
+  z-index: 6;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0.75s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+  animation-name: wipeup;
+  transition: 0.3s ease;
+}
+
+.loader-image {
+  width: 6rem;
+  transform: rotate(-90deg);
+  /* max-width: 50%; */
+}
+
+@media (min-width: 768px) {
+  .loader-image {
+    width: 10rem;
+    transform: rotate(-90deg);
+    /* max-width: 50%; */
+  }
+}
+
+@keyframes wipeup {
+  0%   { 
+    transform: translateY(0);
+  }
+  99% { 
+    transform: translateY(-100vh);
+  }
+  100% {
+    display: none;
+    transform: translateY(100vh);
+  }
+}
+
+@keyframes wipedown {
+  0%   { 
+    transform: translateY(0);
+  }
+  99% { 
+    transform: translateY(100vh);
+  }
+  100% {
+    display: none;
+    transform: translateY(100vh);
+  }
+}
+
+@keyframes fadeOut {
+  0%   { 
+    opacity: 1;
+  }
+  99% { 
+    opacity: 0;
+    transform: translateY(0)
+  }
+  100% {
+    display: none;
+    opacity: 0;
+    transform: translateY(-100vh);
+  }
 }

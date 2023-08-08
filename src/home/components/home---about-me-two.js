@@ -10,8 +10,8 @@ export const About = () => {
         <div className="aboutMe">
             <h1 aria-level="1" tabIndex="0">Hi, I'm Sumner</h1>
             <p tabIndex="0">I’m a Lead Product Designer who designs experiences and strategies that look to solve everyday problems that we have learned to work around.</p>
-            <p>Previously working to keep students safe online and offline at Education Technology company <a href="/project/online-safety-pid-3">Impero Software</a>. More recently helping to scale a leading e-commerce retailer and build better processes at <a href="/project/total-platform-pid-1">Next</a>.</p>
-            <p tabIndex="0">My current challenge is leading, coaching and managing the Design and Research team at <a href="/project/robin-ai-pid-0">Robin AI</a>.</p>
+            {/* <p>Previously working to keep students safe online and offline at Education Technology company <a href="/project/online-safety-pid-3">Impero Software</a>. More recently helping to scale a leading e-commerce retailer and build better processes at <a href="/project/total-platform-pid-1">Next</a>.</p>
+            <p tabIndex="0">My current challenge is leading, coaching and managing the Design and Research team at <a href="/project/robin-ai-pid-0">Robin AI</a>.</p> */}
         </div>
     )
 }

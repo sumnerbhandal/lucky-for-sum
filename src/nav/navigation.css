@@ -40,7 +40,7 @@ nav {
   transform: scale(1.2);
 }
 .masthead.hovered a {
-  color: var(--white)
+  color: var(--deep-purple)
 }
 .masthead a.logo-image img {
   height: 110%;
@@ -113,13 +113,13 @@ nav {
 }
 
 .masthead.hovered #burger-button {
-  border: 0.125rem solid var(--white);
+  border: 0.125rem solid var(--deep-purple);
 }
 .masthead.hovered #burger-button span {
-  background: var(--white);
+  background: var(--deep-purple);
 }
 .masthead.hovered #burger-button p {
-  color: var(--white);
+  color: var(--deep-purple);
 }
 
 #burger-button:hover {
