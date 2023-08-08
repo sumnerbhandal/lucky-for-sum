@@ -29,8 +29,7 @@
     .introSection.hp-section {
         width: 50%;
         align-items: center;
-        padding-left: 4rem;
-        padding-right: 4rem;
+        padding: 4rem;
     }
     .aboutMeTwo {
         width: 55%;
@@ -116,14 +115,14 @@ img.play-button {
 }
 
 .homepage .project-preview-container:nth-child(odd) {
-    background: var(--white);
+    background: var(--off-white);
 }
 
 .homepage .project-preview-container:nth-child(even) .project-preview-thumbnail {
-    background: var(--white);
+    background: var(--off-white);
 }
 .homepage .project-preview-container:nth-child(even) {
-    background: var(--off-white);
+    background: var(--white);
 }
 
 .project-preview {
@@ -228,7 +227,7 @@ img.play-button {
 .image-right p.intro {
     color: var(--happy-mustard-text);
 }
-body.dark .homepage .project-preview-container:nth-child(even) .image-right p.intro {
+body.dark .homepage .project-preview-container:nth-child(odd) .image-right p.intro {
     color: var(--deep-purple);
 }
 
@@ -260,7 +259,7 @@ body.dark .homepage .project-preview-container:nth-child(even) .image-right p.in
 
     .image-right {
         display: flex;
-        background: var(--white);
+        background: var(--happy-mustard);
         width: calc(100% / 2);
         height: 100%;
         justify-content: center;
@@ -273,7 +272,7 @@ body.dark .homepage .project-preview-container:nth-child(even) .image-right p.in
     }
 
     .project-preview-container:nth-child(odd) .image-right {
-        background: var(--happy-mustard);
+        background: var(--white);
         box-shadow: 0 0px 0px 0px var(--happy-mustard);
     }
 
@@ -401,7 +400,7 @@ body.dark .aboutMe p.intro {
     .aboutMe {
         margin: 2rem 0;
         padding: 0 4rem 0 0rem;
-        max-width: 800px;
+        max-width: 37.5rem;
     }
     .aboutMe .column {
         width: calc(50% - 2rem);
