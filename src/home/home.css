@@ -421,6 +421,15 @@ body.dark .aboutMe p.intro {
     color: var(--deep-purple);
 }
 
+.hero-image-container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.hero-image-container img {
+    width: 100%;
+}
+
 @media (min-width: 768px) {
     .aboutMe {
         margin: 2rem 0;
@@ -429,6 +438,10 @@ body.dark .aboutMe p.intro {
     }
     .aboutMe .column {
         width: calc(50% - 2rem);
+    }
+    .hero-image-container {
+        width: 60%;
+
     }
 }
 
@@ -440,6 +453,10 @@ body.dark .aboutMe p.intro {
     .aboutMe {
         padding: 1.5rem 6rem 1.5rem 4rem
     }
+    .hero-image-container {
+        width: 45%;
+    }
+    
 }
 
 @media (min-width: 1600px) {
