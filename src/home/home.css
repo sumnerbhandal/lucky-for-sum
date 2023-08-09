@@ -107,7 +107,7 @@ img.play-button {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    border-bottom: 0.0625rem solid var(--deep-purple);
+    /* border-bottom: 0.0625rem solid var(--deep-purple); */
     border-top: 2px solid var(--deep-purple);
 }
 .homepage .project-preview-container {
@@ -342,6 +342,11 @@ body.dark .homepage .project-preview-container:nth-child(odd) .image-right p.int
     }
     .project-preview h2 {
         font-size: 1.375rem;
+    }
+    .project-preview-container {
+        justify-content: space-between;
+        width: 100%;
+        max-height: 55rem;
     }
 }
 
