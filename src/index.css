@@ -441,7 +441,7 @@ nav {
   /* animation: wipedown 1s forwards ease-out; */
   animation-duration: 0.5s;
   animation-timing-function: ease-in-out;
-  animation-delay: 3s;
+  animation-delay: 1.75s;
   animation-iteration-count: 1;
   animation-direction: forwards;
   animation-fill-mode: forwards;
@@ -461,7 +461,7 @@ nav {
   z-index: 6;
   animation-duration: 0.2s;
   animation-timing-function: ease-in-out;
-  animation-delay: 3.15s;
+  animation-delay: 1.9s;
   animation-iteration-count: 1;
   animation-direction: forwards;
   animation-fill-mode: forwards;

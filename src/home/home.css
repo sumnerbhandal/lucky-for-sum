@@ -420,7 +420,7 @@ body.dark .aboutMe p.intro {
     .aboutMe {
         margin: 2rem 0;
         padding: 0 4rem 0 0rem;
-        max-width: 37.5rem;
+        max-width: 40rem;
     }
     .aboutMe .column {
         width: calc(50% - 2rem);
@@ -429,8 +429,11 @@ body.dark .aboutMe p.intro {
 
 @media (min-width: 1024px) {
     .aboutMe h1 {
-        width: 70%;
+        width: 80%;
         font-size: 3rem;
+    }
+    .aboutMe {
+        padding: 1.5rem 6rem 1.5rem 4rem
     }
 }
 
