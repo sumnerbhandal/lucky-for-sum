@@ -124,7 +124,17 @@ const HomePage = (props) => {
             <LazyLoad offset={400} throttle={50}>
                     <Suspense fallback={<div></div>}>
                         <ProgressiveImageHook
-                            src={require('./images/sumner.png')}
+                            src={require('./images/robin-sumner.jpg')}
+                            placeholder={require('./images/' + imageSrc.replace(".png" || ".gif" || ".jpg", "_placeholder.png"))}
+                            alt="Sumner giving a presentation"
+                            tabIndex={0}
+                        />
+                    </Suspense>
+                </LazyLoad>
+                <LazyLoad offset={400} throttle={50}>
+                    <Suspense fallback={<div></div>}>
+                        <ProgressiveImageHook
+                            src={require('./images/about-768.jpg')}
                             placeholder={require('./images/' + imageSrc.replace(".png" || ".gif" || ".jpg", "_placeholder.png"))}
                             alt="Sumner giving a presentation"
                             tabIndex={0}
