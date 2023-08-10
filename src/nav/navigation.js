@@ -37,7 +37,7 @@ const NavDefault = (props) => {
                         id="link_homepage"
                         // onClick={scrollSectionIntoView}
                         className="logo-image"
-                        to="/#introSection">
+                        to="/#homepage">
                             <img src={require('./icons/lucky-for-sum-logo.svg')} alt="Home"/>
                         </NavHashLink>
                         <NavHashLink className="brand-name" to="/#introSection">

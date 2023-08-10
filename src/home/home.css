@@ -435,33 +435,31 @@ body.dark .aboutMe p.intro {
     height: 100%;
 }
 
-.hero-image-container .LazyLoad.is-visible {
+.hero-image-container .hero-image-container-frame {
     border: 0.125rem solid var(--deep-purple);
     border-radius: 0rem;
     width: 94%;
+    box-sizing: border-box;
+    overflow: hidden;
 }
 
 
-.hero-image-container .LazyLoad.is-visible:first-of-type {
+.hero-image-container .hero-image-container-frame:first-of-type {
     transform: rotate(5deg);
     z-index: 1;
     width: 70%;
 }
 
-.hero-image-container .LazyLoad.is-visible:hover {
+.hero-image-container .hero-image-container-frame:hover {
     transform: rotate(0deg) scale(1.1);
     border-radius: 1rem;
     /* z-index: 2; */
     box-shadow: 12px 12px 0px 0px var(--happy-mustard);
 }
 
-.hero-image-container .LazyLoad.is-visible:hover + .hero-image-container .LazyLoad.is-visible:hover {
-    opacity: 0.1;
-}
 
 
-
-.hero-image-container .LazyLoad.is-visible:last-of-type {
+.hero-image-container .hero-image-container-frame:last-of-type {
     display: none;
 }
 
@@ -472,13 +470,13 @@ body.dark .aboutMe p.intro {
         position: relative;
         align-items: center;
     }
-    .hero-image-container .LazyLoad.is-visible:first-of-type {
+    .hero-image-container .hero-image-container-frame:first-of-type {
         width: 50vw;
         height: 50vw;    
         left: 10vw;
         flex-shrink: 0;
     }
-    .hero-image-container .LazyLoad.is-visible:last-of-type {
+    .hero-image-container .hero-image-container-frame:last-of-type {
         flex-shrink: 0;
         width: 60vw;
         display: flex;
@@ -500,12 +498,12 @@ body.dark .aboutMe p.intro {
     .hero-image-container {
         width: 80%;
     }
-    .hero-image-container .LazyLoad.is-visible:first-of-type {
+    .hero-image-container .hero-image-container-frame:first-of-type {
         width: 35vw;
         height: 35vw;    
         flex-shrink: 0;
     }
-    .hero-image-container .LazyLoad.is-visible:last-of-type {
+    .hero-image-container .hero-image-container-frame:last-of-type {
         flex-shrink: 0;
         width: 45vw;
         display: flex;
@@ -526,11 +524,11 @@ body.dark .aboutMe p.intro {
     .hero-image-container {
         width: 45%;
     }
-    .hero-image-container .LazyLoad.is-visible:first-of-type {
+    .hero-image-container .hero-image-container-frame:first-of-type {
         width: 20rem;
         height: 20rem;    
     }
-    .hero-image-container .LazyLoad.is-visible:last-of-type {
+    .hero-image-container .hero-image-container-frame:last-of-type {
         width: 26rem;
         right: 0rem;
         top: 3rem;

@@ -17,6 +17,7 @@ const Project = lazy(() => import('../project/project'));
 
 const ProgressiveImageHook = lazy(() => import('../reusable-functions/progressive-image-load'));
 const imageSrc = "about-768.jpg";
+const imageSrc2 = "robin-sumner.jpg"
 
 
 const footerStyle = {
@@ -121,26 +122,13 @@ const HomePage = (props) => {
             <About />
             </div>
             <div className="hero-image-container">
-            <LazyLoad offset={400} throttle={50}>
-                    <Suspense fallback={<div></div>}>
-                        <ProgressiveImageHook
-                            src={require('./images/robin-sumner.jpg')}
-                            placeholder={require('./images/' + imageSrc.replace(".png" || ".gif" || ".jpg", "_placeholder.png"))}
-                            alt="Sumner giving a presentation"
-                            tabIndex={0}
-                        />
-                    </Suspense>
-                </LazyLoad>
-                <LazyLoad offset={400} throttle={50}>
-                    <Suspense fallback={<div></div>}>
-                        <ProgressiveImageHook
-                            src={require('./images/about-768.jpg')}
-                            placeholder={require('./images/' + imageSrc.replace(".png" || ".gif" || ".jpg", "_placeholder.png"))}
-                            alt="Sumner giving a presentation"
-                            tabIndex={0}
-                        />
-                    </Suspense>
-                </LazyLoad>
+                <div className="hero-image-container-frame">
+                    <img src={require('./images/robin-sumner.jpg')} />
+                </div>
+                <div className="hero-image-container-frame">
+                    <img src={require('./images/about-768.jpg')} />
+                </div>
+             
                 </div>
                 {/* <HeroVideo pressEnter={pressEnter} videoButton={videoButton} videoPlaying={videoPlaying} /> */}
             </div>
