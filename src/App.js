@@ -9,6 +9,7 @@ const ThemeToggle = lazy(() => import('./dark-light-toggle'));
 const Project = lazy(() => import('./project/project'));
 const HomePage = lazy(() => import('./home/home'));
 const AboutPage = lazy(() => import('./about/about'));
+const Blog = lazy(() => import('./blog/blog'));
 const ReadingProgress = lazy(() => import('./read-progress'));
 const Error = lazy(() => import('./404/index'));
 
@@ -52,7 +53,7 @@ const App = () => {
           <ThemeToggle />
         </Suspense>
         <Routes>
-          <Route path="/" element={ 
+          <Route exact strict path="/" element={ 
               <div>
                 <Suspense fallback={<div></div>}>
                   <HomePage HpReferrer={(value) => setHpReferrer(value)} PreviewPosition={(value) => setProjectPreviewPosition(value)}/>
@@ -86,14 +87,38 @@ const App = () => {
                   <AboutPage position={projectPreviewPosition}  target={target} />
                 </Suspense>
               </div>
-            }/>
-            <Route path="/blog" element={ 
-              <div>
-                <Suspense fallback={<div></div>}>
-                <div className="about">About</div>
-                </Suspense>
-              </div>
             }/> */}
+            <Route exact path="/blog" element={
+                  <div>
+                    <Suspense fallback={<div></div>}>
+                        <Blog HpReferrer={(value) => setHpReferrer(value)} PreviewPosition={(value) => setProjectPreviewPosition(value)} />
+                    </Suspense>
+                  </div>}
+                />
+
+            <Route path="/blog/article/*"
+                  element={
+                      <div>
+                          <div className={`project-page ${!hpReferrer ? "direct-link" : "" }`} id="project-page" tabIndex="0">
+                            <Suspense fallback={<div></div>}>
+                              <ReadingProgress target={target} />
+                            </Suspense>
+                            <Suspense fallback={<div></div>}>
+                              <Project position={projectPreviewPosition}  target={target} />
+                              <Footer />
+                            </Suspense>
+                          </div>
+                          <Suspense fallback={<div></div>}>
+                              {hpReferrer ? (
+                                  <div tabIndex="0" style={hide}>
+                                    <HomePage HpReferrer={(value) => setHpReferrer(value)} PreviewPosition={(value) => setProjectPreviewPosition(value)}  />
+                                  </div>
+                                ) : null}
+                            </Suspense>
+                        </div>
+                      }
+                />
+
              <Suspense fallback={<div></div>}>
                 <Route path="*" element={<Error />} />
             </Suspense>

@@ -27,8 +27,8 @@ body.dark .project-preview-thumbnail.header {
 }
 body.dark .project-preview-thumbnail.header {
     background: #333;
-
 }
+
 .project-preview-container.header {
     flex-wrap: wrap;
 }
@@ -41,6 +41,24 @@ body.dark .project-preview-thumbnail.header {
     pointer-events: none;
     height: 100%;
 }
+
+.project-preview-thumbnail img {
+   height: 100%;
+    position: absolute;
+    top: 0;
+    filter: blur(3px);
+    bottom: 0;
+    animation: blurIn 1s forwards;
+}
+
+
+@media (min-width: 768px) {
+    .project-preview-thumbnail img {
+        width: 100%;
+        height: auto;
+    }
+}
+
 .project-preview-container.header .project-preview {
     position: sticky;
     top: 4.5rem;
@@ -279,6 +297,16 @@ body.dark .project-preview-thumbnail.header {
     } 
 }
 
+@keyframes blurIn {
+
+    0% {
+        filter: blur(3px);
+    }
+    100% {
+        filter: blur(0);
+    } 
+}
+
   @keyframes loadingNextProject {
     0%   { 
 
@@ -317,9 +345,10 @@ body.dark .project-preview-thumbnail.header {
     left: -0.5rem;
     background: var(--happy-mustard);
     width: calc(100% + 1rem);
-    height: 2.5rem;
+    height: 100%;
     z-index: -1;
     opacity: 1;
+    top: 0;
 }
 
 @media (min-width: 768px) {
@@ -339,9 +368,9 @@ body.dark .project-preview-thumbnail.header {
         font-size: 1.25rem;
     }
 
-    .project-content h2:after {
+    /* .project-content h2:after {
         height: 2.75rem;
-    }
+    } */
 }
 
 @media (min-width: 1024px) {
@@ -381,4 +410,27 @@ body.dark .project-preview-thumbnail.header {
     100% {  
         transform: rotate(20deg);
     }
+}
+
+
+.blog-view {
+    max-width: 40rem;
+    margin: 0 auto;
+    margin-top: 2rem;
+}
+
+.blog-view h2 {
+    margin-bottom: 2rem;
+}
+
+.blog-view img {
+    width: 100%;
+}
+
+.blog-view ul {
+    margin-left: 2rem;
+}
+
+.blog-view ul li, .blog-view ol li {
+    margin-bottom: 0.25rem;
 }

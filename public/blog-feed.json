@@ -1,0 +1,144 @@
+{ "blogArticles": 
+    [
+        {
+            "title": "How designers can benefit from writing interaction design acceptance criteria",
+            "tags": [
+                "UX Design", 
+                "BDD"
+            ], 
+            "id": "0",
+            "image": "placeholder-shallow.png",
+            "imageAlt": "experts",
+            "intro": [
+                "Using acceptance criteria frameworks to think beyond static designs."
+            ]
+        },
+        {
+            "title": "What accessibility means for my designs",
+            "tags": [
+                "A11Y", 
+                "Perceivable",
+                "Operable",
+                "Understandable",
+                "Robust"
+            ], 
+            "id": "1",
+            "image": "placeholder-shallow.png",
+            "imageAlt": "experts",
+            "intro": [
+                "Advice on how to incorporate accessibility into your designs and thinking early into your process."
+            ]
+        },
+        {
+            "title": "Why technical implementation knowledge is a UI designers superpower",
+            "tags": [
+                "Front-End", 
+                "Collaboration",
+                "UI Design"
+            ], 
+            "id": "2",
+            "image": "placeholder-shallow.png",
+            "imageAlt": "experts",
+            "intro": [
+                "Leveraging techinical implementation knowledge to foster good collaborative working and help to get everyone on board."
+            ]
+        },
+        {
+            "title": "Tips for being the first designer at a start-up",
+            "tags": [
+                "Start-up", 
+                "Product",
+                "Research"
+            ], 
+            "id": "3",
+            "image": "placeholder-shallow.png",
+            "imageAlt": "experts",
+            "intro": [
+                "A first hand experience of moving from an enterprise level organisastion to a start-up and the things that you should consider before making the move."
+            ]
+        },
+        {
+            "title": "Stepping into design management",
+            "tags": [
+                "Progression", 
+                "Growth",
+                "1-1s"
+            ], 
+            "id": "4",
+            "image": "placeholder-shallow.png",
+            "imageAlt": "experts",
+            "intro": [
+                "Advice on how to balance the transition from IC to managing a team."
+            ]
+        },
+        {
+            "title": "The most important teams for designers to cross-collaborate with",
+            "tags": [
+                "Product", 
+                "Marketing",
+                "Engineering"
+            ], 
+            "id": "5",
+            "image": "placeholder-shallow.png",
+            "imageAlt": "experts",
+            "intro": [
+                "TBC"
+            ]
+        },
+        {
+            "title": "The benefits of using a design methodology",
+            "tags": [
+                "Understanding", 
+                "Deciding",
+                "Designing"
+            ], 
+            "id": "6",
+            "image": "placeholder-shallow.png",
+            "imageAlt": "experts",
+            "intro": [
+                "TBC"
+            ]
+        },
+        {
+            "title": "Working in Design - A research study",
+            "tags": [
+                "Management",
+                "Values", 
+                "Hiring"
+            ], 
+            "id": "7",
+            "image": "working-in-design.jpg",
+            "imageAlt": "experts",
+            "intro": [
+                "A study about what values are important to designers within their work environment."
+            ]
+        },
+        {
+            "title": "Augmenting go to market strategies",
+            "tags": [
+                "User journey", 
+                "Onboarding"
+            ], 
+            "id": "8",
+            "image": "placeholder-shallow.png",
+            "imageAlt": "experts",
+            "intro": [
+                "TBC"
+            ]
+        },
+        {
+            "title": "Measuring the impact of design",
+            "tags": [
+                "Value", 
+                "Progression",
+                "Business Goals"
+            ], 
+            "id": "9",
+            "image": "placeholder-shallow.png",
+            "imageAlt": "experts",
+            "intro": [
+                "TBC"
+            ]
+        }
+    ]
+}

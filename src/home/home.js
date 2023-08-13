@@ -2,10 +2,10 @@ import React, { useState, lazy, useEffect, Suspense } from "react";
 // import { About } from './components/home---about-me';
 import { About } from './components/home---about-me-two';
 import { Link } from "react-router-dom/index";
-import { HeroVideo } from "./components/hero--video";
+// import { HeroVideo } from "./components/hero--video";
 import { Footer } from "../footer/footer";
 import { Helmet } from "react-helmet";
-import LazyLoad from 'react-lazy-load';
+// import LazyLoad from 'react-lazy-load';
 import "./home.css";
 
 const Portfolio = lazy(() => import('./components/portfolio-illustration'));
@@ -14,10 +14,6 @@ const Ligamend = lazy(() => import('./components/ligamend-illustration'));
 const Heuristic = lazy(() => import('./components/heuristic-illustration'));
 const Reality = lazy(() => import('./components/reality-illustration'));
 const Project = lazy(() => import('../project/project'));
-
-const ProgressiveImageHook = lazy(() => import('../reusable-functions/progressive-image-load'));
-const imageSrc = "about-768.jpg";
-const imageSrc2 = "robin-sumner.jpg"
 
 
 const footerStyle = {

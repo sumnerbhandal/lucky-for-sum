@@ -63,11 +63,11 @@ img.play-button {
     flex-wrap: wrap;
     width: 100%;
     position: relative;
-    background: linear-gradient(135deg, var(--off-white) 62%, transparent 38%), radial-gradient(var(--dots-grey) 4px, transparent 4px), radial-gradient(var(--dots-grey) 4px, transparent 4px), transparent;
+    /* background: linear-gradient(135deg, var(--off-white) 62%, transparent 38%), radial-gradient(var(--dots-grey) 4px, transparent 4px), radial-gradient(var(--dots-grey) 4px, transparent 4px), transparent;
     background-size: 100%, 24px 24px, 24px 24px, 100%;
-    background-position: 0 0, -2px 6px, 10px 18px, 0 0;
+    background-position: 0 0, -2px 6px, 10px 18px, 0 0; */
     transition: all 0.3s ease;
-    background-color: var(--off-white);
+    /* background-color: var(--off-white); */
     overflow-x: hidden;
 }
 .hp-section {
@@ -108,7 +108,7 @@ img.play-button {
     flex-wrap: wrap;
     align-items: center;
     /* border-bottom: 0.0625rem solid var(--deep-purple); */
-    border-top: 2px solid var(--deep-purple);
+    border-top: 0.0625rem solid var(--deep-purple);
 }
 .homepage .project-preview-container {
     height: auto;
@@ -217,9 +217,11 @@ img.play-button {
 }
 
 .project-preview a.buttonLink button {
+    margin-top: 0.25rem;
     background: var(--white);
     padding: 0.375rem 3rem;
     border: 0.125rem solid var(--deep-purple);
+    border-radius: 0.125rem;
     font-family: 'Palanquin Dark', sans-serif;
     cursor: pointer;
 }
@@ -276,7 +278,7 @@ body.dark .homepage .project-preview-container:nth-child(odd) .image-right p.int
         background-image: linear-gradient(315deg, #FEC155, #F1B03C);
         animation: gradient 9s ease infinite;
         background-size: 400% 400%;
-        border-left: 2px solid var(--deep-purple);
+        border-left: 0.0625rem solid var(--deep-purple);
     }
 
     .project-preview-container:nth-child(odd) .image-right {
@@ -437,7 +439,7 @@ body.dark .aboutMe p.intro {
 
 .hero-image-container .hero-image-container-frame {
     border: 0.125rem solid var(--deep-purple);
-    border-radius: 0rem;
+    border-radius: 0.125rem;
     width: 94%;
     box-sizing: border-box;
     overflow: hidden;

@@ -2,10 +2,14 @@ import React, { useState, useRef, useEffect } from "react";
 import Menu from "./components/menu";
 import "./navigation.css";
 import { NavHashLink } from 'react-router-hash-link';
+import { NavLink } from "react-router-dom";
+
+
 
 const NavDefault = (props) => {
     const [isShown, setIsShown] = useState(false);
     const [isToggled, setToggled] = useState(false);
+    const [isActive, setIsActive] = useState(false);
 
     function toggleTrueFalse(e) {
         setToggled(!isToggled);
@@ -45,15 +49,16 @@ const NavDefault = (props) => {
                         </NavHashLink>
                     </div>
                         <div className="header-side-container right">
-                        <NavHashLink Link to='/#introSection' className="desktop-links">
-                                Introduction
-                            </NavHashLink>
-                            {/* <NavHashLink to='/#about' className="desktop-links">
-                                About Me
-                            </NavHashLink> */}
-                            <NavHashLink to='/#project-container' className="desktop-links">
-                                Projects
-                            </NavHashLink>
+                            <NavLink end to='/'
+                                className="desktop-links"
+                            >
+                                Home
+                            </NavLink>
+                            <NavLink to='/blog'
+                                className="desktop-links"
+                            >
+                                Blog
+                            </NavLink>
 
                             <a className="get-in-touch-header" target="new" href="mailto:sumnerbhandal@gmail.com">Get In Touch &nbsp; <span role="img" aria-label="Welcome Wave"> 👋🏽</span></a>
                             <button id="burger-button" className={isToggled ? "open" : ""} onClick={toggleTrueFalse}>

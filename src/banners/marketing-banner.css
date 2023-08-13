@@ -25,11 +25,13 @@
   color: var(--deep-purple);
   animation: bannerLoadUp 1s forwards;
   box-shadow: 12px 12px 0px 0px var(--deep-purple);
-  padding: 0.25rem 1.5rem;
+  padding: 1rem 1.5rem;
   max-width: 20rem;
   background: var(--white);
   margin: 0 auto;
   display: block;
+  text-align: center;
+  line-height: 1.25;
 }
 
 @media (min-width: 768px) {
@@ -38,7 +40,7 @@
   }
   .section.banner-title h1 {
     font-size: 2.5rem;
-    max-width: 80vw;
+    max-width: 65rem;
   }
 }
 

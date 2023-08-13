@@ -1,7 +1,7 @@
 import React from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {  faCodepen, faTwitter, faLinkedin, faDribbble, faGithub } from '@fortawesome/free-brands-svg-icons';
-import { NavHashLink } from 'react-router-hash-link';
+import { NavLink } from "react-router-dom";
 import "./menu.css";
 
 const socialLinks = [
@@ -40,14 +40,17 @@ const Menu = (props) => {
         <div ref={props.wrapperRef} className={`main-menu ${props.isToggled ? "open" : ""}`}>
             <ul className="touch-links">
             <li>
-                  <NavHashLink to='/#introSection'  onClick={props.toggleTrueFalse}   tabIndex={props.isToggled ? "0" : "-1"}>Introduction</NavHashLink>
+                  <NavLink to='/'  onClick={props.toggleTrueFalse}   tabIndex={props.isToggled ? "0" : "-1"}>Home</NavLink>
+              </li>
+              <li>
+                  <NavLink to='/blog'  onClick={props.toggleTrueFalse}   tabIndex={props.isToggled ? "0" : "-1"}>Blog</NavLink>
               </li>
               {/* <li>
                   <NavHashLink to='/#about'  onClick={props.toggleTrueFalse}   tabIndex={props.isToggled ? "0" : "-1"}>About</NavHashLink>
               </li> */}
-              <li>
-                  <NavHashLink to='/#project-container' onClick={props.toggleTrueFalse}  tabIndex={props.isToggled ? "0" : "-1"}>Projects</NavHashLink>
-              </li>
+              {/* <li>
+                  <NavLink to='/#project-container' onClick={props.toggleTrueFalse}  tabIndex={props.isToggled ? "0" : "-1"}>Projects</NavHashLink>
+              </li> */}
 
               <li>
               <a className="get-in-touch" target="new" href="mailto:sumnerbhandal@gmail.com" tabIndex={props.isToggled ? "0" : "-1"}>Get In Touch &nbsp; <span role="img" aria-label="Welcome Wave"> 👋🏽</span></a>
