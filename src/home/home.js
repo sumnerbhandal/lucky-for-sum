@@ -115,9 +115,9 @@ const HomePage = (props) => {
             </Helmet>
             <div id="introSection" className="introSection hp-section section">
             <div className="aboutMeTwo">
-            <About />
+                <About />
             </div>
-            <div className="hero-image-container">
+            <div className="hero-image-container  loadup-two">
                 <div className="hero-image-container-frame">
                     <img src={require('./images/robin-sumner.jpg')} />
                 </div>
@@ -130,6 +130,9 @@ const HomePage = (props) => {
             </div>
             {/* <div id="about" className="introSection hp-section section">
                 <About />
+            </div> */}
+            {/* <div className="hero section loadup">
+                    <h2 tabIndex="0">Blog</h2>
             </div> */}
             {!homePageProjects ? (
                 <HPTemplate />

@@ -12,6 +12,7 @@ const BlogPageFeed = [
         "blog" : [
             {
                 // "h2": "The Scope Of The Challenge",
+                "date" : "March 6, 2021",
                 "subsection": [
                     {
                         "copy": [
@@ -47,6 +48,7 @@ const BlogPageFeed = [
         "blog" : [
             {
                 // "h2": "The Scope Of The Challenge",
+                "date" : "2023",
                 "subsection": [
                     {
                         "copy": [
@@ -82,6 +84,7 @@ const BlogPageFeed = [
         "blog" : [
             {
                 // "h2": "The Scope Of The Challenge",
+                "date" : "2023",
                 "subsection": [
                     {
                         "copy": [
@@ -117,6 +120,7 @@ const BlogPageFeed = [
         "blog" : [
             {
                 // "h2": "The Scope Of The Challenge",
+                "date" : "2023",
                 "subsection": [
                     {
                         "copy": [
@@ -152,6 +156,7 @@ const BlogPageFeed = [
         "blog" : [
             {
                 // "h2": "The Scope Of The Challenge",
+                "date" : "2023",
                 "subsection": [
                     {
                         "copy": [
@@ -187,6 +192,7 @@ const BlogPageFeed = [
         "blog" : [
             {
                 // "h2": "The Scope Of The Challenge",
+                "date" : "2023",
                 "subsection": [
                     {
                         "copy": [
@@ -222,6 +228,7 @@ const BlogPageFeed = [
         "blog" : [
             {
                 // "h2": "The Scope Of The Challenge",
+                "date" : "2023",
                 "subsection": [
                     {
                         "copy": [
@@ -257,7 +264,7 @@ const BlogPageFeed = [
         "id": "0",
         "blog" : [
             {
-                // "h2": "The Scope Of The Challenge",
+                "date" : "April 6, 2023",
                 "subsection": [
                     {
                         "copy": [
@@ -265,21 +272,6 @@ const BlogPageFeed = [
                             "A large part of that was conducting and using research to inform everything that we did. At Robin AI, we looked at recruitment and scaling as design problems.",
                             "Our goal was to explore what values are important to designers within their work environment."
                         ],
-                        // "bullet": [
-                        //     "Work with the founders to translate hypotheses into product and research goals"
-                        // ],
-                        // "link" : {
-                        //     "url": "https://app.robinai.co.uk/signup",
-                        //     "text": "Sign up to experience the product for free"
-                        // },
-                        // "link" : {
-                        //     "url": "https://app.robinai.co.uk/signup",
-                        //     "text": "TLDR Sign up for free and try it yourself."
-                        // },
-                        // "subsectionImage" : {
-                        //     "image": "user-journey-map.png",
-                        //     "alt": "An image for a user journey map"
-                        // }
                     }
                 ]
             },
@@ -458,6 +450,7 @@ const BlogPageFeed = [
         "blog" : [
             {
                 // "h2": "The Scope Of The Challenge",
+                "date" : "2023",
                 "subsection": [
                     {
                         "copy": [
@@ -492,6 +485,7 @@ const BlogPageFeed = [
         "id": "0",
         "blog" : [
             {
+                "date" : "2023",
                 // "h2": "The Scope Of The Challenge",
                 "subsection": [
                     {

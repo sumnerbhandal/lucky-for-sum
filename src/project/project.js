@@ -237,8 +237,12 @@ const Project = (props) => {
                                 </h2>
                             </div>
                             }
+                            {content.date === undefined ?
+                                null :
+                                <span className="date">{content.date}</span>
+                            }
                             {content.subsection.map((subsection, index) => (
-                                <div key={index} className="subsection">
+                                    <div key={index} className="subsection">
                                         <div className="">
                                             {subsection.h3 === undefined ? null :
                                             <h3 aria-level="3" tabIndex="0">

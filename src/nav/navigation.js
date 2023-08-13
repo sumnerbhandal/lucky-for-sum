@@ -35,7 +35,7 @@ const NavDefault = (props) => {
             <div className={`masthead ${!isShown ? "" : "hovered"}`}>
                 <div className="section">
                     <div className="header-side-container" >
-                        <NavHashLink
+                        <NavLink
                         onMouseEnter={() => setIsShown(true)}
                         onMouseLeave={() => setIsShown(false)}
                         id="link_homepage"
@@ -43,10 +43,10 @@ const NavDefault = (props) => {
                         className="logo-image"
                         to="/#homepage">
                             <img src={require('./icons/lucky-for-sum-logo.svg')} alt="Home"/>
-                        </NavHashLink>
-                        <NavHashLink className="brand-name" to="/#introSection">
+                        </NavLink>
+                        <NavLink className="brand-name" to="/#introSection">
                             <img src={require('./icons/lfs-logo-dark.svg')} alt="Home"/>
-                        </NavHashLink>
+                        </NavLink>
                     </div>
                         <div className="header-side-container right">
                             <NavLink end to='/'

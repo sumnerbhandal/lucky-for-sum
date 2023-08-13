@@ -244,6 +244,13 @@ body.dark .project-preview-thumbnail.header {
     }
 }
 
+span.date {
+    color: var(--subtext);
+    margin-bottom: 1rem;
+    padding-bottom: 0.3875rem;
+    border: 0;
+    border-bottom: 0.0625rem solid var(--off-white);
+}
 
 
 .next-project-section {
@@ -294,16 +301,6 @@ body.dark .project-preview-thumbnail.header {
         transform: rotate(1000deg);
         border-left-color: var(--off-white);
         border-top-color: var(--off-white);  
-    } 
-}
-
-@keyframes blurIn {
-
-    0% {
-        filter: blur(3px);
-    }
-    100% {
-        filter: blur(0);
     } 
 }
 

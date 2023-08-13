@@ -106,6 +106,44 @@ main {
   animation: bannerLoadUp 1s forwards;
   margin-top: 2rem;
 }
+.loadup {
+  opacity: 0;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+  animation-name: bannerLoadUp;
+  /* margin-top: 2rem; */
+}
+
+.loadup-two {
+  opacity: 0;
+  animation-duration: 1.5s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+  animation-name: bannerLoadUp;
+  /* margin-top: 2rem; */
+}
+
+.hero.section {
+  width: 100%;
+}
+
+.hero.section h2 {
+  margin-top: 3rem;
+    font-size: 2.75rem;
+    margin-bottom: 3rem;
+    font-family: 'DM Serif Display', serif;
+    line-height: 1.15;
+}
+
 @media (min-width: 768px) {
   .product-list {
     margin-top: 2rem;
@@ -568,4 +606,14 @@ a.desktop-links.active:after {
     opacity: 0;
     transform: translateY(-100vh);
   }
+}
+
+@keyframes blurIn {
+
+  0% {
+      filter: blur(3px);
+  }
+  100% {
+      filter: blur(0);
+  } 
 }

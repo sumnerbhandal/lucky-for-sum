@@ -435,6 +435,7 @@ body.dark .aboutMe p.intro {
 .hero-image-container img {
     width: 100%;
     height: 100%;
+    /* animation: blurIn 1s forwards; */
 }
 
 .hero-image-container .hero-image-container-frame {
