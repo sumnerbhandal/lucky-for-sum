@@ -234,9 +234,9 @@ img.play-button {
 .image-right p.intro {
     color: var(--happy-mustard-text);
 }
-body.dark .homepage .project-preview-container:nth-child(odd) .image-right p.intro {
+/* body.dark .homepage .project-preview-container:nth-child(odd) .image-right p.intro {
     color: var(--deep-purple);
-}
+} */
 
 @media (min-width: 768px) {
     .project-preview-container {
