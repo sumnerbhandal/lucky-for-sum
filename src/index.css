@@ -98,7 +98,7 @@ main {
   flex-wrap: wrap; */
 }
 .section {
-  max-width: 80rem;
+  /* max-width: 80rem; */
   margin: 0 auto;
   padding: 0 1.25rem;
 }
@@ -154,7 +154,8 @@ main {
 }
 @media (min-width: 1600px) {
   .section {
-    max-width: 100rem;
+    /* max-width: 100rem; */
+    padding: 0 4rem;
   }
 }
 .PageContent {
