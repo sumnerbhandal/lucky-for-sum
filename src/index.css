@@ -89,10 +89,10 @@ code {
 }
 main {
   margin-top: 4.5rem;
-  background: linear-gradient(135deg, var(--off-white) 62%, transparent 38%), radial-gradient(var(--dots-grey) 4px, transparent 4px), radial-gradient(var(--dots-grey) 4px, transparent 4px), transparent;
+  background: linear-gradient(135deg, var(--white) 62%, transparent 38%), radial-gradient(var(--dots-grey) 4px, transparent 4px), radial-gradient(var(--dots-grey) 4px, transparent 4px), transparent;
   background-size: 100%, 24px 24px, 24px 24px, 100%;
   background-position: 0 0, -2px 6px, 10px 18px, 0 0;
-  background-color: var(--off-white);
+  background-color: var(--white);
   /* height: calc(100vh - 4.5rem);
   overflow-y: scroll;
   flex-wrap: wrap; */

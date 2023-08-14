@@ -115,7 +115,7 @@ img.play-button {
     height: auto;
 }
 
-#project-container {
+#project-container, .article-container {
     box-shadow: 0 0 6.25rem rgba(0,0,0, 0.1);
 }
 
