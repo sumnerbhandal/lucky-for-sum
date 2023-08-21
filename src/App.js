@@ -4,10 +4,13 @@ import { Footer } from './footer/footer';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom/index";
 import "./index.css";
 import "./reset.css";
+import background from "./Speckle-3x.png";
+
 
 const ThemeToggle = lazy(() => import('./dark-light-toggle'));
 const Project = lazy(() => import('./project/project'));
 const HomePage = lazy(() => import('./home/home'));
+const WorkPage = lazy(() => import('./home/work'));
 const AboutPage = lazy(() => import('./about/about'));
 const Blog = lazy(() => import('./blog/blog'));
 const ReadingProgress = lazy(() => import('./read-progress'));
@@ -43,7 +46,7 @@ const App = () => {
   return (
    <Router>
       {/* {loading === false ? ( */}
-      <main>
+      <main style={{ backgroundImage: `url(${background})` }}>
         <div aria-hidden="true" className="loader-wipe"></div>
         <div aria-hidden="true" className="loader-wipe-black"></div>
         <div aria-hidden="true" className="loader-wipe-fixed"><img className="loader-image" src={require('./nav/icons/lucky-for-sum-logo.svg')} alt="Home"/></div>
@@ -88,6 +91,13 @@ const App = () => {
                 </Suspense>
               </div>
             }/> */}
+            <Route exact path="/work" element={
+                  <div>
+                    <Suspense fallback={<div></div>}>
+                        <WorkPage HpReferrer={(value) => setHpReferrer(value)} PreviewPosition={(value) => setProjectPreviewPosition(value)} />
+                    </Suspense>
+                  </div>}
+                />
             <Route exact path="/blog" element={
                   <div>
                     <Suspense fallback={<div></div>}>

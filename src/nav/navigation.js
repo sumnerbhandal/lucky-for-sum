@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 import Menu from "./components/menu";
-import "./navigation.css";
+// import "./navigation.css";
 import { NavHashLink } from 'react-router-hash-link';
 import { NavLink } from "react-router-dom";
 
@@ -44,9 +44,9 @@ const NavDefault = (props) => {
                         to="/#homepage">
                             <img src={require('./icons/lucky-for-sum-logo.svg')} alt="Home"/>
                         </NavLink>
-                        <NavLink className="brand-name" to="/#introSection">
+                        {/* <NavLink className="brand-name" to="/#introSection">
                             <img src={require('./icons/lfs-logo-dark.svg')} alt="Home"/>
-                        </NavLink>
+                        </NavLink> */}
                     </div>
                         <div className="header-side-container right">
                             <NavLink end to='/'
@@ -54,10 +54,15 @@ const NavDefault = (props) => {
                             >
                                 Home
                             </NavLink>
+                            <NavLink to='/work'
+                                className="desktop-links"
+                            >
+                                Work
+                            </NavLink>
                             <NavLink to='/blog'
                                 className="desktop-links"
                             >
-                                Blog
+                                Articles
                             </NavLink>
 
                             <a className="get-in-touch-header" target="new" href="mailto:sumnerbhandal@gmail.com">Get In Touch &nbsp; <span role="img" aria-label="Welcome Wave"> 👋🏽</span></a>

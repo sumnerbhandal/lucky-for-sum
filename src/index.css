@@ -88,19 +88,41 @@ code {
     monospace;
 }
 main {
-  margin-top: 4.5rem;
-  background: linear-gradient(135deg, var(--white) 62%, transparent 38%), radial-gradient(var(--dots-grey) 4px, transparent 4px), radial-gradient(var(--dots-grey) 4px, transparent 4px), transparent;
+  margin-top: 3.5rem;
+  /* background: linear-gradient(135deg, var(--white) 62%, transparent 38%), radial-gradient(var(--dots-grey) 4px, transparent 4px), radial-gradient(var(--dots-grey) 4px, transparent 4px), transparent;
   background-size: 100%, 24px 24px, 24px 24px, 100%;
   background-position: 0 0, -2px 6px, 10px 18px, 0 0;
-  background-color: var(--white);
+  background-color: var(--white); */
   /* height: calc(100vh - 4.5rem);
   overflow-y: scroll;
   flex-wrap: wrap; */
+  background-repeat: repeat;
+  background-size: 30rem;
+  background-color: var(--white);
+
 }
+
+body.dark main {
+  background-blend-mode: soft-light;
+}
+
+.section-wrapper {
+  width: 100%;
+}
+
+@media (min-width: 1024px) {
+  .section-wrapper.core {
+    max-width: 88vw;
+    margin: 0 auto;
+  }
+}
+
+
+
 .section {
-  /* max-width: 80rem; */
+  max-width: 100rem;
   margin: 0 auto;
-  padding: 0 1.25rem;
+  padding: 0 1.5rem;
 }
 .section.loadup {
   animation: bannerLoadUp 1s forwards;
@@ -187,7 +209,7 @@ main {
 .reading-progress-bar {
   position: fixed;
   height: 0.375rem;
-  top: 4.5rem;
+  top: 3.5rem;
   left: 0;
   z-index: 4;
   background-color: var(--deep-purple);
@@ -208,32 +230,34 @@ nav {
   top: 0;
   background: var(--off-white);
   z-index: 3;
-  border-bottom: 0.0625rem solid var(--deep-purple);
 }
 .masthead {
   display: flex;
   font-size: 1.5rem;
-  border-bottom: 0.0625rem solid var(--deep-purple);
+  padding: 0 1.25rem;
+
   background: var(--white);
 }
-.masthead.hovered {
+/* .masthead.hovered {
   background: var(--happy-mustard);
-}
+} */
 
 .masthead > .section {
   display: flex;
   width: 100%;
-  height: 4.5rem;
+  height: 3.5rem;
   align-items: center;
   justify-content: space-between;
+  padding: 0;
+  border-bottom: 0.0625rem solid var(--deep-purple);
 }
 .masthead a.logo-image {
   text-decoration: none;
-  color: var(--deep-purple);
-  background: var(--happy-mustard);
-  width: 3.5rem;
-  height: 3.5rem;
-  padding: 0.5rem;
+  /* color: var(--deep-purple); */
+  background: var(--deep-purple);
+  width: 2rem;
+  height: 2rem;
+  padding: 0.3875rem 0.25rem 0.25rem 0.25rem;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -300,23 +324,24 @@ nav {
 
 /* Burger Menu */
 #burger-button {
-  width: 9rem;
+  width: 8.25rem;
   height: 2.5rem;
   padding: 0.375rem 0.5rem;
   position: relative;
   transform: rotate(0deg);
   transition: .5s ease-in-out;
   cursor: pointer;
-  border: 0.125rem solid var(--deep-purple);
+  /* border: 0.125rem solid var(--deep-purple); */
+  border: 0;
   border-radius: 0.125rem;
   background: none;
   display: flex;
   align-items: center;
   justify-content: flex-start;
 }
-#burger-button:hover {
+/* #burger-button:hover {
   background: var(--happy-mustard);
-}
+} */
 #burger-button:hover p  {
   color: var(--happy-mustard-text);
 }
@@ -324,10 +349,10 @@ nav {
   background: var(--happy-mustard-text);
 }
 #burger-button span {
-  width: 1.25rem;
+  width: 1.125rem;
   display: block;
   position: absolute;
-  height: 0.125rem;
+  height: 0.0625rem;
   background: var(--deep-purple);
   opacity: 1;
   right: 0.75rem;
@@ -336,21 +361,21 @@ nav {
   pointer-events: none;
 }
 #burger-button span:nth-child(1) {
-  top: 0.675rem;
+  top: 0.75rem;
   transform-origin: left center;
 }
 #burger-button span:nth-child(2) {
-  top: 1.0625rem;
+  top: 1.125rem;
   transform-origin: left center;
 }
 #burger-button span:nth-child(3) {
-  top: 1.4375rem;
+  top: 1.5rem;
   transform-origin: left center;
 }
 #burger-button.open span:nth-child(1) {
   transform: rotate(45deg);
-  top: 0.6275rem;
-  right: 0.5rem;
+  top: 0.75rem;
+  right: 0.625rem;
 }
 #burger-button.open span:nth-child(2) {
   width: 0%;
@@ -358,16 +383,17 @@ nav {
 }
 #burger-button.open span:nth-child(3) {
   transform: rotate(-45deg);
-  top: 1.5rem;
-  right: 0.5rem;
+  top: 1.5625rem;
+  right: 0.625rem;
 }
 #burger-button p {
   font-size: 1rem;
-  font-family: 'Palanquin Dark', sans-serif;
+  /* font-family: 'Palanquin Dark', sans-serif; */
   font-weight: 400;
   margin: 0;
-  margin-bottom: 0.125rem;
+  margin-bottom: 0.25rem;
   pointer-events: none;
+  letter-spacing: 0;
 }
 .brand-name {
   display: none;
@@ -421,17 +447,20 @@ a.desktop-links.active:after {
 
 @media (min-width: 768px) {
   #burger-button {
-      width: 9rem;
+      display: none;
+  }
+  .desktop-links {
+    display: flex;
   }
   a.get-in-touch-header  {
       display: flex;
   }
 }
-@media (min-width: 1024px) {
+/* @media (min-width: 1024px) {
   .desktop-links {
     display: flex;
   }
-}
+} */
 
 /* Theme toggle */
 .light-dark-switcher {

@@ -43,7 +43,10 @@ const Menu = (props) => {
                   <NavLink to='/'  onClick={props.toggleTrueFalse}   tabIndex={props.isToggled ? "0" : "-1"}>Home</NavLink>
               </li>
               <li>
-                  <NavLink to='/blog'  onClick={props.toggleTrueFalse}   tabIndex={props.isToggled ? "0" : "-1"}>Blog</NavLink>
+                  <NavLink to='/work'  onClick={props.toggleTrueFalse}   tabIndex={props.isToggled ? "0" : "-1"}>Work</NavLink>
+              </li>
+              <li>
+                  <NavLink to='/blog'  onClick={props.toggleTrueFalse}   tabIndex={props.isToggled ? "0" : "-1"}>Articles</NavLink>
               </li>
               {/* <li>
                   <NavHashLink to='/#about'  onClick={props.toggleTrueFalse}   tabIndex={props.isToggled ? "0" : "-1"}>About</NavHashLink>

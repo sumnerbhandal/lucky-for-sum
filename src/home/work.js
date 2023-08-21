@@ -1,11 +1,7 @@
 import React, { useState, lazy, useEffect, Suspense } from "react";
-// import { About } from './components/home---about-me';
-import { About } from './components/home---about-me-two';
 import { Link } from "react-router-dom/index";
-// import { HeroVideo } from "./components/hero--video";
 import { Footer } from "../footer/footer";
 import { Helmet } from "react-helmet";
-// import LazyLoad from 'react-lazy-load';
 import "./home.css";
 
 const Project = lazy(() => import('../project/project'));
@@ -47,23 +43,12 @@ const HPTemplate = () => {
 };
 
 
-const HomePage = (props) => {
+const WorkPage = (props) => {
     function projectImageOpen(e) {
         const project = e.target;
         const currentProjectPosition = project.getBoundingClientRect();
         props.PreviewPosition(currentProjectPosition);
         props.HpReferrer(true);
-    }
-    function projectImageOpenButton(e) {
-        const project = e.target.parentNode.parentNode.firstChild;
-        const currentProjectPosition = project.getBoundingClientRect();
-        props.PreviewPosition(currentProjectPosition);
-        props.HpReferrer(true);
-    }
-    function pressEnter(e) {
-        if(e.key === 'Enter'){
-            videoButton(e)
-          } return;
     }
     const [videoPlaying, setVideoPlaying] = useState(false);
     function videoButton(e) {
@@ -85,7 +70,7 @@ const HomePage = (props) => {
         setLoadProjects(true);    
     }
     useEffect(() => {
-        const Hp = document.getElementById("homepage");
+        const Hp = document.getElementById("work");
         function watchScroll() {
             Hp.addEventListener("scroll", logit);
         }
@@ -113,92 +98,87 @@ const HomePage = (props) => {
     }, []); 
        
     return (
-        <div id="homepage" className="homepage">
+        <div id="work" className="homepage">
             <Helmet>
-                <title>Lucky For Sum | Design Portfolio | Sumner Bhandal</title>
+                <title>Lucky For Sum | Work | Sumner Bhandal</title>
                 <meta name="description" content="The digital portfolio of Sumner Bhandal. Senior User Interface Designer with a fondness for front-end development and inclusive design." />  
-                <meta name="keywords" content="portfolio,UX,user experience,UI,user interface,product design, designer, digital design,online,digital, support, community, injury, snippets, acl, support community, acl injury, design snippets"/>
+                <meta name="keywords" content=""/>
             </Helmet>
             <div className="section-wrapper">
                 <div id="introSection" className="introSection hp-section section">
                 <div className="aboutMeTwo">
-                    <About />
+                    <div className="aboutMe loadup">
+                        <h1 aria-level="1" tabIndex="0">Work</h1>
+                    </div>
                 </div>
-                <div className="hero-image-container loadup-two section">
-                    <div className="crosshatch"></div>
-                    <div className="hero-image-container-frame">
-                        <img src={require('./images/robin-sumner.jpg')} />
-                    </div>
-                    </div>
                 </div>
             </div>
             <div className="crosshatch left"></div>
             <div className="section-wrapper core">
                 <div className="area">
-                    <h2 aria-level="1" tabIndex="0">Work</h2>
                     {!homePageProjects ? (
                         <HPTemplate />
                     ) : (
-                            homePageProjects.homePageProjects.slice(0,3).map((item, index) => (
-                                <div className="new-project-container" key={index}>
-                                    <div className="new-project-container-row">
-                                        <div className="col">
-                                            <Link to={`/project/${item.url}-pid-${item.id}`} className="project-preview-thumbnail" id={item.id} title={item.url} onClick={projectImageOpen}  tabIndex="0">
-                                            <h3>
-                                                {item.title}
-                                            </h3>
-                                            </Link>
-                                        </div>
-                                        <div className="col">
-                                            {item.intro.map((paragraph, index) => (
-                                                <p key={index} className="intro" tabIndex="0">{paragraph}</p>
-                                            ))}
-                                        </div>
-                                        <div className="col tags">
-                                             {item.tags.map((paragraph, index) => (
-                                                <div className="tag-container">
-                                                     <span key={index} className="tags" tabIndex="0">{paragraph}</span>
-                                                </div>
-                                            ))}
-                                        </div>
+                        homePageProjects.homePageProjects.map((item, index) => (
+                            <div className="new-project-container" key={index}>
+                                <div className="new-project-container-row">
+                                    <div className="col">
+                                        <Link to={`/project/${item.url}-pid-${item.id}`} className="project-preview-thumbnail" id={item.id} title={item.url} onClick={projectImageOpen}  tabIndex="0">
+                                        <h3>
+                                            {item.title}
+                                        </h3>
+                                        </Link>
                                     </div>
-                                    <div className="new-project-container-row">
-                                        <div className="col">
-                                            <Link to={`/project/${item.url}-pid-${item.id}`} id={item.id} className="project-thumbnail" title={item.url} onClick={projectImageOpen}  tabIndex="0">
-                                                <ProgressiveImageHook
-                                                    key={index}
-                                                    src={require('./images/' + item.thumbnail1)}
-                                                    placeholder={require('./images/' + item.thumbnail1.replace(".png" || ".gif" || ".jpg", "_placeholder.png"))}
-                                                    alt={item.thumbnail1Alt}
-                                                    tabIndex={-1}
-                                                />
-                                            </Link>
-                                        </div>
-                                        <div className="col">
-                                        <Link to={`/project/${item.url}-pid-${item.id}`} id={item.id} className="project-thumbnail" title={item.url} onClick={projectImageOpen}  tabIndex="0">
-                                                <ProgressiveImageHook
-                                                    key={index}
-                                                    src={require('./images/' + item.thumbnail2)}
-                                                    placeholder={require('./images/' + item.thumbnail3.replace(".png" || ".gif" || ".jpg", "_placeholder.png"))}
-                                                    alt={item.thumbnail2Alt}
-                                                    tabIndex={-1}
-                                                />
-                                            </Link>
-                                        </div>
-                                        <div className="col">
-                                        <Link to={`/project/${item.url}-pid-${item.id}`} id={item.id} className="project-thumbnail" title={item.url} onClick={projectImageOpen}  tabIndex="0">
-                                                <ProgressiveImageHook
-                                                    key={index}
-                                                    src={require('./images/' + item.thumbnail3)}
-                                                    placeholder={require('./images/' + item.thumbnail3.replace(".png" || ".gif" || ".jpg", "_placeholder.png"))}
-                                                    alt={item.thumbnail3Alt}
-                                                    tabIndex={-1}
-                                                />
-                                            </Link>
-                                        </div>
+                                    <div className="col">
+                                        {item.intro.map((paragraph, index) => (
+                                            <p key={index} className="intro" tabIndex="0">{paragraph}</p>
+                                        ))}
+                                    </div>
+                                    <div className="col tags">
+                                         {item.tags.map((paragraph, index) => (
+                                            <div className="tag-container">
+                                                 <span key={index} className="tags" tabIndex="0">{paragraph}</span>
+                                            </div>
+                                        ))}
                                     </div>
                                 </div>
-                            ))
+                                <div className="new-project-container-row">
+                                    <div className="col">
+                                        <Link to={`/project/${item.url}-pid-${item.id}`} id={item.id} className="project-thumbnail" title={item.url} onClick={projectImageOpen}  tabIndex="0">
+                                            <ProgressiveImageHook
+                                                key={index}
+                                                src={require('./images/' + item.thumbnail1)}
+                                                placeholder={require('./images/' + item.thumbnail1.replace(".png" || ".gif" || ".jpg", "_placeholder.png"))}
+                                                alt={item.thumbnail1Alt}
+                                                tabIndex={-1}
+                                            />
+                                        </Link>
+                                    </div>
+                                    <div className="col">
+                                    <Link to={`/project/${item.url}-pid-${item.id}`} id={item.id} className="project-thumbnail" title={item.url} onClick={projectImageOpen}  tabIndex="0">
+                                            <ProgressiveImageHook
+                                                key={index}
+                                                src={require('./images/' + item.thumbnail2)}
+                                                placeholder={require('./images/' + item.thumbnail3.replace(".png" || ".gif" || ".jpg", "_placeholder.png"))}
+                                                alt={item.thumbnail2Alt}
+                                                tabIndex={-1}
+                                            />
+                                        </Link>
+                                    </div>
+                                    <div className="col">
+                                    <Link to={`/project/${item.url}-pid-${item.id}`} id={item.id} className="project-thumbnail" title={item.url} onClick={projectImageOpen}  tabIndex="0">
+                                            <ProgressiveImageHook
+                                                key={index}
+                                                src={require('./images/' + item.thumbnail3)}
+                                                placeholder={require('./images/' + item.thumbnail3.replace(".png" || ".gif" || ".jpg", "_placeholder.png"))}
+                                                alt={item.thumbnail3Alt}
+                                                tabIndex={-1}
+                                            />
+                                        </Link>
+                                    </div>
+                                </div>
+                            </div>
+                        ))
                         )
                     }
                 </div>
@@ -250,4 +230,4 @@ const HomePage = (props) => {
     );
 }
 
-  export default HomePage;
+  export default WorkPage;

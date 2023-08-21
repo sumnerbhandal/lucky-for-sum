@@ -6,7 +6,15 @@
             "url": "robin-ai",
             "id": "0",
             "image": "Heuristic",
+            "thumbnail1": "Robin-1.jpg",
+            "thumbnail2": "Robin-2.jpg",
+            "thumbnail3": "Robin-3.jpg",
             "feature": "Autocomplete-Feature",
+            "tags": [
+                "User Research",
+                "End-To-End Product Design",
+                "Design Leadership"
+            ],
             "intro": [
                 "Legal services are expensive, and legal administration is a cumbersome and time-consuming process.",
                 "Robin AI are looking to reinvent how we look at those problems and disrupt a multi-billion dollar industry."
@@ -18,19 +26,36 @@
             "url": "total-platform",
             "id": "1",
             "image": "EnrichedSearch",
+            "thumbnail1": "Next-1.jpg",
+            "thumbnail2": "Next-2.png",
+            "thumbnail3": "Next-3.jpg",
             "feature": "Autocomplete-Feature",
+            "tags": [
+                "Architecture",
+                "Accessibility",
+                "UX/UI Design",
+                "Front-End Development"
+            ],
             "intro": [
                 "As high street retailers continue to struggle, one company continues to buck the trend.",
                 "Here's how Next look to revolutionise their online service through creating a progressive platform for themselves and their partners to thrive."
             ]
         },
         {
-            "title": "A Designer Portfolio For All",
+            "title": "A Design Portfolio For All",
             "summary": "UX/UI Design, Inclusive Design, Front-End Development",
             "url": "portfolio-for-all",
             "id": "2",
             "image": "Portfolio",
+            "thumbnail1": "Portfolio-1.jpg",
+            "thumbnail2": "Portfolio-2.jpg",
+            "thumbnail3": "Portfolio-3.jpg",
             "feature": "Portfolio-Feature",
+            "tags": [
+                "UX/UI Design",
+                "Inclusive Design",
+                "Front-End Development"
+            ],
             "intro": [
                 "The consequence of being a designer is that you're only ever as good as your last portfolio.",
                 "Documenting the journey to creating an inclusive design experience."
@@ -42,7 +67,15 @@
             "url": "online-safety",
             "id": "3",
             "image": "Heuristic",
+            "thumbnail1": "Impero-1.jpg",
+            "thumbnail2": "Impero-2.jpg",
+            "thumbnail3": "Impero-3.jpg",
             "feature": "Keeping Children Safe Online",
+            "tags": [
+                "User Research",
+                "Persona Development",
+                "Marketing"
+            ],
             "intro": [
                 "Children should never be safer than when they are in school.",
                 "Here’s how I was able to play my part in helping achieve that."
