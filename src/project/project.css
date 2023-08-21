@@ -1,6 +1,6 @@
 .project-page {
     position: absolute;
-    top: 4.5rem;
+    top: 3.5rem;
     background: var(--off-white);
     z-index: 2;
     width: 100%;
@@ -12,7 +12,8 @@
     animation-direction: alternate; 
     animation-timing-function: ease;
     animation-fill-mode: forwards;
-    background: var(--happy-mustard);
+    /* background: var(--happy-mustard); */
+    background: rgba(0, 0,0, 0.05);
     overflow: hidden;
     margin-top: -2rem;
     clip-path: polygon(100% 0, 100% 60%, 0 100%, 0 0);
@@ -61,7 +62,7 @@ body.dark .project-preview-thumbnail.header {
 
 .project-preview-container.header .project-preview {
     position: sticky;
-    top: 4.5rem;
+    top: 3.5rem;
     width: 100%;
     height: 13rem;
     cursor: initial;
@@ -92,7 +93,29 @@ body.dark .project-preview-thumbnail.header {
     max-width: 1280px;
     width: 100%;
     z-index: 2;
+    background-repeat: repeat;
+    background-size: 30rem;
 }
+
+.project-content {
+    background: var(--white);
+    position: relative;
+    padding: 1.5rem 2rem;
+    min-height: 100vh;
+    opacity: 0;
+    animation: projectContentLoadIn 0.5s forwards;
+    animation-delay: 0.8s;
+    max-width: 1280px;
+    width: 100%;
+    z-index: 2;
+    background-repeat: repeat;
+    background-size: 30rem;
+}
+
+body.dark .project-content {
+    background-blend-mode: overlay;
+}
+
 .project-content section {
     padding-bottom: 1.5rem;
     border-bottom: 2px dashed var(--off-white);

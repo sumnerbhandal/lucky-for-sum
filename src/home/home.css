@@ -6,10 +6,9 @@
     height: auto;
     width: 100%;
     max-width: 72rem;
-    height: calc(100vh - 56px);
     position: relative;
     z-index: 2;
-    min-height: 55rem;
+    min-height: calc(100vh - 56px);
     align-items: center;
     align-content: center;
 }

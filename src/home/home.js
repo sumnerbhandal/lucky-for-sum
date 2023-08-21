@@ -54,12 +54,12 @@ const HomePage = (props) => {
         props.PreviewPosition(currentProjectPosition);
         props.HpReferrer(true);
     }
-    function projectImageOpenButton(e) {
-        const project = e.target.parentNode.parentNode.firstChild;
-        const currentProjectPosition = project.getBoundingClientRect();
-        props.PreviewPosition(currentProjectPosition);
-        props.HpReferrer(true);
-    }
+    // function projectImageOpenButton(e) {
+    //     const project = e.target.parentNode.parentNode.firstChild;
+    //     const currentProjectPosition = project.getBoundingClientRect();
+    //     props.PreviewPosition(currentProjectPosition);
+    //     props.HpReferrer(true);
+    // }
     function pressEnter(e) {
         if(e.key === 'Enter'){
             videoButton(e)
@@ -131,6 +131,7 @@ const HomePage = (props) => {
                     </div>
                     </div>
                 </div>
+                {/* <button className="scroll-to-start">Scroll</button> */}
             </div>
             <div className="crosshatch left"></div>
             <div className="section-wrapper core">
@@ -214,10 +215,10 @@ const HomePage = (props) => {
                                         {
                                             blogProjects.blogArticles.slice(7,11).map((item, index) => (
                                                 <div className="col article">
-                                                     <Link className="blog-image-thumbnail" to={`./blog/article/${item.title.replace(/ /g, '-').toLowerCase()}-pid-${item.id}`} id={item.id}  onClick={projectImageOpen}>                                                       
+                                                     <Link className="blog-image-thumbnail" to={`/blog/article/${item.title.replace(/ /g, '-').toLowerCase()}-pid-${item.id}`} id={item.id}  onClick={projectImageOpen}>                                                       
                                                         <img src={require('../project/images/blog/' + item.image)}/>
                                                     </Link>
-                                                    <Link to={`/project/${item.url}-pid-${item.id}`} className="blog-image-thumbnail" id={item.id} title={item.url} onClick={projectImageOpen}  tabIndex="0">
+                                                    <Link to={`/blog/article/${item.title.replace(/ /g, '-').toLowerCase()}-pid-${item.id}`} className="blog-image-thumbnail" id={item.id} title={item.url} onClick={projectImageOpen}  tabIndex="0">
                                                         <h4>
                                                             {item.title}
                                                         </h4>

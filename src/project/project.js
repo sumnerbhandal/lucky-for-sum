@@ -4,11 +4,13 @@ import hpPreload from "./components/preload";
 import ProjectPageFeed from '../data-feed/project-feed';
 import BlogPageFeed from '../data-feed/blog-feed';
 import {Helmet} from "react-helmet";
+import background from "../Speckle-3x.png";
 const ProgressiveImageHook = lazy(() => import('../reusable-functions/progressive-image-load'));
 const MarketingBannerTwo = lazy(() => import('../banners/marketing-banner'));
 const LazyLoad = lazy(() => import('react-lazy-load'));
 // const ProjectPageFeed = lazy(() => import('../data-feed/project-feed'));
 // const BlogPageFeed = lazy(() => import('../data-feed/blog-feed'));
+
 
 const Project = (props) => {
 
@@ -81,7 +83,7 @@ const Project = (props) => {
                     </div>
                     <MarketingBannerTwo message={pdp.title} />
                 </div>
-                <article id={index + 1} className="project-content section">
+                <article id={index + 1} className="project-content section" style={{ backgroundImage: `url(${background})` }}>
                     {pdp.intro === undefined ?
                     null :
                     <section>
