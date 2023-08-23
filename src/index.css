@@ -429,7 +429,7 @@ a.desktop-links.active:after {
     content: "";
     position: absolute;
     left: -0.5rem;
-    bottom: -0.4375rem;
+    top: 2rem;
     background: var(--happy-mustard);
     width: calc(100% + 1rem);
     height: 0.125rem;

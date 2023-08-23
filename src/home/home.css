@@ -133,10 +133,15 @@
 
 .blog-image-thumbnail {
     width: 100%;
+    overflow: hidden;
+    display: flex;
+    height: 14rem;
+    justify-content: center;
 }
 
 .blog-image-thumbnail img {
-    width: 100%;
+    width: 120%;
+    height: fit-content;
 }
 
 .homepage .project-preview-thumbnail {
@@ -749,4 +754,20 @@ body.dark .aboutMe p.intro {
     border-radius: 0.25rem;
     padding: 2px 8px;
     background-color: var(--off-white);
+}
+
+
+.new-project-container-row.article .col:nth-child(1) .blog-image-thumbnail {
+    border-radius: 6.25rem 0rem;
+}
+
+.new-project-container-row.article .col:nth-child(2) .blog-image-thumbnail {
+    border-radius: 0rem 0rem 0rem 6.25rem;
+}
+.new-project-container-row.article .col:nth-child(3) .blog-image-thumbnail {
+    border-radius: 0rem 6.25rem;
+}
+
+.new-project-container-row.article .col .blog-image-thumbnail:hover {
+    border-radius: 0;
 }
