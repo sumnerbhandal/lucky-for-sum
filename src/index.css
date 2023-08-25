@@ -573,7 +573,7 @@ a.desktop-links.active:before {
   top: 0;
   left: 0;
   background: var(--deep-purple);
-  z-index: 6;
+  z-index: 12;
   animation-duration: 0.5s;
   animation-timing-function: ease-in-out;
   animation-delay: 0.75s;
