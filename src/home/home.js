@@ -60,26 +60,6 @@ const HomePage = (props) => {
     //     props.PreviewPosition(currentProjectPosition);
     //     props.HpReferrer(true);
     // }
-    function pressEnter(e) {
-        if(e.key === 'Enter'){
-            videoButton(e)
-          } return;
-    }
-    const [videoPlaying, setVideoPlaying] = useState(false);
-    function videoButton(e) {
-        const video = document.getElementById("hero-video");
-        video.src = "/hero-video.mp4";
-        if (videoPlaying) {
-            setVideoPlaying(false);
-            video.pause();
-        } else {
-            setVideoPlaying(true);
-            video.play(); 
-        }
-        video.onended = function() {
-            setVideoPlaying(false);
-        };
-    }
     const [loadProjects, setLoadProjects] = useState(false);
     function logit() {
         setLoadProjects(true);    
@@ -127,7 +107,7 @@ const HomePage = (props) => {
                 <div className="hero-image-container loadup-two section">
                     <div className="crosshatch"></div>
                     <div className="hero-image-container-frame">
-                        <img src={require('./images/robin-sumner.jpg')} />
+                        <img src={require('./images/robin-sumner.jpg')} alt="Photo of Sumner making notes on a whiteboard"/>
                     </div>
                     </div>
                 </div>
@@ -216,7 +196,7 @@ const HomePage = (props) => {
                                             blogProjects.blogArticles.slice(7,11).map((item, index) => (
                                                 <div className="col article">
                                                      <Link className="blog-image-thumbnail" to={`/blog/article/${item.title.replace(/ /g, '-').toLowerCase()}-pid-${item.id}`} id={item.id}  onClick={projectImageOpen}>                                                       
-                                                        <img src={require('../project/images/blog/' + item.image)}/>
+                                                        <img src={require('../project/images/blog/' + item.image)} alt={item.alt}/>
                                                     </Link>
                                                     <Link to={`/blog/article/${item.title.replace(/ /g, '-').toLowerCase()}-pid-${item.id}`} id={item.id} title={item.url} onClick={projectImageOpen}  tabIndex="0">
                                                         <h4>

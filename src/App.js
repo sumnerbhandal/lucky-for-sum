@@ -1,4 +1,4 @@
-import React, {useState, createRef, lazy, Suspense, useEffect } from "react";
+import React, {useState, createRef, lazy, Suspense } from "react";
 import NavDefault from './nav/navigation';
 import { Footer } from './footer/footer';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom/index";
@@ -11,18 +11,11 @@ const ThemeToggle = lazy(() => import('./dark-light-toggle'));
 const Project = lazy(() => import('./project/project'));
 const HomePage = lazy(() => import('./home/home'));
 const WorkPage = lazy(() => import('./home/work'));
-const AboutPage = lazy(() => import('./about/about'));
 const Blog = lazy(() => import('./blog/blog'));
 const ReadingProgress = lazy(() => import('./read-progress'));
 const Error = lazy(() => import('./404/index'));
 
 const App = () => {
-
-  const [loading, setLoading] = useState(true)
-
-  useEffect(() => {
-    setTimeout(() => setLoading(false), 6000)
-  }, [])
 
   const target = createRef();
   const [projectPreviewPosition, setProjectPreviewPosition] = useState(null);

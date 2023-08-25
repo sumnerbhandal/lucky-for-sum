@@ -3,13 +3,11 @@ import { Link } from "react-router-dom/index";
 import { Footer } from "../footer/footer";
 import { Helmet } from "react-helmet";
 import "./blog.css";
-const LazyLoad = lazy(() => import('react-lazy-load'));
+import "../home/home.css";
+
 const Project = lazy(() => import('../project/project'));
 const ProgressiveImageHook = lazy(() => import('../reusable-functions/progressive-image-load'));
 
-const footerStyle = {
-    height: "auto"
-}
 
 const numberOfProjects = [
     "1", "2", "3", "4"
@@ -42,6 +40,7 @@ const HPTemplate = () => {
 
 
 const Blog = (props) => {
+    const [scrolledIntoView, setScrolledIntoView] = useState(false);
 
     function projectImageOpen(e) {
         const project = e.target;
@@ -59,16 +58,6 @@ const Blog = (props) => {
     function logit() {
         setLoadProjects(true);    
     }
-    // useEffect(() => {
-    //     const Hp = document.getElementById("blog");
-    //     function watchScroll() {
-    //         Hp.addEventListener("scroll", logit);
-    //     }
-    //     watchScroll();
-    //     return () => {
-    //         Hp.removeEventListener("scroll", logit);
-    //     };
-    // });
 
     const [blogArticles, setblogArticles] = useState(null);
     useEffect(() => {
@@ -78,26 +67,43 @@ const Blog = (props) => {
             setblogArticles(data);
         })
     }, []);
-    // useEffect(() => {
-    //     if (blogArticles != undefined) {
-    //         setblogArticles(blogArticles.blogArticles.toReversed())
-    //     } else return;
-    //   }, []);
-    //
+    function scrollToContent(e) {
+        setScrolledIntoView(true);
+        document.getElementById('articles').scrollIntoView();
+    }
+    useEffect(() => {
+        const handleScroll = event => {
+            setScrolledIntoView(true);
+        };
+        window.addEventListener('scroll', handleScroll);
+        return () => {
+          window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
        
     return (
-        <div id="blog">
-            <div className="section">
-                <Helmet>
-                    <title>Lucky For Sum | Articles | Sumner Bhandal</title>
-                    <meta name="description" content="The digital portfolio of Sumner Bhandal. Senior User Interface Designer with a fondness for front-end development and inclusive design." />  
-                    <meta name="keywords" content=""/>
-                </Helmet>
-                <div className="hero loadup">
-                    <h1 tabIndex="0">Blog</h1>
+        <div id="blog" className="blogpage">
+            <Helmet>
+                <title>Lucky For Sum | Articles | Sumner Bhandal</title>
+                <meta name="description" content="The digital portfolio of Sumner Bhandal. Senior User Interface Designer with a fondness for front-end development and inclusive design." />  
+                <meta name="keywords" content=""/>
+            </Helmet>
+            <div className="section-wrapper">
+                <div id="Work" className="introSection hp-section section">
+                <div className="aboutMeTwo">
+                    <div className="aboutMe loadup">
+                        <h1 aria-level="1" tabIndex="0">Blog</h1>
+                    </div>
+                </div>
                 </div>
             </div>
-            <div className="article-container">
+            <div className="crosshatch left"></div>
+
+            <button className={!scrolledIntoView ? 'scroll-link' : 'scroll-link hide'} aria-label="button" onClick={scrollToContent} tabIndex={!scrolledIntoView ? "0" : "-1"}>
+                <img tab-index="0" src={require('../home/images/arrow.svg')} alt="arrow" />
+            </button> 
+          
+            <div className="article-container" id="articles">
                 <div className="articles loadup-two">
                                 {!blogArticles ? (
                                 <HPTemplate />
@@ -140,6 +146,13 @@ const Blog = (props) => {
 
                             </div>
                 <Footer />
+                <Suspense fallback={<div></div>}>
+            {loadProjects ? (
+                <div style={{display: "none"}}>
+                    <Project/>
+                </div>
+            ) : null}
+            </Suspense>
         </div>
         </div>
     );

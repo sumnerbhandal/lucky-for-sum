@@ -1,9 +1,7 @@
-import React, {lazy, Suspense} from "react";
-import LazyLoad from 'react-lazy-load';
-import { Link } from "react-router-dom/index";
-const ProgressiveImageHook = lazy(() => import('../../reusable-functions/progressive-image-load'));
+import React from "react";
+// const ProgressiveImageHook = lazy(() => import('../../reusable-functions/progressive-image-load'));
 
-const imageSrc = "about-768.jpg";
+// const imageSrc = "about-768.jpg";
 
 export const About = () => {
     return (

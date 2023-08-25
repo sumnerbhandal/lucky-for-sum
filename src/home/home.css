@@ -40,7 +40,7 @@
 .homepage {
     display: flex;
     flex-basis: 100%;
-    height: calc(100vh - 4.5rem);
+    height: calc(100vh - 3.5rem);
     overflow-y: scroll;
     flex-wrap: wrap;
     width: 100%;
@@ -359,7 +359,7 @@
     ;
 }
 
-.homepage h1, .homepage h2 {
+.homepage h1, .homepage h2, .blogpage h1 {
     margin-top: 0;
     font-size: 4.25rem;
     margin-bottom: 1rem;
@@ -383,7 +383,7 @@
     margin-bottom: 8rem;
 }
 
-.homepage h1:after, .homepage h2:after {
+.homepage h1:after, .homepage h2:after, .blogpage h1:after {
     position: absolute;
     content: "";
     width: 25%;
@@ -768,6 +768,6 @@ body.dark .aboutMe p.intro {
     border-radius: 0rem 6.25rem;
 }
 
-.new-project-container-row.article .col .blog-image-thumbnail:hover {
+.new-project-container-row.article .col:nth-child(1) .blog-image-thumbnail:hover {
     border-radius: 0;
 }

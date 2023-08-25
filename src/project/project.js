@@ -77,7 +77,7 @@ const Project = (props) => {
                     {/* {pdp.headerImage} */}
                     {pdp.headerImage === undefined ? null : pdp.headerImage}
                     {pdp.blogImage === undefined ? null : 
-                        <img src={require('./images/blog/' + pdp.blogImage)} tabIndex="-1" />
+                        <img src={require('./images/blog/' + pdp.blogImage)} tabIndex="-1" alt="Banner" />
                     }
 
                     </div>

@@ -44,31 +44,16 @@ const HPTemplate = () => {
 
 
 const WorkPage = (props) => {
+    const [scrolledIntoView, setScrolledIntoView] = useState(false);
+
     function projectImageOpen(e) {
         const project = e.target;
         const currentProjectPosition = project.getBoundingClientRect();
         props.PreviewPosition(currentProjectPosition);
         props.HpReferrer(true);
     }
-    const [videoPlaying, setVideoPlaying] = useState(false);
-    function videoButton(e) {
-        const video = document.getElementById("hero-video");
-        video.src = "/hero-video.mp4";
-        if (videoPlaying) {
-            setVideoPlaying(false);
-            video.pause();
-        } else {
-            setVideoPlaying(true);
-            video.play(); 
-        }
-        video.onended = function() {
-            setVideoPlaying(false);
-        };
-    }
     const [loadProjects, setLoadProjects] = useState(false);
-    function logit() {
-        setLoadProjects(true);    
-    }
+
     useEffect(() => {
         const Hp = document.getElementById("work");
         function watchScroll() {
@@ -79,6 +64,9 @@ const WorkPage = (props) => {
             Hp.removeEventListener("scroll", logit);
         };
     });
+    function logit() {
+        setLoadProjects(true);    
+    }
 
     const [homePageProjects, setHomePageProjects] = useState(null);
     useEffect(() => {
@@ -95,7 +83,11 @@ const WorkPage = (props) => {
         .then((data) => {
             setBlogProjects(data);
         });
-    }, []); 
+    }, []);
+    // function scrollToContent(e) {
+    //     setScrolledIntoView(true);
+    //     document.getElementById('content').scrollIntoView();
+    // } 
        
     return (
         <div id="work" className="homepage">
@@ -105,7 +97,7 @@ const WorkPage = (props) => {
                 <meta name="keywords" content=""/>
             </Helmet>
             <div className="section-wrapper">
-                <div id="introSection" className="introSection hp-section section">
+                <div id="Work" className="introSection hp-section section">
                 <div className="aboutMeTwo">
                     <div className="aboutMe loadup">
                         <h1 aria-level="1" tabIndex="0">Work</h1>
@@ -114,7 +106,12 @@ const WorkPage = (props) => {
                 </div>
             </div>
             <div className="crosshatch left"></div>
-            <div className="section-wrapper core">
+
+            {/* <button className={!scrolledIntoView ? 'scroll-link' : 'scroll-link hide'} aria-label="button" onClick={scrollToContent} tabIndex={!scrolledIntoView ? "0" : "-1"}>
+                <img tab-index="0" src={require('../home/images/arrow.svg')} alt="arrow" />
+            </button>  */}
+
+            <div className="section-wrapper core" id="content">
                 <div className="area">
                     {!homePageProjects ? (
                         <HPTemplate />
@@ -195,7 +192,7 @@ const WorkPage = (props) => {
                                             blogProjects.blogArticles.slice(7,11).map((item, index) => (
                                                 <div className="col article">
                                                      <Link className="blog-image-thumbnail" to={`/blog/article/${item.title.replace(/ /g, '-').toLowerCase()}-pid-${item.id}`} id={item.id}  onClick={projectImageOpen}>                                                       
-                                                        <img src={require('../project/images/blog/' + item.image)}/>
+                                                        <img src={require('../project/images/blog/' + item.image)} alt={item.alt}/>
                                                     </Link>
                                                     <Link to={`/blog/article/${item.title.replace(/ /g, '-').toLowerCase()}-pid-${item.id}`}  id={item.id} title={item.url} onClick={projectImageOpen}  tabIndex="0">
                                                         <h4>

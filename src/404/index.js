@@ -7,7 +7,7 @@ const Error = (props) => {
         <div className="section">
             <div className="error-messaging">
                 <div className="image-container">
-                    <Link to="./" ><img src={require('../nav/icons/lucky-for-sum-logo.svg')} /></Link>
+                    <Link to="./" ><img src={require('../nav/icons/lucky-for-sum-logo.svg')} alt="Lucky for Sum logo" /></Link>
                 </div>
                 <h1>Error 404 - Page Not Found</h1>
                 <div className="text-container">

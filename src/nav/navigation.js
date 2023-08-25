@@ -1,7 +1,5 @@
 import React, { useState, useRef, useEffect } from "react";
 import Menu from "./components/menu";
-// import "./navigation.css";
-import { NavHashLink } from 'react-router-hash-link';
 import { NavLink } from "react-router-dom";
 
 
@@ -9,7 +7,6 @@ import { NavLink } from "react-router-dom";
 const NavDefault = (props) => {
     const [isShown, setIsShown] = useState(false);
     const [isToggled, setToggled] = useState(false);
-    const [isActive, setIsActive] = useState(false);
 
     function toggleTrueFalse(e) {
         setToggled(!isToggled);
