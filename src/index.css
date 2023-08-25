@@ -530,7 +530,7 @@ a.desktop-links.active:before {
   bottom: 0;
   left: 0;
   background: var(--happy-mustard);
-  z-index: 6;
+  z-index: 12;
   /* animation: wipedown 1s forwards ease-out; */
   animation-duration: 0.5s;
   animation-timing-function: ease-in-out;
@@ -551,7 +551,7 @@ a.desktop-links.active:before {
   position: fixed;
   bottom: 0;
   left: 0;
-  z-index: 6;
+  z-index: 12;
   animation-duration: 0.2s;
   animation-timing-function: ease-in-out;
   animation-delay: 1.9s;

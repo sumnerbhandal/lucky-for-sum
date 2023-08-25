@@ -771,3 +771,112 @@ body.dark .aboutMe p.intro {
 .new-project-container-row.article .col .blog-image-thumbnail:hover {
     border-radius: 0;
 }
+
+h1.lucky-for-sum {
+    position: absolute;
+    width: 16rem;
+    transform: translateX(0);
+    transition: 0.3s ease-out;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-out;
+    animation-delay: 3s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+    animation-name: luckyforsum;
+    /* opacity: 0.8; */
+}
+
+.aboutMe h1.intro {
+    opacity: 0;
+    transform: translateX(6.5rem);
+    transition: 0.3s ease-out;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-out;
+    animation-delay: 3s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+    animation-name: luckyforsum2;
+}
+
+.aboutMe h1.lucky-for-sum span, .aboutMe h1.lucky-for-sum:after {
+    /* opacity: 0; */
+    font-size: inherit;
+    font-family: inherit;
+    line-height: inherit;
+    transition: 0.3s ease-out;
+    animation-duration: 0.3s;
+    animation-timing-function: ease-out;
+    animation-delay: 3s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+    animation-name: luckyforsumFadeOut;
+}
+
+.aboutMe h1.intro span, .aboutMe h1.intro:after {
+    /* opacity: 0; */
+    font-size: inherit;
+    font-family: inherit;
+    line-height: inherit;
+    transition: 0.3s ease-out;
+    animation-duration: 0.3s;
+    animation-timing-function: ease-out;
+    animation-delay: 3s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+    animation-name: luckyforsumFadeIn;
+}
+
+
+@keyframes luckyforsum {
+
+    0% {
+        transform: translateX(0);
+        /* opacity: 1; */
+    }
+    100% {
+        transform: translateX(-6.5rem);
+        /* opacity: 0; */
+    } 
+  }
+
+  @keyframes luckyforsum2 {
+
+    0% {
+        transform: translateX(6.5rem);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    } 
+  }
+
+  @keyframes luckyforsumFadeOut {
+
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    } 
+  }
+
+
+  @keyframes luckyforsumFadeIn {
+
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    } 
+  }
+
