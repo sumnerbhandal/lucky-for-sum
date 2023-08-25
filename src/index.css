@@ -316,6 +316,14 @@ nav {
   text-decoration: underline;
 }
 
+body.dark .masthead a:hover, ul li a:hover {
+  color: var(--white);
+}
+
+body.dark .desktop-links:hover:after, a.get-in-touch-header:hover:after {
+  background: var(--happy-mustard);
+}
+
 /* Burger Menu */
 #burger-button {
   width: 8.25rem;
@@ -426,7 +434,7 @@ nav {
   opacity: 1;
 }
 
-a.desktop-links.active:after {
+a.desktop-links.active:before {
     content: "";
     position: absolute;
     left: -0.5rem;

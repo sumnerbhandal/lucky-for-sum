@@ -768,6 +768,6 @@ body.dark .aboutMe p.intro {
     border-radius: 0rem 6.25rem;
 }
 
-.new-project-container-row.article .col:nth-child(1) .blog-image-thumbnail:hover {
+.new-project-container-row.article .col .blog-image-thumbnail:hover {
     border-radius: 0;
 }
