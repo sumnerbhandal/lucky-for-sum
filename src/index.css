@@ -223,7 +223,7 @@ nav {
   width: 100%;
   top: 0;
   background: var(--off-white);
-  z-index: 5;
+  z-index: 10;
 }
 .masthead {
   display: flex;

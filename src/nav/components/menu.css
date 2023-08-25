@@ -8,7 +8,7 @@
   right: 0;
   background: var(--white);
   z-index: -1;
-  height: calc(100vh - 4.5625rem);
+  height: calc(100vh - 3.5rem);
   top: 3.5rem;
   transform: translateX(100%);
   transition: 0.3s ease-in;
