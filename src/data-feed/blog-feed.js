@@ -1,5 +1,3 @@
-// import { Ligamend, Portfolio, EnrichedSearch, Heuristic, Reality } from "../home/components/svg-illustrations";
-import React from 'react';
 
 const BlogPageFeed = [
     {

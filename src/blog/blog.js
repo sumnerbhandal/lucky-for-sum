@@ -40,7 +40,8 @@ const HPTemplate = () => {
 
 
 const Blog = (props) => {
-    const [scrolledIntoView, setScrolledIntoView] = useState(false);
+
+    // Open Project
 
     function projectImageOpen(e) {
         const project = e.target;
@@ -48,16 +49,8 @@ const Blog = (props) => {
         props.PreviewPosition(currentProjectPosition);
         props.HpReferrer(true);
     }
-    function projectImageOpenButton(e) {
-        const project = e.target.parentNode.parentNode.firstChild;
-        const currentProjectPosition = project.getBoundingClientRect();
-        props.PreviewPosition(currentProjectPosition);
-        props.HpReferrer(true);
-    }
-    const [loadProjects, setLoadProjects] = useState(false);
-    function logit() {
-        setLoadProjects(true);    
-    }
+
+    // Feeds
 
     const [blogArticles, setblogArticles] = useState(null);
     useEffect(() => {
@@ -67,19 +60,37 @@ const Blog = (props) => {
             setblogArticles(data);
         })
     }, []);
+
+
+    // Scroll Events
+    const [loadProjects, setLoadProjects] = useState(false);
+    const [scrolledIntoView, setScrolledIntoView] = useState(false);
+
+
     function scrollToContent(e) {
         setScrolledIntoView(true);
         document.getElementById('articles').scrollIntoView();
     }
+
+    function logit() {
+        setLoadProjects(true);    
+    }
+    function handleScroll() {
+        setScrolledIntoView(true);
+    };
     useEffect(() => {
-        const handleScroll = event => {
-            setScrolledIntoView(true);
-        };
-        window.addEventListener('scroll', handleScroll);
+        const Hp = document.getElementById("root");
+        function watchScroll() {
+            Hp.addEventListener("scroll", logit);
+            window.addEventListener('scroll', handleScroll);        
+        }
+        watchScroll();
         return () => {
-          window.removeEventListener('scroll', handleScroll);
+            Hp.removeEventListener("scroll", logit);
+            window.removeEventListener('scroll', handleScroll);
         };
-    }, []);
+    });
+    
        
     return (
         <div id="blog" className="blogpage">
@@ -122,7 +133,7 @@ const Blog = (props) => {
                                                         />
                                                 </div>
                                             </Link>
-                                            <Link  to={`article/${item.title.replace(/ /g, '-').toLowerCase()}-pid-${item.id}`} onClick={projectImageOpenButton}>
+                                            <Link  to={`article/${item.title.replace(/ /g, '-').toLowerCase()}-pid-${item.id}`} onClick={projectImageOpen}>
                                                 <h2 tabIndex="0" >
                                                     {item.title}
                                                 </h2>

@@ -39,7 +39,7 @@ const App = () => {
   return (
    <Router>
       {/* {loading === false ? ( */}
-      <main style={{ backgroundImage: `url(${background})` }}>
+      <main id="main" style={{ backgroundImage: `url(${background})` }}>
         <div aria-hidden="true" className="loader-wipe"></div>
         <div aria-hidden="true" className="loader-wipe-black"></div>
         <div aria-hidden="true" className="loader-wipe-fixed"><img className="loader-image" src={require('./nav/icons/lucky-for-sum-logo.svg')} alt="Home"/></div>

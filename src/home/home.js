@@ -1,79 +1,28 @@
 import React, { useState, lazy, useEffect, Suspense } from "react";
-// import { About } from './components/home---about-me';
 import { About } from './components/home---about-me-two';
 import { Link } from "react-router-dom/index";
-// import { HeroVideo } from "./components/hero--video";
 import { Footer } from "../footer/footer";
+import HPSkeleton from "./hp-skeleton";
+
 import { Helmet } from "react-helmet";
-// import LazyLoad from 'react-lazy-load';
 import "./home.css";
 
 const Project = lazy(() => import('../project/project'));
 const ProgressiveImageHook = lazy(() => import('../reusable-functions/progressive-image-load'));
 
-
-
-const footerStyle = {
-    height: "auto",
-    zIndex: "2"
-}
-
-const numberOfProjects = [
-    "1", "2", "3", "4"
-]
-const HPTemplate = () => {
-    return (
-        numberOfProjects.map((item, index) => (
-            <div className="project-preview-container hp-section" id={"project-container" + index} key={index}>
-                <div className="project-preview">
-                    <Link to="#" className="project-preview-thumbnail" tabIndex="0">
-                        
-                    </Link>
-                    <h3>
-                        Title
-                    </h3>
-                    <p className="project-summary">
-                        Summary
-                    </p>
-                    <Link to="#" tabIndex="-1" className="buttonLink">
-                        <button className="block">View Project</button>
-                    </Link>
-                </div>
-                <div className="image-right">
-                </div>
-            </div>
-        ))    
-    );
-};
-
-
 const HomePage = (props) => {
+
+    // Open Project
+
     function projectImageOpen(e) {
         const project = e.target;
         const currentProjectPosition = project.getBoundingClientRect();
         props.PreviewPosition(currentProjectPosition);
         props.HpReferrer(true);
     }
-    // function projectImageOpenButton(e) {
-    //     const project = e.target.parentNode.parentNode.firstChild;
-    //     const currentProjectPosition = project.getBoundingClientRect();
-    //     props.PreviewPosition(currentProjectPosition);
-    //     props.HpReferrer(true);
-    // }
-    const [loadProjects, setLoadProjects] = useState(false);
-    function logit() {
-        setLoadProjects(true);    
-    }
-    useEffect(() => {
-        const Hp = document.getElementById("homepage");
-        function watchScroll() {
-            Hp.addEventListener("scroll", logit);
-        }
-        watchScroll();
-        return () => {
-            Hp.removeEventListener("scroll", logit);
-        };
-    });
+
+    // Feeds
+
 
     const [homePageProjects, setHomePageProjects] = useState(null);
     useEffect(() => {
@@ -91,6 +40,37 @@ const HomePage = (props) => {
             setBlogProjects(data);
         });
     }, []); 
+
+
+    // Scroll Events
+
+    const [loadProjects, setLoadProjects] = useState(false);
+    const [scrolledIntoView, setScrolledIntoView] = useState(false);
+
+    function scrollToContent(e) {
+        setScrolledIntoView(true);
+        document.getElementById('content').scrollIntoView();
+    }
+
+    function handleScroll() {
+        setScrolledIntoView(true);
+    };
+    function logit() {
+        setLoadProjects(true);    
+    }
+
+    useEffect(() => {
+        const Hp = document.getElementById("root");
+        function watchScroll() {
+            Hp.addEventListener("scroll", logit);
+            window.addEventListener('scroll', handleScroll);        
+        }
+        watchScroll();
+        return () => {
+            Hp.removeEventListener("scroll", logit);
+            window.removeEventListener('scroll', handleScroll);
+        };
+    });
        
     return (
         <div id="homepage" className="homepage">
@@ -107,18 +87,23 @@ const HomePage = (props) => {
                 <div className="hero-image-container loadup-two section">
                     <div className="crosshatch"></div>
                     <div className="hero-image-container-frame">
-                        <img src={require('./images/robin-sumner.jpg')} alt="Photo of Sumner making notes on a whiteboard"/>
+                        <img src={require('./images/robin-sumner.jpg')} alt="Sumner making notes on a whiteboard"/>
                     </div>
                     </div>
                 </div>
-                {/* <button className="scroll-to-start">Scroll</button> */}
+
+
+            <button className={!scrolledIntoView ? 'scroll-link' : 'scroll-link hide'} aria-label="button" onClick={scrollToContent} tabIndex={!scrolledIntoView ? "0" : "-1"}>
+                <img tab-index="0" src={require('../home/images/arrow.svg')} alt="arrow" />
+            </button> 
+
             </div>
             <div className="crosshatch left"></div>
-            <div className="section-wrapper core">
+            <div className="section-wrapper core" id="content">
                 <div className="area">
                     <h2 aria-level="1" tabIndex="0">Work</h2>
                     {!homePageProjects ? (
-                        <HPTemplate />
+                        <HPSkeleton />
                     ) : (
                             homePageProjects.homePageProjects.slice(0,3).map((item, index) => (
                                 <div className="new-project-container" key={index}>
@@ -149,7 +134,7 @@ const HomePage = (props) => {
                                                 <ProgressiveImageHook
                                                     key={index}
                                                     src={require('./images/' + item.thumbnail1)}
-                                                    placeholder={require('./images/' + item.thumbnail1.replace(".png" || ".gif" || ".jpg", "_placeholder.png"))}
+                                                    placeholder={require('./images/' + item.thumbnail1.replace(".png" || ".gif" || ".jpg", "_placeholder.jpg"))}
                                                     alt={item.thumbnail1Alt}
                                                     tabIndex={-1}
                                                 />
@@ -160,7 +145,7 @@ const HomePage = (props) => {
                                                 <ProgressiveImageHook
                                                     key={index}
                                                     src={require('./images/' + item.thumbnail2)}
-                                                    placeholder={require('./images/' + item.thumbnail3.replace(".png" || ".gif" || ".jpg", "_placeholder.png"))}
+                                                    placeholder={require('./images/' + item.thumbnail2.replace(".png" || ".gif" || ".jpg", "_placeholder.jpg"))}
                                                     alt={item.thumbnail2Alt}
                                                     tabIndex={-1}
                                                 />
@@ -171,7 +156,7 @@ const HomePage = (props) => {
                                                 <ProgressiveImageHook
                                                     key={index}
                                                     src={require('./images/' + item.thumbnail3)}
-                                                    placeholder={require('./images/' + item.thumbnail3.replace(".png" || ".gif" || ".jpg", "_placeholder.png"))}
+                                                    placeholder={require('./images/' + item.thumbnail3.replace(".png" || ".gif" || ".jpg", "_placeholder.jpg"))}
                                                     alt={item.thumbnail3Alt}
                                                     tabIndex={-1}
                                                 />
@@ -188,7 +173,7 @@ const HomePage = (props) => {
                 <div className="area">
                     <h2 aria-level="1" tabIndex="0">Articles</h2>
                     {!blogProjects ? (
-                        <HPTemplate />
+                        <HPSkeleton />
                     ) : (
                                 <div className="new-project-container">
                                     <div className="new-project-container-row article">
@@ -217,7 +202,7 @@ const HomePage = (props) => {
                     }
                 </div>
             </div>
-            <div style={footerStyle} className="hp-section">
+            <div className="hp-section footer-section">
                 <Footer />
             </div>
             <Suspense fallback={<div></div>}>

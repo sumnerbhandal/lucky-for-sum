@@ -20,7 +20,7 @@ const Project = (props) => {
     const contentStream = window.location.href.includes("blog") ? BlogPageFeed : ProjectPageFeed;
     const jSONReferrer = window.location.href.split('pid-')[1] === undefined ? hpPreload : contentStream;
 
-    const [projectsShown, setProjectsShown] = useState([jSONReferrer[projectIndex]]);
+    const projectsShown = [jSONReferrer[projectIndex]];
     const [nextProjectIndex, setNextProjectIndex] = useState(parseInt(projectIndex) + 1); 
     const [loaderAnimationId, setLoaderAnimationId] = useState(0);
 
@@ -32,6 +32,16 @@ const Project = (props) => {
     }
 
     const [scrollY, setScrollY] = useState(0);
+
+    useEffect(() => {
+        setTimeout(() => {
+            window.scrollTo({
+                top: 0,
+                left: 0,
+                behavior: 'smooth',
+              });
+          }, "10");
+      }, []);
 
     function logit() {
         const ProjectPage = document.getElementById("project-page");
