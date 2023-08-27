@@ -86,11 +86,10 @@
             ]
         },
         {
-            "title": "The benefits of using a design methodology",
+            "title": "Augmenting go to market strategies",
             "tags": [
-                "Understanding", 
-                "Deciding",
-                "Designing"
+                "User journey", 
+                "Onboarding"
             ], 
             "id": "6",
             "image": "placeholder.jpg",
@@ -114,31 +113,19 @@
             ]
         },
         {
-            "title": "Augmenting go to market strategies",
+            "title": "The benefits of using a design methodology",
             "tags": [
-                "User journey", 
-                "Onboarding"
+                "Understanding", 
+                "Deciding",
+                "Designing"
             ], 
             "id": "8",
-            "image": "placeholder.jpg",
+            "image": "methodology.png",
             "imageAlt": "experts",
             "intro": [
-                "Coming Soon"
-            ]
-        },
-        {
-            "title": "Measuring the impact of design",
-            "tags": [
-                "Value", 
-                "Progression",
-                "Business Goals"
-            ], 
-            "id": "9",
-            "image": "placeholder.jpg",
-            "imageAlt": "experts",
-            "intro": [
-                "Coming Soon"
+                "Designing a new product, service, or experience requires careful planning and execution to ensure success."
             ]
         }
+
     ]
 }

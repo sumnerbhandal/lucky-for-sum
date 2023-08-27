@@ -217,8 +217,8 @@ const BlogPageFeed = [
         ]
     },
     {
-        "title": "The benefits of using a design methodology",
-        "SEOTitle": "The benefits of using a design methodology",
+        "title": "Augmenting go to market strategies",
+        "SEOTitle": "Augmenting go to market strategies",
         "SEODescription": "",
         "keywords": "",
         "path": "blog/",
@@ -262,7 +262,7 @@ const BlogPageFeed = [
         "id": "0",
         "blog" : [
             {
-                "date" : "April 6, 2023",
+                "date" : "April, 2023",
                 "subsection": [
                     {
                         "copy": [
@@ -270,7 +270,7 @@ const BlogPageFeed = [
                             "A large part of that was conducting and using research to inform everything that we did. At Robin AI, we looked at recruitment and scaling as design problems.",
                             "Our goal was to explore what values are important to designers within their work environment."
                         ],
-                    }
+                    },
                 ]
             },
             {
@@ -439,73 +439,170 @@ const BlogPageFeed = [
         ]
     },
     {
-        "title": "Augmenting go to market strategies",
-        "SEOTitle": "Augmenting go to market strategies",
+        "title": "The benefits of using a design methodology",
+        "SEOTitle": "The benefits of using a design methodology",
         "SEODescription": "",
         "keywords": "",
         "path": "blog/",
+        "blogImage":  "methodology.png",
         "id": "0",
         "blog" : [
             {
                 // "h2": "The Scope Of The Challenge",
-                "date" : "2023",
+                "date" : "March, 2023",
                 "subsection": [
                     {
                         "copy": [
-                            "Article coming soon."
+                            "Designing a new product, service, or experience requires careful planning and execution to ensure success. During my tenure at Robin AI, I took some time to reflect on projects that were determined to have met users’ needs successfully (via user sentiment surveys/ adoption metrics within the products) and distilled the process down into 6 key phases."
                         ],
-                        // "bullet": [
-                        //     "Work with the founders to translate hypotheses into product and research goals"
-                        // ],
-                        // "link" : {
-                        //     "url": "https://app.robinai.co.uk/signup",
-                        //     "text": "Sign up to experience the product for free"
-                        // },
-                        // "link" : {
-                        //     "url": "https://app.robinai.co.uk/signup",
-                        //     "text": "TLDR Sign up for free and try it yourself."
-                        // },
-                        // "subsectionImage" : {
-                        //     "image": "user-journey-map.png",
-                        //     "alt": "An image for a user journey map"
-                        // }
                     }
                 ]
-            }
-        ]
-    },
-    {
-        "title": "Measuring the impact of design",
-        "SEOTitle": "Measuring the impact of design",
-        "SEODescription": "",
-        "keywords": "",
-        "path": "blog/",
-        "id": "0",
-        "blog" : [
+            },
             {
-                "date" : "2023",
-                // "h2": "The Scope Of The Challenge",
+                "h2": "Phase 1: Better Understanding",
+                "subsection": [
+                    {
+                        "h3": "Research Approaches",
+                        "copy": [
+                            "The first phase is gathering insights to understand the problem you're trying to solve. This involves research to empathise with users and identify their needs. Understanding the user and their context is crucial to designing solutions that truly meet their needs.",
+                            "Before embarking on the discovery research, it’s important to know why you’re doing it, what the problem is, and how you will know it works. With those in hand, it allows for the opportunity to get a baseline understanding of what the project is and how to determine success.",
+                            "Next, choose the right UX research method by assessing your goals, constraints, and needs for quantitative/qualitative, attitudinal/behavioural, and generative/evaluative data.",
+                        ]
+                    },
+                    {
+                        "h3": "User Journey Mapping",
+                        "copy": [
+                            "User journey mapping is about understanding how the user navigates the problem in their current workflow. It allows us to empathise with their difficulties and discover opportunities.",
+                            "You can do this by talking with an expert and mapping out the steps it takes to achieve that goal noting any insights and pain points along the journey."
+                        ]
+                    },
+                    {
+                        "h3": "Problem Statements",
+                        "copy": [
+                            "A problem statement is exactly as it reads. The research will unveil issues that users/customers are having and this is where we store them.",
+                            "Collect the insights and pain points from the user journey map or other research and modify them so that they take the form of a statement."
+                        ]
+                    },
+                    {
+                        "h3": "How Might We (HMW) Questions",
+                        "copy": [
+                            "‘How Might We’ or HMW questions are a set of questions that look to solve the previously stated problems.",
+                            "One way of approaching this remotely is by doing the following steps:"
+                        ],
+                        "bullet": [
+                            "Using a tool like FigJam, create an interactive whiteboard",
+                            "Add sections and assign a problem statement for each",
+                            "Invite relevant members of the team/stakeholders to the HMW session",
+                            "Explain the process to the rest of the invitees",
+                            "Set a timer for 3/4 minutes for the first problem statement",
+                            "Ask everyone to fill in as many HMW notes as they can in that time for that statement",
+                            "Ask each author to go through their notes and briefly explain their thinking",
+                            "Repeat for the other problem statements"
+                        ]
+                    }                   
+                ]
+            },
+            {
+                "h2": "Phase 2: Defining the Journey",
+                "subsection": [
+                    {
+                        "h3": "Critical Points In The Journey",
+                        "copy": [
+                            "After gathering insights, the next phase is defining the problem. Using your synthesised research findings, reframe these insights into how you might solve them.",
+                            "Defining the problem helps to narrow down the focus, to find out what point in the user journey is the most critical to get right."
+                        ]
+                    },
+                    {
+                        "h3": "The Golden Path aka Happy Path",
+                        "copy": [
+                            "It’s important to pay attention to the ideal path or ‘happy path’ as it’s sometimes known. This is the key set of steps that a user takes to find a product’s real value. This path should be the ideal default and not focus on exceptions or errors.",
+                            "Ways to do this include:" 
+                        ],
+                        "bullet": [
+                            "Identify the key stories/steps that are required in order to achieve the user’s end goal.",
+                            "A good way of framing this is by writing the stories using the Behaviour Driven Development (BDD) process.",
+                            "This encourages the story to be focused on the user completing a functional task that can be used as a checklist for acceptance tests later down the line.",
+                            "It also serves as a good reference when creating designs to make sure that you are hitting the agreed acceptance criteria."
+                        ]
+                    }                      
+                ]
+            },
+            {
+                "h2": "Phase 3: Sketching/Ideating",
+                "subsection": [
+                    {
+                        "h3": "Rapid Ideation",
+                        "copy": [
+                            "This phase involves generating ideas and possible solutions to the defined problem. Brainstorm and sketch out various concepts. The goal here is to come up with many options before evaluating them. Remove judgment and constraints during this creative phase.",
+                        ]
+                    }                    
+                ]
+            },
+            {
+                "h2": "Phase 4: Deciding/Designing",
                 "subsection": [
                     {
                         "copy": [
-                            "Article coming soon."
+                            "Next, start prioritising and deciding on the strongest ideas. Combine concepts or improve upon them. Turn sketches and abstract ideas into more solid solution directions. Having decision criteria based on your goals and user needs will help guide this process.",
+                        ]
+                    },
+                    {
+                        "h3": "Low Fidelity Designs",
+                        "copy": [
+                            "These are a set of designs that expand on the refined ideation phase. These should allow you to facilitate a conversation and allow for basic testing if required.",
+                            "Using the one or two ideas that come out of the ideation phase, set about wireframing the steps that the user will have to go through in more granular detail.",
+                            "At this point, aesthetics isn’t as important as conveying the information. This should enable low fidelity click-throughs or presenting back to others at a stage where you are less attached to what you are creating."
+                        ]
+                    },
+                    {
+                        "h3": "High Fidelity Designs",
+                        "copy": [
+                            "This is the stage where designs should look to be tightened up and made to look closer to what the end product should look like. They should provide a solid foundation for prototype testing."
+                        ]
+                    }                         
+                ]
+            },
+            {
+                "h2": "Phase 5: Prototyping",
+                "subsection": [
+                    {
+                        "copy": [
+                            "Prototypes are a great way of thinking about the individual steps of the user interaction. By encouraging the user to navigate the product organically, you get quick feedback on how intuitive the product is before having to engage the engineers.",
+                            "It also provides a great opportunity to think about the interaction aspect of designing. It forces us to consider what the affordances are in our scenario and how we can signify to the user what they are supposed to do next."
+                        ]
+                    }                       
+                ]
+            },
+            {
+                "h2": "Phase 6: Validate",
+                "subsection": [
+                    {
+                        "copy": [
+                            "Before handing across designs to the engineering team, it’s important to validate the concepts with the people who will be using it.",
+                            "It’s a test to see how useable the proposed set of designs is. This informs how intuitive it is, how users can succeed in other ways and areas of improvement.",
+                        ]
+                    },
+                    {
+                        "h3": "Unmoderated Testing",
+                        "copy": [
+                            "In order to get a wide range of feedback fast, and to encourage a better structure, you can use approaches such as unmoderated testing.",
+                            "There are tools such as Maze.co, which comes with Figma integration and a variety of question types that allow the conductor to see the hot spot activity of a user navigating the prototype."
+                        ]
+                    },
+                    {
+                        "h3": "1-1 interviews",
+                        "copy": [
+                            "These usability interviews are much more time intensive, and require well-planned scripts to ensure that resource is well used.",
+                            "Here are some of the foundational elements that are important to remember as part of that:"
                         ],
-                        // "bullet": [
-                        //     "Work with the founders to translate hypotheses into product and research goals"
-                        // ],
-                        // "link" : {
-                        //     "url": "https://app.robinai.co.uk/signup",
-                        //     "text": "Sign up to experience the product for free"
-                        // },
-                        // "link" : {
-                        //     "url": "https://app.robinai.co.uk/signup",
-                        //     "text": "TLDR Sign up for free and try it yourself."
-                        // },
-                        // "subsectionImage" : {
-                        //     "image": "user-journey-map.png",
-                        //     "alt": "An image for a user journey map"
-                        // }
-                    }
+                        "bullet": [
+                            "Why are you doing it?",
+                            "What are you hoping to achieve?",
+                            "How do you prepare for it?",
+                            "How can you ease a user into the testing session?",
+                            "What tasks do the users need to complete"
+                        ]
+                    }                            
                 ]
             }
         ]
