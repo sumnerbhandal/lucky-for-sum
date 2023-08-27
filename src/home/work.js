@@ -168,28 +168,28 @@ const WorkPage = (props) => {
                     {!blogProjects ? (
                         <HPSkeleton />
                         ) : (
-                                <div className="new-project-container">
-                                    <div className="new-project-container-row article">
-                                        {
-                                            blogProjects.blogArticles.slice(7,11).map((item, index) => (
-                                                <div className="col article">
-                                                     <Link className="blog-image-thumbnail" to={`/blog/article/${item.title.replace(/ /g, '-').toLowerCase()}-pid-${item.id}`} id={item.id}  onClick={projectImageOpen}>                                                       
-                                                        <img src={require('../project/images/blog/' + item.image)} alt={item.alt}/>
-                                                    </Link>
-                                                    <Link to={`/blog/article/${item.title.replace(/ /g, '-').toLowerCase()}-pid-${item.id}`}  id={item.id} title={item.url} onClick={projectImageOpen}  tabIndex="0">
-                                                        <h4>
-                                                            {item.title}
-                                                        </h4>
-                                                    </Link>
-                                                    {item.intro.map((paragraph, index) => (
-                                                        <p key={index} className="intro" tabIndex="0">{paragraph}</p>
-                                                        
-                                                        ))
-                                                    }
-                                                </div>
-                                            ))}
-                                    </div>
-                                </div>                    
+                            <div className="new-project-container">
+                                <div className="new-project-container-row article">
+                                    {
+                                        blogProjects.blogArticles.slice(7,11).map((item, index) => (
+                                            <div className="col article">
+                                                <Link className="blog-image-thumbnail" to={`/blog/article/${item.title.replace(/ /g, '-').toLowerCase()}-pid-${item.id}`} id={item.id}  onClick={projectImageOpen}>                                                       
+                                                    <img src={require('./images/' + item.image)} alt={item.alt}/>
+                                                </Link>
+                                                <Link to={`/blog/article/${item.title.replace(/ /g, '-').toLowerCase()}-pid-${item.id}`} id={item.id} title={item.url} onClick={projectImageOpen}  tabIndex="0">
+                                                    <h4>
+                                                        {item.title}
+                                                    </h4>
+                                                </Link>
+                                                {item.intro.map((paragraph, index) => (
+                                                    <p key={index} className="intro" tabIndex="0">{paragraph}</p>
+                                                    
+                                                    ))
+                                                }
+                                            </div>
+                                        ))}
+                                </div>
+                            </div>                  
                         )
                     }
                 </div>
