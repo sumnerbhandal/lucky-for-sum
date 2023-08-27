@@ -643,6 +643,10 @@ button.scroll-link img {
   transition: 0.3s ease-in-out;
 }
 
+body.dark button.scroll-link img {
+  filter: invert(1);
+}
+
 @media (min-width: 768px) {
   button.scroll-link {
     border: 0;

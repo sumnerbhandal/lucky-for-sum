@@ -73,7 +73,7 @@ const HomePage = (props) => {
     });
        
     return (
-        <div id="homepage" className="homepage">
+        <div id="home" className="homepage">
             <Helmet>
                 <title>Lucky For Sum | Design Portfolio | Sumner Bhandal</title>
                 <meta name="description" content="The digital portfolio of Sumner Bhandal. Senior User Interface Designer with a fondness for front-end development and inclusive design." />  

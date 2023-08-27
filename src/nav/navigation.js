@@ -1,6 +1,8 @@
 import React, { useState, useRef, useEffect } from "react";
 import Menu from "./components/menu";
 import { NavLink } from "react-router-dom";
+import { NavHashLink } from 'react-router-hash-link';
+
 
 
 
@@ -27,23 +29,20 @@ const NavDefault = (props) => {
     const wrapperRef = useRef(null);
     useOutsideAlerter(wrapperRef);
 
+
     return (
         <nav role="navigation">
             <div className={`masthead ${!isShown ? "" : "hovered"}`}>
                 <div className="section">
                     <div className="header-side-container" >
-                        <NavLink
-                        onMouseEnter={() => setIsShown(true)}
-                        onMouseLeave={() => setIsShown(false)}
-                        id="link_homepage"
-                        // onClick={scrollSectionIntoView}
-                        className="logo-image"
-                        to="/#homepage">
+                        <NavHashLink
+                            onMouseEnter={() => setIsShown(true)}
+                            onMouseLeave={() => setIsShown(false)}
+                            id="link_homepage"
+                            className="logo-image"
+                            to="/#home">
                             <img src={require('./icons/lucky-for-sum-logo.svg')} alt="Home"/>
-                        </NavLink>
-                        {/* <NavLink className="brand-name" to="/#introSection">
-                            <img src={require('./icons/lfs-logo-dark.svg')} alt="Home"/>
-                        </NavLink> */}
+                        </NavHashLink>
                     </div>
                         <div className="header-side-container right">
                             <NavLink end to='/'
