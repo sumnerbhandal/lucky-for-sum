@@ -63,6 +63,17 @@ const Blog = (props) => {
 
 
     // Scroll Events
+
+    useEffect(() => {
+        setTimeout(() => {
+            window.scrollTo({
+                top: 0,
+                left: 0,
+                behavior: 'smooth',
+              });
+          }, "0");
+      }, []);
+
     const [loadProjects, setLoadProjects] = useState(false);
     const [scrolledIntoView, setScrolledIntoView] = useState(false);
 

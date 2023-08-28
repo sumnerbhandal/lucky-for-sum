@@ -43,6 +43,25 @@ const WorkPage = (props) => {
 
     // Scroll Events
 
+    // useEffect(() => {
+    //     window.history.scrollRestoration = 'manual'
+    //   }, []);
+
+
+    // useEffect(() => {
+    //     document.body.scrollTo(0, 0); 
+    // });
+
+    useEffect(() => {
+        setTimeout(() => {
+            window.scrollTo({
+                top: 0,
+                left: 0,
+                behavior: 'smooth',
+              });
+          }, "0");
+      }, []);
+
     const [loadProjects, setLoadProjects] = useState(false);
     const [scrolledIntoView, setScrolledIntoView] = useState(false);
 
