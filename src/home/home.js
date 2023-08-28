@@ -178,21 +178,27 @@ const HomePage = (props) => {
                                 <div className="new-project-container">
                                     <div className="new-project-container-row article">
                                         {
-                                            blogProjects.blogArticles.slice(7,11).map((item, index) => (
+                                            blogProjects.blogArticles.slice(6,10).map((item, index) => (
                                                 <div className="col article">
                                                      <Link className="blog-image-thumbnail" to={`/blog/article/${item.title.replace(/ /g, '-').toLowerCase()}-pid-${item.id}`} id={item.id}  onClick={projectImageOpen}>                                                       
-                                                        <img src={require('./images/' + item.image)} alt={item.alt}/>
+                                                        <img src={require('../project/images/blog/' + item.image)} alt={item.alt}/>
                                                     </Link>
                                                     <Link to={`/blog/article/${item.title.replace(/ /g, '-').toLowerCase()}-pid-${item.id}`} id={item.id} title={item.url} onClick={projectImageOpen}  tabIndex="0">
                                                         <h4>
                                                             {item.title}
                                                         </h4>
                                                     </Link>
+                                                    <div className="tag-container blog">
+                                                        {item.tags.map((paragraph, index) => (
+                                                            <span key={index} className="tags" tabIndex="0">{paragraph}</span>
+                                                        ))}
+                                                    </div>
                                                     {item.intro.map((paragraph, index) => (
                                                         <p key={index} className="intro" tabIndex="0">{paragraph}</p>
                                                         
                                                         ))
                                                     }
+
                                                 </div>
                                             ))}
                                     </div>

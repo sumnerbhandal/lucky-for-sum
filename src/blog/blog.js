@@ -103,7 +103,7 @@ const Blog = (props) => {
                 <div id="Work" className="introSection hp-section section">
                 <div className="aboutMeTwo">
                     <div className="aboutMe loadup">
-                        <h1 aria-level="1" tabIndex="0">Blog</h1>
+                        <h1 aria-level="1" tabIndex="0">Articles</h1>
                     </div>
                 </div>
                 </div>

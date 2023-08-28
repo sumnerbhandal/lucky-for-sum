@@ -6,6 +6,7 @@ const BlogPageFeed = [
         "SEODescription": "",
         "keywords": "",
         "path": "blog/",
+        "blogImage":  "ac.png",
         "id": "0",
         "blog" : [
             {
@@ -42,6 +43,7 @@ const BlogPageFeed = [
         "SEODescription": "",
         "keywords": "",
         "path": "blog/",
+        "blogImage":  "a11y.png",
         "id": "0",
         "blog" : [
             {
@@ -78,6 +80,7 @@ const BlogPageFeed = [
         "SEODescription": "",
         "keywords": "",
         "path": "blog/",
+        "blogImage":  "code.png",
         "id": "0",
         "blog" : [
             {
@@ -114,6 +117,7 @@ const BlogPageFeed = [
         "SEODescription": "",
         "keywords": "",
         "path": "blog/",
+        "blogImage":  "first-designer.png",
         "id": "0",
         "blog" : [
             {
@@ -150,6 +154,7 @@ const BlogPageFeed = [
         "SEODescription": "",
         "keywords": "",
         "path": "blog/",
+        "blogImage":  "design-management.jpg",
         "id": "0",
         "blog" : [
             {
@@ -186,6 +191,7 @@ const BlogPageFeed = [
         "SEODescription": "",
         "keywords": "",
         "path": "blog/",
+        "blogImage":  "cross-collab.png",
         "id": "0",
         "blog" : [
             {
@@ -222,11 +228,12 @@ const BlogPageFeed = [
         "SEODescription": "",
         "keywords": "",
         "path": "blog/",
+        "blogImage":  "GTM.png",
         "id": "0",
         "blog" : [
             {
                 // "h2": "The Scope Of The Challenge",
-                "date" : "2023",
+                "date" : "March 2023",
                 "subsection": [
                     {
                         "copy": [
@@ -449,7 +456,7 @@ const BlogPageFeed = [
         "blog" : [
             {
                 // "h2": "The Scope Of The Challenge",
-                "date" : "March, 2023",
+                "date" : "July, 2023",
                 "subsection": [
                     {
                         "copy": [

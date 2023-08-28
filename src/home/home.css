@@ -545,6 +545,12 @@ body.dark .aboutMe p.intro {
     flex-wrap: wrap;
 }
 
+.col .tag-container.blog {
+    margin-top: 0.75rem;
+    margin-bottom: 0.125rem;
+    width: 100%;
+}
+
 .col .tag-container span {
     font-size: 0.875rem;
     border-radius: 0.25rem;
@@ -560,6 +566,7 @@ body.dark .aboutMe p.intro {
     max-height: 18rem;
     justify-content: center;
     align-items: center;
+    background: var(--off-white);
 }
 
 .blog-image-thumbnail img {
