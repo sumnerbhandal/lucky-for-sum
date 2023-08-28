@@ -1,4 +1,4 @@
-import React, { useEffect, useState, lazy, Suspense } from "react";
+import React, { useEffect, lazy, Suspense } from "react";
 import './project.css';
 import hpPreload from "./components/preload";
 import ProjectPageFeed from '../data-feed/project-feed';
@@ -21,8 +21,8 @@ const Project = (props) => {
     const jSONReferrer = window.location.href.split('pid-')[1] === undefined ? hpPreload : contentStream;
 
     const projectsShown = [jSONReferrer[projectIndex]];
-    const [nextProjectIndex, setNextProjectIndex] = useState(parseInt(projectIndex) + 1); 
-    const [loaderAnimationId, setLoaderAnimationId] = useState(0);
+    // const [nextProjectIndex, setNextProjectIndex] = useState(parseInt(projectIndex) + 1); 
+    // const [loaderAnimationId, setLoaderAnimationId] = useState(0);
 
     const projectPreviewPosition = {
         top: verticalPosition,
@@ -31,9 +31,12 @@ const Project = (props) => {
         transform: "rotate(0deg)"
     }
 
-    const [scrollY, setScrollY] = useState(0);
+    // const [scrollY, setScrollY] = useState(0);
 
     useEffect(() => {
+        
+                if (window.location.href.indexOf("project") !== -1 || window.location.href.indexOf("article") !== -1) {
+
         setTimeout(() => {
             window.scrollTo({
                 top: 0,
@@ -41,31 +44,45 @@ const Project = (props) => {
                 behavior: 'smooth',
               });
           }, "10");
+
+        } else return;
+
+
       }, []);
 
-    function logit() {
-        const ProjectPage = document.getElementById("project-page");
-        setScrollY(window.pageYOffset);
-        if ((window.innerHeight + scrollY ) >= ProjectPage.offsetHeight) {
-            let loaderBlob = document.getElementById('load-next-item' + loaderAnimationId);
-            const nextToBeLoaded = nextProjectIndex + 1;
-            setNextProjectIndex(nextToBeLoaded);
-            if (nextProjectIndex < ProjectPageFeed.length) {
-                loaderBlob.classList.add("loading");
-                projectsShown.push(ProjectPageFeed[nextProjectIndex]);
-                setLoaderAnimationId(loaderAnimationId + 1)
-            } return;
-        }
-    }
-    useEffect(() => {
-        function watchScroll() {
-            window.addEventListener("scroll", logit);
-        }
-        watchScroll();
-        return () => {
-            window.removeEventListener("scroll", logit);
-        };
-    });
+      //load in functionality is broken
+
+    // function logit() {
+
+    //     if (window.location.href.indexOf("project") !== -1 || window.location.href.indexOf("article") !== -1) {
+
+    //     const ProjectPage = document.getElementById("project-page");
+    //     setScrollY(window.pageYOffset);
+    //     if ((window.innerHeight + scrollY ) >= ProjectPage.offsetHeight) {
+    //         let loaderBlob = document.getElementById('load-next-item' + loaderAnimationId);
+    //         const nextToBeLoaded = nextProjectIndex + 1;
+    //         setNextProjectIndex(nextToBeLoaded);
+    //         console.log(nextToBeLoaded);
+    //         if (nextProjectIndex < ProjectPageFeed.length) {
+    //             loaderBlob.classList.add("loading");
+    //             projectsShown.push(ProjectPageFeed[nextProjectIndex]);
+    //             setLoaderAnimationId(loaderAnimationId + 1)
+    //         } return;
+    //     }
+
+    //     } else {
+    //         return
+    //     }
+    // }
+    // useEffect(() => {
+    //     function watchScroll() {
+    //         window.addEventListener("scroll", logit);
+    //     }
+    //     watchScroll();
+    //     return () => {
+    //         window.removeEventListener("scroll", logit);
+    //     };
+    // });
 
     const SEOTitle = projectsShown[0].SEOTitle;
     const SEODescription = projectsShown[0].SEODescription;

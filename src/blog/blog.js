@@ -9,9 +9,9 @@ const Project = lazy(() => import('../project/project'));
 const ProgressiveImageHook = lazy(() => import('../reusable-functions/progressive-image-load'));
 
 
-const numberOfProjects = [
-    "1", "2", "3", "4"
-]
+// const numberOfProjects = [
+//     "1", "2", "3", "4"
+// ]
 const HPTemplate = () => {
     return (
         <div></div> 
@@ -61,28 +61,32 @@ const Blog = (props) => {
 
     function scrollToContent(e) {
         setScrolledIntoView(true);
-        document.getElementById('articles').scrollIntoView();
+        document.getElementById('content').scrollIntoView();
+        setTimeout(() => {
+            setLoadProjects(true);   
+          }, "0"); 
     }
 
-    function logit() {
-        setLoadProjects(true);    
-    }
     function handleScroll() {
         setScrolledIntoView(true);
+
+        setTimeout(() => {
+            setLoadProjects(true);   
+          }, "0"); 
     };
+
     useEffect(() => {
-        const Hp = document.getElementById("root");
+        // const Hp = document.getElementById("root");
         function watchScroll() {
-            Hp.addEventListener("scroll", logit);
+            // Hp.addEventListener("scroll", logit);
             window.addEventListener('scroll', handleScroll);        
         }
         watchScroll();
         return () => {
-            Hp.removeEventListener("scroll", logit);
+            // Hp.removeEventListener("scroll", logit);
             window.removeEventListener('scroll', handleScroll);
         };
     });
-    
        
     return (
         <div id="blog" className="blogpage">

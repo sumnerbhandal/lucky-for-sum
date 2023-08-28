@@ -50,24 +50,28 @@ const HomePage = (props) => {
     function scrollToContent(e) {
         setScrolledIntoView(true);
         document.getElementById('content').scrollIntoView();
+        setTimeout(() => {
+            setLoadProjects(true);   
+          }, "0"); 
     }
 
     function handleScroll() {
         setScrolledIntoView(true);
+
+        setTimeout(() => {
+            setLoadProjects(true);   
+          }, "0"); 
     };
-    function logit() {
-        setLoadProjects(true);    
-    }
 
     useEffect(() => {
-        const Hp = document.getElementById("root");
+        // const Hp = document.getElementById("root");
         function watchScroll() {
-            Hp.addEventListener("scroll", logit);
+            // Hp.addEventListener("scroll", logit);
             window.addEventListener('scroll', handleScroll);        
         }
         watchScroll();
         return () => {
-            Hp.removeEventListener("scroll", logit);
+            // Hp.removeEventListener("scroll", logit);
             window.removeEventListener('scroll', handleScroll);
         };
     });
