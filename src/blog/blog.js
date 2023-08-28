@@ -14,26 +14,7 @@ const numberOfProjects = [
 ]
 const HPTemplate = () => {
     return (
-        numberOfProjects.map((item, index) => (
-            <div className="project-preview-container hp-section" id={"project-container" + index} key={index}>
-                <div className="project-preview">
-                    <Link to="#" className="project-preview-thumbnail" tabIndex="0">
-                        
-                    </Link>
-                    <h2>
-                        Title
-                    </h2>
-                    <p className="project-summary">
-                        Summary
-                    </p>
-                    <Link to="#" tabIndex="-1" className="buttonLink">
-                        <button className="block">View Project</button>
-                    </Link>
-                </div>
-                <div className="image-right">
-                </div>
-            </div>
-        ))    
+        <div></div> 
     );
 };
 
