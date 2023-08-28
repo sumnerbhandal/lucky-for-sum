@@ -87,7 +87,16 @@ const Project = (props) => {
                     {/* {pdp.headerImage} */}
                     {pdp.headerImage === undefined ? null : pdp.headerImage}
                     {pdp.blogImage === undefined ? null : 
-                        <img src={require('./images/blog/' + pdp.blogImage)} tabIndex="-1" alt="Banner" />
+
+                        <ProgressiveImageHook
+                        key={index}
+                        src={require('./images/blog/' + pdp.blogImage)}
+                        placeholder={require('./images/blog/' + pdp.blogImage.replace(".png" || ".gif" || ".jpg", "_placeholder.png"))}
+                        alt="Banner"
+                        tabIndex={-1}
+                        />                     
+
+                        // <img src={require('./images/blog/' + pdp.blogImage)} tabIndex="-1" alt="Banner" />
                     }
 
                     </div>
