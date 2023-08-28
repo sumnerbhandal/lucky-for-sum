@@ -62,7 +62,6 @@ const Project = (props) => {
     //         let loaderBlob = document.getElementById('load-next-item' + loaderAnimationId);
     //         const nextToBeLoaded = nextProjectIndex + 1;
     //         setNextProjectIndex(nextToBeLoaded);
-    //         console.log(nextToBeLoaded);
     //         if (nextProjectIndex < ProjectPageFeed.length) {
     //             loaderBlob.classList.add("loading");
     //             projectsShown.push(ProjectPageFeed[nextProjectIndex]);

@@ -125,7 +125,7 @@ const WorkPage = (props) => {
                         <div className="new-project-container" key={index}>
                             <div className="new-project-container-row">
                                 <div className="col">
-                                    <Link to={`/project/${item.url}-pid-${item.id}`} className="project-preview-thumbnail" id={item.id} title={item.url} onClick={projectImageOpen}  tabIndex="0">
+                                    <Link to={`/project/${item.url}-pid-${item.id}`} className="project-preview-thumbnail" id={'project-link-' + item.id} title={item.url} onClick={projectImageOpen}  tabIndex="0">
                                     <h3>
                                         {item.title}
                                     </h3>
@@ -146,7 +146,7 @@ const WorkPage = (props) => {
                             </div>
                             <div className="new-project-container-row">
                                 <div className="col">
-                                    <Link to={`/project/${item.url}-pid-${item.id}`} id={item.id} className="project-thumbnail" title={item.url} onClick={projectImageOpen}  tabIndex="0">
+                                    <Link to={`/project/${item.url}-pid-${item.id}`} id={'project-thumbnail1-' + item.id} className="project-thumbnail" title={item.url} onClick={projectImageOpen}  tabIndex="0">
                                         <ProgressiveImageHook
                                             key={index}
                                             src={require('./images/' + item.thumbnail1)}
@@ -157,7 +157,7 @@ const WorkPage = (props) => {
                                     </Link>
                                 </div>
                                 <div className="col">
-                                <Link to={`/project/${item.url}-pid-${item.id}`} id={item.id} className="project-thumbnail" title={item.url} onClick={projectImageOpen}  tabIndex="0">
+                                <Link to={`/project/${item.url}-pid-${item.id}`} id={'project-thumbnail2-' + item.id}  className="project-thumbnail" title={item.url} onClick={projectImageOpen}  tabIndex="0">
                                         <ProgressiveImageHook
                                             key={index}
                                             src={require('./images/' + item.thumbnail2)}
@@ -168,7 +168,7 @@ const WorkPage = (props) => {
                                     </Link>
                                 </div>
                                 <div className="col">
-                                <Link to={`/project/${item.url}-pid-${item.id}`} id={item.id} className="project-thumbnail" title={item.url} onClick={projectImageOpen}  tabIndex="0">
+                                <Link to={`/project/${item.url}-pid-${item.id}`} id={'project-thumbnail3-' + item.id} className="project-thumbnail" title={item.url} onClick={projectImageOpen}  tabIndex="0">
                                         <ProgressiveImageHook
                                             key={index}
                                             src={require('./images/' + item.thumbnail3)}
@@ -196,10 +196,10 @@ const WorkPage = (props) => {
                                     {
                                         blogProjects.blogArticles.slice(6,10).map((item, index) => (
                                             <div className="col article">
-                                                <Link className="blog-image-thumbnail" to={`/blog/article/${item.title.replace(/ /g, '-').toLowerCase()}-pid-${item.id}`} id={item.id}  onClick={projectImageOpen}>                                                       
-                                                    <img src={require('../project/images/blog/' + item.image)} alt={item.alt}/>
+                                                <Link className="blog-image-thumbnail" to={`/blog/article/${item.title.replace(/ /g, '-').toLowerCase()}-pid-${item.id}`} id={'blog-image-thumbnail' + item.id}   onClick={projectImageOpen}>                                                       
+                                                    <img src={require('../project/images/blog/' + item.image)} alt={item.imageAlt}/>
                                                 </Link>
-                                                <Link to={`/blog/article/${item.title.replace(/ /g, '-').toLowerCase()}-pid-${item.id}`} id={item.id} title={item.url} onClick={projectImageOpen}  tabIndex="0">
+                                                <Link to={`/blog/article/${item.title.replace(/ /g, '-').toLowerCase()}-pid-${item.id}`} id={'blog-text-link' + item.id} title={item.url} onClick={projectImageOpen}  tabIndex="0">
                                                     <h4>
                                                         {item.title}
                                                     </h4>
@@ -222,7 +222,7 @@ const WorkPage = (props) => {
             </div>
             <Suspense fallback={<div></div>}>
             {loadProjects ? (
-                <div style={{display: "none"}}>
+                <div style={{display: "none"}} tabIndex="-1">
                     <Project/>
                 </div>
             ) : null}

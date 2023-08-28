@@ -155,7 +155,7 @@ const Blog = (props) => {
                 <Footer />
                 <Suspense fallback={<div></div>}>
             {loadProjects ? (
-                <div style={{display: "none"}}>
+                <div style={{display: "none"}} tabIndex="-1">
                     <Project/>
                 </div>
             ) : null}
