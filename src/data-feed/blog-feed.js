@@ -510,7 +510,7 @@ const BlogPageFeed = [
                 ]
             },
             {
-                "h2": "Phase 2: Defining the Journey",
+                "h2": "Phase 2: A Well Defined Journey",
                 "subsection": [
                     {
                         "h3": "Critical Points In The Journey",
@@ -535,7 +535,7 @@ const BlogPageFeed = [
                 ]
             },
             {
-                "h2": "Phase 3: Sketching/Ideating",
+                "h2": "Phase 3: Fast Ideation",
                 "subsection": [
                     {
                         "h3": "Rapid Ideation",
@@ -546,7 +546,7 @@ const BlogPageFeed = [
                 ]
             },
             {
-                "h2": "Phase 4: Deciding/Designing",
+                "h2": "Phase 4: Structured Deciding and Designing",
                 "subsection": [
                     {
                         "copy": [
@@ -581,7 +581,7 @@ const BlogPageFeed = [
                 ]
             },
             {
-                "h2": "Phase 6: Validate",
+                "h2": "Phase 6: Increased Emphasis on Validation",
                 "subsection": [
                     {
                         "copy": [
