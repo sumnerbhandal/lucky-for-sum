@@ -112,8 +112,8 @@ const BlogPageFeed = [
         ]
     },
     {
-        "title": "Tips for being the first designer at a start-up",
-        "SEOTitle": "Tips for being the first designer at a start-up",
+        "title": "Top 10 tips for being the first designer at a start-up",
+        "SEOTitle": "Top 10 tips for being the first designer at a start-up",
         "SEODescription": "",
         "keywords": "",
         "path": "blog/",
@@ -122,30 +122,124 @@ const BlogPageFeed = [
         "blog" : [
             {
                 // "h2": "The Scope Of The Challenge",
-                "date" : "2023",
+                "date" : "November 2022",
                 "subsection": [
                     {
                         "copy": [
-                            "Article coming soon."
-                        ],
-                        // "bullet": [
-                        //     "Work with the founders to translate hypotheses into product and research goals"
-                        // ],
-                        // "link" : {
-                        //     "url": "https://app.robinai.co.uk/signup",
-                        //     "text": "Sign up to experience the product for free"
-                        // },
-                        // "link" : {
-                        //     "url": "https://app.robinai.co.uk/signup",
-                        //     "text": "TLDR Sign up for free and try it yourself."
-                        // },
-                        // "subsectionImage" : {
-                        //     "image": "user-journey-map.png",
-                        //     "alt": "An image for a user journey map"
-                        // }
-                    }
+                            "As the first designer at a startup, you have the chance to establish strong design foundations that will scale as the company grows."
+                        ]
+                      }
                 ]
-            }
+            },
+            {
+                
+                "subsection": [
+                    {
+                    "h3": "1. Immerse yourself in the product and business goals",
+                    "copy": [
+                        "Learn the ins and outs of what the startup does, what they're aiming for, and their market. Get a handle on their core value proposition and target users. Figure out how design can boost the product to meet business goals like user adoption, retention, revenue, etc."
+                    ]
+                  }
+                ]
+            },
+            {
+               
+                "subsection": [
+                    {
+                    "h3": "2. Audit the current product experience and identify improvement opportunities tied to business objectives",
+                    "copy": [
+                        "Review the current product and flag areas for improvement, keeping business objectives in mind. Check out the existing UI, functions, flows, and content. Call out issues and pain points in the current user experience. Make a prioritised list of quick wins and longer-term opportunities."
+                    ]
+                  }
+                ]
+            },
+            {
+                "subsection": [
+                    {
+                    "h3": "3. Partner closely with engineering and product teams to align on priorities and feasibility",
+                    "copy": [
+                        "Team up closely with engineering and product teams to align on priorities and feasibility. Build trust together. Collaborate to pick design opportunities that will have the most impact on business value. Give rough estimates on effort to inform priority, and lean on engineering input on technical limitations and considerations."
+                    ]
+                  }
+                ]
+            },
+            {
+              
+                "subsection": [
+                    {
+                    "h3": "4. Create rapid prototypes to get concepts in front of users for feedback as early as possible",
+                    "copy": [
+                        "Move fast to turn ideas into lightweight prototypes for user validation. Focus on major new features or changes to core flows. Get users involved early and continuously to validate direction."
+                    ]
+                  }
+                ]
+            },
+            {
+               
+                "subsection": [
+                    {
+                    "h3": "5. Institute a design system to streamline development and maintain consistency across new features",
+                    "copy": [
+                        "Build a reusable component library with clear guidelines and work with engineering to ensure that they understand how they should use it. This enables engineers to focus on new features instead of one-off designs and maintains visual and UX consistency."
+                    ]
+                  }
+                ]
+            },
+            {
+               
+                "subsection": [
+                    {
+                    "h3": "6. Advocate for research-driven design and develop processes to learn from users often",
+                    "copy": [
+                        "Push for research-driven design and develop processes to regularly learn from users. Champion kickoff research, concept testing, and usability studies. Spot gaps in customer insight to guide strategy. Incorporate user feedback loops into sprints."
+                    ]
+                  }
+                ]
+            },
+            {
+              
+                "subsection": [
+                    {
+                    "h3": "7. Set up collaborative reviews to communicate and gather feedback on design direction",
+                    "copy": [
+                        "Propose a long-term roadmap based on priorities. Schedule regular reviews of concepts to get buy-in and feedback. Make space for discussion and alignment."
+                    ]
+                  }
+                ]
+            },
+            {
+              
+                "subsection": [
+                    {
+                    "h3": "8. Establish relationships with cross-functional partners in marketing, sales and support",
+                    "copy": [
+                        "Make connections with non-engineering teams. Offer training on design principles and how they can apply them in order to propagate user-centric thinking company-wide. You are all on the same team and they have direct access to users, so their feedback is invaluable."
+                    ]
+                  }
+                ]
+            },
+            {
+                
+                "subsection": [
+                    {
+                    "h3": "9. Identify skill and tool gaps and provide resources/training to get stakeholders up to speed",
+                    "copy": [
+                        "Audit where the team lacks design maturity like research skills, tools, or processes. Recommend training, software, and resources to boost competencies."
+                    ]
+                  }
+                ]
+            },
+            {
+               
+                "subsection": [
+                    {
+                    "h3": "10. Document best practices, guidelines, and systems to uphold consistency as the team scales",
+                    "copy": [
+                        "Log your guidelines, new processes, and reasons behind big decisions as you go. This enables the ability to onboard new team members and align them with established direction and past learnings."
+                    ]
+                  }
+                ]
+            },
         ]
     },
     {
