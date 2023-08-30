@@ -137,7 +137,16 @@ const BlogPageFeed = [
                     {
                     "h3": "1. Immerse yourself in the product and business goals",
                     "copy": [
-                        "Learn the ins and outs of what the startup does, what they're aiming for, and their market. Get a handle on their core value proposition and target users. Figure out how design can boost the product to meet business goals like user adoption, retention, revenue, etc."
+                        ""
+                    ],
+                    "bullet": [
+                        "Make it a priority from day one to fully understand what the startup does, what they’re aiming to achieve, and their market landscape.",
+                        "Get to know the product inside and out by using it yourself and talking to current users.",
+                        "Discuss goals and roadmaps with the founding team to grasp their short-term and long-term vision.",
+                        "Learning these nuances will allow you to identify exactly where design can play a strategic role in levelling up the product experience to drive key business goals like user adoption, retention, revenue, and growth.",
+                        "Build empathy for users and get into the founders’ minds to uncover how design can directly tie to business success. Understanding the ins and outs of the startup's goals and reason for being will equip you to make a sizeable impact through user-centric design."
+
+
                     ]
                   }
                 ]
@@ -148,7 +157,15 @@ const BlogPageFeed = [
                     {
                     "h3": "2. Audit the current product experience and identify improvement opportunities tied to business objectives",
                     "copy": [
-                        "Review the current product and flag areas for improvement, keeping business objectives in mind. Check out the existing UI, functions, flows, and content. Call out issues and pain points in the current user experience. Make a prioritised list of quick wins and longer-term opportunities."
+                        ""
+                    ],
+                    "bullet": [
+                        "Take time to comprehensively review the current product experience with a critical eye, keeping core business goals in mind.",
+                        "Rigorously examine existing UI elements, app flows, interactions, and content across all platforms.",
+                        "Use the product firsthand and observe actual users to pinpoint issues and pain points in the current user journey. For example, look for confusing workflows, unclear messaging, too many steps to complete tasks, etc.",
+                        "Note small UX frustrations that could discourage engagement or conversion and flag everything that feels disconnected, inconsistent, unintuitive or overly complex.",
+                        "Call out quick fixes that can improve the experience with little effort as well as larger challenges needing more investment.",
+                        "By methodically auditing the product against business goals, you'll identify the biggest areas where design can dramatically enhance customer acquisition, conversion, retention and satisfaction."
                     ]
                   }
                 ]
@@ -158,9 +175,17 @@ const BlogPageFeed = [
                     {
                     "h3": "3. Partner closely with engineering and product teams to align on priorities and feasibility",
                     "copy": [
-                        "Team up closely with engineering and product teams to align on priorities and feasibility. Build trust together. Collaborate to pick design opportunities that will have the most impact on business value. Give rough estimates on effort to inform priority, and lean on engineering input on technical limitations and considerations."
-                    ]
-                  }
+                        ""
+                    ],
+                    "bullet": [
+                            "It's critical as the first designer to establish close collaboration with engineering and product counterparts to align on priorities and feasibility.",
+                            "Make an effort to build trusted partnerships by maintaining an open dialogue and actively involve them in the design process.",
+                            "Collaborate to decide which design opportunities will deliver the most business value based on their technical insights. For example, the engineering team can help call out complex features that would take significant development effort versus quick wins that can build momentum.",
+                            "Lean on their knowledge of technical constraints and considerations like platform differences, backend implications, or integration complexity.",
+                            "Beyond technical factors, also loop in product partners to tie opportunities back to product roadmaps and user pain points.",
+                            "Building strong mutual understanding upfront prevents wasting effort on ideas that aren't viable or impactful."
+                        ]
+                    }
                 ]
             },
             {
@@ -169,7 +194,14 @@ const BlogPageFeed = [
                     {
                     "h3": "4. Create rapid prototypes to get concepts in front of users for feedback as early as possible",
                     "copy": [
-                        "Move fast to turn ideas into lightweight prototypes for user validation. Focus on major new features or changes to core flows. Get users involved early and continuously to validate direction."
+                        ""
+                    ],
+                    "bullet": [
+                        "Once you have ideas for improving the product experience, it's essential to move quickly to turn those concepts into lightweight prototypes to put in front of real users for validation as early as possible.",
+                        "Don't get bogged down trying to create highly polished prototypes. The goal is to illustrate ideas and interactions minimally to gather initial user feedback.",
+                        "Focus prototyping efforts on major new features or changes to core app flows that will significantly impact user interactions. For example, quickly wireframe or mockup new onboarding flows, or demonstrate a new feature with basic interactions.",
+                        "Then put those preliminary prototypes in users' hands via remote usability tests. See if they can complete key tasks and listen for their reactions. Gathering user feedback early on prototypes prevents going too far down the wrong path and having to make major changes later.",
+                        "Prototyping is all about validating product direction while ideas are still flexible. So establish a habit of involving users continuously throughout iteration. Making user validation a regular part of the process means you can catch issues early and adjust course."
                     ]
                   }
                 ]
@@ -180,7 +212,16 @@ const BlogPageFeed = [
                     {
                     "h3": "5. Institute a design system to streamline development and maintain consistency across new features",
                     "copy": [
-                        "Build a reusable component library with clear guidelines and work with engineering to ensure that they understand how they should use it. This enables engineers to focus on new features instead of one-off designs and maintains visual and UX consistency."
+                        ""
+                    ],
+                    "bullet": [
+                        "A critical initiative as the first designer is to institute a design system by building out a reusable component library with clear guidelines.",
+                        "Work closely with engineers to educate them on the purpose of the design system and the proper usage of the components.",
+                        "Standardise these elements with consistent naming conventions and best practices documentation.",
+                        "Set clear guidelines for when and how components should be used to maintain unity across the product experience.",
+                        "Having this foundation eliminates redundant one-off design efforts and Engineers will be able to focus their time on developing new features rather than re-inventing basic components.",
+                        "Another benefit of a unified design system is it maintains visual consistency and familiarity for users as the product expands.",
+                        "The upfront investment to build a modular component library pays off exponentially through increased efficiency, cohesion, and speed over the long run."
                     ]
                   }
                 ]
@@ -191,7 +232,15 @@ const BlogPageFeed = [
                     {
                     "h3": "6. Advocate for research-driven design and develop processes to learn from users often",
                     "copy": [
-                        "Push for research-driven design and develop processes to regularly learn from users. Champion kickoff research, concept testing, and usability studies. Spot gaps in customer insight to guide strategy. Incorporate user feedback loops into sprints."
+                        ""
+                    ],
+                    "bullet": [
+                        "As the first designer, actively champion integrating research into the design process to uncover insights directly from users.",
+                        "Push for dedicating time and resources to upfront discovery research to guide the product strategy and inform the roadmap.",
+                        "Spot gaps in customer insight across the company that could benefit from additional qualitative or quantitative research. For example, surveys and interviews with converted vs unconverted users could reveal barriers to adoption.",
+                        "Establish a feedback loop where the design team proposes hypotheses, gathers data directly from customers, then iterates based on findings.",
+                        "Having an evidence-based approach ensures the product evolves based on user needs rather than internal assumptions.",
+                        "Making research a cultural pillar will drive better design decisions and outcome."
                     ]
                   }
                 ]
@@ -202,7 +251,15 @@ const BlogPageFeed = [
                     {
                     "h3": "7. Set up collaborative reviews to communicate and gather feedback on design direction",
                     "copy": [
-                        "Propose a long-term roadmap based on priorities. Schedule regular reviews of concepts to get buy-in and feedback. Make space for discussion and alignment."
+                        ""
+                    ],
+                    "bullet": [
+                        "Based on your insights into top user pain points and business priorities, propose a long-term product roadmap. Then break down that vision into distinct initiatives to tackle in phases quarterly or monthly.",
+                        "Establish touchpoints to regularly review design concepts and gather feedback from stakeholders. For example, schedule working sessions to walk through flows, wireframes, or prototypes",
+                        "Make time for open discussion and consideration of alternatives. With ongoing reviews, you can identify potential issues early and adjust approaches while still flexible.",
+                        "Promote transparency by communicating designs often to avoid surprises and fostering alignment both short-term on features and long-term on roadmap direction is key.",
+                        "You want to create buy-in across teams and leadership on where the product experience is headed",
+                        "Consistent reviews and open forums for debate lead to stronger designs informed by diverse perspectives."
                     ]
                   }
                 ]
@@ -213,7 +270,15 @@ const BlogPageFeed = [
                     {
                     "h3": "8. Establish relationships with cross-functional partners in marketing, sales and support",
                     "copy": [
-                        "Make connections with non-engineering teams. Offer training on design principles and how they can apply them in order to propagate user-centric thinking company-wide. You are all on the same team and they have direct access to users, so their feedback is invaluable."
+                        ""
+                    ],
+                    "bullet": [
+                        "Reach out to related teams like sales, customer support, marketing, operations etc.",
+                        "Offer to give presentations or informal training for them on core design principles and how they could apply user-centric thinking to their roles.",
+                        "Get their unique perspectives on challenges users face and see if they're willing to send surveys or interview customers on your behalf as many have direct user access.",
+                        "Look for opportunities for them to help with research recruitment or spread the word when launching new features.",
+                        "Building personal rapport and tapping into their insights can uncover blindspots and While you want to maintain design integrity, be open to feedback from non-designers.",
+                        "Enabling everyone to apply a user-first approach will multiply your impact across the organisation."
                     ]
                   }
                 ]
@@ -224,7 +289,16 @@ const BlogPageFeed = [
                     {
                     "h3": "9. Identify skill and tool gaps and provide resources/training to get stakeholders up to speed",
                     "copy": [
-                        "Audit where the team lacks design maturity like research skills, tools, or processes. Recommend training, software, and resources to boost competencies."
+                        ""
+                    ],
+                    "bullet": [
+                        "Take time early on to audit where your startup team has gaps in design maturity, whether in skills, tools, or processes.",
+                        "Look for areas they may be lacking in capabilities like conducting user research, synthesising findings, building prototypes, interaction design, etc.",
+                        "Review their current toolstack for deficiencies; explore whether new software could aid collaboration or efficiency.",
+                        "Consider if processes could be introduced or refined to integrate research and testing more systematically.",
+                        "Based on this assessment, put together recommendations on training, tools, and resources that could help boost competencies in any weak spots.",
+                        "Arrange team workshops facilitated by an expert in areas where they need mentoring.",
+                        "Investing early in elevating your team’s capabilities in key areas will pay dividends. It empowers the broader organisation to better collaborate, provide impactful feedback, and execute great design."
                     ]
                   }
                 ]
@@ -235,7 +309,15 @@ const BlogPageFeed = [
                     {
                     "h3": "10. Document best practices, guidelines, and systems to uphold consistency as the team scales",
                     "copy": [
-                        "Log your guidelines, new processes, and reasons behind big decisions as you go. This enables the ability to onboard new team members and align them with established direction and past learnings."
+                        ""
+                    ],
+                    "bullet": [
+                        "Make a habit of thoroughly documenting best practices, guidelines, processes and the rationale behind major decisions as you establish them.",
+                        "Document your interactions with stakeholders, key meetings, and team agreements.",
+                        "Capture institutional knowledge via wikis, guides, or an internal blog",
+                        "Having this information documented enables you to effectively train and onboard new team members in the future by getting them aligned with established direction. They can get up to speed quickly on past learnings, processes, and guiding principles to continue momentum.",
+                        "Knowledge sharing will be especially critical once additional designers join the team. You’ll be able to easily pass the baton for them to carry practices forward and assist their learning curve.",
+                        "Documentation also serves as helpful reference material even for existing members who may forget why certain choices were made."
                     ]
                   }
                 ]
