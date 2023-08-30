@@ -346,6 +346,8 @@ const Project = (props) => {
                     ))}
 
                 </article>
+
+                
                 <div className="next-project-section">
                     <div id={`load-next-item${index}`} className="next-project-intro">  
                     </div>

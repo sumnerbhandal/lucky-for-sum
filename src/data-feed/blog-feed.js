@@ -636,7 +636,7 @@ const BlogPageFeed = [
                 "subsection": [
                     {
                         "copy": [
-                            "Designing a new product, service, or experience requires careful planning and execution to ensure success. During my tenure at Robin AI, I took some time to reflect on projects that were determined to have met users’ needs successfully (via user sentiment surveys/ adoption metrics within the products) and distilled the process down into 6 key phases."
+                            "Designing a new product, service, or experience requires careful planning and execution to ensure success. During my tenure at Robin AI, I took some time to reflect on projects that were determined to have met users’ needs successfully (via user sentiment surveys/adoption metrics within the products) and distilled the process down into 6 key phases."
                         ],
                     }
                 ]
@@ -648,7 +648,7 @@ const BlogPageFeed = [
                         "h3": "Research Approaches",
                         "copy": [
                             "The first phase is gathering insights to understand the problem you're trying to solve. This involves research to empathise with users and identify their needs. Understanding the user and their context is crucial to designing solutions that truly meet their needs.",
-                            "Before embarking on the discovery research, it’s important to know why you’re doing it, what the problem is, and how you will know it works. With those in hand, it allows for the opportunity to get a baseline understanding of what the project is and how to determine success.",
+                            "Before embarking on the discovery research, it’s important to know why you’re doing it, what the problem is, and how you will know it works. Using those processes allow for the opportunity to get a baseline understanding of what the project is and how to determine success.",
                             "Next, choose the right UX research method by assessing your goals, constraints, and needs for quantitative/qualitative, attitudinal/behavioural, and generative/evaluative data.",
                         ]
                     },
@@ -656,28 +656,28 @@ const BlogPageFeed = [
                         "h3": "User Journey Mapping",
                         "copy": [
                             "User journey mapping is about understanding how the user navigates the problem in their current workflow. It allows us to empathise with their difficulties and discover opportunities.",
-                            "You can do this by talking with an expert and mapping out the steps it takes to achieve that goal noting any insights and pain points along the journey."
+                            "You can do this by talking with an expert and mapping out the steps it takes to achieve that goal, noting any insights and pain points along the journey."
                         ]
                     },
                     {
                         "h3": "Problem Statements",
                         "copy": [
                             "A problem statement is exactly as it reads. The research will unveil issues that users/customers are having and this is where we store them.",
-                            "Collect the insights and pain points from the user journey map or other research and modify them so that they take the form of a statement."
+                            "Collect the insights and pain points from the user journey map, or other research, and modify them so that they take the form of a statement."
                         ]
                     },
                     {
                         "h3": "How Might We (HMW) Questions",
                         "copy": [
                             "‘How Might We’ or HMW questions are a set of questions that look to solve the previously stated problems.",
-                            "One way of approaching this remotely is by doing the following steps:"
+                            "One way of approaching this remotely is by taking the following steps:"
                         ],
                         "bullet": [
                             "Using a tool like FigJam, create an interactive whiteboard",
                             "Add sections and assign a problem statement for each",
                             "Invite relevant members of the team/stakeholders to the HMW session",
                             "Explain the process to the rest of the invitees",
-                            "Set a timer for 3/4 minutes for the first problem statement",
+                            "Set a timer for 3-4 minutes for the first problem statement",
                             "Ask everyone to fill in as many HMW notes as they can in that time for that statement",
                             "Ask each author to go through their notes and briefly explain their thinking",
                             "Repeat for the other problem statements"
