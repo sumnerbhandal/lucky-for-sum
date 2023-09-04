@@ -636,7 +636,7 @@ const BlogPageFeed = [
                 "subsection": [
                     {
                         "copy": [
-                            "Designing a new product, service, or experience requires careful planning and execution to ensure success. During my tenure at Robin AI, I took some time to reflect on projects that were determined to have met users’ needs successfully (via user sentiment surveys/adoption metrics within the products) and distilled the process down into 6 key phases."
+                            "Designing a new product, service, or experience requires careful planning and execution to ensure success. Over the last year, I took some time to reflect on projects that were determined to have met users’ needs successfully (via user sentiment surveys/adoption metrics within the products) and distilled the process down into 6 key phases."
                         ],
                     }
                 ]
