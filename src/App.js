@@ -19,6 +19,8 @@ const App = () => {
 
   const target = createRef();
   const [projectPreviewPosition, setProjectPreviewPosition] = useState(null);
+  // const [heroImg, setHeroImg] = useState(null);
+
   const [hpReferrer, setHpReferrer] = useState(false);
   function focusStates() {
     document.body.addEventListener('mousedown', function() {

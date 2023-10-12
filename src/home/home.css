@@ -468,7 +468,6 @@ body.dark .aboutMe p.intro {
 
 .new-project-container-row .col .project-thumbnail img {
     width: 105%;
-    height: fit-content;
   }
 
 .new-project-container-row .col:nth-child(1) .project-thumbnail {
@@ -571,7 +570,6 @@ body.dark .aboutMe p.intro {
 
 .blog-image-thumbnail img {
     width: 120%;
-    height: fit-content;
 }
 
 @media (min-width: 768px) {

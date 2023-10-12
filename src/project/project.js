@@ -13,7 +13,7 @@ const LazyLoad = lazy(() => import('react-lazy-load'));
 
 
 const Project = (props) => {
-
+    const heroImg = props.heroImg == null ? 0 : props.heroImg;
     const verticalPosition = props.position == null ? 0 : props.position.y;
     const leftPosition = props.position == null ? 0 : props.position.x;
     const projectIndex = window.location.href.split('pid-')[1] === undefined ? 0 : window.location.href.split('pid-')[1];
@@ -101,6 +101,7 @@ const Project = (props) => {
                 <div className="project-preview">
                     <div style={projectPreviewPosition} className="project-preview-thumbnail header">
                     {/* {pdp.headerImage} */}
+                    {/* {heroImg != undefined ? <img src={heroImg} /> : pdp.headerImage === undefined ? null : pdp.headerImage } */}
                     {pdp.headerImage === undefined ? null : pdp.headerImage}
                     {pdp.blogImage === undefined ? null : 
 

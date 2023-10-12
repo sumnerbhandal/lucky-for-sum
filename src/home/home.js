@@ -6,6 +6,7 @@ import HPSkeleton from "./hp-skeleton";
 
 import { Helmet } from "react-helmet";
 import "./home.css";
+import ProjectPageFeed from "../data-feed/project-feed";
 
 const Project = lazy(() => import('../project/project'));
 const ProgressiveImageHook = lazy(() => import('../reusable-functions/progressive-image-load'));
@@ -16,6 +17,7 @@ const HomePage = (props) => {
 
     function projectImageOpen(e) {
         const project = e.target;
+        // props.heroImg(project.src);
         const currentProjectPosition = project.getBoundingClientRect();
         props.PreviewPosition(currentProjectPosition);
         props.HpReferrer(true);
